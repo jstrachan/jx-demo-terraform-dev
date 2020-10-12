@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - jstrachan/jx-demo-terraform-dev
-      target_url: http://dashboard-jx.
+      target_url: http://dashboard-jx.35.184.150.204.nip.io
 kind: ConfigMap
 metadata:
   creationTimestamp: null
