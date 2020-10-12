@@ -7,38 +7,60 @@ buildPacks:
     gitRef: master
     gitURL: https://github.com/jenkins-x/jx3-pipeline-catalog.git
 cluster:
-  clusterName: ""
-  devEnvApprovers:
-  - todo
-  environmentGitOwner: "todo"
+  clusterName: jstrachan-tekton
+  environmentGitOwner: todo
   gitKind: github
   gitName: github
   gitServer: https://github.com
+  gke:
+    projectNumber: "688875092189"
   namespace: jx
-  project:  ""
+  project: jenkins-x-labs-bdd
   provider: gke
   registry: gcr.io
-  zone: ""
+  zone: us-central1-a
 environments:
-- key: dev
-  owner: ""
-  repository: ""
-- key: staging
-  owner: ""
-  repository: ""
-- key: production
-  owner: ""
-  repository: ""
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: dev
+  owner: jstrachan
+  repository: jx-demo-terraform-dev
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: staging
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: production
 gitops: true
 ingress:
-  domain: ""
+  domain: 35.184.150.204.nip.io
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
     email: ""
     enabled: false
-    production: false
+    production: true
 kaniko: true
+pipelineUser:
+  username: jstrachan
 repository: nexus
 secretStorage: gsm
 storage:
@@ -46,14 +68,14 @@ storage:
     enabled: false
     url: ""
   logs:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://logs-jstrachan-tekton-a8e886d2bef9
   reports:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://reports-jstrachan-tekton-a8e886d2bef9
   repository:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://repository-jstrachan-tekton-a8e886d2bef9
 vault: {}
 velero:
   schedule: ""

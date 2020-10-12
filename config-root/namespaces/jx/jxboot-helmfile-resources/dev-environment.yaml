@@ -1,0 +1,137 @@
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: null
+  labels:
+    env: dev
+    team: jx
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: dev
+  namespace: jx
+spec:
+  kind: Development
+  label: Development
+  namespace: jx
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Never
+  source:
+    ref: master
+    url: https://github.com/jstrachan/jx-demo-terraform-dev.git
+  teamSettings:
+    appsRepository: http://chartmuseum.jenkins-x.io
+    bootRequirements: |
+      autoUpdate:
+        enabled: false
+        schedule: ""
+      bootConfigURL: https://github.com/jenkins-x/jx3-boot-config
+      buildPacks:
+        buildPackLibrary:
+          gitRef: master
+          gitURL: https://github.com/jenkins-x/jx3-pipeline-catalog.git
+      cluster:
+        clusterName: jstrachan-tekton
+        environmentGitOwner: todo
+        gitKind: github
+        gitName: github
+        gitServer: https://github.com
+        gke:
+          projectNumber: "688875092189"
+        namespace: jx
+        project: jenkins-x-labs-bdd
+        provider: gke
+        registry: gcr.io
+        zone: us-central1-a
+      environments:
+      - ingress:
+          domain: ""
+          externalDNS: false
+          namespaceSubDomain: ""
+          tls:
+            email: ""
+            enabled: false
+            production: false
+        key: dev
+        owner: jstrachan
+        repository: jx-demo-terraform-dev
+      - ingress:
+          domain: ""
+          externalDNS: false
+          namespaceSubDomain: ""
+          tls:
+            email: ""
+            enabled: false
+            production: false
+        key: staging
+      - ingress:
+          domain: ""
+          externalDNS: false
+          namespaceSubDomain: ""
+          tls:
+            email: ""
+            enabled: false
+            production: false
+        key: production
+      gitops: true
+      ingress:
+        domain: ""
+        externalDNS: false
+        namespaceSubDomain: -jx.
+        tls:
+          email: ""
+          enabled: false
+          production: true
+      kaniko: true
+      pipelineUser:
+        username: jstrachan
+      repository: nexus
+      secretStorage: gsm
+      storage:
+        backup:
+          enabled: false
+          url: ""
+        logs:
+          enabled: true
+          url: gs://logs-jstrachan-tekton-a8e886d2bef9
+        reports:
+          enabled: true
+          url: gs://reports-jstrachan-tekton-a8e886d2bef9
+        repository:
+          enabled: true
+          url: gs://repository-jstrachan-tekton-a8e886d2bef9
+      vault: {}
+      velero:
+        schedule: ""
+        ttl: ""
+      versionStream:
+        ref: master
+        url: https://github.com/jenkins-x/jxr-versions.git
+      webhook: lighthouse
+    buildPackRef: master
+    buildPackUrl: https://github.com/jenkins-x/jx3-pipeline-catalog.git
+    defaultScheduler:
+      apiVersion: jenkins.io/v1
+      kind: Scheduler
+      name: jx-meta-pipeline
+    dockerRegistryOrg: jenkins-x-labs-bdd
+    envOrganisation: todo
+    gitPublic: true
+    gitServer: https://github.com
+    helmTemplate: true
+    importMode: YAML
+    kubeProvider: gke
+    pipelineUserEmail: jenkins-x@googlegroups.com
+    pipelineUsername: jstrachan
+    promotionEngine: Prow
+    prowConfig: Scheduler
+    prowEngine: Tekton
+    storageLocations:
+      - bucketUrl: gs://logs-jstrachan-tekton-a8e886d2bef9
+        classifier: logs
+      - bucketUrl: gs://reports-jstrachan-tekton-a8e886d2bef9
+        classifier: reports
+    useGitOps: true
+    versionStreamRef: master
+    versionStreamUrl: https://github.com/jenkins-x/jxr-versions.git
+  webHookEngine: Lighthouse
+status: {}
