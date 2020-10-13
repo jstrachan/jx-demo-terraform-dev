@@ -1,0 +1,68 @@
+# Source: nodey534/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-10-13T07:56:50Z"
+  deletionTimestamp: null
+  name: 'nodey534-1.0.0'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: jstrachan-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jstrachan
+      branch: master
+      committer:
+        accountReference:
+          - id: jstrachan-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jstrachan
+      message: |
+        release 1.0.0
+      sha: 5c51781860f448542e4425b0d2491e0d0935f7bc
+    - author:
+        accountReference:
+          - id: jstrachan-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jstrachan
+      branch: master
+      committer:
+        accountReference:
+          - id: jstrachan-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jstrachan
+      message: |
+        release 1.0.0
+      sha: 26b0757e082308f107dea667c0826bc4f711d87e
+    - author:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        Jenkins X build pack
+      sha: 08f8d1b118a0190ac85fe90428c15ffce099ba52
+  gitCloneUrl: https://github.com/jstrachan/nodey534.git
+  gitHttpUrl: https://github.com/jstrachan/nodey534
+  gitOwner: jstrachan
+  gitRepository: nodey534
+  name: 'nodey534'
+  releaseNotesURL: https://github.com/jstrachan/nodey534/releases/tag/v1.0.0
+  version: v1.0.0
+status: {}
