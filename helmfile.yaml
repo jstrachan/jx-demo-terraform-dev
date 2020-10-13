@@ -89,7 +89,7 @@ releases:
   name: nodey533
   namespace: jx-staging
 - chart: dev/nodey534
-  version: 1.0.0
+  version: 1.0.1
   name: nodey534
   namespace: jx-staging
 templates: {}
