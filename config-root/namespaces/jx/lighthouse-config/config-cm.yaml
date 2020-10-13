@@ -9,6 +9,7 @@ data:
       enabled:
         jstrachan/jx-demo-terraform-dev: true
         jstrachan/nodey533: true
+        jstrachan/nodey534: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -22,6 +23,7 @@ data:
       merge_method:
         jstrachan/jx-demo-terraform-dev: merge
         jstrachan/nodey533: merge
+        jstrachan/nodey534: merge
       queries:
       - labels:
         - approved
@@ -34,6 +36,7 @@ data:
         repos:
         - jstrachan/jx-demo-terraform-dev
         - jstrachan/nodey533
+        - jstrachan/nodey534
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - jstrachan/jx-demo-terraform-dev
         - jstrachan/nodey533
+        - jstrachan/nodey534
       target_url: http://dashboard-jx.35.184.150.204.nip.io
 kind: ConfigMap
 metadata:
