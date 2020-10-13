@@ -92,13 +92,13 @@ spec:
           url: ""
         logs:
           enabled: true
-          url: gs://logs-jstrachan-tekton-a8e886d2bef9
+          url: gs://logs-jstrachan-tekton-20699896b252
         reports:
           enabled: true
-          url: gs://reports-jstrachan-tekton-a8e886d2bef9
+          url: gs://reports-jstrachan-tekton-20699896b252
         repository:
           enabled: true
-          url: gs://repository-jstrachan-tekton-a8e886d2bef9
+          url: gs://repository-jstrachan-tekton-20699896b252
       vault: {}
       velero:
         schedule: ""
@@ -126,9 +126,9 @@ spec:
     prowConfig: Scheduler
     prowEngine: Tekton
     storageLocations:
-      - bucketUrl: gs://logs-jstrachan-tekton-a8e886d2bef9
+      - bucketUrl: gs://logs-jstrachan-tekton-20699896b252
         classifier: logs
-      - bucketUrl: gs://reports-jstrachan-tekton-a8e886d2bef9
+      - bucketUrl: gs://reports-jstrachan-tekton-20699896b252
         classifier: reports
     useGitOps: true
     versionStreamRef: master
