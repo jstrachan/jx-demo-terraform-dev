@@ -9,4 +9,5 @@ spec:
     providerKind: github
     repositories:
     - name: nodey533
+    - name: nodey534
     scheduler: in-repo
