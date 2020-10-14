@@ -1,11 +1,11 @@
-# Source: bdd-sbhg-1602677553/templates/deployment.yaml
+# Source: spring-boot-http-gradle/templates/deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bdd-sbhg-1602677553-bdd-sbhg-1602677553
+  name: spring-boot-http-gradle-spring-boot-http-gradle
   labels:
     draft: draft-app
-    chart: "bdd-sbhg-1602677553-0.0.1"
+    chart: "spring-boot-http-gradle-0.0.1"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -13,17 +13,17 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: bdd-sbhg-1602677553-bdd-sbhg-1602677553
+      app: spring-boot-http-gradle-spring-boot-http-gradle
   replicas: 1
   template:
     metadata:
       labels:
         draft: draft-app
-        app: bdd-sbhg-1602677553-bdd-sbhg-1602677553
+        app: spring-boot-http-gradle-spring-boot-http-gradle
     spec:
       containers:
-        - name: bdd-sbhg-1602677553
-          image: "gcr.io/jenkins-x-labs-bdd/bdd-sbhg-1602677553:0.0.1"
+        - name: spring-boot-http-gradle
+          image: "gcr.io/jenkins-x-labs-bdd/spring-boot-http-gradle:0.0.1"
           imagePullPolicy: IfNotPresent
           env:
           envFrom: null

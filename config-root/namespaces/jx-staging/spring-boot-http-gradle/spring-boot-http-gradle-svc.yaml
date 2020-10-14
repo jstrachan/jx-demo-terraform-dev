@@ -1,10 +1,10 @@
-# Source: bdd-sbhg-1602677553/templates/service.yaml
+# Source: spring-boot-http-gradle/templates/service.yaml
 apiVersion: v1
 kind: Service
 metadata:
-  name: bdd-sbhg-1602677553
+  name: spring-boot-http-gradle
   labels:
-    chart: "bdd-sbhg-1602677553-0.0.1"
+    chart: "spring-boot-http-gradle-0.0.1"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     fabric8.io/expose: "true"
@@ -18,4 +18,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app: bdd-sbhg-1602677553-bdd-sbhg-1602677553
+    app: spring-boot-http-gradle-spring-boot-http-gradle
