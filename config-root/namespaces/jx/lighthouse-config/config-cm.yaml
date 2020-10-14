@@ -9,6 +9,7 @@ data:
       enabled:
         cb-kubecd/bdd-nh-1602677114: true
         cb-kubecd/bdd-sbhg-1602677553: true
+        cb-kubecd/spring-boot-http-gradle: true
         jstrachan/jx-demo-terraform-dev: true
         jstrachan/nodey533: true
         jstrachan/nodey534: true
@@ -25,6 +26,7 @@ data:
       merge_method:
         cb-kubecd/bdd-nh-1602677114: merge
         cb-kubecd/bdd-sbhg-1602677553: merge
+        cb-kubecd/spring-boot-http-gradle: merge
         jstrachan/jx-demo-terraform-dev: merge
         jstrachan/nodey533: merge
         jstrachan/nodey534: merge
@@ -41,6 +43,7 @@ data:
         - jstrachan/jx-demo-terraform-dev
         - cb-kubecd/bdd-nh-1602677114
         - cb-kubecd/bdd-sbhg-1602677553
+        - cb-kubecd/spring-boot-http-gradle
         - jstrachan/nodey533
         - jstrachan/nodey534
       - labels:
@@ -55,6 +58,7 @@ data:
         - jstrachan/jx-demo-terraform-dev
         - cb-kubecd/bdd-nh-1602677114
         - cb-kubecd/bdd-sbhg-1602677553
+        - cb-kubecd/spring-boot-http-gradle
         - jstrachan/nodey533
         - jstrachan/nodey534
       target_url: http://dashboard-jx.35.184.150.204.nip.io
