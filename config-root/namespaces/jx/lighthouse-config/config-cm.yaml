@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        cb-kubecd/bdd-gh-1602677553: true
         cb-kubecd/bdd-nh-1602677114: true
         cb-kubecd/bdd-sbhg-1602677553: true
         cb-kubecd/spring-boot-http-gradle: true
@@ -24,6 +25,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        cb-kubecd/bdd-gh-1602677553: merge
         cb-kubecd/bdd-nh-1602677114: merge
         cb-kubecd/bdd-sbhg-1602677553: merge
         cb-kubecd/spring-boot-http-gradle: merge
@@ -41,6 +43,7 @@ data:
         - needs-rebase
         repos:
         - jstrachan/jx-demo-terraform-dev
+        - cb-kubecd/bdd-gh-1602677553
         - cb-kubecd/bdd-nh-1602677114
         - cb-kubecd/bdd-sbhg-1602677553
         - cb-kubecd/spring-boot-http-gradle
@@ -56,6 +59,7 @@ data:
         - needs-rebase
         repos:
         - jstrachan/jx-demo-terraform-dev
+        - cb-kubecd/bdd-gh-1602677553
         - cb-kubecd/bdd-nh-1602677114
         - cb-kubecd/bdd-sbhg-1602677553
         - cb-kubecd/spring-boot-http-gradle
