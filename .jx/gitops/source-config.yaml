@@ -15,6 +15,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: bdd-gh-1602677553
     - name: bdd-nh-1602677114
     - name: bdd-sbhg-1602677553
     - name: spring-boot-http-gradle
