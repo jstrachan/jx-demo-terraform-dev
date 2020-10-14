@@ -84,5 +84,9 @@ releases:
   version: 1.0.0
   name: pusher-wave
   namespace: secret-infra
+- chart: dev/spring-boot-http-gradle
+  version: 0.0.1
+  name: spring-boot-http-gradle
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
