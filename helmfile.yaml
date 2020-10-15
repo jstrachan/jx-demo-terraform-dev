@@ -48,9 +48,9 @@ releases:
   values:
   - versionStream/charts/jx3/jx-pipelines-visualizer/values.yaml.gotmpl
 - chart: jx3/jx-preview
+  version: 0.0.104
   name: jx-preview
   namespace: jx
-  version: 0.0.104
 - chart: stable/nginx-ingress
   version: 1.39.1
   name: nginx-ingress
