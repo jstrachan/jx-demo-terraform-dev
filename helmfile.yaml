@@ -50,6 +50,7 @@ releases:
 - chart: jx3/jx-preview
   name: jx-preview
   namespace: jx
+  version: 0.0.104
 - chart: stable/nginx-ingress
   version: 1.39.1
   name: nginx-ingress
