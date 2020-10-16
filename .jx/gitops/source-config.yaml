@@ -11,10 +11,3 @@ spec:
     - name: nodey533
     - name: nodey534
     scheduler: in-repo
-  - owner: cb-kubecd
-    provider: https://github.com
-    providerKind: github
-    repositories:
-    - name: bdd-gh-1602869144
-    - name: bdd-gh-1602871496
-    scheduler: in-repo
