@@ -11,6 +11,7 @@ cluster:
   environmentGitOwner: todo
   gitKind: github
   gitName: github
+  gitPublic: false
   gitServer: https://github.com
   gke:
     projectNumber: "688875092189"
