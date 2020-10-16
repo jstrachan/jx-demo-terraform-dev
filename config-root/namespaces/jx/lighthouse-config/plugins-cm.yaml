@@ -12,6 +12,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - cb-kubecd/bdd-gh-1602854728
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - cb-kubecd/bdd-nh-1602677114
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -45,6 +49,22 @@ data:
     owners: {}
     plugins:
       cb-kubecd/bdd-gh-1602679032:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      cb-kubecd/bdd-gh-1602854728:
       - approve
       - assign
       - blunderbuss
@@ -171,6 +191,9 @@ data:
       trusted_org: todo
     - repos:
       - cb-kubecd/bdd-gh-1602679032
+      trusted_org: todo
+    - repos:
+      - cb-kubecd/bdd-gh-1602854728
       trusted_org: todo
     - repos:
       - cb-kubecd/bdd-nh-1602677114
