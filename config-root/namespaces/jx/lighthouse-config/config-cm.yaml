@@ -7,8 +7,6 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
-        cb-kubecd/bdd-gh-1602869144: true
-        cb-kubecd/bdd-gh-1602871496: true
         jstrachan/jx-demo-terraform-dev: true
         jstrachan/nodey533: true
         jstrachan/nodey534: true
@@ -23,8 +21,6 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
-        cb-kubecd/bdd-gh-1602869144: merge
-        cb-kubecd/bdd-gh-1602871496: merge
         jstrachan/jx-demo-terraform-dev: merge
         jstrachan/nodey533: merge
         jstrachan/nodey534: merge
@@ -39,8 +35,6 @@ data:
         - needs-rebase
         repos:
         - jstrachan/jx-demo-terraform-dev
-        - cb-kubecd/bdd-gh-1602869144
-        - cb-kubecd/bdd-gh-1602871496
         - jstrachan/nodey533
         - jstrachan/nodey534
       - labels:
@@ -53,8 +47,6 @@ data:
         - needs-rebase
         repos:
         - jstrachan/jx-demo-terraform-dev
-        - cb-kubecd/bdd-gh-1602869144
-        - cb-kubecd/bdd-gh-1602871496
         - jstrachan/nodey533
         - jstrachan/nodey534
       target_url: http://dashboard-jx.35.184.150.204.nip.io
