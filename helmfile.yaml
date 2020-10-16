@@ -89,5 +89,9 @@ releases:
   version: 0.0.1
   name: bdd-gh-1602872962
   namespace: jx-staging
+- chart: dev/bdd-gh-1602873233
+  version: 0.0.1
+  name: bdd-gh-1602873233
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
