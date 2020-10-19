@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: cb-kubecd
+    provider: github
+    repository: bdd-gh-1603125314
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: cb-kubecd-bdd-gh-1603125314
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/cb-kubecd/bdd-gh-1603125314.git
+  org: cb-kubecd
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: bdd-gh-1603125314
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/cb-kubecd/bdd-gh-1603125314
