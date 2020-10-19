@@ -10,6 +10,7 @@ data:
         cb-kubecd/bdd-gh-1602872561: true
         cb-kubecd/bdd-gh-1602872962: true
         cb-kubecd/bdd-gh-1602873233: true
+        cb-kubecd/bdd-gh-1603113443: true
         jstrachan/jx-demo-terraform-dev: true
         jstrachan/nodey533: true
         jstrachan/nodey534: true
@@ -27,6 +28,7 @@ data:
         cb-kubecd/bdd-gh-1602872561: merge
         cb-kubecd/bdd-gh-1602872962: merge
         cb-kubecd/bdd-gh-1602873233: merge
+        cb-kubecd/bdd-gh-1603113443: merge
         jstrachan/jx-demo-terraform-dev: merge
         jstrachan/nodey533: merge
         jstrachan/nodey534: merge
@@ -44,6 +46,7 @@ data:
         - cb-kubecd/bdd-gh-1602872561
         - cb-kubecd/bdd-gh-1602872962
         - cb-kubecd/bdd-gh-1602873233
+        - cb-kubecd/bdd-gh-1603113443
         - jstrachan/nodey533
         - jstrachan/nodey534
       - labels:
@@ -59,6 +62,7 @@ data:
         - cb-kubecd/bdd-gh-1602872561
         - cb-kubecd/bdd-gh-1602872962
         - cb-kubecd/bdd-gh-1602873233
+        - cb-kubecd/bdd-gh-1603113443
         - jstrachan/nodey533
         - jstrachan/nodey534
       target_url: http://dashboard-jx.35.184.150.204.nip.io

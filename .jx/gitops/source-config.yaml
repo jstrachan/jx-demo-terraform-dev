@@ -18,4 +18,5 @@ spec:
     - name: bdd-gh-1602872561
     - name: bdd-gh-1602872962
     - name: bdd-gh-1602873233
+    - name: bdd-gh-1603113443
     scheduler: in-repo
