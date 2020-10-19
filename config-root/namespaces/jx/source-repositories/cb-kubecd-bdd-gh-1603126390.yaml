@@ -5,18 +5,18 @@ metadata:
   labels:
     owner: cb-kubecd
     provider: github
-    repository: bdd-gh-1603125314
+    repository: bdd-gh-1603126390
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  name: cb-kubecd-bdd-gh-1603125314
+  name: cb-kubecd-bdd-gh-1603126390
   namespace: jx
 spec:
-  httpCloneURL: https://github.com/cb-kubecd/bdd-gh-1603125314.git
+  httpCloneURL: https://github.com/cb-kubecd/bdd-gh-1603126390.git
   org: cb-kubecd
   provider: https://github.com
   providerKind: github
   providerName: github
-  repo: bdd-gh-1603125314
+  repo: bdd-gh-1603126390
   scheduler:
     kind: ""
     name: in-repo
-  url: https://github.com/cb-kubecd/bdd-gh-1603125314
+  url: https://github.com/cb-kubecd/bdd-gh-1603126390

@@ -8,7 +8,7 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - cb-kubecd/bdd-gh-1603125314
+      - cb-kubecd/bdd-gh-1603126390
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
@@ -32,7 +32,7 @@ data:
       additional_labels: null
     owners: {}
     plugins:
-      cb-kubecd/bdd-gh-1603125314:
+      cb-kubecd/bdd-gh-1603126390:
       - approve
       - assign
       - blunderbuss
@@ -110,7 +110,7 @@ data:
       - jstrachan/jx-demo-terraform-dev
       trusted_org: todo
     - repos:
-      - cb-kubecd/bdd-gh-1603125314
+      - cb-kubecd/bdd-gh-1603126390
       trusted_org: todo
     - repos:
       - jstrachan/nodey533
