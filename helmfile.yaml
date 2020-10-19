@@ -85,9 +85,5 @@ releases:
   version: 1.0.0
   name: pusher-wave
   namespace: secret-infra
-- chart: dev/bdd-gh-1603126640
-  version: 0.0.1
-  name: bdd-gh-1603126640
-  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
