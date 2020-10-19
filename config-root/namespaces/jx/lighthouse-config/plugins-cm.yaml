@@ -8,10 +8,6 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - cb-kubecd/bdd-gh-1603126640
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - jstrachan/nodey533
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -32,22 +28,6 @@ data:
       additional_labels: null
     owners: {}
     plugins:
-      cb-kubecd/bdd-gh-1603126640:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
       jstrachan/jx-demo-terraform-dev:
       - config-updater
       - approve
@@ -108,9 +88,6 @@ data:
     triggers:
     - repos:
       - jstrachan/jx-demo-terraform-dev
-      trusted_org: todo
-    - repos:
-      - cb-kubecd/bdd-gh-1603126640
       trusted_org: todo
     - repos:
       - jstrachan/nodey533
