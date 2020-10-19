@@ -8,22 +8,6 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - cb-kubecd/bdd-gh-1603115748
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - cb-kubecd/bdd-gh-1603121327
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - cb-kubecd/bdd-gh-1603122261
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - cb-kubecd/bdd-gh-1603123587
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - jstrachan/nodey533
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -44,70 +28,6 @@ data:
       additional_labels: null
     owners: {}
     plugins:
-      cb-kubecd/bdd-gh-1603115748:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      cb-kubecd/bdd-gh-1603121327:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      cb-kubecd/bdd-gh-1603122261:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      cb-kubecd/bdd-gh-1603123587:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
       jstrachan/jx-demo-terraform-dev:
       - config-updater
       - approve
@@ -168,18 +88,6 @@ data:
     triggers:
     - repos:
       - jstrachan/jx-demo-terraform-dev
-      trusted_org: todo
-    - repos:
-      - cb-kubecd/bdd-gh-1603115748
-      trusted_org: todo
-    - repos:
-      - cb-kubecd/bdd-gh-1603121327
-      trusted_org: todo
-    - repos:
-      - cb-kubecd/bdd-gh-1603122261
-      trusted_org: todo
-    - repos:
-      - cb-kubecd/bdd-gh-1603123587
       trusted_org: todo
     - repos:
       - jstrachan/nodey533
