@@ -15,5 +15,5 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
-    - name: bdd-gh-1603127960
+    - name: bdd-gh-1602679032
     scheduler: in-repo
