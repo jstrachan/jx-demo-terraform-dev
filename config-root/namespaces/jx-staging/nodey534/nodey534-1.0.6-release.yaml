@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-10-20T11:58:30Z"
+  creationTimestamp: "2020-10-20T12:03:52Z"
   deletionTimestamp: null
-  name: 'nodey534-1.0.5'
+  name: 'nodey534-1.0.6'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jstrachan
       message: |
-        release 1.0.5
-      sha: cec1a6a487d0815bc1e5086ce76bd8b9706e9598
+        release 1.0.6
+      sha: f64e2fd2d4dcb3bd3e852f18f4dead247a3912dd
     - author:
         accountReference:
           - id: jstrachan-0
@@ -40,8 +40,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jstrachan
       message: |
-        release 1.0.5
-      sha: 17c4c3c5bb38e18332b265ca12f8644e4f35d77f
+        release 1.0.6
+      sha: d2f169d81138e7553adc67622236f5ba5d4eecb0
     - author:
         accountReference:
           - id: james-strachan-0
@@ -51,13 +51,12 @@ spec:
       branch: master
       committer:
         accountReference:
-          - id: james-strachan-0
+          - id: github-0
             provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: add lint
-      sha: 5074c455d425f04d953d14e9f6c5d08b7829bd61
+        email: noreply@github.com
+        name: GitHub
+      message: Update index.html
+      sha: 6656ae9e46c12d3eade2c8dd8298b60c23c7d6e4
     - author:
         accountReference:
           - id: james-strachan-0
@@ -67,18 +66,17 @@ spec:
       branch: master
       committer:
         accountReference:
-          - id: james-strachan-0
+          - id: github-0
             provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: add linter
-      sha: 8560658ca48ee2bb3f7c05cdda5a003cdaeb6234
+        email: noreply@github.com
+        name: GitHub
+      message: 'fix: add default env vars'
+      sha: ee412447a6fb7ad08c72c6a142e4b97c2a092260
   gitCloneUrl: https://github.com/jstrachan/nodey534.git
   gitHttpUrl: https://github.com/jstrachan/nodey534
   gitOwner: jstrachan
   gitRepository: nodey534
   name: 'nodey534'
-  releaseNotesURL: https://github.com/jstrachan/nodey534/releases/tag/v1.0.5
-  version: v1.0.5
+  releaseNotesURL: https://github.com/jstrachan/nodey534/releases/tag/v1.0.6
+  version: v1.0.6
 status: {}
