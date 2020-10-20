@@ -91,7 +91,7 @@ releases:
   name: bdd-gh-1603127960
   namespace: jx-staging
 - chart: dev/nodey534
-  version: 1.0.5
+  version: 1.0.6
   name: nodey534
   namespace: jx-staging
 templates: {}
