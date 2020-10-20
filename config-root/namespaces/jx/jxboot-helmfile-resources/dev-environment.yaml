@@ -115,7 +115,6 @@ spec:
       name: jx-meta-pipeline
     dockerRegistryOrg: jenkins-x-labs-bdd
     envOrganisation: todo
-    gitPublic: true
     gitServer: https://github.com
     helmTemplate: true
     importMode: YAML
