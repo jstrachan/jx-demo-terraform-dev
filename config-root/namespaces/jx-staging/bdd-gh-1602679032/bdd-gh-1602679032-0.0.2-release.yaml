@@ -1,0 +1,164 @@
+# Source: bdd-gh-1602679032/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-10-20T13:06:50Z"
+  deletionTimestamp: null
+  name: 'bdd-gh-1602679032-0.0.2'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: jstrachan-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jstrachan
+      branch: master
+      committer:
+        accountReference:
+          - id: jstrachan-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jstrachan
+      message: |
+        release 0.0.2
+      sha: 65ac35bec0294f12535760f3dde4d3c9e181995b
+    - author:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: use lint folder
+      sha: 61dcbd15b0ce2a75e41f9f3a5ff5c90a0c62eda0
+    - author:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: use lint folder
+      sha: 7f489eeda94bef9762cd11ff3e57e69dfb31e522
+    - author:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: polish
+      sha: 83332ace5014de488c4300b4a21d5c58686c0bed
+    - author:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: try enable linting
+      sha: 7f41dda85701fc47d17e41690413fb31c406affd
+    - author:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: add sleep
+      sha: 62c4d85efdebe9666463350fd399cab5f9fc6049
+    - author:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: more stuff
+      sha: 8c351f2fc896b67d1475b4fd3ba1d9b337765601
+    - author:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: test lint
+      sha: 1d46f1f199c344e992c812f972f904d977e2c875
+    - author:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: add linter
+      sha: e170fad109381ce5d6cfa2e3e4b3c7f49b904bb8
+  gitCloneUrl: https://github.com/cb-kubecd/bdd-gh-1602679032.git
+  gitHttpUrl: https://github.com/cb-kubecd/bdd-gh-1602679032
+  gitOwner: cb-kubecd
+  gitRepository: bdd-gh-1602679032
+  name: 'bdd-gh-1602679032'
+  releaseNotesURL: https://github.com/cb-kubecd/bdd-gh-1602679032/releases/tag/v0.0.2
+  version: v0.0.2
+status: {}
