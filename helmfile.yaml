@@ -90,5 +90,9 @@ releases:
   version: 0.0.1
   name: bdd-gh-1603127960
   namespace: jx-staging
+- chart: dev/nodey534
+  version: 1.0.5
+  name: nodey534
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
