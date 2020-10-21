@@ -11,7 +11,7 @@ metadata:
   namespace: jx
   annotations:
     wave.pusher.com/update-on-config-change: 'true'
-    jenkins-x.io/hash: 'b4dfa1b005b48869d5bc1d89559431c3da59f66b3397e39ab21d007b80ef1083'
+    jenkins-x.io/hash: 'ea3ffc748db4672b13b686e897e02861959247796575e9dfdfdf8650b9158119'
 spec:
   replicas: 1
   selector:
@@ -28,7 +28,7 @@ spec:
       serviceAccountName: lighthouse-tekton-controller
       containers:
         - name: lighthouse-tekton-controller
-          image: gcr.io/jenkinsxio/lighthouse-tekton-controller:0.0.0-SNAPSHOT-PR-1120-5
+          image: gcr.io/jenkinsxio/lighthouse-tekton-controller:0.0.0-SNAPSHOT-PR-1117-30
           imagePullPolicy: IfNotPresent
           args:
             - --namespace=jx
