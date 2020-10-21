@@ -90,5 +90,9 @@ releases:
   version: 1.0.0
   name: nodey536
   namespace: jx-staging
+- chart: dev/node-http-3ed56e893
+  version: 1.0.0
+  name: node-http-3ed56e893
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
