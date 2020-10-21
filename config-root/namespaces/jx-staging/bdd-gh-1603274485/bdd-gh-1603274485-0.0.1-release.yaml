@@ -1,0 +1,52 @@
+# Source: bdd-gh-1603274485/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-10-21T10:06:50Z"
+  deletionTimestamp: null
+  name: 'bdd-gh-1603274485-0.0.1'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: jstrachan-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jstrachan
+      branch: master
+      committer:
+        accountReference:
+          - id: jstrachan-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jstrachan
+      message: |
+        release 0.0.1
+      sha: 3e806005ca1a50d52d183bd1aea9733d83631372
+    - author:
+        accountReference:
+          - id: jstrachan-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jstrachan
+      branch: master
+      committer:
+        accountReference:
+          - id: jstrachan-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jstrachan
+      message: |
+        Jenkins X build pack
+      sha: 02b62f4d97b0f16feb365b060fd76f5ef643df04
+  gitCloneUrl: https://github.com/cb-kubecd/bdd-gh-1603274485.git
+  gitHttpUrl: https://github.com/cb-kubecd/bdd-gh-1603274485
+  gitOwner: cb-kubecd
+  gitRepository: bdd-gh-1603274485
+  name: 'bdd-gh-1603274485'
+  releaseNotesURL: https://github.com/cb-kubecd/bdd-gh-1603274485/releases/tag/v0.0.1
+  version: v0.0.1
+status: {}
