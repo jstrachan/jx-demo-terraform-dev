@@ -1,0 +1,51 @@
+# Source: bdd-gh-1603274485/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-10-21T10:36:02Z"
+  deletionTimestamp: null
+  name: 'bdd-gh-1603274485-0.0.3'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: jstrachan-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jstrachan
+      branch: master
+      committer:
+        accountReference:
+          - id: jstrachan-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jstrachan
+      message: |
+        release 0.0.3
+      sha: 0fcfb34592986f5d67c64cd1232c2b2ab1c6079e
+    - author:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        accountReference:
+          - id: github-0
+            provider: jenkins.io/git-github-userid
+        email: noreply@github.com
+        name: GitHub
+      message: Update main.go
+      sha: c15ef60e92412c23eea42897f7e5b8d1a07f8ebb
+  gitCloneUrl: https://github.com/cb-kubecd/bdd-gh-1603274485.git
+  gitHttpUrl: https://github.com/cb-kubecd/bdd-gh-1603274485
+  gitOwner: cb-kubecd
+  gitRepository: bdd-gh-1603274485
+  name: 'bdd-gh-1603274485'
+  releaseNotesURL: https://github.com/cb-kubecd/bdd-gh-1603274485/releases/tag/v0.0.3
+  version: v0.0.3
+status: {}
