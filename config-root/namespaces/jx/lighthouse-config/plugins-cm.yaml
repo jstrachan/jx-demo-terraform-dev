@@ -12,6 +12,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jstrachan/node-http-3ed56e893
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jstrachan/nodey533
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -54,6 +58,22 @@ data:
       - pony
       jstrachan/jx-demo-terraform-dev:
       - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jstrachan/node-http-3ed56e893:
       - approve
       - assign
       - blunderbuss
@@ -131,6 +151,9 @@ data:
       trusted_org: todo
     - repos:
       - cb-kubecd/bdd-gh-1602679032
+      trusted_org: todo
+    - repos:
+      - jstrachan/node-http-3ed56e893
       trusted_org: todo
     - repos:
       - jstrachan/nodey533

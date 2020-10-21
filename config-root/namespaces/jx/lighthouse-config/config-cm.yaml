@@ -9,6 +9,7 @@ data:
       enabled:
         cb-kubecd/bdd-gh-1602679032: true
         jstrachan/jx-demo-terraform-dev: true
+        jstrachan/node-http-3ed56e893: true
         jstrachan/nodey533: true
         jstrachan/nodey534: true
         jstrachan/nodey536: true
@@ -25,6 +26,7 @@ data:
       merge_method:
         cb-kubecd/bdd-gh-1602679032: merge
         jstrachan/jx-demo-terraform-dev: merge
+        jstrachan/node-http-3ed56e893: merge
         jstrachan/nodey533: merge
         jstrachan/nodey534: merge
         jstrachan/nodey536: merge
@@ -40,6 +42,7 @@ data:
         repos:
         - jstrachan/jx-demo-terraform-dev
         - cb-kubecd/bdd-gh-1602679032
+        - jstrachan/node-http-3ed56e893
         - jstrachan/nodey533
         - jstrachan/nodey534
         - jstrachan/nodey536
@@ -54,6 +57,7 @@ data:
         repos:
         - jstrachan/jx-demo-terraform-dev
         - cb-kubecd/bdd-gh-1602679032
+        - jstrachan/node-http-3ed56e893
         - jstrachan/nodey533
         - jstrachan/nodey534
         - jstrachan/nodey536
