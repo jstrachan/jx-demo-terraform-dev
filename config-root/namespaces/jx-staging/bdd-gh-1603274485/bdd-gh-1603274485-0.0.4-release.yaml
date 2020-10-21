@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-10-21T10:36:02Z"
+  creationTimestamp: "2020-10-21T10:46:18Z"
   deletionTimestamp: null
-  name: 'bdd-gh-1603274485-0.0.3'
+  name: 'bdd-gh-1603274485-0.0.4'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jstrachan
       message: |
-        release 0.0.3
-      sha: 0fcfb34592986f5d67c64cd1232c2b2ab1c6079e
+        release 0.0.4
+      sha: 55a19d41457de3668ad9e38ab84501142ba20576
     - author:
         accountReference:
           - id: james-strachan-0
@@ -40,12 +40,12 @@ spec:
         email: noreply@github.com
         name: GitHub
       message: Update main.go
-      sha: c15ef60e92412c23eea42897f7e5b8d1a07f8ebb
+      sha: 84684afe1d0bd3343ab6c4788162e758e9e00085
   gitCloneUrl: https://github.com/cb-kubecd/bdd-gh-1603274485.git
   gitHttpUrl: https://github.com/cb-kubecd/bdd-gh-1603274485
   gitOwner: cb-kubecd
   gitRepository: bdd-gh-1603274485
   name: 'bdd-gh-1603274485'
-  releaseNotesURL: https://github.com/cb-kubecd/bdd-gh-1603274485/releases/tag/v0.0.3
-  version: v0.0.3
+  releaseNotesURL: https://github.com/cb-kubecd/bdd-gh-1603274485/releases/tag/v0.0.4
+  version: v0.0.4
 status: {}

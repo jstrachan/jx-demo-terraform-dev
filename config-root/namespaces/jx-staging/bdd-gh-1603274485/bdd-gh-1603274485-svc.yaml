@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: bdd-gh-1603274485
   labels:
-    chart: "bdd-gh-1603274485-0.0.3"
+    chart: "bdd-gh-1603274485-0.0.4"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     fabric8.io/expose: "true"
