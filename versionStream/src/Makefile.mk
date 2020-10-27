@@ -204,7 +204,7 @@ pr-regen: all commit push-pr-branch
 .PHONY: push-pr-branch
 push-pr-branch:
 	jx gitops pr push --ignore-no-pr
-	jx gitops pr label --name myupdatebot --matches "env/.*"
+	jx gitops pr label --name myupdatebot --matches "size/.*"
 
 .PHONY: push
 push:
