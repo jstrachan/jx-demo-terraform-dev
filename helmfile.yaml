@@ -21,6 +21,8 @@ repositories:
   url: https://storage.googleapis.com/jenkinsxio/charts
 - name: stable
   url: https://charts.helm.sh/stable
+- name: dev
+  url: http://chartmuseum-jx.35.184.150.204.nip.io/
 releases:
 - chart: jenkins-x/jxboot-helmfile-resources
   version: 1.0.10
@@ -84,5 +86,9 @@ releases:
   version: 1.0.0
   name: pusher-wave
   namespace: secret-infra
+- chart: dev/bdd-gh-1602679032
+  version: 0.0.3
+  name: bdd-gh-1602679032
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
