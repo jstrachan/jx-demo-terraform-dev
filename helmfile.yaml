@@ -91,7 +91,10 @@ releases:
   name: bdd-gh-1602679032
   namespace: jx-staging
 - chart: jx3/jx-build-controller
+  version: 0.0.13
   name: jx-build-controller
   namespace: jx
+  values:
+  - versionStream/charts/jx3/jx-build-controller/values.yaml.gotmpl
 templates: {}
 missingFileHandler: ""
