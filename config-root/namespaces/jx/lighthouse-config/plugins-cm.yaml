@@ -24,6 +24,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - cb-kubecd/bdd-gh-1604073644
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jstrachan/node-http-3ed56e893
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -101,6 +105,22 @@ data:
       - dog
       - pony
       cb-kubecd/bdd-gh-1603280035:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      cb-kubecd/bdd-gh-1604073644:
       - approve
       - assign
       - blunderbuss
@@ -220,6 +240,9 @@ data:
       trusted_org: todo
     - repos:
       - cb-kubecd/bdd-gh-1603280035
+      trusted_org: todo
+    - repos:
+      - cb-kubecd/bdd-gh-1604073644
       trusted_org: todo
     - repos:
       - jstrachan/node-http-3ed56e893
