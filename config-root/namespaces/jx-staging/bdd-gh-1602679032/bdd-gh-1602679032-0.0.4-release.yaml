@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-10-29T07:51:01Z"
+  creationTimestamp: "2020-10-30T15:52:41Z"
   deletionTimestamp: null
-  name: 'bdd-gh-1602679032-0.0.3'
+  name: 'bdd-gh-1602679032-0.0.4'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jstrachan
       message: |
-        release 0.0.3
-      sha: 0681ea825923f2079698c7a151a4c26528b1f7a6
+        release 0.0.4
+      sha: 33c78312bac6b83bceb9fa6445a46f89d4521a7b
     - author:
         accountReference:
           - id: james-strachan-0
@@ -40,8 +40,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: polish lint
-      sha: 68a70b70e525a1b8bdb8198dd736061a305de1ed
+        fix: avoid boilerplate
+      sha: f8bbdc5783c6e732381fe396e961b5790247f4d6
     - author:
         accountReference:
           - id: james-strachan-0
@@ -56,8 +56,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: polish lint
-      sha: 5970c74d44023d542fc7e83bc7b573fcd2d3e2c2
+        fix: working
+      sha: 8f25dff00196129456dad95e895df46dc4613e21
     - author:
         accountReference:
           - id: james-strachan-0
@@ -72,8 +72,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: polish lint
-      sha: 2d4f4ab17ca0312894548af6d8f226a1a7915cdc
+        fix: avoid boilerplate
+      sha: caa4cfad9e84826209379c9fdf76d43def50d03e
     - author:
         accountReference:
           - id: james-strachan-0
@@ -88,8 +88,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: polish lint
-      sha: 03d608a852253675efe61f0ec00d2a8e0eed6257
+        fix: avoid boilerplate
+      sha: d03dc592d025be5179ee776d29ba45853d1f5138
     - author:
         accountReference:
           - id: james-strachan-0
@@ -104,8 +104,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: polish lint
-      sha: 222cc150f0ab89a2a47458a2143fd442fc8d625e
+        fix: avoid boilerplate
+      sha: b89ed845c0a4e83f9c98e3a8f477536f986b44d4
     - author:
         accountReference:
           - id: james-strachan-0
@@ -120,8 +120,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: polish lint
-      sha: 0ef628ddd6b7be004180d7a2db36b11b65898133
+        fix: avoid boilerplate
+      sha: aab06c2a3ea7681a009e48376ee85a74c437350b
     - author:
         accountReference:
           - id: james-strachan-0
@@ -136,8 +136,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: polish lint
-      sha: b84d0acd135e4785e7ced9a9b9d3b9989b2ebd49
+        fix: avoid boilerplate
+      sha: 500a044645f7509721a31531f4846813e4c00b41
     - author:
         accountReference:
           - id: james-strachan-0
@@ -152,8 +152,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: polish lint
-      sha: d3b2b4480bc9aaeadff65216d447d3769b8c1c22
+        fix: avoid boilerplate
+      sha: 23c0e616114efe2647afc32a5439e18667dc1112
     - author:
         accountReference:
           - id: james-strachan-0
@@ -168,8 +168,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: polish lint
-      sha: a4574a41ae57a918f27a00b2f96a8989f277504c
+        fix: avoid boilerplate
+      sha: d547b37597f1d548b877ec86b29250e0f0d1059f
     - author:
         accountReference:
           - id: james-strachan-0
@@ -184,8 +184,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: polish lint
-      sha: e06191134e6596fe0b2c5d43a3c683af22221cef
+        fix: avoid boilerplate
+      sha: c4df6a772bff20902b4fb3c036029a7c7bba7bf4
     - author:
         accountReference:
           - id: james-strachan-0
@@ -200,8 +200,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: polish lint
-      sha: 34d80fce79ab9140399f9a68d5c6a31838a8c4b0
+        fix: avoid boilerplate
+      sha: aa87bad9fcb9d9daa5e35207dd662abb76a60064
     - author:
         accountReference:
           - id: james-strachan-0
@@ -216,8 +216,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: polish lint
-      sha: 6a3c11850e7b8654b718dc9a2006746543272610
+        fix: avoid boilerplate
+      sha: 060e8ca15f67abb0186ac876a2cfe7e8d714422f
     - author:
         accountReference:
           - id: james-strachan-0
@@ -232,8 +232,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: polish lint
-      sha: a1fdf3369ab0abdc902e1ca9c5637f5c100ff4aa
+        fix: avoid boilerplate
+      sha: d256af6d989eea70b02d8c0b5821983d9b36066f
     - author:
         accountReference:
           - id: james-strachan-0
@@ -248,8 +248,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: polish lint
-      sha: a8b79d3ac32338ac247e02b11ef2bdccc16ec200
+        fix: avoid boilerplate
+      sha: 300dc9eb495a1d15fac40c9e80a4774147099e34
     - author:
         accountReference:
           - id: james-strachan-0
@@ -264,8 +264,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: polish lint
-      sha: 13b9b26bf4082aebee33520e5639ed97e4083802
+        fix: avoid boilerplate
+      sha: d07daa1297739e9c7aee54702d5df551dd91be89
     - author:
         accountReference:
           - id: james-strachan-0
@@ -280,8 +280,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: polish lint
-      sha: ac9a24ff5b9d1999fd13ae1678fd539757eacee2
+        fix: avoid boilerplate
+      sha: 3cf65df162afe3fbf8cf5d91717d5b3c24f645d8
     - author:
         accountReference:
           - id: james-strachan-0
@@ -296,8 +296,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: add org
-      sha: 4da255f5524eb4d32364de528775282d7c67b5c6
+        fix: avoid boilerplate
+      sha: 00916549d70d4271ba4782d08b82f2c5ea41cd13
     - author:
         accountReference:
           - id: james-strachan-0
@@ -312,8 +312,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: add org
-      sha: 88758c7ce90ed911e3146af36e044657b192c845
+        fix: avoid boilerplate
+      sha: 8fd90cbde0a986d423f158b98915341affd9373e
     - author:
         accountReference:
           - id: james-strachan-0
@@ -328,8 +328,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: add org
-      sha: 306f8b66a772c2c9f0a0c6b292e6393dd1dab69a
+        fix: avoid boilerplate
+      sha: d6b530b23b4c9ad9befb140f4a970d0a7c9ae772
     - author:
         accountReference:
           - id: james-strachan-0
@@ -344,8 +344,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: add org
-      sha: e77c87aa0843781ee5dade708d6f7cf4a7adebce
+        fix: avoid boilerplate
+      sha: 22ccf753bee698bea5cf7db55d6a6b7faf49e0a1
     - author:
         accountReference:
           - id: james-strachan-0
@@ -360,8 +360,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: add org
-      sha: cf0e010a38d05d2e859f6c4cd0527124a7014fa6
+        fix: avoid boilerplate
+      sha: e52a6251aa6876b33f73a7f0807127b4df22ebbf
     - author:
         accountReference:
           - id: james-strachan-0
@@ -376,8 +376,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: add org
-      sha: df6dbdcc0bce5bbf91712c6aec46829ba6a2e244
+        fix: avoid boilerplate
+      sha: ad2838bb03a1f900011ee18d1ef01c19c48b7ed4
     - author:
         accountReference:
           - id: james-strachan-0
@@ -392,8 +392,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: add org
-      sha: a2d016e61b2bab8c41db99ee6ecc3ee6caba2dbf
+        fix: avoid boilerplate
+      sha: ea9e8152e42391ddc5e55ae03e4fa78c93cb297e
     - author:
         accountReference:
           - id: james-strachan-0
@@ -408,8 +408,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: add org
-      sha: 17f083169cf9ae7188ec3bd6e33630c51c2d1a2b
+        fix: avoid boilerplate
+      sha: 4d403a74a807ef6191c5c88df9f48ce839332293
     - author:
         accountReference:
           - id: james-strachan-0
@@ -424,8 +424,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: add org
-      sha: 7b40bce8f7beb9fd7648cb7a32b29c2b23e338f7
+        fix: avoid boilerplate
+      sha: 45eb8c04d094c1115a4152e4abd0a7b07a78a1f2
     - author:
         accountReference:
           - id: james-strachan-0
@@ -440,8 +440,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: add github org env vars
-      sha: a401ac692d135a8f56fa2b4a920cb6e944e02e67
+        fix: avoid boilerplate
+      sha: 8a5b525bea994806652297a354ee20511c13a741
     - author:
         accountReference:
           - id: james-strachan-0
@@ -456,8 +456,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: avoid local
-      sha: 8ae3e2bfc53fff2facab76c5663cdef9bb7408c7
+        fix: avoid boilerplate
+      sha: d0fe873a9360770e871dd4542cc1fa5044d54feb
     - author:
         accountReference:
           - id: james-strachan-0
@@ -472,8 +472,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: avoid local
-      sha: e9f0a6052342bed1ad6fd9d3231e38081ccabc0c
+        fix: avoid boilerplate
+      sha: adcd68d016035dd735019416ad973c170f06bdff
     - author:
         accountReference:
           - id: james-strachan-0
@@ -488,8 +488,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: lets add raw webhook
-      sha: 9a4f46d2904ccb09834ccdeb23b667766c183fb9
+        fix: avoid boilerplate
+      sha: e99c372e9613a491e7a4c770624e9292d827621a
     - author:
         accountReference:
           - id: james-strachan-0
@@ -504,8 +504,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: lets add raw webhook
-      sha: bb8d4b24424a94c1711c8e1764e1dca8204e7e81
+        fix: avoid boilerplate
+      sha: f40f259c50966a7f604a86a7997eeec02ad901a3
     - author:
         accountReference:
           - id: james-strachan-0
@@ -520,8 +520,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: lets add raw webhook
-      sha: 895a95195fca451d715991a08e90871b1484888b
+        fix: avoid boilerplate
+      sha: 7625c73156aba260688f415e13559ee848a8c088
     - author:
         accountReference:
           - id: james-strachan-0
@@ -536,8 +536,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: lets add raw webhook
-      sha: d9a89d740299d2f20ff80ee195608c82c1c882d8
+        fix: avoid boilerplate
+      sha: fa44ff97f480e896cf5f5fdb8b7f97e5ef2d1e05
     - author:
         accountReference:
           - id: james-strachan-0
@@ -552,8 +552,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: lets add raw webhook
-      sha: 0d105e2a72ad9158e37df31bbce8ce203d959247
+        fix: avoid boilerplate
+      sha: ee41d8dfd79f8f802316284f6970001f19b3070e
     - author:
         accountReference:
           - id: james-strachan-0
@@ -568,8 +568,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: lets add raw webhook
-      sha: d3e0ba23d9eab9f47e691d2503e881efca8e09a2
+        fix: avoid boilerplate
+      sha: 6338defb8707279060ba0ac2aa3cb1b7233b43fd
     - author:
         accountReference:
           - id: james-strachan-0
@@ -584,8 +584,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: lets add raw webhook
-      sha: 720ac8a1d6bf8583017c03a90dd251325f4b66a1
+        fix: avoid boilerplate
+      sha: 73c959262ce22a80b450ea4d84181f55e2574102
     - author:
         accountReference:
           - id: james-strachan-0
@@ -600,24 +600,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: lets add raw webhook
-      sha: 39615e9e040b6383925fc85783d7c5725ee43da3
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: upgrade
-      sha: 5ac1021447c00d6a53dc4620b1ddc1151aedbb50
+        fix: avoid boilerplate
+      sha: e5b4aacfe0f11a959ad4168afcd3eec5c67e4e89
     - author:
         accountReference:
           - id: james-strachan-0
@@ -633,7 +617,7 @@ spec:
         name: James Strachan
       message: |
         fix: polish
-      sha: c27ef4182acd6dad7fc98b800f57e2f7748a68b4
+      sha: 784c605653eec3b8561ed0f988cde535223f88b0
     - author:
         accountReference:
           - id: james-strachan-0
@@ -649,7 +633,7 @@ spec:
         name: James Strachan
       message: |
         fix: polish
-      sha: 85858ca40f0cf50d668e8d2f3480b7c15a0b355c
+      sha: 6eb1d111726b2364a3ff0b77f41574d28eee6375
     - author:
         accountReference:
           - id: james-strachan-0
@@ -665,7 +649,7 @@ spec:
         name: James Strachan
       message: |
         fix: polish
-      sha: d7577c33652b9bd330978da932a5b74fd9414b65
+      sha: 0db97e4cab97457896d589746f7b88925f8ae7e0
     - author:
         accountReference:
           - id: james-strachan-0
@@ -681,7 +665,7 @@ spec:
         name: James Strachan
       message: |
         fix: polish
-      sha: 8010336e47a8fb6fe36268fc09b2833753eff074
+      sha: 5c2d1cd2eefa186677bab7bf5526d79dcfff866e
     - author:
         accountReference:
           - id: james-strachan-0
@@ -697,7 +681,7 @@ spec:
         name: James Strachan
       message: |
         fix: polish
-      sha: 0c7fd31082acec873513990ca639f54faac215dd
+      sha: d8f29f7382f71f871bcd73734ad5c37b433f4c41
     - author:
         accountReference:
           - id: james-strachan-0
@@ -713,7 +697,7 @@ spec:
         name: James Strachan
       message: |
         fix: polish
-      sha: 7370b024b54e6f4e2aab338b12cb601b40b81ba1
+      sha: e563db845cd8a4629e6d7440c1ca00d3047575ff
     - author:
         accountReference:
           - id: james-strachan-0
@@ -729,39 +713,7 @@ spec:
         name: James Strachan
       message: |
         fix: polish
-      sha: f6ac3e09ff71898633e5d73eddfa70dd9be38c4a
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: use source
-      sha: 8f2c80426049909516548bdf30991cba1cb8c531
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: polished
-      sha: 05e67e7344daa595bb441f9997dcba1d68c32111
+      sha: 26d80ca2a97cd904507716d2947d20077720cf2f
     - author:
         accountReference:
           - id: james-strachan-0
@@ -777,7 +729,7 @@ spec:
         name: James Strachan
       message: |
         fix: polish
-      sha: a42deea5587aa4c9a70ee0d5b904d0ab059a5a18
+      sha: 8fa82d76decb28dfa51933be8dd9fb287de2809d
     - author:
         accountReference:
           - id: james-strachan-0
@@ -793,252 +745,12 @@ spec:
         name: James Strachan
       message: |
         fix: polish
-      sha: ac61074f80535d9e4650aca5b4be436c73ae068d
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: polish
-      sha: 66700c55d6e3d87cc0a8b47c032ee0d112151aa4
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: polish
-      sha: 1dad1bbc0a602e15c05d5afdfc30d505b8f4dfa1
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: polish
-      sha: 27eff63a1cdf4e08807edf492b19ec626135ffae
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: polish
-      sha: e4f819d1cd5ca15e99a4e91241fa97ae8a27489c
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: polish
-      sha: 99cff988356d7c0858eff8caf773ee9374fa2d4f
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: polish
-      sha: 04b9b3f586a9c2a75861038ae76db7bb299178e5
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: lint pipeline
-      sha: 6856fc1956735cda54895cdea51bea45300970d7
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: polish
-      sha: 51197e7723d7351d8f4c1b34397970dd53480c6d
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: polish
-      sha: 3b0583b07b35c0df5b3ba61aeff9a8b01cf6261a
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: polish
-      sha: 54fc30c487c08011ef94e8c4c1c3e842fe35c823
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: stuff
-      sha: 699386054a0482769cb88c5d04258f88d74f6d73
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: stuff
-      sha: 13f59fbb53a9db8c57654419da0026244eb2f2f5
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: remove local pr
-      sha: 6da9af7b6bbeb71312b60b84d10509769660f967
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: polish
-      sha: d6cd75a438666096838638492ef5d46dd16a5db9
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: added resources
-      sha: e174cd77a9121a711d16c557f103d8b14ab93c5c
+      sha: 36cfd52e42a8353337311047ec60a8769ac05245
   gitCloneUrl: https://github.com/cb-kubecd/bdd-gh-1602679032.git
   gitHttpUrl: https://github.com/cb-kubecd/bdd-gh-1602679032
   gitOwner: cb-kubecd
   gitRepository: bdd-gh-1602679032
   name: 'bdd-gh-1602679032'
-  releaseNotesURL: https://github.com/cb-kubecd/bdd-gh-1602679032/releases/tag/v0.0.3
-  version: v0.0.3
+  releaseNotesURL: https://github.com/cb-kubecd/bdd-gh-1602679032/releases/tag/v0.0.4
+  version: v0.0.4
 status: {}

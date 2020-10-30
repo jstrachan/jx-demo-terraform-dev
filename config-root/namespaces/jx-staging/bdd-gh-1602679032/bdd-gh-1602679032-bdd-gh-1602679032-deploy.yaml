@@ -5,7 +5,7 @@ metadata:
   name: bdd-gh-1602679032-bdd-gh-1602679032
   labels:
     draft: draft-app
-    chart: "bdd-gh-1602679032-0.0.3"
+    chart: "bdd-gh-1602679032-0.0.4"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: bdd-gh-1602679032
-          image: "gcr.io/jenkins-x-labs-bdd/bdd-gh-1602679032:0.0.3"
+          image: "gcr.io/jenkins-x-labs-bdd/bdd-gh-1602679032:0.0.4"
           imagePullPolicy: IfNotPresent
           env:
           envFrom: null

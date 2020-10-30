@@ -87,7 +87,7 @@ releases:
   name: pusher-wave
   namespace: secret-infra
 - chart: dev/bdd-gh-1602679032
-  version: 0.0.3
+  version: 0.0.4
   name: bdd-gh-1602679032
   namespace: jx-staging
 - chart: jx3/jx-build-controller
