@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-11-05T10:04:07Z"
+  creationTimestamp: "2020-11-05T10:07:34Z"
   deletionTimestamp: null
-  name: 'nodey536-1.0.2'
+  name: 'nodey536-1.0.3'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jstrachan
       message: |
-        release 1.0.2
-      sha: 9a0fea87bf1a3a223c2d5464a3cb36e0d8e4d221
+        release 1.0.3
+      sha: 169310fa8007ab7ebd20d0f18ad95f3af8f80ee5
     - author:
         accountReference:
           - id: jenkins-x-bot
@@ -40,8 +40,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jstrachan
       message: |
-        release 1.0.2
-      sha: 24ecf49320ccba91d2f633c644e7f357d256b8b5
+        release 1.0.3
+      sha: 0041427a9f43774310a3e7667ca117b3b140c279
     - author:
         accountReference:
           - id: james-strachan-0
@@ -56,29 +56,13 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: upgrade pipeline
-      sha: 2438dcc702b280a0941c01d6353bcbe4dcc1b5cb
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        update jenkins-x (https://github.com/jenkins-x/jx3-pipeline-catalog) from master (6aa461af889fa2b2a2224699edef2cb5f36bf2e3) to master (005e78cf69b643862344397a635736a51dd1bd89)
-      sha: e7a10b43669bc6f52a1575763d40afc283a8a499
+        fix: change title
+      sha: 090777c8c4730c4cd5864199e8f698507f572eb2
   gitCloneUrl: https://github.com/jstrachan/nodey536.git
   gitHttpUrl: https://github.com/jstrachan/nodey536
   gitOwner: jstrachan
   gitRepository: nodey536
   name: 'nodey536'
-  releaseNotesURL: https://github.com/jstrachan/nodey536/releases/tag/v1.0.2
-  version: v1.0.2
+  releaseNotesURL: https://github.com/jstrachan/nodey536/releases/tag/v1.0.3
+  version: v1.0.3
 status: {}
