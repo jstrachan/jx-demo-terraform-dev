@@ -100,5 +100,7 @@ releases:
   version: 1.0.3
   name: nodey536
   namespace: jx-staging
+- chart: jx3/jx-kh-check
+  name: health-checks-jx
 templates: {}
 missingFileHandler: ""
