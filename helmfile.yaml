@@ -97,7 +97,7 @@ releases:
   values:
   - versionStream/charts/jx3/jx-build-controller/values.yaml.gotmpl
 - chart: dev/nodey536
-  version: 1.0.4
+  version: 1.0.5
   name: nodey536
   namespace: jx-staging
 - chart: jx3/jx-kh-check
