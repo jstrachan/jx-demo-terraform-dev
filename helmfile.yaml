@@ -101,6 +101,10 @@ releases:
   name: nodey536
   namespace: jx-staging
 - chart: jx3/jx-kh-check
+  version: 0.0.32
   name: health-checks-jx
+  namespace: jx
+  values:
+  - versionStream/charts/jx3/health-checks-jx/values.yaml.gotmpl
 templates: {}
 missingFileHandler: ""
