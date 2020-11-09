@@ -13,6 +13,7 @@ data:
         cb-kubecd/bdd-gh-1603280035: true
         cb-kubecd/bdd-gh-1604073644: true
         jstrachan/jx-demo-terraform-dev: true
+        jstrachan/mytap1: true
         jstrachan/node-http-3ed56e893: true
         jstrachan/nodey533: true
         jstrachan/nodey534: true
@@ -34,6 +35,7 @@ data:
         cb-kubecd/bdd-gh-1603280035: merge
         cb-kubecd/bdd-gh-1604073644: merge
         jstrachan/jx-demo-terraform-dev: merge
+        jstrachan/mytap1: merge
         jstrachan/node-http-3ed56e893: merge
         jstrachan/nodey533: merge
         jstrachan/nodey534: merge
@@ -54,6 +56,7 @@ data:
         - cb-kubecd/bdd-gh-1603279273
         - cb-kubecd/bdd-gh-1603280035
         - cb-kubecd/bdd-gh-1604073644
+        - jstrachan/mytap1
         - jstrachan/node-http-3ed56e893
         - jstrachan/nodey533
         - jstrachan/nodey534
@@ -73,6 +76,7 @@ data:
         - cb-kubecd/bdd-gh-1603279273
         - cb-kubecd/bdd-gh-1603280035
         - cb-kubecd/bdd-gh-1604073644
+        - jstrachan/mytap1
         - jstrachan/node-http-3ed56e893
         - jstrachan/nodey533
         - jstrachan/nodey534

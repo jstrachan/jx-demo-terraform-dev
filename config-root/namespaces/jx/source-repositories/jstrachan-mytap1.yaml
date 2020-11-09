@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jstrachan
+    provider: github
+    repository: mytap1
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jstrachan-mytap1
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jstrachan/mytap1.git
+  org: jstrachan
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: mytap1
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jstrachan/mytap1
