@@ -10,6 +10,7 @@ spec:
     repositories:
     - name: mytap1
     - name: node-http-3ed56e893
+    - name: nodey506
     - name: nodey507
     - name: nodey533
     - name: nodey534
