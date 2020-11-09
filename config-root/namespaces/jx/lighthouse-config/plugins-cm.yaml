@@ -36,6 +36,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jstrachan/nodey506
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jstrachan/nodey507
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -193,6 +197,22 @@ data:
       - cat
       - dog
       - pony
+      jstrachan/nodey506:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jstrachan/nodey507:
       - approve
       - assign
@@ -289,6 +309,9 @@ data:
       trusted_org: todo
     - repos:
       - jstrachan/node-http-3ed56e893
+      trusted_org: todo
+    - repos:
+      - jstrachan/nodey506
       trusted_org: todo
     - repos:
       - jstrachan/nodey507
