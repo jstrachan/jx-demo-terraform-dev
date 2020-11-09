@@ -15,6 +15,7 @@ data:
         jstrachan/jx-demo-terraform-dev: true
         jstrachan/mytap1: true
         jstrachan/node-http-3ed56e893: true
+        jstrachan/nodey507: true
         jstrachan/nodey533: true
         jstrachan/nodey534: true
         jstrachan/nodey536: true
@@ -37,6 +38,7 @@ data:
         jstrachan/jx-demo-terraform-dev: merge
         jstrachan/mytap1: merge
         jstrachan/node-http-3ed56e893: merge
+        jstrachan/nodey507: merge
         jstrachan/nodey533: merge
         jstrachan/nodey534: merge
         jstrachan/nodey536: merge
@@ -58,6 +60,7 @@ data:
         - cb-kubecd/bdd-gh-1604073644
         - jstrachan/mytap1
         - jstrachan/node-http-3ed56e893
+        - jstrachan/nodey507
         - jstrachan/nodey533
         - jstrachan/nodey534
         - jstrachan/nodey536
@@ -78,6 +81,7 @@ data:
         - cb-kubecd/bdd-gh-1604073644
         - jstrachan/mytap1
         - jstrachan/node-http-3ed56e893
+        - jstrachan/nodey507
         - jstrachan/nodey533
         - jstrachan/nodey534
         - jstrachan/nodey536
