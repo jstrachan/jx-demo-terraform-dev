@@ -4971,3 +4971,4 @@
 2020-11-11 13:23:43 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 3, pod_cache_api_updates: 49987, id_cache_miss: 49884, namespace_cache_miss: 443878
 2020-11-11 13:28:43 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 4, pod_cache_api_updates: 50023, id_cache_miss: 49920, namespace_cache_miss: 444041
 2020-11-11 13:30:35 +0000 [info]: #0 detected rotation of /var/log/containers/lighthouse-gc-jobs-1605096000-fmdnm_jx_lighthouse-gc-jobs-2b0cfef7977d73f9c979e9926327501288e4e2b45ccf3bee13e73a3d0c458cfa.log; waiting 5 seconds
+2020-11-11 13:33:43 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 4, pod_cache_api_updates: 50063, id_cache_miss: 49960, namespace_cache_miss: 444231

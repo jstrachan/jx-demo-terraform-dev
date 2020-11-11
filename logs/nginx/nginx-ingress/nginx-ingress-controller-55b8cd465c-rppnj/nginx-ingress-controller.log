@@ -309,3 +309,4 @@ W1111 13:29:40.043867       6 controller.go:909] Service "jx/bucketrepo" does no
 W1111 13:29:50.501769       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
 W1111 13:29:53.835263       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
 W1111 13:29:57.168545       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+10.128.0.5 - - [11/Nov/2020:13:32:01 +0000] "GET /currentsetting.htm HTTP/1.1" 404 32 "-" "-" 58 0.002 [jx-hook-80] [] 10.8.5.10:8080 32 0.001 404 baaf591b5a3019a6fccf339f5363e136
