@@ -1958,3 +1958,5 @@ Started Sonatype Nexus OSS 3.24.0-02
 2020-11-11 13:50:00,009+0000 INFO  [quartz-7-thread-19] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change RUNNING -> WAITING (OK)
 2020-11-11 14:00:00,014+0000 INFO  [quartz-7-thread-19] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change WAITING -> RUNNING
 2020-11-11 14:00:00,024+0000 INFO  [quartz-7-thread-19] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change RUNNING -> WAITING (OK)
+2020-11-11 14:10:00,004+0000 INFO  [quartz-7-thread-19] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change WAITING -> RUNNING
+2020-11-11 14:10:00,007+0000 INFO  [quartz-7-thread-19] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change RUNNING -> WAITING (OK)

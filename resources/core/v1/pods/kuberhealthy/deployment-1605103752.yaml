@@ -1,0 +1,128 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    comcast.github.io/check-name: deployment
+  creationTimestamp: "2020-11-11T14:09:17Z"
+  labels:
+    app: kuberhealthy-check
+    kuberhealthy-check-name: deployment
+    kuberhealthy-run-id: 9cbffea6-9015-493c-bcdd-92b21c9330d4
+  name: deployment-1605103752
+  namespace: kuberhealthy
+  ownerReferences:
+  - apiVersion: v1
+    kind: Pod
+    name: kuberhealthy-5c46966647-6db64
+    uid: d98a024b-7504-4cdd-a3bb-c70c6128d8fb
+  resourceVersion: "27437813"
+  selfLink: /api/v1/namespaces/kuberhealthy/pods/deployment-1605103752
+  uid: 9ab0739a-9ec7-4e4b-8f54-26026d48f73d
+spec:
+  containers:
+  - env:
+    - name: CHECK_DEPLOYMENT_REPLICAS
+      value: "4"
+    - name: CHECK_DEPLOYMENT_ROLLING_UPDATE
+      value: "true"
+    - name: CHECK_SERVICE_ACCOUNT
+      value: default
+    - name: KH_REPORTING_URL
+      value: http://kuberhealthy.kuberhealthy.svc.cluster.local/externalCheckStatus
+    - name: KH_RUN_UUID
+      value: 9cbffea6-9015-493c-bcdd-92b21c9330d4
+    - name: KH_CHECK_RUN_DEADLINE
+      value: "1605104652"
+    - name: KH_POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    image: kuberhealthy/deployment-check:v1.6.2
+    imagePullPolicy: IfNotPresent
+    name: deployment
+    resources:
+      limits:
+        cpu: 40m
+      requests:
+        cpu: 25m
+        memory: 15Mi
+    securityContext:
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: deployment-sa-token-jzgz5
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-pmxj
+  priority: 0
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  securityContext:
+    fsGroup: 999
+    runAsUser: 999
+  serviceAccount: deployment-sa
+  serviceAccountName: deployment-sa
+  terminationGracePeriodSeconds: 60
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: deployment-sa-token-jzgz5
+    secret:
+      defaultMode: 420
+      secretName: deployment-sa-token-jzgz5
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:09:17Z"
+    reason: PodCompleted
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:10:18Z"
+    reason: PodCompleted
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:10:18Z"
+    reason: PodCompleted
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:09:17Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://1d8bd58a576f8d08c777abf64a4c7bcd3b32c77a5621b6c77177334e1ef4764b
+    image: kuberhealthy/deployment-check:v1.6.2
+    imageID: docker-pullable://kuberhealthy/deployment-check@sha256:19ad1a5255b0d0c6d2f3b8f31759f986c3b832d2a4b39a2056a6d05140e3f761
+    lastState: {}
+    name: deployment
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      terminated:
+        containerID: docker://1d8bd58a576f8d08c777abf64a4c7bcd3b32c77a5621b6c77177334e1ef4764b
+        exitCode: 0
+        finishedAt: "2020-11-11T14:10:18Z"
+        reason: Completed
+        startedAt: "2020-11-11T14:09:20Z"
+  hostIP: 10.128.0.11
+  phase: Succeeded
+  podIP: 10.8.7.54
+  podIPs:
+  - ip: 10.8.7.54
+  qosClass: Burstable
+  startTime: "2020-11-11T14:09:17Z"

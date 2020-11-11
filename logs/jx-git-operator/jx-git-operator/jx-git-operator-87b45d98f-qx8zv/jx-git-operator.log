@@ -35815,3 +35815,129 @@ about to run: git rev-parse HEAD in dir /tmp/jx-git-operator-584296880/jx-boot
 29dbc182eed672c77d9293b9af552b42cdfbff7f
 repository jx-boot has latest commit sha 29dbc182eed672c77d9293b9af552b42cdfbff7f
 found Job jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2
+polling repository jx-boot in namespace jx-git-operator with git URL https://****:****@github.com/****/jx-demo-terraform-dev
+about to run: git pull origin master in dir /tmp/jx-git-operator-584296880/jx-boot
+From https://github.com/****/jx-demo-terraform-dev
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+about to run: git rev-parse HEAD in dir /tmp/jx-git-operator-584296880/jx-boot
+29dbc182eed672c77d9293b9af552b42cdfbff7f
+repository jx-boot has latest commit sha 29dbc182eed672c77d9293b9af552b42cdfbff7f
+found Job jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2
+polling repository jx-boot in namespace jx-git-operator with git URL https://****:****@github.com/****/jx-demo-terraform-dev
+about to run: git pull origin master in dir /tmp/jx-git-operator-584296880/jx-boot
+From https://github.com/****/jx-demo-terraform-dev
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+about to run: git rev-parse HEAD in dir /tmp/jx-git-operator-584296880/jx-boot
+29dbc182eed672c77d9293b9af552b42cdfbff7f
+repository jx-boot has latest commit sha 29dbc182eed672c77d9293b9af552b42cdfbff7f
+found Job jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2
+polling repository jx-boot in namespace jx-git-operator with git URL https://****:****@github.com/****/jx-demo-terraform-dev
+about to run: git pull origin master in dir /tmp/jx-git-operator-584296880/jx-boot
+From https://github.com/****/jx-demo-terraform-dev
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+about to run: git rev-parse HEAD in dir /tmp/jx-git-operator-584296880/jx-boot
+29dbc182eed672c77d9293b9af552b42cdfbff7f
+repository jx-boot has latest commit sha 29dbc182eed672c77d9293b9af552b42cdfbff7f
+found Job jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2
+polling repository jx-boot in namespace jx-git-operator with git URL https://****:****@github.com/****/jx-demo-terraform-dev
+about to run: git pull origin master in dir /tmp/jx-git-operator-584296880/jx-boot
+From https://github.com/****/jx-demo-terraform-dev
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+about to run: git rev-parse HEAD in dir /tmp/jx-git-operator-584296880/jx-boot
+29dbc182eed672c77d9293b9af552b42cdfbff7f
+repository jx-boot has latest commit sha 29dbc182eed672c77d9293b9af552b42cdfbff7f
+found Job jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2
+polling repository jx-boot in namespace jx-git-operator with git URL https://****:****@github.com/****/jx-demo-terraform-dev
+about to run: git pull origin master in dir /tmp/jx-git-operator-584296880/jx-boot
+From https://github.com/****/jx-demo-terraform-dev
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+about to run: git rev-parse HEAD in dir /tmp/jx-git-operator-584296880/jx-boot
+29dbc182eed672c77d9293b9af552b42cdfbff7f
+repository jx-boot has latest commit sha 29dbc182eed672c77d9293b9af552b42cdfbff7f
+found Job jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2
+polling repository jx-boot in namespace jx-git-operator with git URL https://****:****@github.com/****/jx-demo-terraform-dev
+about to run: git pull origin master in dir /tmp/jx-git-operator-584296880/jx-boot
+From https://github.com/****/jx-demo-terraform-dev
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+about to run: git rev-parse HEAD in dir /tmp/jx-git-operator-584296880/jx-boot
+29dbc182eed672c77d9293b9af552b42cdfbff7f
+repository jx-boot has latest commit sha 29dbc182eed672c77d9293b9af552b42cdfbff7f
+found Job jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2
+polling repository jx-boot in namespace jx-git-operator with git URL https://****:****@github.com/****/jx-demo-terraform-dev
+about to run: git pull origin master in dir /tmp/jx-git-operator-584296880/jx-boot
+From https://github.com/****/jx-demo-terraform-dev
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+about to run: git rev-parse HEAD in dir /tmp/jx-git-operator-584296880/jx-boot
+29dbc182eed672c77d9293b9af552b42cdfbff7f
+repository jx-boot has latest commit sha 29dbc182eed672c77d9293b9af552b42cdfbff7f
+found Job jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2
+polling repository jx-boot in namespace jx-git-operator with git URL https://****:****@github.com/****/jx-demo-terraform-dev
+about to run: git pull origin master in dir /tmp/jx-git-operator-584296880/jx-boot
+From https://github.com/****/jx-demo-terraform-dev
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+about to run: git rev-parse HEAD in dir /tmp/jx-git-operator-584296880/jx-boot
+29dbc182eed672c77d9293b9af552b42cdfbff7f
+repository jx-boot has latest commit sha 29dbc182eed672c77d9293b9af552b42cdfbff7f
+found Job jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2
+polling repository jx-boot in namespace jx-git-operator with git URL https://****:****@github.com/****/jx-demo-terraform-dev
+about to run: git pull origin master in dir /tmp/jx-git-operator-584296880/jx-boot
+From https://github.com/****/jx-demo-terraform-dev
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+about to run: git rev-parse HEAD in dir /tmp/jx-git-operator-584296880/jx-boot
+29dbc182eed672c77d9293b9af552b42cdfbff7f
+repository jx-boot has latest commit sha 29dbc182eed672c77d9293b9af552b42cdfbff7f
+found Job jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2
+polling repository jx-boot in namespace jx-git-operator with git URL https://****:****@github.com/****/jx-demo-terraform-dev
+about to run: git pull origin master in dir /tmp/jx-git-operator-584296880/jx-boot
+From https://github.com/****/jx-demo-terraform-dev
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+about to run: git rev-parse HEAD in dir /tmp/jx-git-operator-584296880/jx-boot
+29dbc182eed672c77d9293b9af552b42cdfbff7f
+repository jx-boot has latest commit sha 29dbc182eed672c77d9293b9af552b42cdfbff7f
+found Job jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2
+polling repository jx-boot in namespace jx-git-operator with git URL https://****:****@github.com/****/jx-demo-terraform-dev
+about to run: git pull origin master in dir /tmp/jx-git-operator-584296880/jx-boot
+From https://github.com/****/jx-demo-terraform-dev
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+about to run: git rev-parse HEAD in dir /tmp/jx-git-operator-584296880/jx-boot
+29dbc182eed672c77d9293b9af552b42cdfbff7f
+repository jx-boot has latest commit sha 29dbc182eed672c77d9293b9af552b42cdfbff7f
+found Job jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2
+polling repository jx-boot in namespace jx-git-operator with git URL https://****:****@github.com/****/jx-demo-terraform-dev
+about to run: git pull origin master in dir /tmp/jx-git-operator-584296880/jx-boot
+From https://github.com/****/jx-demo-terraform-dev
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+about to run: git rev-parse HEAD in dir /tmp/jx-git-operator-584296880/jx-boot
+29dbc182eed672c77d9293b9af552b42cdfbff7f
+repository jx-boot has latest commit sha 29dbc182eed672c77d9293b9af552b42cdfbff7f
+found Job jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2
+polling repository jx-boot in namespace jx-git-operator with git URL https://****:****@github.com/****/jx-demo-terraform-dev
+about to run: git pull origin master in dir /tmp/jx-git-operator-584296880/jx-boot
+From https://github.com/****/jx-demo-terraform-dev
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+about to run: git rev-parse HEAD in dir /tmp/jx-git-operator-584296880/jx-boot
+29dbc182eed672c77d9293b9af552b42cdfbff7f
+repository jx-boot has latest commit sha 29dbc182eed672c77d9293b9af552b42cdfbff7f
+found Job jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2
+polling repository jx-boot in namespace jx-git-operator with git URL https://****:****@github.com/****/jx-demo-terraform-dev
+about to run: git pull origin master in dir /tmp/jx-git-operator-584296880/jx-boot
+From https://github.com/****/jx-demo-terraform-dev
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+about to run: git rev-parse HEAD in dir /tmp/jx-git-operator-584296880/jx-boot
+29dbc182eed672c77d9293b9af552b42cdfbff7f
+repository jx-boot has latest commit sha 29dbc182eed672c77d9293b9af552b42cdfbff7f
+found Job jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2

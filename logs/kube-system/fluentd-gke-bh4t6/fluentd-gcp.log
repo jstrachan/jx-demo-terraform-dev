@@ -4994,3 +4994,10 @@
 2020-11-11 14:01:14 +0000 [info]: #0 following tail of /var/log/containers/jx-bot-token-1605103211_jx_jx-bot-token-ad3b9013772d0e628bf8ed11dda615b9edc1ec8bf8987cbe2f4bed8a4b47ec89.log
 2020-11-11 14:01:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
 2020-11-11 14:03:43 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 4, pod_cache_api_updates: 50296, id_cache_miss: 50193, namespace_cache_miss: 445276
+2020-11-11 14:08:43 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 4, pod_cache_api_updates: 50331, id_cache_miss: 50228, namespace_cache_miss: 445443
+2020-11-11 14:09:36 +0000 [info]: #0 detected rotation of /var/log/containers/check-reaper-1605103200-6qp5t_kuberhealthy_check-reaper-efc0db0852cc572beb0b7cb6fb8508cf9b8845868d710eebf77957850fac9a33.log; waiting 5 seconds
+2020-11-11 14:09:36 +0000 [info]: #0 detected rotation of /var/log/containers/jx-bot-token-1605103211_jx_jx-bot-token-ad3b9013772d0e628bf8ed11dda615b9edc1ec8bf8987cbe2f4bed8a4b47ec89.log; waiting 5 seconds
+2020-11-11 14:10:14 +0000 [info]: #0 following tail of /var/log/containers/jx-bot-token-1605103753_jx_jx-bot-token-c922b02a27c9a18d09b9e3956a842e42f6041895ce59a945e8f3ffd1088f352b.log
+2020-11-11 14:10:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:10:14 +0000 [info]: #0 following tail of /var/log/containers/jx-pod-status-1605103754_kuberhealthy_main-5533cd5dae5869594627e32746b5790b89a0af1058ad1999b1cff26156bb8689.log
+2020-11-11 14:10:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
