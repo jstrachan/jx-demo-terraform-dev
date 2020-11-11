@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: chartmuseum-chartmuseum
+  name: jenkins-x-chartmuseum
   labels:
     app: chartmuseum
     chart: chartmuseum-2.6.0
@@ -25,7 +25,7 @@ spec:
   revisionHistoryLimit: 10
   template:
     metadata:
-      name: chartmuseum-chartmuseum
+      name: jenkins-x-chartmuseum
       annotations: {}
       labels:
         app: chartmuseum
@@ -48,6 +48,16 @@ spec:
               value: "prov"
             - name: "STORAGE"
               value: "local"
+            - name: "BASIC_AUTH_PASS"
+              valueFrom:
+                secretKeyRef:
+                  name: jenkins-x-chartmuseum
+                  key: "BASIC_AUTH_PASS"
+            - name: "BASIC_AUTH_USER"
+              valueFrom:
+                secretKeyRef:
+                  name: jenkins-x-chartmuseum
+                  key: "BASIC_AUTH_USER"
           args:
             - --port=8080
             - --storage-local-rootdir=/storage
@@ -87,4 +97,4 @@ spec:
       volumes:
         - name: storage-volume
           persistentVolumeClaim:
-            claimName: chartmuseum-chartmuseum
+            claimName: jenkins-x-chartmuseum
