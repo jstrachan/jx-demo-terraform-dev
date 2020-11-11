@@ -1964,3 +1964,5 @@ Started Sonatype Nexus OSS 3.24.0-02
 2020-11-11 14:15:48,851+0000 INFO  [SessionValidationThread-1] *UNKNOWN org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
 2020-11-11 14:20:00,007+0000 INFO  [quartz-7-thread-19] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change WAITING -> RUNNING
 2020-11-11 14:20:00,018+0000 INFO  [quartz-7-thread-19] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change RUNNING -> WAITING (OK)
+2020-11-11 14:30:00,005+0000 INFO  [quartz-7-thread-19] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change WAITING -> RUNNING
+2020-11-11 14:30:00,012+0000 INFO  [quartz-7-thread-19] *SYSTEM org.sonatype.nexus.quartz.internal.task.QuartzTaskInfo - Task 'Storage facet cleanup' [repository.storage-facet-cleanup] state change RUNNING -> WAITING (OK)
