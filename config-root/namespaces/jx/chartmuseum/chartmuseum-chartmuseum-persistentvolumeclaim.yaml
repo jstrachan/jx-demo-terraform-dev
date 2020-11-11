@@ -2,9 +2,9 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: jenkins-x-chartmuseum
+  name: chartmuseum-chartmuseum
   labels:
-    app: jenkins-x-chartmuseum
+    app: chartmuseum-chartmuseum
     release: "chartmuseum"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
