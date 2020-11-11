@@ -4984,3 +4984,10 @@
 2020-11-11 13:50:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
 2020-11-11 13:50:35 +0000 [info]: #0 detected rotation of /var/log/containers/jx-preview-gc-jobs-1605100800-2m6sg_jx_jx-preview-gc-jobs-cfab00ab98ec52c4839e8f179523d430d04a1acb5330dc6088f62ff2b9d6ef25.log; waiting 5 seconds
 2020-11-11 13:53:43 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 3, pod_cache_api_updates: 50214, id_cache_miss: 50111, namespace_cache_miss: 444917
+2020-11-11 13:58:43 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 4, pod_cache_api_updates: 50251, id_cache_miss: 50148, namespace_cache_miss: 445076
+2020-11-11 14:00:14 +0000 [info]: #0 following tail of /var/log/containers/check-reaper-1605103200-6qp5t_kuberhealthy_check-reaper-efc0db0852cc572beb0b7cb6fb8508cf9b8845868d710eebf77957850fac9a33.log
+2020-11-11 14:00:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:00:14 +0000 [info]: #0 following tail of /var/log/containers/deployment-deployment-684769f48c-5mdb4_kuberhealthy_deployment-container-078b96d288260a7ec8d2babe184a7d362427f363b49d88cbf08a240992011624.log
+2020-11-11 14:00:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:00:21 +0000 [info]: #0 detected rotation of /var/log/containers/deployment-deployment-684769f48c-5mdb4_kuberhealthy_deployment-container-078b96d288260a7ec8d2babe184a7d362427f363b49d88cbf08a240992011624.log; waiting 5 seconds
+2020-11-11 14:00:36 +0000 [info]: #0 detected rotation of /var/log/containers/jx-bot-token-1605102581_jx_jx-bot-token-99e182524c269644cead5cb5b22639e7f5451c779672b66472724d2156b607cc.log; waiting 5 seconds
