@@ -5900,3 +5900,87 @@ I1111 14:00:30.999835       1 podfinder.go:188] Syncing pod "kuberhealthy/jx-sec
 I1111 14:00:30.999841       1 podfinder.go:194] Pod "kuberhealthy/jx-secrets-1605103220" not found
 I1111 14:00:31.399969       1 podfinder.go:188] Syncing pod "kuberhealthy/jx-secrets-1605103220"
 I1111 14:00:31.400030       1 podfinder.go:194] Pod "kuberhealthy/jx-secrets-1605103220" not found
+I1111 14:01:16.571307       1 podfinder.go:188] Syncing pod "kuberhealthy/dns-status-internal-1605103271"
+I1111 14:01:16.586572       1 podfinder.go:312] Unable to sync sandbox "1e38032af620a3a5c9c254b561740b6e886dc12439f68a01dc489e48f7ff61a5": setup not complete: podUID="155b1a8f-802e-4f94-b1c0-c3e0d783dc5e", ip=""
+I1111 14:01:16.590690       1 podfinder.go:312] Unable to sync sandbox "42f03054aa42d0de27a90be5a8598c9cdf8d33b3435a13b335ed58d4ce1fbfa6": setup not complete: podUID="b2356061-6d18-4b28-b204-b91eb0c4eed0", ip=""
+I1111 14:01:16.604361       1 podfinder.go:312] Unable to sync sandbox "536c2d66988ef3f50dbb45a1cd3feb40250758a7d5f584c0cbeac13275f23331": setup not complete: podUID="3c75068f-57f3-475f-9d2b-41d47bd2a708", ip=""
+I1111 14:01:16.614882       1 podfinder.go:312] Unable to sync sandbox "b187f3bd80c351199a728af43585f613b691203d40741dc8f660205d273531ed": setup not complete: podUID="94ee86f4-6ff2-41c5-b2a3-554eb5506149", ip=""
+I1111 14:01:16.622827       1 podfinder.go:312] Unable to sync sandbox "d0fab6d26b04388a0fa9b6dd15d836cbc6290fb14f4fa5999a6eea936c2e2ed9": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+I1111 14:01:16.627414       1 podfinder.go:312] Unable to sync sandbox "d686314f660ac151beb00375e93af3cee733052447123b7f9ed647cea694a658": setup not complete: podUID="3ddfb481-19e3-409d-971d-ca32821b699c", ip=""
+E1111 14:01:16.627479       1 podfinder.go:178] Error syncing pod "kuberhealthy/dns-status-internal-1605103271": generic::unavailable: pod "kuberhealthy/dns-status-internal-1605103271" not found after refresh
+I1111 14:01:16.627523       1 podfinder.go:188] Syncing pod "kuberhealthy/dns-status-internal-1605103271"
+I1111 14:01:21.577552       1 podfinder.go:312] Unable to sync sandbox "1e38032af620a3a5c9c254b561740b6e886dc12439f68a01dc489e48f7ff61a5": setup not complete: podUID="155b1a8f-802e-4f94-b1c0-c3e0d783dc5e", ip=""
+I1111 14:01:21.580160       1 podfinder.go:312] Unable to sync sandbox "42f03054aa42d0de27a90be5a8598c9cdf8d33b3435a13b335ed58d4ce1fbfa6": setup not complete: podUID="b2356061-6d18-4b28-b204-b91eb0c4eed0", ip=""
+I1111 14:01:21.583045       1 podfinder.go:312] Unable to sync sandbox "536c2d66988ef3f50dbb45a1cd3feb40250758a7d5f584c0cbeac13275f23331": setup not complete: podUID="3c75068f-57f3-475f-9d2b-41d47bd2a708", ip=""
+I1111 14:01:21.586382       1 podfinder.go:312] Unable to sync sandbox "b187f3bd80c351199a728af43585f613b691203d40741dc8f660205d273531ed": setup not complete: podUID="94ee86f4-6ff2-41c5-b2a3-554eb5506149", ip=""
+I1111 14:01:21.589483       1 podfinder.go:312] Unable to sync sandbox "d0fab6d26b04388a0fa9b6dd15d836cbc6290fb14f4fa5999a6eea936c2e2ed9": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+I1111 14:01:21.592691       1 podfinder.go:312] Unable to sync sandbox "d686314f660ac151beb00375e93af3cee733052447123b7f9ed647cea694a658": setup not complete: podUID="3ddfb481-19e3-409d-971d-ca32821b699c", ip=""
+E1111 14:01:21.592727       1 podfinder.go:178] Error syncing pod "kuberhealthy/dns-status-internal-1605103271": generic::unavailable: pod "kuberhealthy/dns-status-internal-1605103271" not found after refresh
+I1111 14:01:21.592763       1 podfinder.go:188] Syncing pod "kuberhealthy/dns-status-internal-1605103271"
+I1111 14:01:21.592770       1 podfinder.go:194] Pod "kuberhealthy/dns-status-internal-1605103271" not found
+I1111 14:01:21.992920       1 podfinder.go:188] Syncing pod "kuberhealthy/dns-status-internal-1605103271"
+I1111 14:01:21.992970       1 podfinder.go:194] Pod "kuberhealthy/dns-status-internal-1605103271" not found
+I1111 14:03:05.471119       1 podfinder.go:188] Syncing pod "kuberhealthy/check-reaper-1605103380-8x2vf"
+I1111 14:03:05.483400       1 podfinder.go:312] Unable to sync sandbox "1e38032af620a3a5c9c254b561740b6e886dc12439f68a01dc489e48f7ff61a5": setup not complete: podUID="155b1a8f-802e-4f94-b1c0-c3e0d783dc5e", ip=""
+I1111 14:03:05.485262       1 podfinder.go:312] Unable to sync sandbox "42f03054aa42d0de27a90be5a8598c9cdf8d33b3435a13b335ed58d4ce1fbfa6": setup not complete: podUID="b2356061-6d18-4b28-b204-b91eb0c4eed0", ip=""
+I1111 14:03:05.489483       1 podfinder.go:312] Unable to sync sandbox "536c2d66988ef3f50dbb45a1cd3feb40250758a7d5f584c0cbeac13275f23331": setup not complete: podUID="3c75068f-57f3-475f-9d2b-41d47bd2a708", ip=""
+I1111 14:03:05.493217       1 podfinder.go:312] Unable to sync sandbox "b187f3bd80c351199a728af43585f613b691203d40741dc8f660205d273531ed": setup not complete: podUID="94ee86f4-6ff2-41c5-b2a3-554eb5506149", ip=""
+I1111 14:03:05.501068       1 podfinder.go:312] Unable to sync sandbox "d0fab6d26b04388a0fa9b6dd15d836cbc6290fb14f4fa5999a6eea936c2e2ed9": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+I1111 14:03:05.517623       1 podfinder.go:312] Unable to sync sandbox "d686314f660ac151beb00375e93af3cee733052447123b7f9ed647cea694a658": setup not complete: podUID="3ddfb481-19e3-409d-971d-ca32821b699c", ip=""
+E1111 14:03:05.517659       1 podfinder.go:178] Error syncing pod "kuberhealthy/check-reaper-1605103380-8x2vf": generic::unavailable: pod "kuberhealthy/check-reaper-1605103380-8x2vf" not found after refresh
+I1111 14:03:05.558451       1 podfinder.go:188] Syncing pod "kuberhealthy/check-reaper-1605103380-8x2vf"
+I1111 14:03:10.476745       1 podfinder.go:312] Unable to sync sandbox "1e38032af620a3a5c9c254b561740b6e886dc12439f68a01dc489e48f7ff61a5": setup not complete: podUID="155b1a8f-802e-4f94-b1c0-c3e0d783dc5e", ip=""
+I1111 14:03:10.480137       1 podfinder.go:312] Unable to sync sandbox "42f03054aa42d0de27a90be5a8598c9cdf8d33b3435a13b335ed58d4ce1fbfa6": setup not complete: podUID="b2356061-6d18-4b28-b204-b91eb0c4eed0", ip=""
+I1111 14:03:10.481749       1 podfinder.go:312] Unable to sync sandbox "536c2d66988ef3f50dbb45a1cd3feb40250758a7d5f584c0cbeac13275f23331": setup not complete: podUID="3c75068f-57f3-475f-9d2b-41d47bd2a708", ip=""
+I1111 14:03:10.484699       1 podfinder.go:312] Unable to sync sandbox "b187f3bd80c351199a728af43585f613b691203d40741dc8f660205d273531ed": setup not complete: podUID="94ee86f4-6ff2-41c5-b2a3-554eb5506149", ip=""
+I1111 14:03:10.487520       1 podfinder.go:312] Unable to sync sandbox "d0fab6d26b04388a0fa9b6dd15d836cbc6290fb14f4fa5999a6eea936c2e2ed9": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+I1111 14:03:10.490341       1 podfinder.go:312] Unable to sync sandbox "d686314f660ac151beb00375e93af3cee733052447123b7f9ed647cea694a658": setup not complete: podUID="3ddfb481-19e3-409d-971d-ca32821b699c", ip=""
+E1111 14:03:10.490371       1 podfinder.go:178] Error syncing pod "kuberhealthy/check-reaper-1605103380-8x2vf": generic::unavailable: pod "kuberhealthy/check-reaper-1605103380-8x2vf" not found after refresh
+I1111 14:03:10.490405       1 podfinder.go:188] Syncing pod "kuberhealthy/check-reaper-1605103380-8x2vf"
+I1111 14:03:10.490420       1 podfinder.go:194] Pod "kuberhealthy/check-reaper-1605103380-8x2vf" not found
+I1111 14:03:10.890515       1 podfinder.go:188] Syncing pod "kuberhealthy/check-reaper-1605103380-8x2vf"
+I1111 14:03:10.890560       1 podfinder.go:194] Pod "kuberhealthy/check-reaper-1605103380-8x2vf" not found
+I1111 14:03:33.816694       1 podfinder.go:188] Syncing pod "jx-staging/nodey536-nodey536-558695b556-266sn"
+I1111 14:03:33.816745       1 podfinder.go:207] Pod "jx-staging/nodey536-nodey536-558695b556-266sn" found in snapshot: podfinder.entry{sandboxUID:"1b802d6eafc7b93c2eddfa87f0e13e6f81b2ad5d4ce05ceae63611553e70fb84", podUID:"2b20f443-4a98-463c-acbf-d0761a924ca2", ip:"10.8.8.2"}
+I1111 14:03:48.805351       1 podfinder.go:188] Syncing pod "jx-staging/nodey536-nodey536-558695b556-266sn"
+I1111 14:03:48.805404       1 podfinder.go:207] Pod "jx-staging/nodey536-nodey536-558695b556-266sn" found in snapshot: podfinder.entry{sandboxUID:"1b802d6eafc7b93c2eddfa87f0e13e6f81b2ad5d4ce05ceae63611553e70fb84", podUID:"2b20f443-4a98-463c-acbf-d0761a924ca2", ip:"10.8.8.2"}
+I1111 14:04:16.577202       1 podfinder.go:188] Syncing pod "kuberhealthy/jx-pod-status-1605103451"
+I1111 14:04:16.592383       1 podfinder.go:312] Unable to sync sandbox "1e38032af620a3a5c9c254b561740b6e886dc12439f68a01dc489e48f7ff61a5": setup not complete: podUID="155b1a8f-802e-4f94-b1c0-c3e0d783dc5e", ip=""
+I1111 14:04:16.593812       1 podfinder.go:312] Unable to sync sandbox "42f03054aa42d0de27a90be5a8598c9cdf8d33b3435a13b335ed58d4ce1fbfa6": setup not complete: podUID="b2356061-6d18-4b28-b204-b91eb0c4eed0", ip=""
+I1111 14:04:16.595545       1 podfinder.go:312] Unable to sync sandbox "536c2d66988ef3f50dbb45a1cd3feb40250758a7d5f584c0cbeac13275f23331": setup not complete: podUID="3c75068f-57f3-475f-9d2b-41d47bd2a708", ip=""
+I1111 14:04:16.598834       1 podfinder.go:312] Unable to sync sandbox "b187f3bd80c351199a728af43585f613b691203d40741dc8f660205d273531ed": setup not complete: podUID="94ee86f4-6ff2-41c5-b2a3-554eb5506149", ip=""
+I1111 14:04:16.600587       1 podfinder.go:312] Unable to sync sandbox "d0fab6d26b04388a0fa9b6dd15d836cbc6290fb14f4fa5999a6eea936c2e2ed9": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+I1111 14:04:16.603890       1 podfinder.go:312] Unable to sync sandbox "d686314f660ac151beb00375e93af3cee733052447123b7f9ed647cea694a658": setup not complete: podUID="3ddfb481-19e3-409d-971d-ca32821b699c", ip=""
+E1111 14:04:16.603953       1 podfinder.go:178] Error syncing pod "kuberhealthy/jx-pod-status-1605103451": generic::unavailable: pod "kuberhealthy/jx-pod-status-1605103451" not found after refresh
+I1111 14:04:16.649430       1 podfinder.go:188] Syncing pod "kuberhealthy/jx-pod-status-1605103451"
+I1111 14:04:21.584377       1 podfinder.go:312] Unable to sync sandbox "1e38032af620a3a5c9c254b561740b6e886dc12439f68a01dc489e48f7ff61a5": setup not complete: podUID="155b1a8f-802e-4f94-b1c0-c3e0d783dc5e", ip=""
+I1111 14:04:21.587316       1 podfinder.go:312] Unable to sync sandbox "42f03054aa42d0de27a90be5a8598c9cdf8d33b3435a13b335ed58d4ce1fbfa6": setup not complete: podUID="b2356061-6d18-4b28-b204-b91eb0c4eed0", ip=""
+I1111 14:04:21.589566       1 podfinder.go:312] Unable to sync sandbox "536c2d66988ef3f50dbb45a1cd3feb40250758a7d5f584c0cbeac13275f23331": setup not complete: podUID="3c75068f-57f3-475f-9d2b-41d47bd2a708", ip=""
+I1111 14:04:21.590942       1 podfinder.go:312] Unable to sync sandbox "b187f3bd80c351199a728af43585f613b691203d40741dc8f660205d273531ed": setup not complete: podUID="94ee86f4-6ff2-41c5-b2a3-554eb5506149", ip=""
+I1111 14:04:21.593895       1 podfinder.go:312] Unable to sync sandbox "d0fab6d26b04388a0fa9b6dd15d836cbc6290fb14f4fa5999a6eea936c2e2ed9": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+I1111 14:04:21.595251       1 podfinder.go:312] Unable to sync sandbox "d686314f660ac151beb00375e93af3cee733052447123b7f9ed647cea694a658": setup not complete: podUID="3ddfb481-19e3-409d-971d-ca32821b699c", ip=""
+E1111 14:04:21.595292       1 podfinder.go:178] Error syncing pod "kuberhealthy/jx-pod-status-1605103451": generic::unavailable: pod "kuberhealthy/jx-pod-status-1605103451" not found after refresh
+I1111 14:04:21.595315       1 podfinder.go:188] Syncing pod "kuberhealthy/jx-pod-status-1605103451"
+I1111 14:04:21.595321       1 podfinder.go:194] Pod "kuberhealthy/jx-pod-status-1605103451" not found
+I1111 14:04:21.995511       1 podfinder.go:188] Syncing pod "kuberhealthy/jx-pod-status-1605103451"
+I1111 14:04:21.995560       1 podfinder.go:194] Pod "kuberhealthy/jx-pod-status-1605103451" not found
+I1111 14:05:26.915930       1 podfinder.go:188] Syncing pod "kuberhealthy/jx-secrets-1605103521"
+I1111 14:05:26.928683       1 podfinder.go:312] Unable to sync sandbox "1e38032af620a3a5c9c254b561740b6e886dc12439f68a01dc489e48f7ff61a5": setup not complete: podUID="155b1a8f-802e-4f94-b1c0-c3e0d783dc5e", ip=""
+I1111 14:05:26.931834       1 podfinder.go:312] Unable to sync sandbox "42f03054aa42d0de27a90be5a8598c9cdf8d33b3435a13b335ed58d4ce1fbfa6": setup not complete: podUID="b2356061-6d18-4b28-b204-b91eb0c4eed0", ip=""
+I1111 14:05:26.976747       1 podfinder.go:312] Unable to sync sandbox "536c2d66988ef3f50dbb45a1cd3feb40250758a7d5f584c0cbeac13275f23331": setup not complete: podUID="3c75068f-57f3-475f-9d2b-41d47bd2a708", ip=""
+I1111 14:05:27.027788       1 podfinder.go:312] Unable to sync sandbox "b187f3bd80c351199a728af43585f613b691203d40741dc8f660205d273531ed": setup not complete: podUID="94ee86f4-6ff2-41c5-b2a3-554eb5506149", ip=""
+I1111 14:05:27.032534       1 podfinder.go:312] Unable to sync sandbox "d0fab6d26b04388a0fa9b6dd15d836cbc6290fb14f4fa5999a6eea936c2e2ed9": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+I1111 14:05:27.035916       1 podfinder.go:312] Unable to sync sandbox "d686314f660ac151beb00375e93af3cee733052447123b7f9ed647cea694a658": setup not complete: podUID="3ddfb481-19e3-409d-971d-ca32821b699c", ip=""
+E1111 14:05:27.035952       1 podfinder.go:178] Error syncing pod "kuberhealthy/jx-secrets-1605103521": generic::unavailable: pod "kuberhealthy/jx-secrets-1605103521" not found after refresh
+I1111 14:05:27.073701       1 podfinder.go:188] Syncing pod "kuberhealthy/jx-secrets-1605103521"
+I1111 14:05:31.921802       1 podfinder.go:312] Unable to sync sandbox "1e38032af620a3a5c9c254b561740b6e886dc12439f68a01dc489e48f7ff61a5": setup not complete: podUID="155b1a8f-802e-4f94-b1c0-c3e0d783dc5e", ip=""
+I1111 14:05:31.923331       1 podfinder.go:312] Unable to sync sandbox "42f03054aa42d0de27a90be5a8598c9cdf8d33b3435a13b335ed58d4ce1fbfa6": setup not complete: podUID="b2356061-6d18-4b28-b204-b91eb0c4eed0", ip=""
+I1111 14:05:31.924658       1 podfinder.go:312] Unable to sync sandbox "536c2d66988ef3f50dbb45a1cd3feb40250758a7d5f584c0cbeac13275f23331": setup not complete: podUID="3c75068f-57f3-475f-9d2b-41d47bd2a708", ip=""
+I1111 14:05:31.926384       1 podfinder.go:312] Unable to sync sandbox "b187f3bd80c351199a728af43585f613b691203d40741dc8f660205d273531ed": setup not complete: podUID="94ee86f4-6ff2-41c5-b2a3-554eb5506149", ip=""
+I1111 14:05:31.928543       1 podfinder.go:312] Unable to sync sandbox "d0fab6d26b04388a0fa9b6dd15d836cbc6290fb14f4fa5999a6eea936c2e2ed9": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+I1111 14:05:31.931033       1 podfinder.go:312] Unable to sync sandbox "d686314f660ac151beb00375e93af3cee733052447123b7f9ed647cea694a658": setup not complete: podUID="3ddfb481-19e3-409d-971d-ca32821b699c", ip=""
+E1111 14:05:31.931061       1 podfinder.go:178] Error syncing pod "kuberhealthy/jx-secrets-1605103521": generic::unavailable: pod "kuberhealthy/jx-secrets-1605103521" not found after refresh
+I1111 14:05:31.931096       1 podfinder.go:188] Syncing pod "kuberhealthy/jx-secrets-1605103521"
+I1111 14:05:31.931103       1 podfinder.go:194] Pod "kuberhealthy/jx-secrets-1605103521" not found
+I1111 14:05:32.331218       1 podfinder.go:188] Syncing pod "kuberhealthy/jx-secrets-1605103521"
+I1111 14:05:32.333481       1 podfinder.go:194] Pod "kuberhealthy/jx-secrets-1605103521" not found

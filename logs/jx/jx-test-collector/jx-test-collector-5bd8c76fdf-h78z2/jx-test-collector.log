@@ -2181,3 +2181,132 @@ A  resources/core/v1/pods/kuberhealthy/dns-status-internal-1605103151.yaml
 A  resources/core/v1/pods/kuberhealthy/jx-pod-status-1605103151.yaml
 A  resources/core/v1/pods/kuberhealthy/jx-secrets-1605103220.yaml
 about to run: git commit -a -m chore: latest logs in dir /tmp/jx-test-collector-155602160
+[gh-pages cb6a93d] chore: latest logs
+ 78 files changed, 6480 insertions(+), 1 deletion(-)
+ create mode 100644 logs/jx-git-operator/kuberhealthy-check/jx-install-1605102941/jx-install.log
+ create mode 100644 logs/jx-git-operator/kuberhealthy-check/jx-install-1605103031/jx-install.log
+ create mode 100644 logs/jx-git-operator/kuberhealthy-check/jx-install-1605103121/jx-install.log
+ create mode 100644 logs/jx-git-operator/kuberhealthy-check/jx-install-1605103211/jx-install.log
+ create mode 100644 logs/jx/jx-preview-gc-jobs/jx-preview-gc-jobs-1605103200-x4g8j/jx-preview-gc-jobs.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-bot-token-1605103031/jx-bot-token.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-bot-token-1605103121/jx-bot-token.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-bot-token-1605103211/jx-bot-token.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-webhook-1605103031/jx-webhook.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-webhook-1605103121/jx-webhook.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-webhook-1605103211/jx-webhook.log
+ create mode 100644 logs/jx/lighthouse-gc-jobs/lighthouse-gc-jobs-1605103200-kzlsb/lighthouse-gc-jobs.log
+ create mode 100644 logs/kuberhealthy/check-reaper-1605103020-2hxvk/check-reaper.log
+ create mode 100644 logs/kuberhealthy/check-reaper-1605103200-6qp5t/check-reaper.log
+ create mode 100644 logs/kuberhealthy/deployment-deployment-684769f48c-5mdb4/deployment-container.log
+ create mode 100644 logs/kuberhealthy/deployment-deployment-684769f48c-8dq7x/deployment-container.log
+ create mode 100644 logs/kuberhealthy/deployment-deployment-684769f48c-fclkh/deployment-container.log
+ create mode 100644 logs/kuberhealthy/deployment-deployment-684769f48c-lx58m/deployment-container.log
+ create mode 100644 logs/kuberhealthy/deployment-deployment-74998867d6-5fgfw/deployment-container.log
+ create mode 100644 logs/kuberhealthy/deployment-deployment-74998867d6-5qm64/deployment-container.log
+ create mode 100644 logs/kuberhealthy/deployment-deployment-74998867d6-k58v6/deployment-container.log
+ create mode 100644 logs/kuberhealthy/deployment-deployment-74998867d6-v5fv7/deployment-container.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/deployment-1605103151/deployment.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/dns-status-internal-1605103031/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/dns-status-internal-1605103151/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/jx-pod-status-1605103151/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/jx-secrets-1605103220/main.log
+ create mode 100644 resources/core/v1/pods/jx-git-operator/jx-install-1605102941.yaml
+ create mode 100644 resources/core/v1/pods/jx-git-operator/jx-install-1605103031.yaml
+ create mode 100644 resources/core/v1/pods/jx-git-operator/jx-install-1605103121.yaml
+ create mode 100644 resources/core/v1/pods/jx-git-operator/jx-install-1605103211.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-bot-token-1605102941.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-bot-token-1605103031.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-bot-token-1605103121.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-bot-token-1605103211.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-preview-gc-jobs-1605103200-x4g8j.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-webhook-1605102941.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-webhook-1605103031.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-webhook-1605103121.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-webhook-1605103211.yaml
+ create mode 100644 resources/core/v1/pods/jx/lighthouse-gc-jobs-1605103200-kzlsb.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/check-reaper-1605103020-2hxvk.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/check-reaper-1605103200-6qp5t.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/deployment-1605103151.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/dns-status-internal-1605103031.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/dns-status-internal-1605103151.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/jx-pod-status-1605103151.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/jx-secrets-1605103220.yaml
+about to run: git push origin gh-pages in dir /tmp/jx-test-collector-155602160
+WARNING: Error opening stream to kuberhealthy/dns-status-internal-1605103271: main
+WARNING: Error opening stream to jx-git-operator/jx-install-1605103301: jx-install
+WARNING: Error opening stream to jx/jx-webhook-1605103301: jx-webhook
+WARNING: Error opening stream to jx/jx-bot-token-1605103301: jx-bot-token
+To https://github.com/****/jx-demo-terraform-dev
+   90f78d6..cb6a93d  gh-pages -> gh-pages
+sync completed
+WARNING: Error opening stream to kuberhealthy/check-reaper-1605103380-8x2vf: check-reaper
+WARNING: Error opening stream to kuberhealthy/dns-status-internal-1605103391: main
+WARNING: Error opening stream to jx/jx-webhook-1605103391: jx-webhook
+WARNING: Error opening stream to jx-git-operator/jx-install-1605103391: jx-install
+WARNING: Error opening stream to jx/jx-bot-token-1605103391: jx-bot-token
+WARNING: Error opening stream to kuberhealthy/jx-pod-status-1605103451: main
+WARNING: Error opening stream to jx-git-operator/jx-install-1605103481: jx-install
+WARNING: Error opening stream to jx/jx-webhook-1605103481: jx-webhook
+WARNING: Error opening stream to jx/jx-bot-token-1605103481: jx-bot-token
+WARNING: Error opening stream to kuberhealthy/dns-status-internal-1605103511: main
+WARNING: Error opening stream to kuberhealthy/jx-secrets-1605103521: main
+about to run: git add * in dir /tmp/jx-test-collector-155602160
+about to run: git status -s in dir /tmp/jx-test-collector-155602160
+MM logs/jx-git-operator/jx-git-operator/jx-git-operator-87b45d98f-qx8zv/jx-git-operator.log
+A  logs/jx-git-operator/kuberhealthy-check/jx-install-1605103301/jx-install.log
+A  logs/jx-git-operator/kuberhealthy-check/jx-install-1605103391/jx-install.log
+A  logs/jx-git-operator/kuberhealthy-check/jx-install-1605103481/jx-install.log
+MM logs/jx-staging/bdd-gh-1602679032-bdd-gh-1602679032/bdd-gh-1602679032-bdd-gh-1602679032-59944d755d-wdsx4/bdd-gh-1602679032.log
+MM logs/jx-staging/nodey536-nodey536/nodey536-nodey536-76cfc5958f-hjcgd/nodey536.log
+MM logs/jx/chartmuseum/jenkins-x-chartmuseum-844cddb458-2mnfm/chartmuseum.log
+M  logs/jx/jx-build-controller/jx-build-controller-c85865f96-7dshs/jx-build-controller.log
+M  logs/jx/jx-test-collector/jx-test-collector-5bd8c76fdf-h78z2/jx-test-collector.log
+A  logs/jx/kuberhealthy-check/jx-bot-token-1605103301/jx-bot-token.log
+A  logs/jx/kuberhealthy-check/jx-bot-token-1605103391/jx-bot-token.log
+A  logs/jx/kuberhealthy-check/jx-bot-token-1605103481/jx-bot-token.log
+A  logs/jx/kuberhealthy-check/jx-webhook-1605103301/jx-webhook.log
+A  logs/jx/kuberhealthy-check/jx-webhook-1605103391/jx-webhook.log
+A  logs/jx/kuberhealthy-check/jx-webhook-1605103481/jx-webhook.log
+M  logs/jx/lighthouse-keeper/lighthouse-keeper-6c7b89b4c5-gsswn/lighthouse-keeper.log
+M  logs/jx/lighthouse-webhooks/lighthouse-webhooks-859b6fffb6-xdrrj/lighthouse-webhooks.log
+M  logs/kube-system/fluentd-gke-284vt/fluentd-gcp.log
+M  logs/kube-system/fluentd-gke-822w2/fluentd-gcp.log
+M  logs/kube-system/fluentd-gke-bh4t6/fluentd-gcp.log
+M  logs/kube-system/fluentd-gke-v6gsx/fluentd-gcp.log
+M  logs/kube-system/gke-metadata-server-8fjjb/gke-metadata-server.log
+M  logs/kube-system/gke-metadata-server-gvh82/gke-metadata-server.log
+MM logs/kube-system/gke-metadata-server-tkqwz/gke-metadata-server.log
+M  logs/kube-system/gke-metrics-agent-md5kj/gke-metrics-agent.log
+M  logs/kube-system/gke-metrics-agent-z92tn/gke-metrics-agent.log
+M  logs/kube-system/prometheus-to-sd-gfp6g/prometheus-to-sd.log
+M  logs/kube-system/prometheus-to-sd-j875f/prometheus-to-sd.log
+M  logs/kube-system/prometheus-to-sd-l65fc/prometheus-to-sd.log
+M  logs/kube-system/prometheus-to-sd-qfzkw/prometheus-to-sd.log
+M  logs/kube-system/stackdriver-metadata-agent/stackdriver-metadata-agent-cluster-level-547f9bfb74-87q4p/metadata-agent.log
+A  logs/kuberhealthy/check-reaper-1605103380-8x2vf/check-reaper.log
+A  logs/kuberhealthy/kuberhealthy-check/dns-status-internal-1605103271/main.log
+A  logs/kuberhealthy/kuberhealthy-check/dns-status-internal-1605103391/main.log
+A  logs/kuberhealthy/kuberhealthy-check/dns-status-internal-1605103511/main.log
+A  logs/kuberhealthy/kuberhealthy-check/jx-pod-status-1605103451/main.log
+A  logs/kuberhealthy/kuberhealthy-check/jx-secrets-1605103521/main.log
+M  logs/kuberhealthy/kuberhealthy/kuberhealthy-5c46966647-6db64/kuberhealthy.log
+M  logs/kuberhealthy/kuberhealthy/kuberhealthy-5c46966647-7mbjl/kuberhealthy.log
+M  logs/nginx/nginx-ingress/nginx-ingress-controller-55b8cd465c-bmzsj/nginx-ingress-controller.log
+M  logs/tekton-pipelines/tekton-pipelines-webhook/tekton-pipelines-webhook-b4b67f45-zlmlc/webhook.log
+A  resources/core/v1/pods/jx-git-operator/jx-install-1605103301.yaml
+A  resources/core/v1/pods/jx-git-operator/jx-install-1605103391.yaml
+A  resources/core/v1/pods/jx-git-operator/jx-install-1605103481.yaml
+M  resources/core/v1/pods/jx-staging/nodey536-nodey536-558695b556-266sn.yaml
+A  resources/core/v1/pods/jx/jx-bot-token-1605103301.yaml
+A  resources/core/v1/pods/jx/jx-bot-token-1605103391.yaml
+A  resources/core/v1/pods/jx/jx-bot-token-1605103481.yaml
+A  resources/core/v1/pods/jx/jx-webhook-1605103301.yaml
+A  resources/core/v1/pods/jx/jx-webhook-1605103391.yaml
+A  resources/core/v1/pods/jx/jx-webhook-1605103481.yaml
+A  resources/core/v1/pods/kuberhealthy/check-reaper-1605103380-8x2vf.yaml
+A  resources/core/v1/pods/kuberhealthy/dns-status-internal-1605103271.yaml
+A  resources/core/v1/pods/kuberhealthy/dns-status-internal-1605103391.yaml
+A  resources/core/v1/pods/kuberhealthy/dns-status-internal-1605103511.yaml
+A  resources/core/v1/pods/kuberhealthy/jx-pod-status-1605103451.yaml
+A  resources/core/v1/pods/kuberhealthy/jx-secrets-1605103521.yaml
+about to run: git commit -a -m chore: latest logs in dir /tmp/jx-test-collector-155602160
