@@ -8640,3 +8640,21 @@
 2020-11-11 14:19:59 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
 2020-11-11 14:20:02 +0000 [info]: #0 detected rotation of /var/log/containers/deployment-deployment-7754944654-q5f25_kuberhealthy_deployment-container-9a71c0e250bc66db4208452344b6d519451bd47fcd6c0e29eacf42977dfdeeb5.log; waiting 5 seconds
 2020-11-11 14:20:02 +0000 [info]: #0 detected rotation of /var/log/containers/deployment-deployment-6bf8fd9975-ftf5q_kuberhealthy_deployment-container-2bc18ff138a714ff394bdfbdcb1f397c2fedc35f775eef7e88b7eb8fd5a9bdb4.log; waiting 5 seconds
+2020-11-11 14:20:58 +0000 [info]: #0 following tail of /var/log/containers/jx-secrets-1605104425_kuberhealthy_main-961cbc4b89a94f3d544882c32773e4db87e9de461ae86f45f1fb7f2b113bc652.log
+2020-11-11 14:20:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:21:58 +0000 [info]: #0 following tail of /var/log/containers/check-reaper-1605104460-khsp6_kuberhealthy_check-reaper-ea5e5a0342677c3a8df5a54af4f4f4a9c72233b7649308d1a2b2198ab828ae83.log
+2020-11-11 14:21:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:22:01 +0000 [info]: #0 detected rotation of /var/log/containers/jx-bot-token-1605103931_jx_jx-bot-token-bd97e2d80e4a185be005441617953a34e2d2c1580c34e382e7aab7b355a4233b.log; waiting 5 seconds
+2020-11-11 14:22:02 +0000 [info]: #0 detected rotation of /var/log/containers/jx-install-1605103931_jx-git-operator_jx-install-72a4e4f63373b87479656f1e9f1cd179f75a5b0373c8aca3ad80dba986286263.log; waiting 5 seconds
+2020-11-11 14:22:02 +0000 [info]: #0 detected rotation of /var/log/containers/dns-status-internal-1605103753_kuberhealthy_main-3f0aaa4b746906fa9253ec65c408fd082a84e5607af580624a1612c6ac5dbcf2.log; waiting 5 seconds
+2020-11-11 14:22:02 +0000 [info]: #0 detected rotation of /var/log/containers/check-reaper-1605103920-lgfb2_kuberhealthy_check-reaper-ab0217f5402865a1427aa67b2a81381b2ca5c6e9a50d63867d0b8f80ea452913.log; waiting 5 seconds
+2020-11-11 14:23:58 +0000 [info]: #0 following tail of /var/log/containers/dns-status-internal-1605104591_kuberhealthy_main-50c846969e60fe388643203ba0b9acccb1d7ca0b46c22558fe6a5defffdfd493.log
+2020-11-11 14:23:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:24:57 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 3, pod_cache_api_updates: 35724, id_cache_miss: 35723, namespace_cache_miss: 28343, pod_cache_watch_delete_ignored: 16239, pod_cache_watch_updates: 45860, pod_cache_host_updates: 37243, pod_cache_watch_ignored: 16257, pod_watch_failures: 139, pod_watch_error_type_notices: 139, namespace_cache_watch_misses: 6
+2020-11-11 14:24:58 +0000 [info]: #0 following tail of /var/log/containers/jx-pod-status-1605104651_kuberhealthy_main-033929b8fe04cf4bc08ee6b21ad1ee05595e266bb7305d7f6b6fee2ba48dbd66.log
+2020-11-11 14:24:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:25:02 +0000 [info]: #0 detected rotation of /var/log/containers/jx-install-1605104111_jx-git-operator_jx-install-4aa3441efc8aadbd3a8c842ed298a3c455296cc00e7fb1fffc33b8197f2576ed.log; waiting 5 seconds
+2020-11-11 14:25:02 +0000 [info]: #0 detected rotation of /var/log/containers/dns-status-internal-1605103991_kuberhealthy_main-31d85bbb5df1ff20ae73e14203ab0a3c2df26de153bf185b42f6a3f467d29fb4.log; waiting 5 seconds
+2020-11-11 14:25:02 +0000 [info]: #0 detected rotation of /var/log/containers/check-reaper-1605104100-97ddr_kuberhealthy_check-reaper-2083badb69bb74340969295626e9edeb60b6b5ffce6ec44fe2bba1e6dccc0a3e.log; waiting 5 seconds
+2020-11-11 14:25:02 +0000 [info]: #0 detected rotation of /var/log/containers/jx-webhook-1605104111_jx_jx-webhook-5d6ce95f4d9eb693cc088053f02fd95379e96bedad6b1d426c746b56e1ce57a5.log; waiting 5 seconds
+2020-11-11 14:25:02 +0000 [info]: #0 detected rotation of /var/log/containers/jx-install-1605104021_jx-git-operator_jx-install-554319a8440d33873f5384c8c2bdab95a47f5db02cd0d00be489275a214620ec.log; waiting 5 seconds

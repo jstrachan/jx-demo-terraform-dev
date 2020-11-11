@@ -5025,3 +5025,6 @@
 2020-11-11 14:16:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
 2020-11-11 14:18:37 +0000 [info]: #0 detected rotation of /var/log/containers/jx-bot-token-1605103753_jx_jx-bot-token-c922b02a27c9a18d09b9e3956a842e42f6041895ce59a945e8f3ffd1088f352b.log; waiting 5 seconds
 2020-11-11 14:18:43 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 5, pod_cache_api_updates: 50439, id_cache_miss: 50336, namespace_cache_miss: 445849
+2020-11-11 14:23:43 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 3, pod_cache_api_updates: 50471, id_cache_miss: 50368, namespace_cache_miss: 446019
+2020-11-11 14:24:37 +0000 [info]: #0 detected rotation of /var/log/containers/jx-bot-token-1605104111_jx_jx-bot-token-bf9f647dac7cf12eac6f09f4bedcd5de9493088b7a046392be9cc94a9e1916ef.log; waiting 5 seconds
+2020-11-11 14:24:37 +0000 [info]: #0 detected rotation of /var/log/containers/jx-webhook-1605104021_jx_jx-webhook-5603f1eb22dc14cfc21dee531466109aa9a5fb2db8d69bec51ffd17920d84425.log; waiting 5 seconds

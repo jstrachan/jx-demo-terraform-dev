@@ -2882,3 +2882,7 @@ logging pod: release-kkwgq-from-build-pack-vstr5-pod-zgfsv
 wrote file jenkins-x/logs/****/jx-demo-terraform-dev/master/1.log to bucket gs://logs-****-tekton-20699896b252
 updated PipelineActivity ****-jx-demo-terraform-dev-master-1 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/master/1.log
 updated release-kkwgq
+updated release-kkwgq
+updated dev
+updated production
+updated staging
