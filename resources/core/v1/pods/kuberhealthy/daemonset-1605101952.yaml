@@ -1,0 +1,127 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    comcast.github.io/check-name: daemonset
+  creationTimestamp: "2020-11-11T13:39:17Z"
+  labels:
+    app: kuberhealthy-check
+    kuberhealthy-check-name: daemonset
+    kuberhealthy-run-id: 1db2c9a1-6d73-4c2d-a0f8-67779555f92c
+  name: daemonset-1605101952
+  namespace: kuberhealthy
+  ownerReferences:
+  - apiVersion: v1
+    kind: Pod
+    name: kuberhealthy-5c46966647-6db64
+    uid: d98a024b-7504-4cdd-a3bb-c70c6128d8fb
+  resourceVersion: "27419777"
+  selfLink: /api/v1/namespaces/kuberhealthy/pods/daemonset-1605101952
+  uid: 8d519d6b-2318-4e74-9e6e-d2b37bac96b7
+spec:
+  containers:
+  - env:
+    - name: POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    - name: CHECK_POD_TIMEOUT
+      value: 10m
+    - name: KH_REPORTING_URL
+      value: http://kuberhealthy.kuberhealthy.svc.cluster.local/externalCheckStatus
+    - name: KH_RUN_UUID
+      value: 1db2c9a1-6d73-4c2d-a0f8-67779555f92c
+    - name: KH_CHECK_RUN_DEADLINE
+      value: "1605102672"
+    - name: KH_POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    image: kuberhealthy/daemonset-check:v3.2.1
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources:
+      requests:
+        cpu: 10m
+        memory: 50Mi
+    securityContext:
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: daemonset-khcheck-token-lpq5m
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-pmxj
+  priority: 0
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  securityContext:
+    fsGroup: 999
+    runAsUser: 999
+  serviceAccount: daemonset-khcheck
+  serviceAccountName: daemonset-khcheck
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: daemonset-khcheck-token-lpq5m
+    secret:
+      defaultMode: 420
+      secretName: daemonset-khcheck-token-lpq5m
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:39:17Z"
+    reason: PodCompleted
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:39:39Z"
+    reason: PodCompleted
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:39:39Z"
+    reason: PodCompleted
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:39:17Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://f19729ad5cb456b5823e971a81df03d3f6fdda2de0f61389c7a2f072ca5d48c7
+    image: kuberhealthy/daemonset-check:v3.2.1
+    imageID: docker-pullable://kuberhealthy/daemonset-check@sha256:e26c64054144cfee77ce8994195a96c5dfd120bc0e57a1c6c77f962eebdad40a
+    lastState: {}
+    name: main
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      terminated:
+        containerID: docker://f19729ad5cb456b5823e971a81df03d3f6fdda2de0f61389c7a2f072ca5d48c7
+        exitCode: 0
+        finishedAt: "2020-11-11T13:39:38Z"
+        reason: Completed
+        startedAt: "2020-11-11T13:39:19Z"
+  hostIP: 10.128.0.11
+  phase: Succeeded
+  podIP: 10.8.7.205
+  podIPs:
+  - ip: 10.8.7.205
+  qosClass: Burstable
+  startTime: "2020-11-11T13:39:17Z"

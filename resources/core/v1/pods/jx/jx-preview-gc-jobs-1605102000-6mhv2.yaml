@@ -1,0 +1,106 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2020-11-11T13:40:05Z"
+  generateName: jx-preview-gc-jobs-1605102000-
+  labels:
+    app: jx-preview-gc-jobs
+    controller-uid: 72a2d06d-eeec-4b54-bd06-0a4e37dbe28c
+    job-name: jx-preview-gc-jobs-1605102000
+    release: jx-preview
+  name: jx-preview-gc-jobs-1605102000-6mhv2
+  namespace: jx
+  ownerReferences:
+  - apiVersion: batch/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: Job
+    name: jx-preview-gc-jobs-1605102000
+    uid: 72a2d06d-eeec-4b54-bd06-0a4e37dbe28c
+  resourceVersion: "27420029"
+  selfLink: /api/v1/namespaces/jx/pods/jx-preview-gc-jobs-1605102000-6mhv2
+  uid: 8701c406-b581-4281-89eb-2ba7f2ace32c
+spec:
+  containers:
+  - command:
+    - /bin/sh
+    - -c
+    - jx gitops git setup --namespace jx --secret tekton-git && jx preview gc
+    image: gcr.io/jenkinsxio/jx-cli:latest
+    imagePullPolicy: IfNotPresent
+    name: jx-preview-gc-jobs
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: jx-preview-gc-jobs-token-hvrbq
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-pmxj
+  priority: 0
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: jx-preview-gc-jobs
+  serviceAccountName: jx-preview-gc-jobs
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: jx-preview-gc-jobs-token-hvrbq
+    secret:
+      defaultMode: 420
+      secretName: jx-preview-gc-jobs-token-hvrbq
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:40:05Z"
+    reason: PodCompleted
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:40:05Z"
+    reason: PodCompleted
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:40:05Z"
+    reason: PodCompleted
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:40:05Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://8a4df8a40aea64009ba5e59ead7ac672b069475b37398d68a9e28bccb81a8c97
+    image: gcr.io/jenkinsxio/jx-cli:latest
+    imageID: docker-pullable://gcr.io/jenkinsxio/jx-cli@sha256:fcd9bde5e3162d26e196b2cad77d76611a23a38207e4dc39e691b795c6815a7a
+    lastState: {}
+    name: jx-preview-gc-jobs
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      terminated:
+        containerID: docker://8a4df8a40aea64009ba5e59ead7ac672b069475b37398d68a9e28bccb81a8c97
+        exitCode: 0
+        finishedAt: "2020-11-11T13:40:07Z"
+        reason: Completed
+        startedAt: "2020-11-11T13:40:07Z"
+  hostIP: 10.128.0.11
+  phase: Succeeded
+  podIP: 10.8.7.213
+  podIPs:
+  - ip: 10.8.7.213
+  qosClass: BestEffort
+  startTime: "2020-11-11T13:40:05Z"

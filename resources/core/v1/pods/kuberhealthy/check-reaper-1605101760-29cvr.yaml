@@ -1,0 +1,113 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2020-11-11T13:36:04Z"
+  generateName: check-reaper-1605101760-
+  labels:
+    controller-uid: 2d71f56a-eafd-43a6-8a99-17e24d426a3a
+    job-name: check-reaper-1605101760
+  name: check-reaper-1605101760-29cvr
+  namespace: kuberhealthy
+  ownerReferences:
+  - apiVersion: batch/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: Job
+    name: check-reaper-1605101760
+    uid: 2d71f56a-eafd-43a6-8a99-17e24d426a3a
+  resourceVersion: "27417653"
+  selfLink: /api/v1/namespaces/kuberhealthy/pods/check-reaper-1605101760-29cvr
+  uid: f06ecafd-1891-4f2c-a475-85ca8c26f2f7
+spec:
+  containers:
+  - env:
+    - name: SINGLE_NAMESPACE
+    - name: MAX_PODS_THRESHOLD
+      value: "4"
+    - name: JOB_DELETE_TIME_DURATION
+      value: 15m
+    image: kuberhealthy/check-reaper:v1.5.0
+    imagePullPolicy: IfNotPresent
+    name: check-reaper
+    resources:
+      requests:
+        cpu: 10m
+        memory: 50Mi
+    securityContext:
+      allowPrivilegeEscalation: false
+      runAsNonRoot: true
+      runAsUser: 999
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: check-reaper-token-x2jn2
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-nap-n1-standard--0a7ecf20-446q
+  priority: 0
+  restartPolicy: OnFailure
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: check-reaper
+  serviceAccountName: check-reaper
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: check-reaper-token-x2jn2
+    secret:
+      defaultMode: 420
+      secretName: check-reaper-token-x2jn2
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:36:04Z"
+    reason: PodCompleted
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:36:04Z"
+    reason: PodCompleted
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:36:04Z"
+    reason: PodCompleted
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:36:04Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://4ddf82b83342275ec470a1ecea164723a2c3c9e4e0c040b59e31f3aff196a79f
+    image: kuberhealthy/check-reaper:v1.5.0
+    imageID: docker-pullable://kuberhealthy/check-reaper@sha256:0ed616550b90a95ff2aa13636137516ee958da0086b9f23f2d38b424c8bf7916
+    lastState: {}
+    name: check-reaper
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      terminated:
+        containerID: docker://4ddf82b83342275ec470a1ecea164723a2c3c9e4e0c040b59e31f3aff196a79f
+        exitCode: 0
+        finishedAt: "2020-11-11T13:36:05Z"
+        reason: Completed
+        startedAt: "2020-11-11T13:36:05Z"
+  hostIP: 10.128.0.14
+  phase: Succeeded
+  podIP: 10.8.8.168
+  podIPs:
+  - ip: 10.8.8.168
+  qosClass: Burstable
+  startTime: "2020-11-11T13:36:04Z"

@@ -4972,3 +4972,8 @@
 2020-11-11 13:28:43 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 4, pod_cache_api_updates: 50023, id_cache_miss: 49920, namespace_cache_miss: 444041
 2020-11-11 13:30:35 +0000 [info]: #0 detected rotation of /var/log/containers/lighthouse-gc-jobs-1605096000-fmdnm_jx_lighthouse-gc-jobs-2b0cfef7977d73f9c979e9926327501288e4e2b45ccf3bee13e73a3d0c458cfa.log; waiting 5 seconds
 2020-11-11 13:33:43 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 4, pod_cache_api_updates: 50063, id_cache_miss: 49960, namespace_cache_miss: 444231
+2020-11-11 13:38:43 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 4, pod_cache_api_updates: 50098, id_cache_miss: 49995, namespace_cache_miss: 444393
+2020-11-11 13:40:14 +0000 [info]: #0 following tail of /var/log/containers/jx-bot-token-1605101954_jx_jx-bot-token-4ff28dccd8dc3e78b18bfdc6996cda83cf0f72b01e8c2bafee7b46f99f176d6e.log
+2020-11-11 13:40:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 13:40:14 +0000 [info]: #0 following tail of /var/log/containers/deployment-deployment-64f9486766-jds5n_kuberhealthy_deployment-container-8cf8f963f4ec88307115f2c88bfef1cb0d299d5344bd6aad2154ef9e7b1a7501.log
+2020-11-11 13:40:21 +0000 [info]: #0 detected rotation of /var/log/containers/deployment-deployment-64f9486766-jds5n_kuberhealthy_deployment-container-8cf8f963f4ec88307115f2c88bfef1cb0d299d5344bd6aad2154ef9e7b1a7501.log; waiting 5 seconds

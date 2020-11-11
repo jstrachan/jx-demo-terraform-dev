@@ -317,3 +317,9 @@ W1111 13:29:53.835678       6 controller.go:909] Service "jx/bucketrepo" does no
 W1111 13:29:57.168951       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
 10.8.5.1 - - [11/Nov/2020:13:31:00 +0000] "GET / HTTP/1.1" 200 0 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)" 160 0.001 [jx-hook-80] [] 10.8.5.10:8080 0 0.000 200 ef48efcb1234a0168855f559cd400faf
 10.128.0.2 - - [11/Nov/2020:13:31:19 +0000] "GET /currentsetting.htm HTTP/1.1" 404 32 "-" "-" 58 0.001 [jx-hook-80] [] 10.8.5.10:8080 32 0.001 404 b435b3849ca48b6982037f46943d2fba
+W1111 13:39:36.107833       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:39:39.439501       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:40:11.198692       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:40:14.532138       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:40:17.865515       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:40:21.198811       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
