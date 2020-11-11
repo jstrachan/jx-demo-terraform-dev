@@ -1,0 +1,69 @@
+apiVersion: jenkins.io/v1
+kind: PipelineActivity
+metadata:
+  annotations:
+    lighthouse.jenkins-x.io/cloneURI: https://github.com/jstrachan/jx-demo-terraform-dev.git
+    lighthouse.jenkins-x.io/job: release
+  creationTimestamp: "2020-11-11T14:11:27Z"
+  generation: 9
+  labels:
+    build: "1"
+    created-by-lighthouse: "true"
+    event-GUID: c90d7b16-2427-11eb-802c-b03dd6cae28c
+    lighthouse.jenkins-x.io/baseSHA: 3fa250c36d7b290bcd845cafc789b754972f1d7d
+    lighthouse.jenkins-x.io/branch: master
+    lighthouse.jenkins-x.io/buildNum: "1605103887267"
+    lighthouse.jenkins-x.io/context: release
+    lighthouse.jenkins-x.io/id: c9bc571c-2427-11eb-827f-524720e729cd
+    lighthouse.jenkins-x.io/job: release
+    lighthouse.jenkins-x.io/lastCommitSHA: 3fa250c36d7b290bcd845cafc789b754972f1d7d
+    lighthouse.jenkins-x.io/refs.org: jstrachan
+    lighthouse.jenkins-x.io/refs.repo: jx-demo-terraform-dev
+    lighthouse.jenkins-x.io/type: postsubmit
+    podName: release-kkwgq-from-build-pack-vstr5-pod-zgfsv
+    tekton.dev/pipeline: release-kkwgq
+  name: jstrachan-jx-demo-terraform-dev-master-1
+  namespace: jx
+  resourceVersion: "27441027"
+  selfLink: /apis/jenkins.io/v1/namespaces/jx/pipelineactivities/jstrachan-jx-demo-terraform-dev-master-1
+  uid: 6a1ad001-736c-4247-bf0d-a9dec9c7d9ea
+spec:
+  baseSHA: 3fa250c36d7b290bcd845cafc789b754972f1d7d
+  batchPipelineActivity: {}
+  build: "1"
+  buildLogsUrl: gs://logs-jstrachan-tekton-20699896b252/jenkins-x/logs/jstrachan/jx-demo-terraform-dev/master/1.log
+  completedTimestamp: "2020-11-11T14:15:23Z"
+  context: release
+  gitBranch: master
+  gitOwner: jstrachan
+  gitRepository: jx-demo-terraform-dev
+  gitUrl: https://github.com/jstrachan/jx-demo-terraform-dev.git
+  lastCommitSHA: 3fa250c36d7b290bcd845cafc789b754972f1d7d
+  pipeline: jstrachan/jx-demo-terraform-dev/master
+  startedTimestamp: "2020-11-11T14:11:27Z"
+  status: Succeeded
+  steps:
+  - kind: Stage
+    stage:
+      completedTimestamp: "2020-11-11T14:15:23Z"
+      name: from build pack
+      startedTimestamp: "2020-11-11T14:13:32Z"
+      status: Succeeded
+      steps:
+      - completedTimestamp: "2020-11-11T14:13:39Z"
+        name: Git Clone
+        startedTimestamp: "2020-11-11T14:13:32Z"
+        status: Succeeded
+      - completedTimestamp: "2020-11-11T14:13:44Z"
+        name: Git Setup
+        startedTimestamp: "2020-11-11T14:13:40Z"
+        status: Succeeded
+      - completedTimestamp: "2020-11-11T14:13:44Z"
+        name: Setup Builder Home
+        startedTimestamp: "2020-11-11T14:13:44Z"
+        status: Succeeded
+      - completedTimestamp: "2020-11-11T14:15:23Z"
+        name: Make Pr
+        startedTimestamp: "2020-11-11T14:13:45Z"
+        status: Succeeded
+status: {}

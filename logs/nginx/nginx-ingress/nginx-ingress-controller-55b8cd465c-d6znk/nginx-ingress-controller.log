@@ -362,3 +362,23 @@ W1111 14:09:58.942624       6 controller.go:909] Service "jx/bucketrepo" does no
 W1111 14:10:02.275977       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
 W1111 14:10:05.609347       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
 W1111 14:10:08.942836       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+10.128.0.5 - - [11/Nov/2020:14:12:03 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.004 200 c741410029c73af463f10b6fd76da9ce
+10.128.0.5 - - [11/Nov/2020:14:12:31 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 3640c06da6ab298e309f2bbf603b3b0d
+10.128.0.5 - - [11/Nov/2020:14:12:44 +0000] "GET /charts/nodey536-1.0.5.tgz HTTP/1.1" 200 4872 "-" "Helm/3.4.0" 111 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 4866 0.002 200 571b86ff6626234238a003513e661dc3
+I1111 14:13:29.025428       6 event.go:278] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"jx", Name:"jx-pipelines-visualizer", UID:"3e351917-525a-47c7-bf5a-540e9eec7638", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"27439714", FieldPath:""}): type: 'Normal' reason: 'UPDATE' Ingress jx/jx-pipelines-visualizer
+W1111 14:13:29.026974       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+I1111 14:13:29.027124       6 controller.go:139] Configuration changes detected, backend reload required.
+I1111 14:13:29.528319       6 controller.go:155] Backend successfully reloaded.
+I1111 14:13:29.721635       6 event.go:278] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"jx", Name:"hook", UID:"50a35503-da26-463a-8803-8d1a09735261", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"27439738", FieldPath:""}): type: 'Normal' reason: 'UPDATE' Ingress jx/hook
+W1111 14:13:32.360528       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+I1111 14:13:32.360870       6 controller.go:139] Configuration changes detected, backend reload required.
+I1111 14:13:32.495451       6 controller.go:155] Backend successfully reloaded.
+W1111 14:13:35.693816       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 14:13:39.044402       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+10.8.7.1 - - [11/Nov/2020:14:14:01 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.004 200 36a044fc1a3544e4a6af4a86bee878bc
+10.128.0.5 - - [11/Nov/2020:14:14:11 +0000] "GET /index.yaml HTTP/1.1" 200 17806 "-" "Helm/3.4.0" 96 0.004 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 f3d38e2338b154b2d9b041737a5f119f
+10.8.7.1 - - [11/Nov/2020:14:14:27 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.005 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.005 200 a972f7385615a893a950fc390cde82cf
+W1111 14:14:35.958422       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+10.128.0.5 - - [11/Nov/2020:14:14:36 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 368e8e23593572d8d12d3c71b8009b48
+10.8.7.1 - - [11/Nov/2020:14:15:03 +0000] "GET /index.yaml HTTP/1.1" 200 17806 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 7daf5d7f8024a38f26a9895887a97d02
+10.8.7.1 - - [11/Nov/2020:14:15:17 +0000] "GET /index.yaml HTTP/1.1" 200 17813 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.004 200 893cce0c2417148ca0afd9df5347f59b

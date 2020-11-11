@@ -1,0 +1,146 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    ad.datadoghq.com/keeper.logs: '[{"source":"lighthouse","service":"keeper"}]'
+    wave.pusher.com/config-hash: d2b9232b24905e8c38452f792e043ec3970a5a4c120815b640f115a7352f407a
+  creationTimestamp: "2020-11-11T14:13:30Z"
+  generateName: lighthouse-keeper-64955449b9-
+  labels:
+    app: lighthouse-keeper
+    draft: draft-app
+    pod-template-hash: 64955449b9
+  name: lighthouse-keeper-64955449b9-6sbt2
+  namespace: jx
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: lighthouse-keeper-64955449b9
+    uid: bf31c087-1981-49d8-914a-c98ebe0a4715
+  resourceVersion: "27440511"
+  selfLink: /api/v1/namespaces/jx/pods/lighthouse-keeper-64955449b9-6sbt2
+  uid: 17483d08-343e-4052-90d6-28415bb01b11
+spec:
+  containers:
+  - args:
+    - --namespace=jx
+    env:
+    - name: GIT_KIND
+      value: github
+    - name: GIT_SERVER
+      value: https://github.com
+    - name: GIT_USER
+      value: jstrachan
+    - name: GIT_TOKEN
+      valueFrom:
+        secretKeyRef:
+          key: oauth
+          name: lighthouse-oauth-token
+    - name: JX_LOG_FORMAT
+      value: json
+    - name: LOGRUS_FORMAT
+      value: json
+    - name: LIGHTHOUSE_KEEPER_STATUS_CONTEXT_LABEL
+      value: Lighthouse Merge Status
+    image: gcr.io/jenkinsxio/lighthouse-keeper:0.0.0-SNAPSHOT-PR-1142-27
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /
+        port: http
+        scheme: HTTP
+      initialDelaySeconds: 120
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+    name: lighthouse-keeper
+    ports:
+    - containerPort: 8888
+      name: http
+      protocol: TCP
+    readinessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /
+        port: http
+        scheme: HTTP
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+    resources:
+      limits:
+        cpu: 400m
+        memory: 512Mi
+      requests:
+        cpu: 100m
+        memory: 128Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: lighthouse-keeper-token-5dr6q
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-ccfi
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: lighthouse-keeper
+  serviceAccountName: lighthouse-keeper
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: lighthouse-keeper-token-5dr6q
+    secret:
+      defaultMode: 420
+      secretName: lighthouse-keeper-token-5dr6q
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:13:31Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:14:35Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:14:35Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:13:31Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://7963ba63f0ee4b5bca2d0d7c13fb70ca2eae2904ff41ed1bfba5de66b3605d6a
+    image: gcr.io/jenkinsxio/lighthouse-keeper:0.0.0-SNAPSHOT-PR-1142-27
+    imageID: docker-pullable://gcr.io/jenkinsxio/lighthouse-keeper@sha256:8f811aa1ccb0a15e33742b2f9ab77f6216d2f8ad603c5fcc2b1fac088b7715db
+    lastState: {}
+    name: lighthouse-keeper
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-11T14:13:34Z"
+  hostIP: 10.128.0.2
+  phase: Running
+  podIP: 10.8.3.107
+  podIPs:
+  - ip: 10.8.3.107
+  qosClass: Burstable
+  startTime: "2020-11-11T14:13:31Z"

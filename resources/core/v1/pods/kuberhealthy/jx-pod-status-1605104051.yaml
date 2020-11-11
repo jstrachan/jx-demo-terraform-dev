@@ -1,0 +1,122 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    comcast.github.io/check-name: jx-pod-status
+  creationTimestamp: "2020-11-11T14:14:16Z"
+  labels:
+    app: kuberhealthy-check
+    kuberhealthy-check-name: jx-pod-status
+    kuberhealthy-run-id: 31ffd55c-f02a-414b-8993-aa37fa632290
+  name: jx-pod-status-1605104051
+  namespace: kuberhealthy
+  ownerReferences:
+  - apiVersion: v1
+    kind: Pod
+    name: kuberhealthy-5c46966647-6db64
+    uid: d98a024b-7504-4cdd-a3bb-c70c6128d8fb
+  resourceVersion: "27440372"
+  selfLink: /api/v1/namespaces/kuberhealthy/pods/jx-pod-status-1605104051
+  uid: cef01125-017b-424d-b996-37af5350b58a
+spec:
+  containers:
+  - env:
+    - name: SKIP_DURATION
+      value: 10m
+    - name: KH_REPORTING_URL
+      value: http://kuberhealthy.kuberhealthy.svc.cluster.local/externalCheckStatus
+    - name: KH_RUN_UUID
+      value: 31ffd55c-f02a-414b-8993-aa37fa632290
+    - name: KH_CHECK_RUN_DEADLINE
+      value: "1605104951"
+    - name: KH_POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    image: gcr.io/jenkinsxio/jx-pod-status:0.0.51
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources:
+      requests:
+        cpu: 10m
+        memory: 50Mi
+    securityContext:
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: jx-pod-status-sa-token-59bdb
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-nap-n1-standard--0a7ecf20-446q
+  priority: 0
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  securityContext:
+    fsGroup: 999
+    runAsUser: 999
+  serviceAccount: jx-pod-status-sa
+  serviceAccountName: jx-pod-status-sa
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: jx-pod-status-sa-token-59bdb
+    secret:
+      defaultMode: 420
+      secretName: jx-pod-status-sa-token-59bdb
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:14:16Z"
+    reason: PodCompleted
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:14:19Z"
+    reason: PodCompleted
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:14:19Z"
+    reason: PodCompleted
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:14:16Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://ee74e00bd954aff31d6e6c989bf3f2025945ffe0c8f9a6ccc831e08b65c0083b
+    image: gcr.io/jenkinsxio/jx-pod-status:0.0.51
+    imageID: docker-pullable://gcr.io/jenkinsxio/jx-pod-status@sha256:cd02ae63849e5050350a47df2687e63691a9ea98ff06498edbed77ea253d8ff8
+    lastState: {}
+    name: main
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      terminated:
+        containerID: docker://ee74e00bd954aff31d6e6c989bf3f2025945ffe0c8f9a6ccc831e08b65c0083b
+        exitCode: 0
+        finishedAt: "2020-11-11T14:14:18Z"
+        reason: Completed
+        startedAt: "2020-11-11T14:14:17Z"
+  hostIP: 10.128.0.14
+  phase: Succeeded
+  podIP: 10.8.8.219
+  podIPs:
+  - ip: 10.8.8.219
+  qosClass: Burstable
+  startTime: "2020-11-11T14:14:16Z"

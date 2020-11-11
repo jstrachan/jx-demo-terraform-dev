@@ -5001,3 +5001,23 @@
 2020-11-11 14:10:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
 2020-11-11 14:10:14 +0000 [info]: #0 following tail of /var/log/containers/jx-pod-status-1605103754_kuberhealthy_main-5533cd5dae5869594627e32746b5790b89a0af1058ad1999b1cff26156bb8689.log
 2020-11-11 14:10:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:12:14 +0000 [info]: #0 following tail of /var/log/containers/jx-boot-e6692c40-71ac-40bd-b738-4d24db840f63-q8twj_jx-git-operator_git-clone-2ea4bb3aae697e5f2a89f62a888fbe7984579e646adad4a6154dc5430bc3ee3f.log
+2020-11-11 14:12:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:12:14 +0000 [info]: #0 following tail of /var/log/containers/jx-boot-e6692c40-71ac-40bd-b738-4d24db840f63-q8twj_jx-git-operator_job-359e2173164b4140ea9d3295e70ebc9c8acac85d3007f8f2257ae1a69ae8c1e6.log
+2020-11-11 14:12:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:13:34 +0000 [info]: #0 detected rotation of /var/log/containers/lighthouse-tekton-controller-55665cdd4f-9xlbm_jx_lighthouse-tekton-controller-5281564fe1520da876f0c1d8954031c61d600db4b364e4454a40f85d76bb6b91.log; waiting 5 seconds
+2020-11-11 14:13:38 +0000 [info]: #0 detected rotation of /var/log/containers/lighthouse-foghorn-55c8559447-97554_jx_lighthouse-foghorn-5c672a5089732ebd79edafc04f79d2462e4bb2d7a0497be6049758a4dd27792c.log; waiting 5 seconds
+2020-11-11 14:13:43 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 10, pod_cache_api_updates: 50390, id_cache_miss: 50287, namespace_cache_miss: 445682
+2020-11-11 14:14:01 +0000 [info]: #0 detected rotation of /var/log/containers/lighthouse-keeper-6c7b89b4c5-gsswn_jx_lighthouse-keeper-c7678c333991ac19ad3edae3cb0097eeb333ee8b9aea7a5963df58d7e3efb899.log; waiting 5 seconds
+2020-11-11 14:14:14 +0000 [info]: #0 following tail of /var/log/containers/lighthouse-tekton-controller-74bd4b8487-952sp_jx_lighthouse-tekton-controller-1310e7463cf817c7dc26db2b7051d8cea16a4c2682b5a85ee949f300af85a3c2.log
+2020-11-11 14:14:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:14:14 +0000 [info]: #0 following tail of /var/log/containers/jx-webhook-1605104021_jx_jx-webhook-5603f1eb22dc14cfc21dee531466109aa9a5fb2db8d69bec51ffd17920d84425.log
+2020-11-11 14:14:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:14:14 +0000 [info]: #0 following tail of /var/log/containers/lighthouse-foghorn-fb5cf7559-nnpjb_jx_lighthouse-foghorn-de1277b684ed0ad9c1d9b6e30a8ee904cfaf8c2f0fae11e3b64d4ed2901d722b.log
+2020-11-11 14:14:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:14:14 +0000 [info]: #0 following tail of /var/log/containers/jx-boot-e6692c40-71ac-40bd-b738-4d24db840f63-sjcpl_jx-git-operator_job-9b8bfdf757eaa97f32c0fd8dfd3c385bf5ddd1c4554276a76d36a9b320333ab8.log
+2020-11-11 14:14:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:14:14 +0000 [info]: #0 following tail of /var/log/containers/jx-pipelines-visualizer-547974f8df-9f2vb_jx_jx-pipelines-visualizer-d7a139e8e5abe095b4f3641cfb599ca40640221286cd03aebc22b29c5b55f935.log
+2020-11-11 14:14:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:14:14 +0000 [info]: #0 following tail of /var/log/containers/jx-boot-e6692c40-71ac-40bd-b738-4d24db840f63-sjcpl_jx-git-operator_git-clone-11f12002dfe3d0265b4067d7531fe59dff578b505e738fbbacce8f80f6f7a05e.log
+2020-11-11 14:14:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.

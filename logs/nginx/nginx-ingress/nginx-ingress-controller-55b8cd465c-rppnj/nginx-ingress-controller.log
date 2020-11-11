@@ -339,3 +339,25 @@ W1111 14:09:58.964302       6 controller.go:909] Service "jx/bucketrepo" does no
 W1111 14:10:02.297689       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
 W1111 14:10:05.630976       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
 W1111 14:10:08.964502       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+2020/11/11 14:11:59 [warn] 497#497: *1307458 a client request body is buffered to a temporary file /tmp/client-body/0000000022, client: 10.128.0.5, server: _, request: "POST /hook HTTP/1.1", host: "hook-jx.35.184.150.204.nip.io"
+10.128.0.5 - - [11/Nov/2020:14:11:59 +0000] "POST /hook HTTP/1.1" 200 19 "-" "GitHub-Hookshot/6767b47" 21262 0.062 [jx-hook-80] [] 10.8.5.10:8080 19 0.013 200 b39ef6c166aaafef72b66bf97e8ea30e
+10.128.0.5 - - [11/Nov/2020:14:12:17 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 eab59544b862958bfc3a3733d5438931
+10.128.0.5 - - [11/Nov/2020:14:12:44 +0000] "GET /charts/bdd-gh-1602679032-0.0.4.tgz HTTP/1.1" 200 6419 "-" "Helm/3.4.0" 120 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 6413 0.002 200 486f20ed1cc974e348d7ca935f836047
+W1111 14:13:29.025454       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+I1111 14:13:29.025573       6 controller.go:139] Configuration changes detected, backend reload required.
+I1111 14:13:29.061444       6 event.go:278] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"jx", Name:"jx-pipelines-visualizer", UID:"3e351917-525a-47c7-bf5a-540e9eec7638", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"27439714", FieldPath:""}): type: 'Normal' reason: 'UPDATE' Ingress jx/jx-pipelines-visualizer
+I1111 14:13:29.200178       6 controller.go:155] Backend successfully reloaded.
+I1111 14:13:29.708966       6 event.go:278] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"jx", Name:"hook", UID:"50a35503-da26-463a-8803-8d1a09735261", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"27439738", FieldPath:""}): type: 'Normal' reason: 'UPDATE' Ingress jx/hook
+W1111 14:13:32.358885       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+I1111 14:13:32.359032       6 controller.go:139] Configuration changes detected, backend reload required.
+I1111 14:13:32.510205       6 controller.go:155] Backend successfully reloaded.
+W1111 14:13:35.692222       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 14:13:39.025564       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+10.128.0.5 - - [11/Nov/2020:14:13:47 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 c3143b0008233ba497feb349d8ad3016
+10.128.0.11 - - [11/Nov/2020:14:14:15 +0000] "GET /index.yaml HTTP/1.1" 200 17806 "-" "Helm/3.4.0" 96 0.004 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.004 200 2979dc318a96b17226fa1e238d2a790a
+10.128.0.11 - - [11/Nov/2020:14:14:15 +0000] "GET /charts/bdd-gh-1602679032-0.0.4.tgz HTTP/1.1" 200 6419 "-" "Helm/3.4.0" 120 0.001 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 6413 0.001 200 b11bd1f3ecb404fd9a3c7b81bcdfad3c
+10.128.0.5 - - [11/Nov/2020:14:14:23 +0000] "GET /index.yaml HTTP/1.1" 200 17813 "-" "Helm/3.4.0" 96 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.002 200 ed31b223cf5634dfc025faae4cde4f2b
+10.128.0.5 - - [11/Nov/2020:14:14:23 +0000] "GET /charts/bdd-gh-1602679032-0.0.4.tgz HTTP/1.1" 200 6419 "-" "Helm/3.4.0" 120 0.001 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 6413 0.001 200 0a86ea6c8d0d16cda8da0024548b3ab0
+W1111 14:14:35.856375       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+10.128.0.11 - - [11/Nov/2020:14:14:50 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 297508051a61be898d46c25a5fdad331
+10.128.0.5 - - [11/Nov/2020:14:15:00 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.002 200 5e157305844253e73199ca41b90c2a98

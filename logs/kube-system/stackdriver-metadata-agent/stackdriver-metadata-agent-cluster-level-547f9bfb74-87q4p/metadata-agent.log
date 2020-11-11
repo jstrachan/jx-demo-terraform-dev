@@ -8083,3 +8083,9 @@ I1111 14:08:43.209147       1 trace.go:897] Failed loading config; disabling tra
 I1111 14:08:50.777731       1 binarylog.go:274] rpc: flushed binary log to ""
 I1111 14:09:50.778018       1 binarylog.go:274] rpc: flushed binary log to ""
 I1111 14:10:50.778240       1 binarylog.go:274] rpc: flushed binary log to ""
+I1111 14:11:50.778489       1 binarylog.go:274] rpc: flushed binary log to ""
+I1111 14:12:50.778722       1 binarylog.go:274] rpc: flushed binary log to ""
+I1111 14:13:43.209386       1 trace.go:897] Failed loading config; disabling tracing: open /export/hda3/trace_data/trace_config.proto: no such file or directory
+I1111 14:13:50.778937       1 binarylog.go:274] rpc: flushed binary log to ""
+I1111 14:14:50.779124       1 binarylog.go:274] rpc: flushed binary log to ""
+I1111 14:15:50.783548       1 binarylog.go:274] rpc: flushed binary log to ""

@@ -2853,3 +2853,32 @@ updated staging
 updated dev
 updated production
 updated staging
+created PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+added release-kkwgq
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+updated release-kkwgq
+updated release-kkwgq
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+updated release-kkwgq
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+updated release-kkwgq
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+updated release-kkwgq
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+updated release-kkwgq
+updated dev
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+updated release-kkwgq
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+updated release-kkwgq
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+updated release-kkwgq
+updated release-kkwgq
+updated dev
+updated production
+updated staging
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+logging pod: release-kkwgq-from-build-pack-vstr5-pod-zgfsv
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/master/1.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/master/1.log
+updated release-kkwgq

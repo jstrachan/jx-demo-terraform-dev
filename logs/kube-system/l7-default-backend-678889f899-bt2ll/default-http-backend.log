@@ -105,3 +105,4 @@ I1111 10:14:57.719134       1 server-with-metrics.go:85] No connection requests 
 I1111 11:14:57.719383       1 server-with-metrics.go:85] No connection requests received for 1 hour
 I1111 12:14:57.719655       1 server-with-metrics.go:85] No connection requests received for 1 hour
 I1111 13:14:57.719963       1 server-with-metrics.go:85] No connection requests received for 1 hour
+I1111 14:14:57.720163       1 server-with-metrics.go:85] No connection requests received for 1 hour
