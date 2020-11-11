@@ -48,16 +48,6 @@ spec:
               value: "prov"
             - name: "STORAGE"
               value: "local"
-            - name: "BASIC_AUTH_PASS"
-              valueFrom:
-                secretKeyRef:
-                  name: chartmuseum-chartmuseum
-                  key: "BASIC_AUTH_PASS"
-            - name: "BASIC_AUTH_USER"
-              valueFrom:
-                secretKeyRef:
-                  name: chartmuseum-chartmuseum
-                  key: "BASIC_AUTH_USER"
           args:
             - --port=8080
             - --storage-local-rootdir=/storage
