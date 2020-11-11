@@ -3,33 +3,31 @@ kind: Pod
 metadata:
   annotations:
     components.gke.io/component-name: event-exporter
-    components.gke.io/component-version: 1.0.7
-  creationTimestamp: "2020-11-07T03:13:19Z"
-  deletionGracePeriodSeconds: 120
-  deletionTimestamp: "2020-11-11T14:45:13Z"
-  generateName: event-exporter-gke-8489df9489-
+    components.gke.io/component-version: 1.0.8
+  creationTimestamp: "2020-11-11T14:42:31Z"
+  generateName: event-exporter-gke-77cccd97c6-
   labels:
     k8s-app: event-exporter
-    pod-template-hash: 8489df9489
-    version: v0.3.1
-  name: event-exporter-gke-8489df9489-4nkwt
+    pod-template-hash: 77cccd97c6
+    version: v0.3.4
+  name: event-exporter-gke-77cccd97c6-6j7jr
   namespace: kube-system
   ownerReferences:
   - apiVersion: apps/v1
     blockOwnerDeletion: true
     controller: true
     kind: ReplicaSet
-    name: event-exporter-gke-8489df9489
-    uid: 54b7a314-fe0e-458a-a8c3-526f37b4127f
-  resourceVersion: "27455031"
-  selfLink: /api/v1/namespaces/kube-system/pods/event-exporter-gke-8489df9489-4nkwt
-  uid: b55e4b70-a3fd-456f-84cd-2e596a7438d8
+    name: event-exporter-gke-77cccd97c6
+    uid: 363e6f64-a6cc-40db-99d5-47208191b06f
+  resourceVersion: "27455027"
+  selfLink: /api/v1/namespaces/kube-system/pods/event-exporter-gke-77cccd97c6-6j7jr
+  uid: 411fffa5-7eb5-47e9-a763-b1ed5047e666
 spec:
   containers:
   - command:
     - /event-exporter
     - -sink-opts=-stackdriver-resource-model=new -endpoint=https://logging.googleapis.com
-    image: gke.gcr.io/event-exporter:v0.3.3-gke.0
+    image: gke.gcr.io/event-exporter:v0.3.4-gke.0
     imagePullPolicy: IfNotPresent
     name: event-exporter
     resources: {}
@@ -108,25 +106,25 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2020-11-07T03:13:19Z"
+    lastTransitionTime: "2020-11-11T14:42:31Z"
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2020-11-07T03:14:58Z"
+    lastTransitionTime: "2020-11-11T14:43:13Z"
     status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2020-11-07T03:14:58Z"
+    lastTransitionTime: "2020-11-11T14:43:13Z"
     status: "True"
     type: ContainersReady
   - lastProbeTime: null
-    lastTransitionTime: "2020-11-07T03:13:19Z"
+    lastTransitionTime: "2020-11-11T14:42:31Z"
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - containerID: docker://cf8a978086a9088f12435feee1899016e34402aeaf55f21d0266cc9fcf4fdf01
-    image: gke.gcr.io/event-exporter:v0.3.3-gke.0
-    imageID: docker-pullable://gke.gcr.io/event-exporter@sha256:6c08dc79478246a7cf9b7f7242dbc6ab0fdde2610b346db06faac69ec548d4f2
+  - containerID: docker://14674b4295095e22564099a08c446e102114be3e5e19def68fdbc9bf5aaa6f29
+    image: gke.gcr.io/event-exporter:v0.3.4-gke.0
+    imageID: docker-pullable://gke.gcr.io/event-exporter@sha256:34b034af960047020f4674151bbb2b55878f82a0b76dabca81b518e9fe82180d
     lastState: {}
     name: event-exporter
     ready: true
@@ -134,8 +132,8 @@ status:
     started: true
     state:
       running:
-        startedAt: "2020-11-07T03:14:13Z"
-  - containerID: docker://ccca0c8372eccd4311fc1e8893fbcf2cc2863951315d00261dd9c9686511bb4a
+        startedAt: "2020-11-11T14:42:35Z"
+  - containerID: docker://21afadcdd58ce711f3e6709aa546b2fe7c4e04f40aeeae269ece6f8b5b371b5d
     image: gke.gcr.io/prometheus-to-sd:v0.10.0-gke.0
     imageID: docker-pullable://gke.gcr.io/prometheus-to-sd@sha256:c5e12680a431990d5e39ed249dcb43a7672e99f7ef94a9928be40cf2f418f62f
     lastState: {}
@@ -145,11 +143,11 @@ status:
     started: true
     state:
       running:
-        startedAt: "2020-11-07T03:14:14Z"
+        startedAt: "2020-11-11T14:42:35Z"
   hostIP: 10.128.0.11
   phase: Running
-  podIP: 10.8.7.5
+  podIP: 10.8.7.160
   podIPs:
-  - ip: 10.8.7.5
+  - ip: 10.8.7.160
   qosClass: BestEffort
-  startTime: "2020-11-07T03:13:19Z"
+  startTime: "2020-11-11T14:42:31Z"

@@ -1,0 +1,178 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    components.gke.io/component-name: gke-metrics-agent
+    components.gke.io/component-version: 0.27.1
+    configHash: 1NVLw3Sml7dcQ+DlLxg9ktvVU2KMxYPrHGJLZGEFKOw=
+  creationTimestamp: "2020-11-11T14:44:24Z"
+  generateName: gke-metrics-agent-
+  labels:
+    component: gke-metrics-agent
+    controller-revision-hash: 8558ccb478
+    k8s-app: gke-metrics-agent
+    pod-template-generation: "2"
+  name: gke-metrics-agent-9gqjf
+  namespace: kube-system
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: DaemonSet
+    name: gke-metrics-agent
+    uid: 92fe92af-8d93-4241-8a69-b91c8217a2fe
+  resourceVersion: "27455986"
+  selfLink: /api/v1/namespaces/kube-system/pods/gke-metrics-agent-9gqjf
+  uid: a404f563-5c7d-438a-9b77-fc5a8855cb3b
+spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchFields:
+          - key: metadata.name
+            operator: In
+            values:
+            - gke-jstrachan-tekton-default-pool-154aeb80-ccfi
+  containers:
+  - command:
+    - /otelsvc
+    - --config=/conf/gke-metrics-agent-config.yaml
+    - --metrics-level=NONE
+    env:
+    - name: NODE_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: spec.nodeName
+    - name: POD_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.name
+    - name: POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    - name: KUBELET_HOST
+      value: 127.0.0.1
+    - name: ARG1
+      value: ${1}
+    - name: ARG2
+      value: ${2}
+    image: gcr.io/gke-release/gke-metrics-agent:0.1.3-gke.0
+    imagePullPolicy: IfNotPresent
+    name: gke-metrics-agent
+    resources:
+      limits:
+        memory: 50Mi
+      requests:
+        cpu: 3m
+        memory: 50Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /conf
+      name: gke-metrics-agent-config-vol
+    - mountPath: /etc/ssl/certs
+      name: ssl-certs
+      readOnly: true
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: gke-metrics-agent-token-ht7p8
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  hostNetwork: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-ccfi
+  nodeSelector:
+    kubernetes.io/os: linux
+  priority: 2000001000
+  priorityClassName: system-node-critical
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: gke-metrics-agent
+  serviceAccountName: gke-metrics-agent
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    operator: Exists
+  - effect: NoSchedule
+    operator: Exists
+  - key: components.gke.io/gke-managed-components
+    operator: Exists
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/disk-pressure
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/memory-pressure
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/pid-pressure
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/unschedulable
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/network-unavailable
+    operator: Exists
+  volumes:
+  - configMap:
+      defaultMode: 420
+      items:
+      - key: gke-metrics-agent-config
+        path: gke-metrics-agent-config.yaml
+      name: gke-metrics-agent-conf
+    name: gke-metrics-agent-config-vol
+  - hostPath:
+      path: /etc/ssl/certs
+      type: ""
+    name: ssl-certs
+  - name: gke-metrics-agent-token-ht7p8
+    secret:
+      defaultMode: 420
+      secretName: gke-metrics-agent-token-ht7p8
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:44:24Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:44:25Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:44:25Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:44:24Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://84331f641acd61b3742648b606829a3d536abc713a6ab5cd101224737c91b837
+    image: gcr.io/gke-release/gke-metrics-agent:0.1.3-gke.0
+    imageID: docker-pullable://gcr.io/gke-release/gke-metrics-agent@sha256:9ba59e40ac1bccf7fce37903a3ef51d865d376f46907d7667f2e8b79d839ef58
+    lastState: {}
+    name: gke-metrics-agent
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-11T14:44:25Z"
+  hostIP: 10.128.0.2
+  phase: Running
+  podIP: 10.128.0.2
+  podIPs:
+  - ip: 10.128.0.2
+  qosClass: Burstable
+  startTime: "2020-11-11T14:44:24Z"

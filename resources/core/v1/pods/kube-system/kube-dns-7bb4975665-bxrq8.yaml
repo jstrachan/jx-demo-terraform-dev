@@ -1,0 +1,332 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    components.gke.io/component-name: kubedns
+    components.gke.io/component-version: 1.0.5
+    scheduler.alpha.kubernetes.io/critical-pod: ""
+    seccomp.security.alpha.kubernetes.io/pod: runtime/default
+  creationTimestamp: "2020-11-11T14:43:34Z"
+  generateName: kube-dns-7bb4975665-
+  labels:
+    k8s-app: kube-dns
+    pod-template-hash: 7bb4975665
+  name: kube-dns-7bb4975665-bxrq8
+  namespace: kube-system
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: kube-dns-7bb4975665
+    uid: ac5f08cd-8cfb-4999-bf63-583447bf20b4
+  resourceVersion: "27455575"
+  selfLink: /api/v1/namespaces/kube-system/pods/kube-dns-7bb4975665-bxrq8
+  uid: d3ada848-359c-4b34-b59c-1e811b29e6da
+spec:
+  affinity:
+    podAntiAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - podAffinityTerm:
+          labelSelector:
+            matchExpressions:
+            - key: k8s-app
+              operator: In
+              values:
+              - kube-dns
+          topologyKey: kubernetes.io/hostname
+        weight: 100
+  containers:
+  - args:
+    - --domain=cluster.local.
+    - --dns-port=10053
+    - --config-dir=/kube-dns-config
+    - --v=2
+    env:
+    - name: PROMETHEUS_PORT
+      value: "10055"
+    image: gke.gcr.io/k8s-dns-kube-dns-amd64:1.15.16-gke.0
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 5
+      httpGet:
+        path: /healthcheck/kubedns
+        port: 10054
+        scheme: HTTP
+      initialDelaySeconds: 60
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 5
+    name: kubedns
+    ports:
+    - containerPort: 10053
+      name: dns-local
+      protocol: UDP
+    - containerPort: 10053
+      name: dns-tcp-local
+      protocol: TCP
+    - containerPort: 10055
+      name: metrics
+      protocol: TCP
+    readinessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /readiness
+        port: 8081
+        scheme: HTTP
+      initialDelaySeconds: 3
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 5
+    resources:
+      limits:
+        memory: 210Mi
+      requests:
+        cpu: 100m
+        memory: 70Mi
+    securityContext:
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+      runAsGroup: 1001
+      runAsUser: 1001
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /kube-dns-config
+      name: kube-dns-config
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-dns-token-gvk7l
+      readOnly: true
+  - args:
+    - -v=2
+    - -logtostderr
+    - -configDir=/etc/k8s/dns/dnsmasq-nanny
+    - -restartDnsmasq=true
+    - --
+    - -k
+    - --cache-size=1000
+    - --no-negcache
+    - --dns-forward-max=1500
+    - --log-facility=-
+    - --server=/cluster.local/127.0.0.1#10053
+    - --server=/in-addr.arpa/127.0.0.1#10053
+    - --server=/ip6.arpa/127.0.0.1#10053
+    image: gke.gcr.io/k8s-dns-dnsmasq-nanny-amd64:1.15.16-gke.0
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 5
+      httpGet:
+        path: /healthcheck/dnsmasq
+        port: 10054
+        scheme: HTTP
+      initialDelaySeconds: 60
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 5
+    name: dnsmasq
+    ports:
+    - containerPort: 53
+      name: dns
+      protocol: UDP
+    - containerPort: 53
+      name: dns-tcp
+      protocol: TCP
+    resources:
+      requests:
+        cpu: 150m
+        memory: 20Mi
+    securityContext:
+      capabilities:
+        add:
+        - NET_BIND_SERVICE
+        - SETGID
+        drop:
+        - all
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /etc/k8s/dns/dnsmasq-nanny
+      name: kube-dns-config
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-dns-token-gvk7l
+      readOnly: true
+  - args:
+    - --v=2
+    - --logtostderr
+    - --probe=kubedns,127.0.0.1:10053,kubernetes.default.svc.cluster.local,5,SRV
+    - --probe=dnsmasq,127.0.0.1:53,kubernetes.default.svc.cluster.local,5,SRV
+    image: gke.gcr.io/k8s-dns-sidecar-amd64:1.15.16-gke.0
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 5
+      httpGet:
+        path: /metrics
+        port: 10054
+        scheme: HTTP
+      initialDelaySeconds: 60
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 5
+    name: sidecar
+    ports:
+    - containerPort: 10054
+      name: metrics
+      protocol: TCP
+    resources:
+      requests:
+        cpu: 10m
+        memory: 20Mi
+    securityContext:
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+      runAsGroup: 1001
+      runAsUser: 1001
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-dns-token-gvk7l
+      readOnly: true
+  - command:
+    - /monitor
+    - --source=kubedns:http://localhost:10054?whitelisted=probe_kubedns_latency_ms,probe_kubedns_errors,dnsmasq_misses,dnsmasq_hits
+    - --stackdriver-prefix=container.googleapis.com/internal/addons
+    - --api-override=https://monitoring.googleapis.com/
+    - --pod-id=$(POD_NAME)
+    - --namespace-id=$(POD_NAMESPACE)
+    - --v=2
+    env:
+    - name: POD_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.name
+    - name: POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    image: gke.gcr.io/prometheus-to-sd:v0.4.2
+    imagePullPolicy: IfNotPresent
+    name: prometheus-to-sd
+    resources: {}
+    securityContext:
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+      runAsGroup: 1001
+      runAsUser: 1001
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-dns-token-gvk7l
+      readOnly: true
+  dnsPolicy: Default
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-nap-n1-standard--0a7ecf20-446q
+  nodeSelector:
+    beta.kubernetes.io/os: linux
+  priority: 2000000000
+  priorityClassName: system-cluster-critical
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext:
+    fsGroup: 65534
+    supplementalGroups:
+    - 65534
+  serviceAccount: kube-dns
+  serviceAccountName: kube-dns
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - key: CriticalAddonsOnly
+    operator: Exists
+  - key: components.gke.io/gke-managed-components
+    operator: Exists
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - configMap:
+      defaultMode: 420
+      name: kube-dns
+      optional: true
+    name: kube-dns-config
+  - name: kube-dns-token-gvk7l
+    secret:
+      defaultMode: 420
+      secretName: kube-dns-token-gvk7l
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:43:34Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:43:56Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:43:56Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:43:34Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://f7619a9d543247a1c81bfdc36f391a3282771db408a85852199904d48e8f1daf
+    image: gke.gcr.io/k8s-dns-dnsmasq-nanny-amd64:1.15.16-gke.0
+    imageID: docker-pullable://gke.gcr.io/k8s-dns-dnsmasq-nanny-amd64@sha256:bd25b644c9e14dcfe77f54ec7f249b151850f6ad23548e02046aa9204fb11d25
+    lastState: {}
+    name: dnsmasq
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-11T14:43:45Z"
+  - containerID: docker://943ad95ebaf381a2132e4d84e2f6940e7687b3008bc2a8e6d45df986803ebe87
+    image: gke.gcr.io/k8s-dns-kube-dns-amd64:1.15.16-gke.0
+    imageID: docker-pullable://gke.gcr.io/k8s-dns-kube-dns-amd64@sha256:9e76595f4bf8490bbaff6acfcc1f3243a4bb112481f7f59b3a52c2b09e6ced3c
+    lastState: {}
+    name: kubedns
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-11T14:43:42Z"
+  - containerID: docker://bff44f3f129a6f306846555d9f37161d9510b1d192cd11c7363ff2050f96cf8a
+    image: gke.gcr.io/prometheus-to-sd:v0.4.2
+    imageID: docker-pullable://gke.gcr.io/prometheus-to-sd@sha256:aca8ef83a7fae83f1f8583e978dd4d1ff655b9f2ca0a76bda5edce6d8965bdf2
+    lastState: {}
+    name: prometheus-to-sd
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-11T14:43:51Z"
+  - containerID: docker://e11c252fcde699037fcff7eeee52642d7518f568ca5c19d03ece13278bd723b5
+    image: gke.gcr.io/k8s-dns-sidecar-amd64:1.15.16-gke.0
+    imageID: docker-pullable://gke.gcr.io/k8s-dns-sidecar-amd64@sha256:f890a184d953ef2a80f756ff1ab93e92cc6cd76cdb0c89b56d1d30846d72249b
+    lastState: {}
+    name: sidecar
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-11T14:43:49Z"
+  hostIP: 10.128.0.14
+  phase: Running
+  podIP: 10.8.8.245
+  podIPs:
+  - ip: 10.8.8.245
+  qosClass: Burstable
+  startTime: "2020-11-11T14:43:34Z"

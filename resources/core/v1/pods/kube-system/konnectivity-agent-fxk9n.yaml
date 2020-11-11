@@ -1,0 +1,173 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    components.gke.io/component-name: konnectivitynetworkproxy-agent
+    components.gke.io/component-version: 0.0.14
+  creationTimestamp: "2020-11-11T14:42:36Z"
+  generateName: konnectivity-agent-
+  labels:
+    controller-revision-hash: 54c7865d77
+    k8s-app: konnectivity-agent
+    pod-template-generation: "1"
+  name: konnectivity-agent-fxk9n
+  namespace: kube-system
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: DaemonSet
+    name: konnectivity-agent
+    uid: f4fadd16-4555-460b-bad4-94449c58ca4d
+  resourceVersion: "27455524"
+  selfLink: /api/v1/namespaces/kube-system/pods/konnectivity-agent-fxk9n
+  uid: 02bec8e2-01c7-4f8f-9dd1-0cd67ddd767b
+spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchFields:
+          - key: metadata.name
+            operator: In
+            values:
+            - gke-jstrachan-tekton-default-pool-154aeb80-pmxj
+  containers:
+  - args:
+    - --logtostderr=true
+    - --ca-cert=/var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+    - --proxy-server-host=35.238.250.202
+    - --proxy-server-port=8132
+    - --health-server-port=8093
+    - --admin-server-port=8094
+    - --service-account-token-path=/var/run/secrets/tokens/konnectivity-agent-token
+    command:
+    - /proxy-agent
+    env:
+    - name: POD_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.name
+    - name: POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    image: gke.gcr.io/proxy-agent-amd64:v0.0.12-gke.0
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /healthz
+        port: 8093
+        scheme: HTTP
+      initialDelaySeconds: 15
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 15
+    name: konnectivity-agent
+    ports:
+    - containerPort: 8093
+      name: metrics
+      protocol: TCP
+    resources:
+      limits:
+        memory: 30Mi
+      requests:
+        memory: 30Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/tokens
+      name: konnectivity-agent-token
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: konnectivity-agent-token-fj2zv
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-pmxj
+  priority: 2000000000
+  priorityClassName: system-cluster-critical
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext:
+    fsGroup: 1000
+    runAsGroup: 1000
+    runAsUser: 1000
+  serviceAccount: konnectivity-agent
+  serviceAccountName: konnectivity-agent
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - key: CriticalAddonsOnly
+    operator: Exists
+  - key: components.gke.io/gke-managed-components
+    operator: Exists
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/disk-pressure
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/memory-pressure
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/pid-pressure
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/unschedulable
+    operator: Exists
+  volumes:
+  - name: konnectivity-agent-token
+    projected:
+      defaultMode: 420
+      sources:
+      - serviceAccountToken:
+          audience: system:konnectivity-server
+          expirationSeconds: 3600
+          path: konnectivity-agent-token
+  - name: konnectivity-agent-token-fj2zv
+    secret:
+      defaultMode: 420
+      secretName: konnectivity-agent-token-fj2zv
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:42:37Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:43:53Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:43:53Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:42:37Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://7f9517cb64632f6d16f38666dc0d3c366efb2aef92be8a3108cba8006aae28f7
+    image: gke.gcr.io/proxy-agent-amd64:v0.0.12-gke.0
+    imageID: docker-pullable://gke.gcr.io/proxy-agent-amd64@sha256:48d0539837896b0680b36e880b9cbbba8daadf40bfb76805431006e409ad9e48
+    lastState: {}
+    name: konnectivity-agent
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-11T14:42:40Z"
+  hostIP: 10.128.0.11
+  phase: Running
+  podIP: 10.8.7.162
+  podIPs:
+  - ip: 10.8.7.162
+  qosClass: Burstable
+  startTime: "2020-11-11T14:42:37Z"

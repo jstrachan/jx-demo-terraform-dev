@@ -1,0 +1,213 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    components.gke.io/component-name: gke-metadata-server
+    components.gke.io/component-version: 0.3.139
+    monitoring.gke.io/path: /metricz
+  creationTimestamp: "2020-11-11T14:43:59Z"
+  generateName: gke-metadata-server-
+  labels:
+    addonmanager.kubernetes.io/mode: Reconcile
+    controller-revision-hash: 59b66f9948
+    k8s-app: gke-metadata-server
+    pod-template-generation: "3"
+  name: gke-metadata-server-vtzqp
+  namespace: kube-system
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: DaemonSet
+    name: gke-metadata-server
+    uid: acc5a97c-7f05-4279-9345-b3bd6d3ff40e
+  resourceVersion: "27455716"
+  selfLink: /api/v1/namespaces/kube-system/pods/gke-metadata-server-vtzqp
+  uid: 7ac56640-46a4-48b6-8bbb-9174867f99d0
+spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchFields:
+          - key: metadata.name
+            operator: In
+            values:
+            - gke-jstrachan-tekton-default-pool-154aeb80-pmxj
+  containers:
+  - command:
+    - /gke-metadata-server
+    - --logtostderr
+    - --token-exchange-endpoint=https://securetoken.googleapis.com/v1/identitybindingtoken
+    - --workload-pool=jenkins-x-labs-bdd.svc.id.goog
+    - --identity-provider=https://container.googleapis.com/v1/projects/jenkins-x-labs-bdd/locations/us-central1-a/clusters/jstrachan-tekton
+    - --passthrough-ksa-list=kube-system:container-watcher-pod-reader,kube-system:event-exporter-sa,kube-system:fluentd-gcp-scaler,kube-system:heapster,kube-system:kube-dns,kube-system:metadata-agent,kube-system:network-metering-agent,kube-system:securityprofile-controller,istio-system:istio-ingressgateway-service-account,istio-system:cluster-local-gateway-service-account,csm:csm-sync-agent,knative-serving:controller
+    - --attributes=cluster-name=jstrachan-tekton,cluster-uid=a34ca6aa1b392cc23fe288fb90ab4390abb91c54174eda9910ae21059fb113b5,cluster-location=us-central1-a
+    - --cluster-uid=a34ca6aa1b392cc23fe288fb90ab4390abb91c54174eda9910ae21059fb113b5
+    - --stackdriver-profiler-upload-project=gke-cpprof-prod
+    image: gke.gcr.io/gke-metadata-server:20201102_0300_RC0
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 3
+      httpGet:
+        host: 127.0.0.1
+        path: /healthz
+        port: 989
+        scheme: HTTP
+      initialDelaySeconds: 30
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+    name: gke-metadata-server
+    ports:
+    - containerPort: 989
+      hostPort: 989
+      name: metrics
+      protocol: TCP
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100Mi
+      requests:
+        cpu: 100m
+        memory: 100Mi
+    securityContext:
+      privileged: true
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/lib/kubelet/kubeconfig
+      name: kubelet-credentials
+      readOnly: true
+    - mountPath: /var/lib/kubelet/pki/
+      name: kubelet-certs
+      readOnly: true
+    - mountPath: /var/run/
+      name: container-runtime-interface
+    - mountPath: /etc/srv/kubernetes/pki
+      name: kubelet-pki
+      readOnly: true
+    - mountPath: /etc/ssl/certs/
+      name: ca-certificates
+      readOnly: true
+    - mountPath: /home/kubernetes/bin/gke-exec-auth-plugin
+      name: gke-exec-auth-plugin
+      readOnly: true
+    - mountPath: /dev/tpm0
+      name: tpm0
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: gke-metadata-server-token-k9vvf
+      readOnly: true
+  dnsPolicy: Default
+  enableServiceLinks: true
+  hostNetwork: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-pmxj
+  nodeSelector:
+    beta.kubernetes.io/os: linux
+    iam.gke.io/gke-metadata-server-enabled: "true"
+  priority: 2000001000
+  priorityClassName: system-node-critical
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: gke-metadata-server
+  serviceAccountName: gke-metadata-server
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    operator: Exists
+  - effect: NoSchedule
+    operator: Exists
+  - key: components.gke.io/gke-managed-components
+    operator: Exists
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/disk-pressure
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/memory-pressure
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/pid-pressure
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/unschedulable
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/network-unavailable
+    operator: Exists
+  volumes:
+  - hostPath:
+      path: /var/lib/kubelet/pki/
+      type: Directory
+    name: kubelet-certs
+  - hostPath:
+      path: /var/lib/kubelet/kubeconfig
+      type: File
+    name: kubelet-credentials
+  - hostPath:
+      path: /var/run/
+      type: Directory
+    name: container-runtime-interface
+  - hostPath:
+      path: /etc/srv/kubernetes/pki/
+      type: Directory
+    name: kubelet-pki
+  - hostPath:
+      path: /etc/ssl/certs/
+      type: Directory
+    name: ca-certificates
+  - hostPath:
+      path: /home/kubernetes/bin/gke-exec-auth-plugin
+      type: File
+    name: gke-exec-auth-plugin
+  - hostPath:
+      path: /dev/tpm0
+      type: CharDevice
+    name: tpm0
+  - name: gke-metadata-server-token-k9vvf
+    secret:
+      defaultMode: 420
+      secretName: gke-metadata-server-token-k9vvf
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:44:00Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:44:04Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:44:04Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:44:00Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://9e2a15b6d7007f15378f5c1e889d6bee111936189a54d1afe8e15d3a2ca4f2bd
+    image: gke.gcr.io/gke-metadata-server:20201102_0300_RC0
+    imageID: docker-pullable://gke.gcr.io/gke-metadata-server@sha256:8432168c493491318f0df27062ee45907ee482f239096f34d92e9a9c7e93a261
+    lastState: {}
+    name: gke-metadata-server
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-11T14:44:04Z"
+  hostIP: 10.128.0.11
+  phase: Running
+  podIP: 10.128.0.11
+  podIPs:
+  - ip: 10.128.0.11
+  qosClass: Guaranteed
+  startTime: "2020-11-11T14:44:00Z"

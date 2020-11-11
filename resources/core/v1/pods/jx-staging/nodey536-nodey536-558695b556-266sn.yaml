@@ -18,7 +18,7 @@ metadata:
     kind: ReplicaSet
     name: nodey536-nodey536-558695b556
     uid: da3d4bb3-4b3f-4596-bacd-91ba53c5b8df
-  resourceVersion: "27452290"
+  resourceVersion: "27456314"
   selfLink: /api/v1/namespaces/jx-staging/pods/nodey536-nodey536-558695b556-266sn
   uid: 2b20f443-4a98-463c-acbf-d0761a924ca2
 spec:
