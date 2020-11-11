@@ -1,0 +1,22 @@
+time="2020-11-11T13:09:19Z" level=info msg="Found instance namespace: kuberhealthy"
+time="2020-11-11T13:09:19Z" level=info msg="Kuberhealthy is located in the kuberhealthy namespace."
+time="2020-11-11T13:09:19Z" level=info msg="Check time limit set to: 14m48.127073876s"
+time="2020-11-11T13:09:19Z" level=info msg="Check pod is running on node: gke-****-tekton-nap-n1-standard--0a7ecf20-446q"
+time="2020-11-11T13:09:19Z" level=debug msg="Getting pod: dns-status-internal-1605100152 in order to get its node information"
+time="2020-11-11T13:09:19Z" level=error msg="Error waiting for node to reach minimum age: pods \"dns-status-internal-1605100152\" is forbidden: User \"system:serviceaccount:kuberhealthy:default\" cannot get resource \"pods\" in API group \"\" in the namespace \"kuberhealthy\""
+time="2020-11-11T13:09:19Z" level=debug msg="Checking if the kuberhealthy endpoint: http://kuberhealthy.kuberhealthy.svc.cluster.local/externalCheckStatus is ready."
+time="2020-11-11T13:09:19Z" level=debug msg="http://kuberhealthy.kuberhealthy.svc.cluster.local/externalCheckStatus is ready."
+time="2020-11-11T13:09:19Z" level=debug msg="Kuberhealthy endpoint: http://kuberhealthy.kuberhealthy.svc.cluster.local/externalCheckStatus is ready. Proceeding to run check."
+time="2020-11-11T13:09:19Z" level=debug msg="Getting pod: dns-status-internal-1605100152 in order to get its node information"
+time="2020-11-11T13:09:19Z" level=error msg="Error waiting for kube proxy to be ready: error getting kuberhealthy pod: pods \"dns-status-internal-1605100152\" is forbidden: User \"system:serviceaccount:kuberhealthy:default\" cannot get resource \"pods\" in API group \"\" in the namespace \"kuberhealthy\""
+time="2020-11-11T13:09:19Z" level=info msg="Running DNS status checker"
+time="2020-11-11T13:09:19Z" level=info msg="DNS Status check testing hostname: kubernetes.default"
+time="2020-11-11T13:09:19Z" level=info msg="DNS Status check determined that kubernetes.default was OK."
+2020/11/11 13:09:19 checkClient: DEBUG: Reporting SUCCESS
+2020/11/11 13:09:19 checkClient: DEBUG: Sending report with error length of:0
+2020/11/11 13:09:19 checkClient: DEBUG: Sending report with ok state of:true
+2020/11/11 13:09:19 checkClient: INFO: Using kuberhealthy reporting URL:http://kuberhealthy.kuberhealthy.svc.cluster.local/externalCheckStatus
+2020/11/11 13:09:19 checkClient: DEBUG: Making POST request to kuberhealthy:
+2020/11/11 13:09:20 checkClient: INFO: Got a good http return status code from kuberhealthy URL:http://kuberhealthy.kuberhealthy.svc.cluster.local/externalCheckStatus
+time="2020-11-11T13:09:20Z" level=info msg="Successfully reported success to Kuberhealthy servers"
+time="2020-11-11T13:09:20Z" level=info msg="Done running DNS Status check for hostname: kubernetes.default"

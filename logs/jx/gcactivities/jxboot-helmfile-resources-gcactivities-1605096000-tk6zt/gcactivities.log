@@ -1,0 +1,5 @@
+{"level":"info","msg":"deleting PipelineActivity ****-jx-demo-terraform-dev-pr-78-2","time":"2020-11-11T12:00:02Z"}
+{"level":"info","msg":"deleting PipelineActivity ****-jx-demo-terraform-dev-pr-78-1","time":"2020-11-11T12:00:02Z"}
+{"level":"info","msg":"deleting PipelineActivity ****-jx-demo-terraform-dev-pr-77-3","time":"2020-11-11T12:00:02Z"}
+{"level":"info","msg":"deleting PipelineActivity ****-jx-demo-terraform-dev-pr-77-2","time":"2020-11-11T12:00:02Z"}
+{"level":"warning","msg":"no ProwJob instances found: prowjobs.prow.k8s.io is forbidden: User \"system:serviceaccount:jx:jxboot-helmfile-resources-gcactivities\" cannot list resource \"prowjobs\" in API group \"prow.k8s.io\" in the namespace \"jx\"","time":"2020-11-11T12:00:02Z"}

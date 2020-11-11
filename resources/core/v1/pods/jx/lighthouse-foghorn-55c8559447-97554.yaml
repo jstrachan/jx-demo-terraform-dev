@@ -1,0 +1,127 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    wave.pusher.com/config-hash: d2b9232b24905e8c38452f792e043ec3970a5a4c120815b640f115a7352f407a
+  creationTimestamp: "2020-11-11T13:20:16Z"
+  generateName: lighthouse-foghorn-55c8559447-
+  labels:
+    app: lighthouse-foghorn
+    draft: draft-app
+    pod-template-hash: 55c8559447
+  name: lighthouse-foghorn-55c8559447-97554
+  namespace: jx
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: lighthouse-foghorn-55c8559447
+    uid: a820f2bc-bc00-4d05-932e-a0524ed5ca0d
+  resourceVersion: "27408460"
+  selfLink: /api/v1/namespaces/jx/pods/lighthouse-foghorn-55c8559447-97554
+  uid: 5cf93ebc-785f-422b-8c40-f3934b51b317
+spec:
+  containers:
+  - args:
+    - --namespace=jx
+    env:
+    - name: GIT_KIND
+      value: github
+    - name: GIT_SERVER
+      value: https://github.com
+    - name: GIT_USER
+    - name: GIT_TOKEN
+      valueFrom:
+        secretKeyRef:
+          key: oauth
+          name: lighthouse-oauth-token
+    - name: JX_LOG_FORMAT
+      value: json
+    - name: LOGRUS_FORMAT
+      value: json
+    - name: DEFAULT_PIPELINE_RUN_SERVICE_ACCOUNT
+      value: tekton-bot
+    - name: DEFAULT_PIPELINE_RUN_TIMEOUT
+      value: 2h0m0s
+    - name: JX_DEFAULT_IMAGE
+      value: gcr.io/jenkinsxio/builder-maven:2.1.142-761
+    - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
+      value: namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}
+    image: gcr.io/jenkinsxio/lighthouse-foghorn:0.0.874
+    imagePullPolicy: IfNotPresent
+    name: lighthouse-foghorn
+    resources:
+      limits:
+        cpu: 100m
+        memory: 256Mi
+      requests:
+        cpu: 80m
+        memory: 128Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: lighthouse-foghorn-token-jfrmv
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-n21q
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: lighthouse-foghorn
+  serviceAccountName: lighthouse-foghorn
+  terminationGracePeriodSeconds: 180
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: lighthouse-foghorn-token-jfrmv
+    secret:
+      defaultMode: 420
+      secretName: lighthouse-foghorn-token-jfrmv
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:20:16Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:20:20Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:20:20Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:20:16Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://5c672a5089732ebd79edafc04f79d2462e4bb2d7a0497be6049758a4dd27792c
+    image: gcr.io/jenkinsxio/lighthouse-foghorn:0.0.874
+    imageID: docker-pullable://gcr.io/jenkinsxio/lighthouse-foghorn@sha256:285c29177e35aa3bdd9d380a5f8346f07247ba78061de8e65daf5bf18bc70af7
+    lastState: {}
+    name: lighthouse-foghorn
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-11T13:20:19Z"
+  hostIP: 10.128.0.5
+  phase: Running
+  podIP: 10.8.5.212
+  podIPs:
+  - ip: 10.8.5.212
+  qosClass: Burstable
+  startTime: "2020-11-11T13:20:16Z"

@@ -1,0 +1,21 @@
+I1107 03:05:11.960568       1 flags.go:52] FLAG: --alsologtostderr="false"
+I1107 03:05:11.960643       1 flags.go:52] FLAG: --dnsmasq-addr="127.0.0.1"
+I1107 03:05:11.960652       1 flags.go:52] FLAG: --dnsmasq-poll-interval-ms="5000"
+I1107 03:05:11.960660       1 flags.go:52] FLAG: --dnsmasq-port="53"
+I1107 03:05:11.960665       1 flags.go:52] FLAG: --log-backtrace-at=":0"
+I1107 03:05:11.960672       1 flags.go:52] FLAG: --log-dir=""
+I1107 03:05:11.960678       1 flags.go:52] FLAG: --log-flush-frequency="5s"
+I1107 03:05:11.960685       1 flags.go:52] FLAG: --logtostderr="true"
+I1107 03:05:11.960691       1 flags.go:52] FLAG: --probe="[{Label:kubedns Server:127.0.0.1:10053 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:33} {Label:dnsmasq Server:127.0.0.1:53 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:33}]"
+I1107 03:05:11.960738       1 flags.go:52] FLAG: --prometheus-addr="0.0.0.0"
+I1107 03:05:11.960746       1 flags.go:52] FLAG: --prometheus-namespace="kubedns"
+I1107 03:05:11.960753       1 flags.go:52] FLAG: --prometheus-path="/metrics"
+I1107 03:05:11.960762       1 flags.go:52] FLAG: --prometheus-port="10054"
+I1107 03:05:11.960768       1 flags.go:52] FLAG: --stderrthreshold="2"
+I1107 03:05:11.960774       1 flags.go:52] FLAG: --v="2"
+I1107 03:05:11.960780       1 flags.go:52] FLAG: --version="false"
+I1107 03:05:11.960790       1 flags.go:52] FLAG: --vmodule=""
+I1107 03:05:11.960821       1 main.go:51] Version v1.15.13
+I1107 03:05:11.960834       1 server.go:46] Starting server (options {DnsMasqPort:53 DnsMasqAddr:127.0.0.1 DnsMasqPollIntervalMs:5000 Probes:[{Label:kubedns Server:127.0.0.1:10053 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:33} {Label:dnsmasq Server:127.0.0.1:53 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:33}] PrometheusAddr:0.0.0.0 PrometheusPort:10054 PrometheusPath:/metrics PrometheusNamespace:kubedns})
+I1107 03:05:11.960915       1 dnsprobe.go:75] Starting dnsProbe {Label:kubedns Server:127.0.0.1:10053 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:33}
+I1107 03:05:11.960972       1 dnsprobe.go:75] Starting dnsProbe {Label:dnsmasq Server:127.0.0.1:53 Name:kubernetes.default.svc.cluster.local. Interval:5s Type:33}

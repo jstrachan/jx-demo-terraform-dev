@@ -1,0 +1,122 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    wave.pusher.com/config-hash: 100444e91862dd77d7ebe29f050c1e9a7f357c771e1a7b7650aae27e6a3a031d
+  creationTimestamp: "2020-11-11T13:20:21Z"
+  generateName: lighthouse-tekton-controller-55665cdd4f-
+  labels:
+    app: lighthouse-tekton-controller
+    draft: draft-app
+    pod-template-hash: 55665cdd4f
+  name: lighthouse-tekton-controller-55665cdd4f-9xlbm
+  namespace: jx
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: lighthouse-tekton-controller-55665cdd4f
+    uid: c88a6fd3-5e99-428f-8bdc-bf9f223bf531
+  resourceVersion: "27408537"
+  selfLink: /api/v1/namespaces/jx/pods/lighthouse-tekton-controller-55665cdd4f-9xlbm
+  uid: e1046f91-598a-4ff6-8db8-7ae77f6be5a0
+spec:
+  affinity: {}
+  containers:
+  - args:
+    - --namespace=jx
+    - --dashboard-url=http://dashboard-jx.
+    - --dashboard-template=namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}
+    env:
+    - name: LOGRUS_FORMAT
+      value: json
+    - name: DEFAULT_PIPELINE_RUN_SERVICE_ACCOUNT
+      value: tekton-bot
+    - name: DEFAULT_PIPELINE_RUN_TIMEOUT
+      value: 2h0m0s
+    - name: JX_DEFAULT_IMAGE
+      value: gcr.io/jenkinsxio/builder-maven:2.1.142-761
+    - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
+      value: namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}
+    image: gcr.io/jenkinsxio/lighthouse-tekton-controller:0.0.874
+    imagePullPolicy: IfNotPresent
+    name: lighthouse-tekton-controller
+    ports:
+    - containerPort: 8080
+      name: metrics
+      protocol: TCP
+    resources:
+      limits:
+        cpu: 100m
+        memory: 256Mi
+      requests:
+        cpu: 80m
+        memory: 128Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: lighthouse-tekton-controller-token-8nw4v
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-n21q
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: lighthouse-tekton-controller
+  serviceAccountName: lighthouse-tekton-controller
+  terminationGracePeriodSeconds: 180
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: lighthouse-tekton-controller-token-8nw4v
+    secret:
+      defaultMode: 420
+      secretName: lighthouse-tekton-controller-token-8nw4v
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:20:21Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:20:26Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:20:26Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:20:21Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://5281564fe1520da876f0c1d8954031c61d600db4b364e4454a40f85d76bb6b91
+    image: gcr.io/jenkinsxio/lighthouse-tekton-controller:0.0.874
+    imageID: docker-pullable://gcr.io/jenkinsxio/lighthouse-tekton-controller@sha256:d7afa8873f4b647d0dbb9c778c49ce35235a3ce5230fd65ca132a24f1cfceaad
+    lastState: {}
+    name: lighthouse-tekton-controller
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-11T13:20:25Z"
+  hostIP: 10.128.0.5
+  phase: Running
+  podIP: 10.8.5.214
+  podIPs:
+  - ip: 10.8.5.214
+  qosClass: Burstable
+  startTime: "2020-11-11T13:20:21Z"

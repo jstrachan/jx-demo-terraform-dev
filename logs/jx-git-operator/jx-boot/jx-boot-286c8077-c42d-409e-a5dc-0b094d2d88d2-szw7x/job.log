@@ -1,0 +1,337 @@
+jx gitops git setup
+about to run: git config --global --add user.name ****
+about to run: git config --global --add user.email jenkins-x@googlegroups.com
+about to run: git config --global credential.helper store in dir /home
+Generated Git credentials file /home/.config/git/credentials
+jx gitops apply
+found last commit message: chore: regenerated
+
+/pipeline cancel
+last commit disabled further processing
+# NOTE be very careful about these 2 labels as getting them wrong can remove stuff in you cluster!
+kubectl apply --prune -l=gitops.jenkins-x.io/pipeline=cluster    -R -f config-root/cluster
+customresourcedefinition.apiextensions.k8s.io/apps.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/buildpacks.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/commitstatuses.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/environmentrolebindings.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/environments.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/extensions.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/facts.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/gitservices.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/pipelineactivities.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/pipelinestructures.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/plugins.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/releases.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/schedulers.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/sourcerepositories.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/sourcerepositorygroups.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/teams.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/users.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/workflows.jenkins.io configured
+clusterrole.rbac.authorization.k8s.io/jx-build-controller-jx unchanged
+clusterrolebinding.rbac.authorization.k8s.io/jx-build-controller-jx unchanged
+clusterrole.rbac.authorization.k8s.io/jx-pipelines-visualizer unchanged
+clusterrolebinding.rbac.authorization.k8s.io/jx-pipelines-visualizer unchanged
+clusterrole.rbac.authorization.k8s.io/jx-preview-gc-jobs unchanged
+clusterrolebinding.rbac.authorization.k8s.io/jx-preview-gc-jobs unchanged
+customresourcedefinition.apiextensions.k8s.io/previews.preview.jenkins.io unchanged
+clusterrole.rbac.authorization.k8s.io/gcactivities-jx unchanged
+clusterrolebinding.rbac.authorization.k8s.io/gcactivities-jx unchanged
+clusterrole.rbac.authorization.k8s.io/tekton-bot unchanged
+clusterrolebinding.rbac.authorization.k8s.io/tekton-bot-jx unchanged
+customresourcedefinition.apiextensions.k8s.io/lighthousejobs.lighthouse.jenkins.io unchanged
+namespace/jx-production configured
+namespace/jx-staging configured
+namespace/jx unchanged
+namespace/nginx configured
+namespace/secret-infra configured
+clusterrole.rbac.authorization.k8s.io/nginx-ingress unchanged
+clusterrolebinding.rbac.authorization.k8s.io/nginx-ingress unchanged
+customresourcedefinition.apiextensions.k8s.io/externalsecrets.kubernetes-client.io unchanged
+clusterrolebinding.rbac.authorization.k8s.io/kubernetes-external-secrets-auth unchanged
+clusterrole.rbac.authorization.k8s.io/kubernetes-external-secrets unchanged
+clusterrolebinding.rbac.authorization.k8s.io/kubernetes-external-secrets unchanged
+clusterrole.rbac.authorization.k8s.io/pusher-wave-pusher-wave unchanged
+clusterrolebinding.rbac.authorization.k8s.io/pusher-wave-pusher-wave unchanged
+customresourcedefinition.apiextensions.k8s.io/clustertasks.tekton.dev configured
+customresourcedefinition.apiextensions.k8s.io/conditions.tekton.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/images.caching.internal.knative.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/pipelineresources.tekton.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/pipelineruns.tekton.dev configured
+customresourcedefinition.apiextensions.k8s.io/pipelines.tekton.dev configured
+customresourcedefinition.apiextensions.k8s.io/runs.tekton.dev configured
+customresourcedefinition.apiextensions.k8s.io/taskruns.tekton.dev configured
+customresourcedefinition.apiextensions.k8s.io/tasks.tekton.dev configured
+clusterrole.rbac.authorization.k8s.io/tekton-aggregate-edit unchanged
+clusterrole.rbac.authorization.k8s.io/tekton-aggregate-view unchanged
+clusterrole.rbac.authorization.k8s.io/tekton-pipelines-controller-cluster-access unchanged
+clusterrolebinding.rbac.authorization.k8s.io/tekton-pipelines-controller-cluster-access unchanged
+clusterrolebinding.rbac.authorization.k8s.io/tekton-pipelines-controller-leaderelection unchanged
+clusterrole.rbac.authorization.k8s.io/tekton-pipelines-controller-tenant-access unchanged
+clusterrolebinding.rbac.authorization.k8s.io/tekton-pipelines-controller-tenant-access unchanged
+clusterrole.rbac.authorization.k8s.io/tekton-pipelines-leader-election unchanged
+namespace/tekton-pipelines unchanged
+clusterrole.rbac.authorization.k8s.io/tekton-pipelines-webhook-cluster-access unchanged
+clusterrolebinding.rbac.authorization.k8s.io/tekton-pipelines-webhook-cluster-access unchanged
+clusterrolebinding.rbac.authorization.k8s.io/tekton-pipelines-webhook-leaderelection unchanged
+kubectl apply --prune -l=gitops.jenkins-x.io/pipeline=namespaces -R -f config-root/namespaces
+deployment.apps/jenkins-x-chartmuseum unchanged
+persistentvolumeclaim/jenkins-x-chartmuseum unchanged
+externalsecret.kubernetes-client.io/jenkins-x-chartmuseum unchanged
+service/jenkins-x-chartmuseum unchanged
+serviceaccount/jenkins-x-controllerbuild unchanged
+deployment.apps/jx-build-controller configured
+rolebinding.rbac.authorization.k8s.io/jx-build-controller unchanged
+role.rbac.authorization.k8s.io/jx-build-controller unchanged
+kuberhealthycheck.comcast.github.io/jx-bot-token unchanged
+release.jenkins.io/jx-kh-check-0.0.32 configured
+rolebinding.rbac.authorization.k8s.io/jx-webhook-check-rb unchanged
+kuberhealthycheck.comcast.github.io/jx-webhook unchanged
+serviceaccount/jx-webhook-sa unchanged
+role.rbac.authorization.k8s.io/jx-webhook-service-role unchanged
+deployment.apps/jx-pipelines-visualizer configured
+ingress.networking.k8s.io/jx-pipelines-visualizer unchanged
+serviceaccount/jx-pipelines-visualizer unchanged
+service/jx-pipelines-visualizer unchanged
+cronjob.batch/jx-preview-gc-jobs unchanged
+rolebinding.rbac.authorization.k8s.io/jx-preview-gc-jobs unchanged
+role.rbac.authorization.k8s.io/jx-preview-gc-jobs unchanged
+serviceaccount/jx-preview-gc-jobs unchanged
+ingress.networking.k8s.io/chartmuseum unchanged
+release.jenkins.io/gcactivities-2.0.1143 configured
+rolebinding.rbac.authorization.k8s.io/gcactivities unchanged
+role.rbac.authorization.k8s.io/gcactivities unchanged
+cronjob.batch/jxboot-helmfile-resources-gcactivities unchanged
+serviceaccount/jxboot-helmfile-resources-gcactivities unchanged
+release.jenkins.io/gcpods-2.0.1143 configured
+rolebinding.rbac.authorization.k8s.io/gcpods unchanged
+role.rbac.authorization.k8s.io/gcpods unchanged
+cronjob.batch/jxboot-helmfile-resources-gcpods unchanged
+serviceaccount/jxboot-helmfile-resources-gcpods unchanged
+role.rbac.authorization.k8s.io/committer unchanged
+scheduler.jenkins.io/default unchanged
+environment.jenkins.io/dev unchanged
+sourcerepository.jenkins.io/dev unchanged
+scheduler.jenkins.io/environment unchanged
+ingress.networking.k8s.io/hook unchanged
+scheduler.jenkins.io/in-repo unchanged
+configmap/ingress-config unchanged
+externalsecret.kubernetes-client.io/jenkins-docker-cfg unchanged
+externalsecret.kubernetes-client.io/jenkins-maven-settings unchanged
+externalsecret.kubernetes-client.io/jenkins-npm-token unchanged
+externalsecret.kubernetes-client.io/jenkins-release-gpg unchanged
+configmap/jenkins-x-devpod-config unchanged
+configmap/jenkins-x-docker-registry unchanged
+configmap/jenkins-x-extensions unchanged
+configmap/jenkins-x-pod-template-aws-cdk unchanged
+configmap/jenkins-x-pod-template-dlang unchanged
+configmap/jenkins-x-pod-template-go unchanged
+configmap/jenkins-x-pod-template-gradle unchanged
+configmap/jenkins-x-pod-template-jx-base unchanged
+configmap/jenkins-x-pod-template-machine-learning unchanged
+configmap/jenkins-x-pod-template-machine-learning-gpu unchanged
+configmap/jenkins-x-pod-template-maven unchanged
+configmap/jenkins-x-pod-template-maven-graalvm unchanged
+configmap/jenkins-x-pod-template-maven-java11 unchanged
+configmap/jenkins-x-pod-template-maven-nodejs unchanged
+configmap/jenkins-x-pod-template-newman unchanged
+configmap/jenkins-x-pod-template-nodejs unchanged
+configmap/jenkins-x-pod-template-nodejs10x unchanged
+configmap/jenkins-x-pod-template-nodejs12x unchanged
+configmap/jenkins-x-pod-template-nodejs8x unchanged
+configmap/jenkins-x-pod-template-packer unchanged
+configmap/jenkins-x-pod-template-php5x unchanged
+configmap/jenkins-x-pod-template-php7x unchanged
+configmap/jenkins-x-pod-template-promote unchanged
+configmap/jenkins-x-pod-template-python unchanged
+configmap/jenkins-x-pod-template-python2 unchanged
+configmap/jenkins-x-pod-template-python37 unchanged
+configmap/jenkins-x-pod-template-ruby unchanged
+configmap/jenkins-x-pod-template-rust unchanged
+configmap/jenkins-x-pod-template-scala unchanged
+configmap/jenkins-x-pod-template-swift unchanged
+configmap/jenkins-x-pod-template-terraform unchanged
+externalsecret.kubernetes-client.io/jx-basic-auth-htpasswd unchanged
+externalsecret.kubernetes-client.io/jx-basic-auth-user-password unchanged
+role.rbac.authorization.k8s.io/jx-pipeline-activity-updater unchanged
+externalsecret.kubernetes-client.io/jx-pipeline-git-github-github unchanged
+role.rbac.authorization.k8s.io/jx-view unchanged
+ingress.networking.k8s.io/nexus unchanged
+role.rbac.authorization.k8s.io/owner unchanged
+scheduler.jenkins.io/pr-only unchanged
+environment.jenkins.io/production unchanged
+scheduler.jenkins.io/release-only unchanged
+environment.jenkins.io/staging unchanged
+rolebinding.rbac.authorization.k8s.io/tekton-bot unchanged
+role.rbac.authorization.k8s.io/tekton-bot unchanged
+serviceaccount/tekton-bot configured
+externalsecret.kubernetes-client.io/tekton-container-registry-auth unchanged
+externalsecret.kubernetes-client.io/tekton-git unchanged
+role.rbac.authorization.k8s.io/viewer unchanged
+service/hook unchanged
+deployment.apps/lighthouse-foghorn unchanged
+rolebinding.rbac.authorization.k8s.io/lighthouse-foghorn unchanged
+role.rbac.authorization.k8s.io/lighthouse-foghorn unchanged
+serviceaccount/lighthouse-foghorn unchanged
+cronjob.batch/lighthouse-gc-jobs unchanged
+rolebinding.rbac.authorization.k8s.io/lighthouse-gc-jobs unchanged
+role.rbac.authorization.k8s.io/lighthouse-gc-jobs unchanged
+serviceaccount/lighthouse-gc-jobs unchanged
+externalsecret.kubernetes-client.io/lighthouse-hmac-token unchanged
+externalsecret.kubernetes-client.io/lighthouse-jenkins-token unchanged
+deployment.apps/lighthouse-keeper unchanged
+rolebinding.rbac.authorization.k8s.io/lighthouse-keeper unchanged
+role.rbac.authorization.k8s.io/lighthouse-keeper unchanged
+serviceaccount/lighthouse-keeper unchanged
+service/lighthouse-keeper unchanged
+externalsecret.kubernetes-client.io/lighthouse-oauth-token unchanged
+deployment.apps/lighthouse-tekton-controller configured
+rolebinding.rbac.authorization.k8s.io/lighthouse-tekton-controller unchanged
+role.rbac.authorization.k8s.io/lighthouse-tekton-controller unchanged
+serviceaccount/lighthouse-tekton-controller unchanged
+service/lighthouse-tekton-controller unchanged
+deployment.apps/lighthouse-webhooks unchanged
+rolebinding.rbac.authorization.k8s.io/lighthouse-webhooks unchanged
+role.rbac.authorization.k8s.io/lighthouse-webhooks unchanged
+serviceaccount/lighthouse-webhooks unchanged
+configmap/config configured
+configmap/jx-install-config unchanged
+pipeline.tekton.dev/jx-meta-pipeline configured
+configmap/plugins configured
+configmap/nexus unchanged
+deployment.apps/nexus-nexus configured
+persistentvolumeclaim/nexus-nexus unchanged
+externalsecret.kubernetes-client.io/nexus unchanged
+service/nexus unchanged
+sourcerepository.jenkins.io/cb-kubecd-bdd-gh-1602679032 unchanged
+sourcerepository.jenkins.io/cb-kubecd-bdd-gh-1603274485 unchanged
+sourcerepository.jenkins.io/cb-kubecd-bdd-gh-1603279273 unchanged
+sourcerepository.jenkins.io/cb-kubecd-bdd-gh-1603280035 unchanged
+sourcerepository.jenkins.io/cb-kubecd-bdd-gh-1604073644 unchanged
+sourcerepository.jenkins.io/****-mytap1 unchanged
+sourcerepository.jenkins.io/****-node-http-3ed56e893 unchanged
+sourcerepository.jenkins.io/****-nodey506 unchanged
+sourcerepository.jenkins.io/****-nodey507 unchanged
+sourcerepository.jenkins.io/****-nodey533 unchanged
+sourcerepository.jenkins.io/****-nodey534 unchanged
+sourcerepository.jenkins.io/****-nodey536 unchanged
+externalsecret.kubernetes-client.io/tekton-container-registry-auth unchanged
+release.jenkins.io/bdd-gh-1602679032-0.0.4 configured
+deployment.apps/bdd-gh-1602679032-bdd-gh-1602679032 configured
+ingress.extensions/bdd-gh-1602679032 unchanged
+service/bdd-gh-1602679032 unchanged
+externalsecret.kubernetes-client.io/tekton-container-registry-auth unchanged
+release.jenkins.io/nodey536-1.0.5 configured
+ingress.extensions/nodey536 unchanged
+deployment.apps/nodey536-nodey536 configured
+service/nodey536 unchanged
+serviceaccount/nginx-ingress-backend unchanged
+deployment.apps/nginx-ingress-controller configured
+poddisruptionbudget.policy/nginx-ingress-controller unchanged
+service/nginx-ingress-controller unchanged
+deployment.apps/nginx-ingress-default-backend configured
+service/nginx-ingress-default-backend unchanged
+rolebinding.rbac.authorization.k8s.io/nginx-ingress unchanged
+role.rbac.authorization.k8s.io/nginx-ingress unchanged
+serviceaccount/nginx-ingress unchanged
+deployment.apps/kubernetes-external-secrets unchanged
+serviceaccount/kubernetes-external-secrets unchanged
+service/kubernetes-external-secrets unchanged
+deployment.apps/pusher-wave-pusher-wave configured
+serviceaccount/pusher-wave-pusher-wave unchanged
+configmap/config-artifact-bucket unchanged
+configmap/config-artifact-pvc unchanged
+configmap/config-defaults unchanged
+configmap/config-leader-election unchanged
+configmap/config-logging unchanged
+configmap/config-observability unchanged
+validatingwebhookconfiguration.admissionregistration.k8s.io/config.webhook.pipeline.tekton.dev unchanged
+configmap/feature-flags unchanged
+serviceaccount/tekton-bot configured
+externalsecret.kubernetes-client.io/tekton-container-registry-auth unchanged
+externalsecret.kubernetes-client.io/tekton-git unchanged
+deployment.apps/tekton-pipelines-controller unchanged
+rolebinding.rbac.authorization.k8s.io/tekton-pipelines-controller unchanged
+role.rbac.authorization.k8s.io/tekton-pipelines-controller unchanged
+serviceaccount/tekton-pipelines-controller unchanged
+service/tekton-pipelines-controller unchanged
+podsecuritypolicy.policy/tekton-pipelines configured
+deployment.apps/tekton-pipelines-webhook unchanged
+rolebinding.rbac.authorization.k8s.io/tekton-pipelines-webhook unchanged
+role.rbac.authorization.k8s.io/tekton-pipelines-webhook unchanged
+serviceaccount/tekton-pipelines-webhook unchanged
+service/tekton-pipelines-webhook unchanged
+validatingwebhookconfiguration.admissionregistration.k8s.io/validation.webhook.pipeline.tekton.dev unchanged
+secret/webhook-certs unchanged
+mutatingwebhookconfiguration.admissionregistration.k8s.io/webhook.pipeline.tekton.dev unchanged
+# lets apply any infrastructure specific labels or annotations to enable IAM roles on ServiceAccounts etc
+jx gitops postprocess
+there is no post processing Secret jx-post-process in namespace default so not performing any additional post processing steps
+changing to the jx namespace to verify
+jx ns jx
+Now using namespace 'jx' on server ''.
+jx verify ingress -b
+now verifying docker registry ingress setup in dir .
+jx gitops webhook update --warn-on-fail
+Checking hooks for repository cb-kubecd/bdd-gh-1602679032
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1602854728
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1602867626
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1602869144
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1602871496
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1602872561
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1602872962
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1602873233
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1603113443
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1603115748
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1603121327
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1603122261
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1603123587
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1603125314
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1603126640
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1603127960
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1603274485
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1603279273
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1603280035
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-gh-1604073644
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-nh-1602677114
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/bdd-sbhg-1602677553
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository cb-kubecd/spring-boot-http-gradle
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository ****/jx-demo-terraform-dev
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository ****/mytap1
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository ****/node-http-3ed56e893
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository ****/nodey506
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository ****/nodey507
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository ****/nodey533
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository ****/nodey534
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook
+Checking hooks for repository ****/nodey536
+Found matching hook for url http://hook-jx.35.184.150.204.nip.io/hook

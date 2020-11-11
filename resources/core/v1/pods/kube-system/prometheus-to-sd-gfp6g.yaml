@@ -1,0 +1,141 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2020-11-07T03:03:44Z"
+  generateName: prometheus-to-sd-
+  labels:
+    controller-revision-hash: 6df76d6d9b
+    k8s-app: prometheus-to-sd
+    pod-template-generation: "1"
+  name: prometheus-to-sd-gfp6g
+  namespace: kube-system
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: DaemonSet
+    name: prometheus-to-sd
+    uid: d392460e-ae52-4b4c-8a9d-ebaa0027cab4
+  resourceVersion: "22537949"
+  selfLink: /api/v1/namespaces/kube-system/pods/prometheus-to-sd-gfp6g
+  uid: 620e482e-a489-4e93-a4ad-7d3db64b5c0a
+spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchFields:
+          - key: metadata.name
+            operator: In
+            values:
+            - gke-jstrachan-tekton-default-pool-154aeb80-ccfi
+  containers:
+  - command:
+    - /monitor
+    - --source=node:http://$(METRICS_ADDRESS)?whitelisted=conntrack_entries,conntrack_error_count,num_inuse_sockets,num_tw_sockets,socket_memory&metricsPrefix=container.googleapis.com/internal/net/cluster
+    - --source=kube-proxy:http://localhost:10249?whitelisted=sync_proxy_rules_latency_microseconds&metricsPrefix=container.googleapis.com/internal/addons
+    - --source=kubelet:http://localhost:10255?whitelisted=docker_operations,docker_operations_errors,runtime_operations,runtime_operations_errors,runtime_operations_latency_microseconds,pleg_relist_latency_microseconds,pod_start_latency_microseconds,rest_client_requests_total,storage_operation_duration_seconds,storage_operation_errors_total,run_podsandbox_duration_seconds,run_podsandbox_errors_total,storage_operation_status_count
+    - --source=kubelet:http://localhost:10255/metrics/probes?whitelisted=prober_probe_total&podIdLabel=pod&namespaceIdLabel=namespace&containerNameLabel=container
+    - --source=workload_identity:http://localhost:989/metricz?metricsPrefix=container.googleapis.com/internal/addons&whitelisted=loading_cache_blocking_count,loading_cache_fetching_count,loading_cache_fetch_count,loading_cache_latency,loading_cache_request_count,metadata_server_build_info,metadata_server_request_count,metadata_server_request_durations,outgoing_request_count,outgoing_request_latency
+    - --stackdriver-prefix=container.googleapis.com/internal/nodes
+    - --api-override=https://monitoring.googleapis.com/
+    env:
+    - name: METRICS_ADDRESS
+      valueFrom:
+        configMapKeyRef:
+          key: metrics_address
+          name: networking-metrics-config
+    image: k8s.gcr.io/prometheus-to-sd:v0.8.2
+    imagePullPolicy: IfNotPresent
+    name: prometheus-to-sd
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: prometheus-to-sd-token-qfj6f
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  hostNetwork: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-ccfi
+  nodeSelector:
+    beta.kubernetes.io/os: linux
+  priority: 2000001000
+  priorityClassName: system-node-critical
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: prometheus-to-sd
+  serviceAccountName: prometheus-to-sd
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    operator: Exists
+  - effect: NoSchedule
+    operator: Exists
+  - key: components.gke.io/gke-managed-components
+    operator: Exists
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/disk-pressure
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/memory-pressure
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/pid-pressure
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/unschedulable
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/network-unavailable
+    operator: Exists
+  volumes:
+  - name: prometheus-to-sd-token-qfj6f
+    secret:
+      defaultMode: 420
+      secretName: prometheus-to-sd-token-qfj6f
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:03:44Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:03:50Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:03:50Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:03:44Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://35c45c3e0808b7871276424c63d4ab7ce2d25a4837001f8d5353eca978f02b47
+    image: k8s.gcr.io/prometheus-to-sd:v0.8.2
+    imageID: docker-pullable://k8s.gcr.io/prometheus-to-sd@sha256:3216dd0e94d6911f6dc04f4258c0bf5cb1fff088ee2d3ce742ada490cbd5ca5c
+    lastState: {}
+    name: prometheus-to-sd
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-07T03:03:50Z"
+  hostIP: 10.128.0.2
+  phase: Running
+  podIP: 10.128.0.2
+  podIPs:
+  - ip: 10.128.0.2
+  qosClass: BestEffort
+  startTime: "2020-11-07T03:03:44Z"

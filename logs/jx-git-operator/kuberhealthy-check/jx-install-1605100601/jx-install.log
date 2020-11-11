@@ -1,0 +1,4 @@
+time="2020-11-11T13:16:48Z" level=info msg="Found instance namespace: jx-git-operator"
+time="2020-11-11T13:16:48Z" level=info msg="Kuberhealthy is located in the jx-git-operator namespace."
+starting jx-install health checks
+successfully reported

@@ -1,0 +1,136 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    checksum/config: 63acd39743830f893e6c8532762c52a0b0f3a38f7910647a2b720fc2216a049a
+  creationTimestamp: "2020-11-11T13:19:41Z"
+  generateName: bucketrepo-bucketrepo-59846fdf9c-
+  labels:
+    app: bucketrepo-bucketrepo
+    draft: draft-app
+    pod-template-hash: 59846fdf9c
+  name: bucketrepo-bucketrepo-59846fdf9c-rj4lr
+  namespace: jx
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: bucketrepo-bucketrepo-59846fdf9c
+    uid: b79ec161-a341-42fe-a1b0-c5857c456dd0
+  resourceVersion: "27407795"
+  selfLink: /api/v1/namespaces/jx/pods/bucketrepo-bucketrepo-59846fdf9c-rj4lr
+  uid: 93c950a9-1cef-45b5-9b6e-02c306ec3386
+spec:
+  containers:
+  - args:
+    - -config-path=/config
+    - -log-level=info
+    command:
+    - /home/nonroot/bucketrepo
+    image: gcr.io/jenkinsxio/bucketrepo:0.1.44
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /healthz
+        port: 8080
+        scheme: HTTP
+      initialDelaySeconds: 60
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+    name: bucketrepo
+    ports:
+    - containerPort: 8080
+      protocol: TCP
+    readinessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /healthz
+        port: 8080
+        scheme: HTTP
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 256Mi
+      requests:
+        cpu: 80m
+        memory: 128Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /config
+      name: config
+      readOnly: true
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: bucketrepo-bucketrepo-token-5nglb
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-ccfi
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: bucketrepo-bucketrepo
+  serviceAccountName: bucketrepo-bucketrepo
+  terminationGracePeriodSeconds: 10
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: config
+    secret:
+      defaultMode: 420
+      secretName: bucketrepo-config
+  - name: bucketrepo-bucketrepo-token-5nglb
+    secret:
+      defaultMode: 420
+      secretName: bucketrepo-bucketrepo-token-5nglb
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:19:41Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:19:41Z"
+    message: 'containers with unready status: [bucketrepo]'
+    reason: ContainersNotReady
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:19:41Z"
+    message: 'containers with unready status: [bucketrepo]'
+    reason: ContainersNotReady
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:19:41Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - image: gcr.io/jenkinsxio/bucketrepo:0.1.44
+    imageID: ""
+    lastState: {}
+    name: bucketrepo
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      waiting:
+        reason: ContainerCreating
+  hostIP: 10.128.0.2
+  phase: Pending
+  qosClass: Burstable
+  startTime: "2020-11-11T13:19:41Z"

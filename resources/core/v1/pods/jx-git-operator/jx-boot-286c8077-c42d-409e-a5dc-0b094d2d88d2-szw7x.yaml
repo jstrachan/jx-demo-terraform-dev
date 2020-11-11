@@ -1,0 +1,175 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2020-11-10T15:33:28Z"
+  generateName: jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2-
+  labels:
+    app: jx-boot
+    controller-uid: 4a601b31-c139-4f2a-9bc6-874c7e99b153
+    jenkins-x.io/kind: jx-git-operator
+    job-name: jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2
+  name: jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2-szw7x
+  namespace: jx-git-operator
+  ownerReferences:
+  - apiVersion: batch/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: Job
+    name: jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2
+    uid: 4a601b31-c139-4f2a-9bc6-874c7e99b153
+  resourceVersion: "26411594"
+  selfLink: /api/v1/namespaces/jx-git-operator/pods/jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2-szw7x
+  uid: 99c7d267-80b2-4337-bb72-c04fc8f96335
+spec:
+  containers:
+  - args:
+    - apply
+    command:
+    - make
+    image: gcr.io/jenkinsxio/jx-cli:3.0.668
+    imagePullPolicy: Always
+    name: job
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /workspace
+      name: workspace-volume
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: jx-boot-job-token-hdr72
+      readOnly: true
+    workingDir: /workspace/source
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  initContainers:
+  - args:
+    - -c
+    - 'mkdir -p $HOME; git config --global --add user.name $GIT_AUTHOR_NAME; git config --global --add user.email $GIT_AUTHOR_EMAIL; git config --global credential.helper store; git clone https://${GIT_USER}:${GIT_TOKEN}@${GIT_URL#"https://"} ${GIT_SUB_DIR}; echo cloned url: $(inputs.params.url) to dir: ${GIT_SUB_DIR}; cd ${GIT_SUB_DIR}; git checkout ${GIT_REVISION}; echo checked out revision: ${GIT_REVISION} to dir: ${GIT_SUB_DIR}'
+    command:
+    - /bin/sh
+    env:
+    - name: GIT_URL
+      valueFrom:
+        secretKeyRef:
+          key: url
+          name: jx-boot
+    - name: GIT_USER
+      valueFrom:
+        secretKeyRef:
+          key: username
+          name: jx-boot
+    - name: GIT_TOKEN
+      valueFrom:
+        secretKeyRef:
+          key: password
+          name: jx-boot
+    - name: GIT_REVISION
+      value: master
+    - name: GIT_SUB_DIR
+      value: source
+    - name: GIT_AUTHOR_EMAIL
+      value: jenkins-x@googlegroups.com
+    - name: GIT_AUTHOR_NAME
+      value: jenkins-x-labs-bot
+    - name: GIT_COMMITTER_EMAIL
+      value: jenkins-x@googlegroups.com
+    - name: GIT_COMMITTER_NAME
+      value: jenkins-x-labs-bot
+    - name: XDG_CONFIG_HOME
+      value: /workspace/xdg_config
+    image: gcr.io/jenkinsxio/jx-cli:3.0.668
+    imagePullPolicy: IfNotPresent
+    name: git-clone
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /workspace
+      name: workspace-volume
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: jx-boot-job-token-hdr72
+      readOnly: true
+    workingDir: /workspace
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-n21q
+  priority: 0
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: jx-boot-job
+  serviceAccountName: jx-boot-job
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - emptyDir: {}
+    name: workspace-volume
+  - name: jx-boot-job-token-hdr72
+    secret:
+      defaultMode: 420
+      secretName: jx-boot-job-token-hdr72
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-10T15:33:31Z"
+    reason: PodCompleted
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-10T15:34:14Z"
+    reason: PodCompleted
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-10T15:34:14Z"
+    reason: PodCompleted
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-10T15:33:28Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://37768b31ce4b4e7b1a161f68236331fdf3632487a656b0b8e4fec73176c56d94
+    image: gcr.io/jenkinsxio/jx-cli:3.0.668
+    imageID: docker-pullable://gcr.io/jenkinsxio/jx-cli@sha256:ce47e63336a9cb1138b5fc5d2c1bfec92e35845074e6a2e24d5f958a17e3d354
+    lastState: {}
+    name: job
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      terminated:
+        containerID: docker://37768b31ce4b4e7b1a161f68236331fdf3632487a656b0b8e4fec73176c56d94
+        exitCode: 0
+        finishedAt: "2020-11-10T15:34:14Z"
+        reason: Completed
+        startedAt: "2020-11-10T15:33:31Z"
+  hostIP: 10.128.0.5
+  initContainerStatuses:
+  - containerID: docker://6330d8c8425d66a0618cf7cda6e3093541ad1990215703a82fedfc934a9bf939
+    image: gcr.io/jenkinsxio/jx-cli:3.0.668
+    imageID: docker-pullable://gcr.io/jenkinsxio/jx-cli@sha256:ce47e63336a9cb1138b5fc5d2c1bfec92e35845074e6a2e24d5f958a17e3d354
+    lastState: {}
+    name: git-clone
+    ready: true
+    restartCount: 0
+    state:
+      terminated:
+        containerID: docker://6330d8c8425d66a0618cf7cda6e3093541ad1990215703a82fedfc934a9bf939
+        exitCode: 0
+        finishedAt: "2020-11-10T15:33:31Z"
+        reason: Completed
+        startedAt: "2020-11-10T15:33:30Z"
+  phase: Succeeded
+  podIP: 10.8.5.33
+  podIPs:
+  - ip: 10.8.5.33
+  qosClass: BestEffort
+  startTime: "2020-11-10T15:33:28Z"

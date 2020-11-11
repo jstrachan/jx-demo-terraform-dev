@@ -1,0 +1,6 @@
+ERROR: logging before flag.Parse: I1107 03:09:13.445378       1 pod_nanny.go:68] Invoked by [/pod_nanny --config-dir=/etc/config --cpu=40m --extra-cpu=0.5m --memory=80Mi --extra-memory=2Mi --threshold=5 --deployment=stackdriver-metadata-agent-cluster-level --container=metadata-agent --poll-period=300000 --estimator=exponential --minClusterSize=16 --use-metrics=true]
+ERROR: logging before flag.Parse: I1107 03:09:13.445450       1 pod_nanny.go:69] Version: 1.8.11
+ERROR: logging before flag.Parse: I1107 03:09:13.445474       1 pod_nanny.go:85] Watching namespace: kube-system, pod: stackdriver-metadata-agent-cluster-level-547f9bfb74-87q4p, container: metadata-agent.
+ERROR: logging before flag.Parse: I1107 03:09:13.445484       1 pod_nanny.go:86] storage: MISSING, extra_storage: 0Gi
+ERROR: logging before flag.Parse: I1107 03:09:13.447085       1 pod_nanny.go:116] cpu: 40m, extra_cpu: 0.5m, memory: 80Mi, extra_memory: 2Mi
+ERROR: logging before flag.Parse: I1107 03:09:13.447119       1 pod_nanny.go:145] Resources: [{Base:{i:{value:40 scale:-3} d:{Dec:<nil>} s:40m Format:DecimalSI} ExtraPerNode:{i:{value:5 scale:-4} d:{Dec:<nil>} s: Format:DecimalSI} Name:cpu} {Base:{i:{value:83886080 scale:0} d:{Dec:<nil>} s: Format:BinarySI} ExtraPerNode:{i:{value:2097152 scale:0} d:{Dec:<nil>} s:2Mi Format:BinarySI} Name:memory}]

@@ -1,0 +1,6 @@
+I1107 03:14:14.053039       1 main.go:125] GCE config: &{Project:jenkins-x-labs-bdd Zone:us-central1-a Cluster:****-tekton ClusterLocation:us-central1-a Instance:gke-****-tekton-default-pool-154aeb80-pmxj InstanceId:8800304965656227447}
+I1107 03:14:14.053131       1 main.go:190] Taking source configs from flags
+I1107 03:14:14.053149       1 main.go:192] Taking source configs from kubernetes api server
+I1107 03:14:14.053156       1 main.go:128] Built the following source configs: [0xc0000945b0]
+I1107 03:14:14.053662       1 main.go:201] Running prometheus-to-sd, monitored target is event_exporter http://localhost:80
+E1111 10:13:26.065060       1 stackdriver.go:60] Error while sending request to Stackdriver googleapi: Error 503: The service is currently unavailable., backendError

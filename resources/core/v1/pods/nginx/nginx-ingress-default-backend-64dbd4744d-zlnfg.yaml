@@ -1,0 +1,122 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    wave.pusher.com/config-hash: 100444e91862dd77d7ebe29f050c1e9a7f357c771e1a7b7650aae27e6a3a031d
+  creationTimestamp: "2020-11-07T03:13:20Z"
+  generateName: nginx-ingress-default-backend-64dbd4744d-
+  labels:
+    app: nginx-ingress
+    app.kubernetes.io/component: default-backend
+    pod-template-hash: 64dbd4744d
+    release: nginx-ingress
+  name: nginx-ingress-default-backend-64dbd4744d-zlnfg
+  namespace: nginx
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: nginx-ingress-default-backend-64dbd4744d
+    uid: 190ccd7b-7981-4b66-a741-0a3d13200832
+  resourceVersion: "22547355"
+  selfLink: /api/v1/namespaces/nginx/pods/nginx-ingress-default-backend-64dbd4744d-zlnfg
+  uid: f562b4f3-025a-4a71-a5d1-23562bb94343
+spec:
+  containers:
+  - image: k8s.gcr.io/defaultbackend-amd64:1.5
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /healthz
+        port: 8080
+        scheme: HTTP
+      initialDelaySeconds: 30
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 5
+    name: nginx-ingress-default-backend
+    ports:
+    - containerPort: 8080
+      name: http
+      protocol: TCP
+    readinessProbe:
+      failureThreshold: 6
+      httpGet:
+        path: /healthz
+        port: 8080
+        scheme: HTTP
+      periodSeconds: 5
+      successThreshold: 1
+      timeoutSeconds: 5
+    resources: {}
+    securityContext:
+      runAsUser: 65534
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: nginx-ingress-backend-token-9tllh
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-pmxj
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: nginx-ingress-backend
+  serviceAccountName: nginx-ingress-backend
+  terminationGracePeriodSeconds: 60
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: nginx-ingress-backend-token-9tllh
+    secret:
+      defaultMode: 420
+      secretName: nginx-ingress-backend-token-9tllh
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:13:20Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:14:58Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:14:58Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:13:20Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://53c83016386b593ac97425ad6b0dd9b2b1f42523db1b004201303a2eb93d5278
+    image: k8s.gcr.io/defaultbackend-amd64:1.5
+    imageID: docker-pullable://k8s.gcr.io/defaultbackend-amd64@sha256:4dc5e07c8ca4e23bddb3153737d7b8c556e5fb2f29c4558b7cd6e6df99c512c7
+    lastState: {}
+    name: nginx-ingress-default-backend
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-07T03:14:29Z"
+  hostIP: 10.128.0.11
+  phase: Running
+  podIP: 10.8.7.10
+  podIPs:
+  - ip: 10.8.7.10
+  qosClass: BestEffort
+  startTime: "2020-11-07T03:13:20Z"

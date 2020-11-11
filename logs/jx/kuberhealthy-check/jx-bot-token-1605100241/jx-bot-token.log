@@ -1,0 +1,5 @@
+time="2020-11-11T13:10:49Z" level=info msg="Found instance namespace: jx"
+time="2020-11-11T13:10:49Z" level=info msg="Kuberhealthy is located in the jx namespace."
+starting jx-bot-token health checks
+received 200
+successfully reported

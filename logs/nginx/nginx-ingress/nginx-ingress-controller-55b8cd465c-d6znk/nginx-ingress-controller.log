@@ -1,0 +1,322 @@
+-------------------------------------------------------------------------------
+NGINX Ingress controller
+  Release:       0.32.0
+  Build:         git-446845114
+  Repository:    https://github.com/kubernetes/ingress-nginx
+  nginx version: nginx/1.17.10
+
+-------------------------------------------------------------------------------
+
+I1107 03:14:27.610642       6 flags.go:204] Watching for Ingress class: nginx
+W1107 03:14:27.611154       6 flags.go:249] SSL certificate chain completion is disabled (--enable-ssl-chain-completion=false)
+W1107 03:14:27.611254       6 client_config.go:543] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+I1107 03:14:27.611486       6 main.go:220] Creating API client for https://10.11.240.1:443
+I1107 03:14:27.620419       6 main.go:264] Running in Kubernetes cluster version v1.16+ (v1.16.13-gke.401) - git (clean) commit eb94c181eea5290e9da1238db02cfef263542f5f - platform linux/amd64
+I1107 03:14:27.626911       6 main.go:94] Validated nginx/nginx-ingress-default-backend as the default backend.
+I1107 03:14:28.286948       6 main.go:105] SSL fake certificate created /etc/ingress-controller/ssl/default-fake-certificate.pem
+W1107 03:14:28.312355       6 store.go:645] Unexpected error reading configuration configmap: configmaps "nginx-ingress-controller" not found
+I1107 03:14:28.339831       6 nginx.go:263] Starting NGINX Ingress controller
+I1107 03:14:29.450523       6 event.go:278] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"jx-staging", Name:"bdd-gh-1602679032", UID:"8bd035a5-e298-4443-bb74-1026c73e1582", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"13710957", FieldPath:""}): type: 'Normal' reason: 'CREATE' Ingress jx-staging/bdd-gh-1602679032
+I1107 03:14:29.450730       6 event.go:278] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"jx", Name:"hook", UID:"50a35503-da26-463a-8803-8d1a09735261", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"3012", FieldPath:""}): type: 'Normal' reason: 'CREATE' Ingress jx/hook
+I1107 03:14:29.451007       6 event.go:278] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"jx-staging", Name:"nodey536", UID:"30052b08-29da-4625-8536-d236952a2075", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"20780037", FieldPath:""}): type: 'Normal' reason: 'CREATE' Ingress jx-staging/nodey536
+I1107 03:14:29.451116       6 event.go:278] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"jx", Name:"chartmuseum", UID:"eba6d1c3-0a81-47f9-b3a4-9d0561efc24f", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"3011", FieldPath:""}): type: 'Normal' reason: 'CREATE' Ingress jx/chartmuseum
+I1107 03:14:29.451399       6 event.go:278] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"jx", Name:"jx-pipelines-visualizer", UID:"3e351917-525a-47c7-bf5a-540e9eec7638", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"13690018", FieldPath:""}): type: 'Normal' reason: 'CREATE' Ingress jx/jx-pipelines-visualizer
+I1107 03:14:29.451999       6 event.go:278] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"jx", Name:"nexus", UID:"a73c5f4c-0514-40f1-853d-dcfd22ada780", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"3009", FieldPath:""}): type: 'Normal' reason: 'CREATE' Ingress jx/nexus
+I1107 03:14:29.540362       6 nginx.go:307] Starting NGINX process
+I1107 03:14:29.540458       6 leaderelection.go:242] attempting to acquire leader lease  nginx/ingress-controller-leader-nginx...
+W1107 03:14:29.541334       6 controller.go:393] Service "nginx/nginx-ingress-default-backend" does not have any active Endpoint
+W1107 03:14:29.541426       6 controller.go:909] Service "jx/nexus" does not have any active Endpoint.
+I1107 03:14:29.541553       6 controller.go:139] Configuration changes detected, backend reload required.
+I1107 03:14:29.544277       6 status.go:86] new leader elected: nginx-ingress-controller-55b8cd465c-z4xwj
+I1107 03:14:29.805781       6 controller.go:155] Backend successfully reloaded.
+I1107 03:14:29.806070       6 controller.go:164] Initial sync, sleeping for 1 second.
+W1107 03:14:57.081599       6 controller.go:393] Service "nginx/nginx-ingress-default-backend" does not have any active Endpoint
+W1107 03:14:57.081687       6 controller.go:909] Service "jx/nexus" does not have any active Endpoint.
+W1107 03:15:00.415852       6 controller.go:909] Service "jx/nexus" does not have any active Endpoint.
+W1107 03:15:03.748443       6 controller.go:909] Service "jx/nexus" does not have any active Endpoint.
+W1107 03:15:07.083381       6 controller.go:909] Service "jx/nexus" does not have any active Endpoint.
+W1107 03:15:10.416412       6 controller.go:909] Service "jx/nexus" does not have any active Endpoint.
+W1107 03:15:13.748494       6 controller.go:909] Service "jx/nexus" does not have any active Endpoint.
+W1107 03:15:50.811640       6 controller.go:909] Service "jx/nexus" does not have any active Endpoint.
+I1107 03:23:59.820813       6 status.go:86] new leader elected: nginx-ingress-controller-55b8cd465c-bmzsj
+10.8.7.1 - - [07/Nov/2020:03:47:54 +0000] "\x05\x01\x00" 400 158 "-" "-" 0 0.845 [] [] - - - - bf908181298445328c11355660d38425
+10.128.0.14 - - [07/Nov/2020:12:23:39 +0000] "\x16\x03\x01\x00\xEE\x01\x00\x00\xEA\x03\x03\xAE\x9A\x99\x82?\x8E\x87\xCB\x89\x9Fo\xA2\xF3'\xE4\xCF\x15\x08L\xC5\x19H\xD5a\xCE\xDC\xCE\xEAY\x15_Z \xEC\xF8'\xDD\x9C}\xB8\xE2\xFE\xFF\xD01(F#\x97\xEAI\xB9/k\xD8\xB7\xCA\xEA\xCAL\xC9\x87\x02\x84)\x00&\xC0/\xC00\xC0+\xC0,\xCC\xA8\xCC\xA9\xC0\x13\xC0\x09\xC0\x14\xC0" 400 158 "-" "-" 0 0.992 [] [] - - - - 0fae2e133ffa33da619db6c938e5511e
+10.128.0.2 - - [07/Nov/2020:15:20:38 +0000] "145.ll|'|'|SGFjS2VkX0Q0OTkwNjI3|'|'|WIN-JNAPIER0859|'|'|JNapier|'|'|19-02-01|'|'||'|'|Win 7 Professional SP1 x64|'|'|No|'|'|0.7d|'|'|..|'|'|AA==|'|'|112.inf|'|'|SGFjS2VkDQoxOTIuMTY4LjkyLjIyMjo1NTUyDQpEZXNrdG9wDQpjbGllbnRhLmV4ZQ0KRmFsc2UNCkZhbHNlDQpUcnVlDQpGYWxzZQ==12.act|'|'|AA==" 400 158 "-" "-" 0 0.055 [] [] - - - - 12b778d4c4f9566ad10777b30c0092a8
+10.128.0.14 - - [07/Nov/2020:16:23:27 +0000] "GET /0bef HTTP/1.0" 400 256 "-" "-" 22 0.000 [] [] - - - - 2e409b73710ad7ba3c6e96dbdacb50d4
+10.128.0.2 - - [08/Nov/2020:01:44:44 +0000] "GET ../../proc/ HTTP" 400 158 "-" "-" 0 0.107 [] [] - - - - f84815b833bc9a4d348d43afd87c7930
+10.8.7.1 - - [08/Nov/2020:02:49:55 +0000] "GET ../../proc/ HTTP" 400 158 "-" "-" 0 0.106 [] [] - - - - b099865c2797d31b8ac6ce69a538f470
+10.8.7.1 - - [08/Nov/2020:15:59:59 +0000] "GET / HTTP/1.1" 200 43 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36" 228 0.002 [jx-staging-bdd-gh-1602679032-80] [] 10.8.3.5:8080 43 0.002 200 749eb992aa9126178e87b74d39a159e4
+10.8.7.1 - - [08/Nov/2020:15:59:59 +0000] "GET /apaththatneverExistHuhHUuhHU HTTP/1.1" 200 43 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36" 256 0.001 [jx-staging-bdd-gh-1602679032-80] [] 10.8.3.5:8080 43 0.001 200 ed3e3ca48eaa0f990ef7a5ee37091683
+10.8.7.1 - - [08/Nov/2020:15:59:59 +0000] "GET / HTTP/1.1" 200 1460 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36" 208 0.004 [jx-nexus-80] [] 10.8.7.13:8081 11240 0.004 200 8a0868c360659e7388c975a9dab94b85
+10.128.0.2 - - [08/Nov/2020:15:59:59 +0000] "GET /**** HTTP/1.1" 200 43 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36" 233 0.001 [jx-staging-bdd-gh-1602679032-80] [] 10.8.3.5:8080 43 0.001 200 0dff1b137cf73aea6a7dd3f26c77d375
+10.8.7.1 - - [08/Nov/2020:16:00:00 +0000] "GET /.ssh HTTP/1.1" 200 43 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36" 232 0.001 [jx-staging-bdd-gh-1602679032-80] [] 10.8.3.5:8080 43 0.001 200 ac60188066464a79b051522fc7687b81
+10.128.0.14 - - [08/Nov/2020:16:00:00 +0000] "GET /**** HTTP/1.1" 404 738 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36" 213 0.010 [jx-nexus-80] [] 10.8.7.13:8081 2031 0.009 404 85659b2807948809930faf9d751abc81
+10.128.0.5 - - [08/Nov/2020:16:00:00 +0000] "GET /**** HTTP/1.1" 404 21 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36" 219 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 21 0.002 404 a78ba9f803686017e715cfcc839e74af
+10.128.0.14 - - [08/Nov/2020:16:00:00 +0000] "GET /phpmy**** HTTP/1.1" 200 43 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36" 238 0.005 [jx-staging-bdd-gh-1602679032-80] [] 10.8.3.5:8080 43 0.005 200 b2f42cb04075ed64d2bbe7faaf49ac7e
+10.128.0.2 - - [08/Nov/2020:16:00:00 +0000] "GET /.ssh HTTP/1.1" 404 738 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36" 212 0.006 [jx-nexus-80] [] 10.8.7.13:8081 2031 0.004 404 45caf3506019acbfc0a275a8e5434850
+10.8.7.1 - - [08/Nov/2020:16:00:01 +0000] "GET /.gpg HTTP/1.1" 404 21 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36" 218 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 21 0.001 404 e4d5dccd06dcfde5574a556f972f22d5
+10.128.0.5 - - [08/Nov/2020:16:00:01 +0000] "GET /phpmy**** HTTP/1.1" 404 738 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36" 218 0.005 [jx-nexus-80] [] 10.8.7.13:8081 2031 0.004 404 25073e22483291c4838e8eb2da99204c
+10.128.0.2 - - [08/Nov/2020:16:00:01 +0000] "GET /.htpasswd HTTP/1.1" 404 738 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36" 217 0.005 [jx-nexus-80] [] 10.8.7.13:8081 2031 0.005 404 63276401add3fae6807ed01061b7e372
+10.128.0.2 - - [08/Nov/2020:16:00:01 +0000] "GET /phpmy**** HTTP/1.1" 404 24 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36" 217 0.002 [jx-hook-80] [] 10.8.5.10:8080 24 0.002 404 73e91f64d5ca330eb5d58bdabcea8d19
+10.128.0.2 - - [08/Nov/2020:16:00:01 +0000] "GET /.htpasswd HTTP/1.1" 404 21 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36" 223 0.001 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 21 0.001 404 92c39d83f7731b841c84da943f24cf27
+10.8.7.1 - - [08/Nov/2020:16:00:01 +0000] "GET /password HTTP/1.1" 404 738 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36" 216 0.003 [jx-nexus-80] [] 10.8.7.13:8081 2031 0.003 404 36e34ed167c44a1a9d42e2661d33c5b2
+10.128.0.5 - - [08/Nov/2020:16:00:01 +0000] "GET /swagger.json HTTP/1.1" 404 738 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36" 306 0.005 [jx-nexus-80] [] 10.8.7.13:8081 2031 0.005 404 56078c39921c1916c802db1a3d01c2b3
+10.128.0.14 - - [08/Nov/2020:16:00:02 +0000] "GET /password HTTP/1.1" 404 22 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36" 215 0.001 [jx-hook-80] [] 10.8.5.10:8080 22 0.001 404 11c4c6de60c339aba286d77a555862e7
+10.128.0.14 - - [08/Nov/2020:16:07:18 +0000] "\x16\x03\x01\x00\xEE\x01\x00\x00\xEA\x03\x03\xDF\xEF\xDF\x9A\xAF\x96O\x1D\xDD\x87;\xA1\xDF\x0C\xE9#\xCC\xE5\xEE\xED\xB5\xBA\x96!\xFB\x1A\x83P\x90\xE3\x10\xEB \xB9\xEA\xED\xF8y\xFB\xE4J|" 400 158 "-" "-" 0 0.381 [] [] - - - - db5e9f7b98079c14007d7043d6111deb
+10.128.0.2 - - [08/Nov/2020:23:36:23 +0000] "\x05\x01\x00" 400 158 "-" "-" 0 0.145 [] [] - - - - aa288209ae40626dbd6f105f5300a17c
+10.128.0.5 - - [09/Nov/2020:05:38:41 +0000] "\x04\x01\x00P#\xAA\xE1\x88\x00" 400 158 "-" "-" 0 0.144 [] [] - - - - 88ce96fe7317f5844a0d9272a4d542cf
+10.128.0.5 - - [09/Nov/2020:05:39:14 +0000] "\x05\x01\x00" 400 158 "-" "-" 0 0.143 [] [] - - - - 935cca65188181cffb77f61732f92ede
+10.8.7.1 - - [09/Nov/2020:07:21:56 +0000] "\x03\x00\x00/*\xE0\x00\x00\x00\x00\x00Cookie: mstshash=Administr" 400 158 "-" "-" 0 0.181 [] [] - - - - 91449a6ebb5440264d026932abb8cf8e
+10.8.7.1 - - [09/Nov/2020:09:09:03 +0000] "POST /hook HTTP/1.1" 200 19 "-" "GitHub-Hookshot/8ca99f5" 8482 0.031 [jx-hook-80] [] 10.8.5.10:8080 19 0.005 200 87dc813a629e26fdebc9f8fa98aa3596
+10.128.0.14 - - [09/Nov/2020:09:10:16 +0000] "POST /hook HTTP/1.1" 200 19 "-" "GitHub-Hookshot/8ca99f5" 8604 0.031 [jx-hook-80] [] 10.8.5.10:8080 19 0.005 200 d6bcf52dff67f32625f759f37bee732f
+10.8.7.1 - - [09/Nov/2020:09:10:17 +0000] "POST /hook HTTP/1.1" 200 21 "-" "GitHub-Hookshot/8ca99f5" 7089 0.135 [jx-hook-80] [] 10.8.5.10:8080 21 0.109 200 2066faf403b6b9b41071aa535716a075
+10.128.0.5 - - [09/Nov/2020:09:10:38 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.033 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.034 200 1ade8f9d1c4320b2dc9cf9fd0d2968fe
+10.128.0.5 - - [09/Nov/2020:09:11:54 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.002 200 78a54367e0b05571499849d99a5cec62
+10.128.0.5 - - [09/Nov/2020:09:11:55 +0000] "GET /charts/nodey536-1.0.5.tgz HTTP/1.1" 200 4872 "-" "Helm/3.4.0" 111 0.487 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 4866 0.488 200 e69f57c915d1df985b4f450faafc6a25
+10.128.0.5 - - [09/Nov/2020:09:12:31 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.004 200 542872912ae31d6aef4b07aee44e7351
+10.128.0.2 - - [09/Nov/2020:09:12:33 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.001 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.001 200 098695625de992176cef5e41a611b859
+10.128.0.5 - - [09/Nov/2020:09:12:55 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 cd9361c837674a06bd3fafc611299a0d
+10.128.0.2 - - [09/Nov/2020:09:13:09 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 bf2947b6599c388918d9ae4467712513
+10.128.0.5 - - [09/Nov/2020:09:13:24 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.002 200 8c6a9131e38f5ebbbf6cfe9676571c4f
+10.128.0.2 - - [09/Nov/2020:09:13:35 +0000] "GET /charts/nodey536-1.0.5.tgz HTTP/1.1" 200 4872 "-" "Helm/3.4.0" 111 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 4866 0.002 200 cb969ebd40aef0695585e531d0b5dfe5
+10.128.0.5 - - [09/Nov/2020:09:13:36 +0000] "GET /charts/bdd-gh-1602679032-0.0.4.tgz HTTP/1.1" 200 6419 "-" "Helm/3.4.0" 120 0.001 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 6413 0.000 200 a362b231ae074adfa6250fcdf45ff412
+10.128.0.5 - - [09/Nov/2020:09:13:36 +0000] "GET /charts/nodey536-1.0.5.tgz HTTP/1.1" 200 4872 "-" "Helm/3.4.0" 111 0.001 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 4866 0.002 200 76fe88ed0153c9b0a12b0b874b4793be
+I1109 09:13:53.117458       6 store.go:448] secret jx/jx-basic-auth-htpasswd was updated and it is used in ingress annotations. Parsing...
+I1109 09:13:53.118808       6 controller.go:139] Configuration changes detected, backend reload required.
+I1109 09:13:53.237966       6 controller.go:155] Backend successfully reloaded.
+10.128.0.14 - - [09/Nov/2020:09:14:04 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.004 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.004 200 91956a5f93fe0a6f5c7ebd50ec779f61
+I1109 09:14:13.253841       6 store.go:448] secret jx/jx-basic-auth-htpasswd was updated and it is used in ingress annotations. Parsing...
+I1109 09:14:13.254977       6 controller.go:139] Configuration changes detected, backend reload required.
+I1109 09:14:13.371954       6 controller.go:155] Backend successfully reloaded.
+10.128.0.5 - - [09/Nov/2020:09:14:43 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7418 0.030 [jx-hook-80] [] 10.8.5.10:8080 48 0.004 200 29f87dcfb6785ed468a60dd26069ab7a
+10.8.7.1 - - [09/Nov/2020:09:14:44 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7403 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 4fa691159676ef5b411a7da7b35e41a5
+10.128.0.2 - - [09/Nov/2020:09:14:47 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7423 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 a1e1437b264b76c9cb1f3691aa25ae6a
+10.128.0.5 - - [09/Nov/2020:09:14:49 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7403 0.138 [jx-hook-80] [] 10.8.5.10:8080 48 0.114 200 6073cdb1b5bb2c8a4e54e49f3ed3ee0a
+10.8.7.1 - - [09/Nov/2020:09:14:52 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7658 0.124 [jx-hook-80] [] 10.8.5.10:8080 48 0.099 200 6697e6baa8e8f1030ad82548d0c434b4
+2020/11/09 09:14:52 [warn] 185#185: *1243674 a client request body is buffered to a temporary file /tmp/client-body/0000000001, client: 10.8.7.1, server: hook-jx.35.184.150.204.nip.io, request: "POST /hook HTTP/1.1", host: "hook-jx.35.184.150.204.nip.io"
+10.8.7.1 - - [09/Nov/2020:09:14:53 +0000] "POST /hook HTTP/1.1" 200 17 "-" "GitHub-Hookshot/8ca99f5" 24561 0.194 [jx-hook-80] [] 10.8.5.10:8080 17 0.141 200 d34679e4a8fbcefa17be63e76105da39
+10.128.0.2 - - [09/Nov/2020:09:14:54 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7726 0.369 [jx-hook-80] [] 10.8.5.10:8080 48 0.344 200 9190c6641287d265785ab926fe9ac201
+2020/11/09 09:15:12 [warn] 185#185: *1243806 a client request body is buffered to a temporary file /tmp/client-body/0000000002, client: 10.128.0.2, server: hook-jx.35.184.150.204.nip.io, request: "POST /hook HTTP/1.1", host: "hook-jx.35.184.150.204.nip.io"
+10.128.0.2 - - [09/Nov/2020:09:15:12 +0000] "POST /hook HTTP/1.1" 200 19 "-" "GitHub-Hookshot/8ca99f5" 11324 0.030 [jx-hook-80] [] 10.8.5.10:8080 19 0.004 200 36104348995b1c1dcff77e2775023c91
+10.128.0.14 - - [09/Nov/2020:09:15:32 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7416 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 f044111c641d327953f0528f79e52134
+10.8.7.1 - - [09/Nov/2020:09:15:33 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7410 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 2ad6a62821232e1c7057e7cd225759c5
+10.8.7.1 - - [09/Nov/2020:09:15:34 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7423 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 028663f2cdce802bc23cdfc1c507d622
+10.8.7.1 - - [09/Nov/2020:09:15:34 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7410 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 89e8d1ed8b71a0ac2820b09dc6e6e0a2
+10.128.0.14 - - [09/Nov/2020:09:15:35 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7420 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 9f49ef7e12cca7a375a5e195a411fc49
+10.128.0.2 - - [09/Nov/2020:09:15:38 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7403 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 7939407065cb1ba43ed89614b8beb12a
+10.128.0.14 - - [09/Nov/2020:09:15:39 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7421 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 65ed1a4860c1efcd03c52bcffdfa750c
+10.8.7.1 - - [09/Nov/2020:09:15:41 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7427 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 6f5e9a10678552e92710e77d7bcc1168
+10.128.0.2 - - [09/Nov/2020:09:15:42 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7414 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 b5da41ba4056621fdadcb8e531962cb4
+10.128.0.2 - - [09/Nov/2020:09:15:47 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 b976bb58b97fa390f908d116c13b9dee
+10.128.0.5 - - [09/Nov/2020:09:15:49 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7120 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 0284148fb7fb53cc22e018b2a62dbbdc
+10.128.0.5 - - [09/Nov/2020:09:16:34 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7417 0.030 [jx-hook-80] [] 10.8.5.10:8080 48 0.004 200 b47f88a01a14f631ece55c0bfabb5e17
+10.8.7.1 - - [09/Nov/2020:09:16:37 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7421 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 cc00869e6cbd8bf2c75f77b05f3c9f72
+10.128.0.14 - - [09/Nov/2020:09:16:38 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7427 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 8faebdf5b94d71ab31477b8ee6b90c79
+10.8.7.1 - - [09/Nov/2020:09:16:41 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7403 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 688e8a91d1b15e1e72df06c1571d1d15
+10.128.0.2 - - [09/Nov/2020:09:16:42 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7410 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 fed6c178ab98a37b9afb9d5fc8095b17
+10.128.0.14 - - [09/Nov/2020:09:16:43 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7415 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 8b2e60ee460951b7018a5a7c45d24cec
+10.128.0.2 - - [09/Nov/2020:09:16:46 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7414 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 15e9855e9ee13c7cabc97194c7218865
+10.128.0.2 - - [09/Nov/2020:09:16:48 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.002 200 dbfa8524770c17f70e178adf9bed4b6b
+10.128.0.2 - - [09/Nov/2020:09:16:48 +0000] "GET /charts/bdd-gh-1602679032-0.0.4.tgz HTTP/1.1" 200 6419 "-" "Helm/3.4.0" 120 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 6413 0.002 200 224d58b5489c0b1ceeab04e8f084f4a4
+10.128.0.14 - - [09/Nov/2020:09:16:50 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7108 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 c2d8a200a5cb4a1b897b430440b28440
+10.128.0.2 - - [09/Nov/2020:09:21:43 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.002 200 f798fbd545505b2350f73e1641461277
+10.128.0.5 - - [09/Nov/2020:09:21:53 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.004 200 32d9686271ba9a6edc10c6151f11df5e
+10.128.0.2 - - [09/Nov/2020:09:21:56 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.001 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.002 200 489ea932a015eb1dd3b76c8499ebb3b6
+10.128.0.5 - - [09/Nov/2020:09:22:09 +0000] "GET /index.yaml HTTP/1.1" 200 17819 "-" "Helm/3.4.0" 96 0.004 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 b6df666e14cacba03467df142fa264fe
+10.128.0.2 - - [09/Nov/2020:09:22:19 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 85cd4068eb6615d89e94df47b35fb141
+10.128.0.2 - - [09/Nov/2020:09:22:30 +0000] "GET /index.yaml HTTP/1.1" 200 17813 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 bf12abfa5caf4a25471303a8fe36a286
+10.128.0.5 - - [09/Nov/2020:09:22:32 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.005 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.005 200 68927fdf6be3ec318fd50f5ed15367c1
+10.128.0.5 - - [09/Nov/2020:09:22:44 +0000] "GET /index.yaml HTTP/1.1" 200 17806 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 1b8262826878cc026babe58bb980b919
+10.128.0.5 - - [09/Nov/2020:09:23:10 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.022 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.022 200 e6288d5ca705db1df7ec008920136cd7
+10.128.0.5 - - [09/Nov/2020:09:23:11 +0000] "GET /charts/bdd-gh-1602679032-0.0.4.tgz HTTP/1.1" 200 6419 "-" "Helm/3.4.0" 120 0.001 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 6413 0.000 200 c1a37e8699705a7e583f2464b8f8dc42
+10.128.0.5 - - [09/Nov/2020:09:23:11 +0000] "GET /charts/nodey536-1.0.5.tgz HTTP/1.1" 200 4872 "-" "Helm/3.4.0" 111 0.001 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 4866 0.001 200 ea01b9a77f29081c16f65c3cae44e78b
+10.128.0.5 - - [09/Nov/2020:09:23:47 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.002 200 d03884dddede19315d542b5e4c853d63
+10.128.0.5 - - [09/Nov/2020:09:23:59 +0000] "GET /charts/bdd-gh-1602679032-0.0.4.tgz HTTP/1.1" 200 6419 "-" "Helm/3.4.0" 120 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 6413 0.003 200 a64cc9b97d81479314b354052edbd0dc
+10.128.0.5 - - [09/Nov/2020:09:24:36 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 54459ebe938a2fb31f5a02efb3381cf5
+I1109 09:25:07.915681       6 store.go:448] secret jx/jx-basic-auth-htpasswd was updated and it is used in ingress annotations. Parsing...
+I1109 09:25:07.916924       6 controller.go:139] Configuration changes detected, backend reload required.
+I1109 09:25:08.038336       6 controller.go:155] Backend successfully reloaded.
+I1109 09:25:28.033863       6 store.go:448] secret jx/jx-basic-auth-htpasswd was updated and it is used in ingress annotations. Parsing...
+I1109 09:25:28.034816       6 controller.go:139] Configuration changes detected, backend reload required.
+I1109 09:25:28.164015       6 controller.go:155] Backend successfully reloaded.
+10.128.0.2 - - [09/Nov/2020:09:26:02 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7420 0.031 [jx-hook-80] [] 10.8.5.10:8080 48 0.005 200 ea606c35cfbaf19d1293311445945953
+10.128.0.2 - - [09/Nov/2020:09:26:04 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7420 0.032 [jx-hook-80] [] 10.8.5.10:8080 48 0.005 200 67da7c713c00cb2dd39d6e591f53ea25
+10.128.0.5 - - [09/Nov/2020:09:26:09 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7403 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.004 200 70dd120cda3ea5b1814461646cf06395
+10.128.0.5 - - [09/Nov/2020:09:26:13 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7572 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 89807aa6db9ec445d4a26bb6ec651047
+10.8.7.1 - - [09/Nov/2020:09:26:14 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7839 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 54baf72568c67051f1229d5b0fb63ad9
+10.128.0.5 - - [09/Nov/2020:09:26:15 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 6872 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 676984c42c4948a88f8efd145710c261
+10.8.7.1 - - [09/Nov/2020:09:26:16 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7624 0.027 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 aceac15c275a9bc94cf8fd34aad60d92
+10.128.0.2 - - [09/Nov/2020:09:26:17 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7097 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 46970a01be3c649d1dd80847ab905436
+10.128.0.14 - - [09/Nov/2020:09:26:17 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7125 0.036 [jx-hook-80] [] 10.8.5.10:8080 48 0.011 200 a4888b9360aa5e49a6fd824a8637aae6
+10.128.0.5 - - [09/Nov/2020:09:26:18 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7120 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 279f1ebfb8f50e0011e4831208b4ec56
+10.128.0.2 - - [09/Nov/2020:09:26:54 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7418 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.004 200 ed81c4af70755a920ac2bcf0f465ab15
+10.8.7.1 - - [09/Nov/2020:09:27:04 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7402 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 59677541068b349a2f44a7bb0524601b
+10.128.0.2 - - [09/Nov/2020:09:27:07 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7562 0.030 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 c8abcdb37b214c518b5f9bd3b08d0b54
+10.128.0.5 - - [09/Nov/2020:09:27:08 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7839 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 a64fe82e5037d61e0738dff2d4f635ba
+10.128.0.2 - - [09/Nov/2020:09:27:09 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7712 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 35e99199f11bef8f9bf7d3baaef001a6
+10.128.0.2 - - [09/Nov/2020:09:27:10 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7637 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 fd37c8b6d89835ed6a9e9bc400f7209a
+10.128.0.5 - - [09/Nov/2020:09:27:10 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7108 0.031 [jx-hook-80] [] 10.8.5.10:8080 48 0.007 200 b7ca9126995b008fed12d4bbb1ba19e5
+10.128.0.2 - - [09/Nov/2020:09:27:32 +0000] "POST /hook HTTP/1.1" 200 19 "-" "GitHub-Hookshot/8ca99f5" 8608 0.031 [jx-hook-80] [] 10.8.5.10:8080 19 0.005 200 493be3d73e98aa2252ce01c808997f4e
+2020/11/09 09:27:33 [warn] 335#335: *1248680 a client request body is buffered to a temporary file /tmp/client-body/0000000003, client: 10.8.7.1, server: hook-jx.35.184.150.204.nip.io, request: "POST /hook HTTP/1.1", host: "hook-jx.35.184.150.204.nip.io"
+10.8.7.1 - - [09/Nov/2020:09:27:33 +0000] "POST /hook HTTP/1.1" 200 17 "-" "GitHub-Hookshot/8ca99f5" 23886 0.055 [jx-hook-80] [] 10.8.5.10:8080 17 0.004 200 4f318f0caaff5e0780c8b1e45836f93a
+2020/11/09 09:27:37 [warn] 336#336: *1248704 a client request body is buffered to a temporary file /tmp/client-body/0000000004, client: 10.8.7.1, server: hook-jx.35.184.150.204.nip.io, request: "POST /hook HTTP/1.1", host: "hook-jx.35.184.150.204.nip.io"
+10.8.7.1 - - [09/Nov/2020:09:27:37 +0000] "POST /hook HTTP/1.1" 200 17 "-" "GitHub-Hookshot/8ca99f5" 24557 0.054 [jx-hook-80] [] 10.8.5.10:8080 17 0.003 200 94ac7ed0441d6dda79a75995abed3a52
+10.128.0.2 - - [09/Nov/2020:09:28:48 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 bb3b233b20ee1a2a9ed15ff8e1c13170
+10.128.0.2 - - [09/Nov/2020:09:29:13 +0000] "GET /charts/nodey536-1.0.5.tgz HTTP/1.1" 200 4872 "-" "Helm/3.4.0" 111 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 4866 0.001 200 b07096c5cab5a30bea03a380ba824c9b
+10.8.7.1 - - [09/Nov/2020:09:29:20 +0000] "POST /hook HTTP/1.1" 200 19 "-" "GitHub-Hookshot/8ca99f5" 9515 0.029 [jx-hook-80] [] 10.8.5.10:8080 19 0.004 200 2c42864e23741798b288f623975c41fa
+10.128.0.2 - - [09/Nov/2020:09:30:26 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.004 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.004 200 7b81e0e55c881e7ec4abfdb86f686ee4
+10.8.7.1 - - [09/Nov/2020:09:30:44 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7424 0.030 [jx-hook-80] [] 10.8.5.10:8080 48 0.004 200 c756d679543a49aa2a2bfad46794deb7
+10.8.7.1 - - [09/Nov/2020:09:30:48 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7423 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 7145925189662632e723c1e6676c6351
+10.128.0.14 - - [09/Nov/2020:09:30:48 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7414 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 029559a88b8cd830893a7f26a471345e
+10.8.7.1 - - [09/Nov/2020:09:30:49 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7410 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 5eb6287ffd52c39c19a8cf078f34065b
+10.128.0.5 - - [09/Nov/2020:09:30:51 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7415 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 94a042b456733736b0515e27062ddcd9
+10.128.0.2 - - [09/Nov/2020:09:30:52 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7423 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 be2371f94f3a3fc5335be4f3fd321c57
+10.8.7.1 - - [09/Nov/2020:09:30:53 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7423 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 28745808e5da7bd253d995d6e465d752
+10.8.7.1 - - [09/Nov/2020:09:30:55 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7417 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 58d4f3cdbb840d097c2b954d373407c1
+10.128.0.5 - - [09/Nov/2020:09:30:55 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7409 0.030 [jx-hook-80] [] 10.8.5.10:8080 48 0.004 200 854301bd92c3d710cfa7e559774ebe8e
+10.128.0.14 - - [09/Nov/2020:09:30:57 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7402 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 e396852ba5dbb07a89c9716b106c714e
+10.128.0.2 - - [09/Nov/2020:09:31:01 +0000] "GET /index.yaml HTTP/1.1" 200 17806 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 3c89c3e93994eb5322f703ed1ace4991
+10.8.7.1 - - [09/Nov/2020:09:31:07 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 6852 0.032 [jx-hook-80] [] 10.8.5.10:8080 48 0.006 200 407118bbb6cc76fb4ab7b7aa64b0c55f
+10.128.0.2 - - [09/Nov/2020:09:31:08 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7624 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 012b8b731e8f2b1751ecdbb7548dc070
+10.128.0.14 - - [09/Nov/2020:09:31:10 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/8ca99f5" 7107 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 1f3861bb4f7f40126ea25b9b555306c8
+10.128.0.2 - - [09/Nov/2020:09:31:12 +0000] "GET /charts/bdd-gh-1602679032-0.0.4.tgz HTTP/1.1" 200 6419 "-" "Helm/3.4.0" 120 0.004 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 6413 0.003 200 c5b76b77f64977a71f9c2e52abbb4b17
+10.128.0.2 - - [09/Nov/2020:09:31:12 +0000] "GET /charts/nodey536-1.0.5.tgz HTTP/1.1" 200 4872 "-" "Helm/3.4.0" 111 0.000 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 4866 0.001 200 51dd248ee6e771565af87d949212d13c
+10.128.0.2 - - [09/Nov/2020:09:31:47 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 95e8085fd20c0fa75df0f2381a16f33c
+10.128.0.14 - - [09/Nov/2020:10:41:16 +0000] "POST /hook HTTP/1.1" 200 21 "-" "GitHub-Hookshot/1fd0917" 7089 0.032 [jx-hook-80] [] 10.8.5.10:8080 21 0.004 200 a068422e846a597e708d23383a37948e
+2020/11/09 10:41:17 [warn] 335#335: *1277023 a client request body is buffered to a temporary file /tmp/client-body/0000000005, client: 10.8.7.1, server: hook-jx.35.184.150.204.nip.io, request: "POST /hook HTTP/1.1", host: "hook-jx.35.184.150.204.nip.io"
+10.8.7.1 - - [09/Nov/2020:10:41:17 +0000] "POST /hook HTTP/1.1" 200 17 "-" "GitHub-Hookshot/1fd0917" 24310 0.233 [jx-hook-80] [] 10.8.5.10:8080 17 0.182 200 99fbebc0befd762b74fa2ba3cf5daca8
+10.128.0.2 - - [09/Nov/2020:10:42:19 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.008 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.008 200 2ff55fe05d3b1e058408dbdf3b355d23
+10.8.7.1 - - [09/Nov/2020:10:42:49 +0000] "POST /hook HTTP/1.1" 200 19 "-" "GitHub-Hookshot/1fd0917" 8528 0.030 [jx-hook-80] [] 10.8.5.10:8080 19 0.004 200 24b49e94df3eddaef3348fd6a0b9f9ad
+10.128.0.2 - - [09/Nov/2020:10:42:58 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.002 200 e40a840789c34ec5aa5d59de1584696e
+10.128.0.2 - - [09/Nov/2020:10:42:58 +0000] "GET /charts/nodey536-1.0.5.tgz HTTP/1.1" 200 4872 "-" "Helm/3.4.0" 111 0.001 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 4866 0.001 200 6eb2a1228895cfc5b54819f573108d3c
+10.128.0.5 - - [09/Nov/2020:10:43:06 +0000] "GET /index.yaml HTTP/1.1" 200 17812 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 4db67b748ff50a8de8a6eaaba1026b48
+2020/11/09 10:43:07 [warn] 335#335: *1277747 a client request body is buffered to a temporary file /tmp/client-body/0000000006, client: 10.8.7.1, server: hook-jx.35.184.150.204.nip.io, request: "POST /hook HTTP/1.1", host: "hook-jx.35.184.150.204.nip.io"
+10.8.7.1 - - [09/Nov/2020:10:43:07 +0000] "POST /hook HTTP/1.1" 200 17 "-" "GitHub-Hookshot/1fd0917" 24773 0.054 [jx-hook-80] [] 10.8.5.10:8080 17 0.003 200 bec4cb727a42ae606ce143e073e483ba
+2020/11/09 10:43:12 [warn] 336#336: *1277783 a client request body is buffered to a temporary file /tmp/client-body/0000000007, client: 10.128.0.2, server: hook-jx.35.184.150.204.nip.io, request: "POST /hook HTTP/1.1", host: "hook-jx.35.184.150.204.nip.io"
+10.128.0.2 - - [09/Nov/2020:10:43:13 +0000] "POST /hook HTTP/1.1" 200 17 "-" "GitHub-Hookshot/1fd0917" 24766 0.105 [jx-hook-80] [] 10.8.5.10:8080 17 0.054 200 f465f97b23a2ebe0aaeb81e022ebd5f4
+10.128.0.5 - - [09/Nov/2020:10:43:33 +0000] "GET /charts/nodey536-1.0.5.tgz HTTP/1.1" 200 4872 "-" "Helm/3.4.0" 111 0.006 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 4866 0.006 200 1bbdc6726187ded30742ca968314074b
+10.128.0.5 - - [09/Nov/2020:10:43:34 +0000] "POST /hook HTTP/1.1" 200 19 "-" "GitHub-Hookshot/1fd0917" 8608 0.030 [jx-hook-80] [] 10.8.5.10:8080 19 0.005 200 10b768fc02d8e79f55d4007a4d1efa47
+10.128.0.5 - - [09/Nov/2020:10:43:46 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.005 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.005 200 d8363d5210ebc46624d6632493d3b2bf
+10.128.0.2 - - [09/Nov/2020:10:44:10 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.002 200 bdddc99acec03f80d1cf14f45b425f23
+2020/11/09 10:44:13 [warn] 336#336: *1278182 a client request body is buffered to a temporary file /tmp/client-body/0000000008, client: 10.128.0.14, server: hook-jx.35.184.150.204.nip.io, request: "POST /hook HTTP/1.1", host: "hook-jx.35.184.150.204.nip.io"
+10.128.0.14 - - [09/Nov/2020:10:44:13 +0000] "POST /hook HTTP/1.1" 200 19 "-" "GitHub-Hookshot/1fd0917" 11319 0.029 [jx-hook-80] [] 10.8.5.10:8080 19 0.003 200 60a060b1e94856d0056ecfcd1e5a53a2
+10.128.0.14 - - [09/Nov/2020:10:44:45 +0000] "GET /index.yaml HTTP/1.1" 200 17813 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 41cde70a9ce0b316d13de82499daa6e2
+10.128.0.14 - - [09/Nov/2020:10:45:10 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.004 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.004 200 226056cb28782ffd4e42b3b3352e7ba7
+2020/11/09 10:45:24 [warn] 336#336: *1278643 a client request body is buffered to a temporary file /tmp/client-body/0000000009, client: 10.128.0.2, server: hook-jx.35.184.150.204.nip.io, request: "POST /hook HTTP/1.1", host: "hook-jx.35.184.150.204.nip.io"
+10.128.0.2 - - [09/Nov/2020:10:45:24 +0000] "POST /hook HTTP/1.1" 200 17 "-" "GitHub-Hookshot/1fd0917" 24773 0.058 [jx-hook-80] [] 10.8.5.10:8080 17 0.007 200 05ee5bea7a27f752389869457bc4e525
+10.8.7.1 - - [09/Nov/2020:10:46:14 +0000] "POST /hook HTTP/1.1" 200 19 "-" "GitHub-Hookshot/1fd0917" 10288 0.101 [jx-hook-80] [] 10.8.5.10:8080 19 0.075 200 73a20c2e0e02e4a37eead1099407f122
+10.128.0.5 - - [09/Nov/2020:10:46:29 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.005 200 55c1b995f2dd81ff3f6778030d172e0e
+10.128.0.2 - - [09/Nov/2020:10:46:37 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.002 200 be57796e9457c4c649b7521ba07735db
+10.128.0.2 - - [09/Nov/2020:10:46:51 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 4b2a63fe84f2eb51080f83860f87bcef
+10.128.0.2 - - [09/Nov/2020:10:47:27 +0000] "GET /index.yaml HTTP/1.1" 200 17814 "-" "Helm/3.4.0" 96 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.002 200 77ed26e9998c88ca6273d34718793de8
+10.128.0.5 - - [09/Nov/2020:10:47:45 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 5a56a0736d960fd71d32a378a578fe97
+10.128.0.5 - - [09/Nov/2020:10:47:46 +0000] "GET /charts/nodey536-1.0.5.tgz HTTP/1.1" 200 4872 "-" "Helm/3.4.0" 111 0.001 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 4866 0.001 200 84212ce86f9bad6db22a02dca0daffef
+10.128.0.2 - - [09/Nov/2020:10:47:52 +0000] "GET /charts/bdd-gh-1602679032-0.0.4.tgz HTTP/1.1" 200 6419 "-" "Helm/3.4.0" 120 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 6413 0.001 200 ca28174251720dd950be53153195d7cb
+I1109 10:48:22.561346       6 store.go:448] secret jx/jx-basic-auth-htpasswd was updated and it is used in ingress annotations. Parsing...
+I1109 10:48:22.788010       6 controller.go:139] Configuration changes detected, backend reload required.
+I1109 10:48:23.207120       6 controller.go:155] Backend successfully reloaded.
+I1109 10:48:53.409566       6 store.go:448] secret jx/jx-basic-auth-htpasswd was updated and it is used in ingress annotations. Parsing...
+I1109 10:48:53.410529       6 controller.go:139] Configuration changes detected, backend reload required.
+I1109 10:48:53.536714       6 controller.go:155] Backend successfully reloaded.
+10.8.7.1 - - [09/Nov/2020:10:49:35 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7399 0.044 [jx-hook-80] [] 10.8.5.10:8080 48 0.018 200 7f7d290b8fae8a3437e6a204afc81101
+10.8.7.1 - - [09/Nov/2020:10:49:36 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7423 0.031 [jx-hook-80] [] 10.8.5.10:8080 48 0.006 200 f688f2ebf231743ce13f45b4e25a010e
+10.8.7.1 - - [09/Nov/2020:10:49:37 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7420 0.031 [jx-hook-80] [] 10.8.5.10:8080 48 0.005 200 213c9372fee618b55f095b0ac258f00c
+10.128.0.14 - - [09/Nov/2020:10:49:37 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7410 0.033 [jx-hook-80] [] 10.8.5.10:8080 48 0.008 200 f79c1e26d68725d1b58e075e20fc853b
+10.8.7.1 - - [09/Nov/2020:10:49:39 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7421 0.042 [jx-hook-80] [] 10.8.5.10:8080 48 0.017 200 a4e217a6ee714310c1e8b9305360791f
+10.8.7.1 - - [09/Nov/2020:10:49:41 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7399 0.038 [jx-hook-80] [] 10.8.5.10:8080 48 0.013 200 43b8aa59489279f4974b896b8436e209
+10.128.0.5 - - [09/Nov/2020:10:49:42 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 32c99ee2ec9a771fdcbe3b404ccdd591
+10.8.7.1 - - [09/Nov/2020:10:49:43 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7409 0.043 [jx-hook-80] [] 10.8.5.10:8080 48 0.018 200 d48d93ef8d61ebba38c22331712763f7
+10.128.0.14 - - [09/Nov/2020:10:49:43 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7426 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 2524fa7fceb5581427469ee242602026
+10.128.0.14 - - [09/Nov/2020:10:49:44 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7409 0.035 [jx-hook-80] [] 10.8.5.10:8080 48 0.009 200 20af8ff10b9db19800926d35ed8acb99
+10.8.7.1 - - [09/Nov/2020:10:49:44 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7575 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 497fe6a542dba7e52e9305878f31fce6
+10.128.0.14 - - [09/Nov/2020:10:49:45 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7658 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 40bfb542d027ec0aaa6ffad7c937d340
+10.128.0.5 - - [09/Nov/2020:10:49:46 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7832 0.037 [jx-hook-80] [] 10.8.5.10:8080 48 0.012 200 6c5bc33d40b7c165be361c798a7780c0
+10.128.0.2 - - [09/Nov/2020:10:49:47 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 6860 0.038 [jx-hook-80] [] 10.8.5.10:8080 48 0.012 200 58e88a11d345dc89b0d71377c4c5a916
+10.128.0.2 - - [09/Nov/2020:10:49:48 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7613 0.032 [jx-hook-80] [] 10.8.5.10:8080 48 0.004 200 201dcd3d80bd2b67573a1dc286585f9b
+10.8.7.1 - - [09/Nov/2020:10:49:49 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7125 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 38ab94df141c4e28959532b95b9931c1
+10.8.7.1 - - [09/Nov/2020:10:49:49 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7108 0.032 [jx-hook-80] [] 10.8.5.10:8080 48 0.006 200 b9bd7d4c6f621d8e06da39da3a9cf029
+10.8.7.1 - - [09/Nov/2020:10:49:51 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7107 0.126 [jx-hook-80] [] 10.8.5.10:8080 48 0.100 200 89ac8fa0a47e4d00303eb9fd5cb7b71d
+10.128.0.5 - - [09/Nov/2020:10:50:10 +0000] "GET /charts/nodey536-1.0.5.tgz HTTP/1.1" 200 4872 "-" "Helm/3.4.0" 111 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 4866 0.002 200 633700b944d694d41d5c9d30fc551820
+10.128.0.5 - - [09/Nov/2020:10:51:16 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 17d4e887235a173996816796f397a599
+10.128.0.5 - - [09/Nov/2020:10:51:43 +0000] "GET /charts/bdd-gh-1602679032-0.0.4.tgz HTTP/1.1" 200 6419 "-" "Helm/3.4.0" 120 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 6413 0.003 200 49fd89a23dac976ab525df298d7d2449
+10.128.0.5 - - [09/Nov/2020:10:51:43 +0000] "GET /charts/nodey536-1.0.5.tgz HTTP/1.1" 200 4872 "-" "Helm/3.4.0" 111 0.001 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 4866 0.001 200 a4eb52b4020d543416ad7f56b21f2b14
+10.128.0.5 - - [09/Nov/2020:10:52:18 +0000] "GET /index.yaml HTTP/1.1" 200 17806 "-" "Helm/3.4.0" 96 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.002 200 7da5716cf2edaf1eca3912c1043de3ed
+I1109 10:53:36.286754       6 store.go:448] secret jx/jx-basic-auth-htpasswd was updated and it is used in ingress annotations. Parsing...
+I1109 10:53:36.288072       6 controller.go:139] Configuration changes detected, backend reload required.
+I1109 10:53:36.409713       6 controller.go:155] Backend successfully reloaded.
+I1109 10:53:56.636158       6 store.go:448] secret jx/jx-basic-auth-htpasswd was updated and it is used in ingress annotations. Parsing...
+I1109 10:53:56.637400       6 controller.go:139] Configuration changes detected, backend reload required.
+I1109 10:53:56.766236       6 controller.go:155] Backend successfully reloaded.
+10.8.7.1 - - [09/Nov/2020:10:54:26 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7410 0.030 [jx-hook-80] [] 10.8.5.10:8080 48 0.004 200 d1dddfc4eb789e523463451abe687d54
+10.128.0.14 - - [09/Nov/2020:10:54:27 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7399 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.004 200 c8186072657b13cb6195cf66d91e92bf
+10.128.0.2 - - [09/Nov/2020:10:54:27 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7399 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 d3dd488beb2d1c2e3ade47f4e2bf6632
+10.128.0.14 - - [09/Nov/2020:10:54:28 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7417 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 edbbf4fab6c26733fe717bd5b5df2aa6
+10.8.7.1 - - [09/Nov/2020:10:54:28 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7410 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 871775a68047838243fafee578feb42f
+10.128.0.14 - - [09/Nov/2020:10:54:30 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7410 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 5b7e3c2ce23ae9895486e40d3ed8e834
+10.128.0.14 - - [09/Nov/2020:10:54:33 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7410 0.033 [jx-hook-80] [] 10.8.5.10:8080 48 0.007 200 8a7bc46a1421ef4e74ed0ce47e0f94fc
+10.128.0.5 - - [09/Nov/2020:10:54:34 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7410 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 294d4c03f2f985c592e4001f55891592
+10.128.0.14 - - [09/Nov/2020:10:54:35 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7402 0.031 [jx-hook-80] [] 10.8.5.10:8080 48 0.005 200 c31f63b6f95d4a289fa6bbd34fc743cb
+10.128.0.2 - - [09/Nov/2020:10:54:36 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7409 0.038 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 95f5ce573d998fff2581572975ca2228
+10.128.0.14 - - [09/Nov/2020:10:54:37 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7569 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 7eece12c50c58f604e572465fdb90b98
+10.128.0.14 - - [09/Nov/2020:10:54:38 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7661 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 67b155399c870638c28532092eecae5a
+10.8.7.1 - - [09/Nov/2020:10:54:38 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7844 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 9b90e5257bdc985dafa368ddcbcb418b
+10.128.0.2 - - [09/Nov/2020:10:54:39 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 6849 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 3dfd8e7077cf14639dcb65ae403acb42
+10.128.0.5 - - [09/Nov/2020:10:54:40 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7634 0.120 [jx-hook-80] [] 10.8.5.10:8080 48 0.095 200 6908d45e67f6c98a27c4686eb4e38bfb
+10.128.0.14 - - [09/Nov/2020:10:54:40 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7119 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 e7465af479bc68b4ad963cc55e9982db
+10.8.7.1 - - [09/Nov/2020:10:54:42 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7108 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 a33a1e2978d2aa51c2f62f4e912d0723
+10.128.0.5 - - [09/Nov/2020:10:54:42 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7107 0.027 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 679b185a49e09455773e569cbef8fde8
+10.128.0.5 - - [09/Nov/2020:10:55:21 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7415 0.031 [jx-hook-80] [] 10.8.5.10:8080 48 0.004 200 efcafa8acca287455289ae9a1ea064a4
+10.8.7.1 - - [09/Nov/2020:10:55:21 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7423 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 9dd1d4768018211501f3d968386d6e05
+10.128.0.5 - - [09/Nov/2020:10:55:24 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7403 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 3e45762f94b49e723eddb0148f1f18ff
+10.128.0.14 - - [09/Nov/2020:10:55:29 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7399 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 5dd7ca9d488d6b7cb8a297a01755454d
+10.128.0.2 - - [09/Nov/2020:10:55:30 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7402 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 3b46c8cd2bb5bdef5e223bec1329dcbe
+10.128.0.2 - - [09/Nov/2020:10:55:32 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7409 0.031 [jx-hook-80] [] 10.8.5.10:8080 48 0.005 200 e28a3cb8f552fb6d5baa5016855f264f
+10.128.0.5 - - [09/Nov/2020:10:55:37 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7101 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 9291eee56f201b4665670c96281e253c
+10.128.0.14 - - [09/Nov/2020:10:55:37 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/1fd0917" 7108 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 dd1c29a5824c07fe742dd60b3aca871a
+10.128.0.5 - - [09/Nov/2020:11:08:58 +0000] "\x01\x00\x00\x00" 400 158 "-" "-" 0 0.179 [] [] - - - - 554104e2854aadbd41cf439aed0aab23
+10.128.0.14 - - [09/Nov/2020:17:19:13 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.004 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 01b4df16118b3221faac7b92ead01c86
+10.128.0.2 - - [10/Nov/2020:07:18:52 +0000] "SSTP_DUPLEX_POST /sra_{BA195980-CD49-458b-9E23-C84EE0ADCD75}/ HTTP/1.1" 400 158 "-" "-" 193 0.000 [] [] - - - - 9e043e16c05402ac0b349be7640b4d28
+10.128.0.2 - - [10/Nov/2020:08:21:50 +0000] "GET / HTTP/1.1" 400 158 "-" "-" 18 0.000 [] [] - - - - 9ce6e64fea94bec3c12c592f5e8fc1a8
+10.128.0.2 - - [10/Nov/2020:08:45:46 +0000] "GET / HTTP/1.1" 400 658 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36" 241 0.000 [] [] - - - - 62c3dc263092e702757060bdbd64f509
+10.8.7.1 - - [10/Nov/2020:08:45:46 +0000] "GET /favicon.ico HTTP/1.1" 400 658 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36" 252 0.000 [] [] - - - - 78ac5f60f9778b0e305e52594158bddd
+10.128.0.14 - - [10/Nov/2020:10:35:40 +0000] "GET /TdaC HTTP/1.1" 400 158 "-" "-" 22 0.000 [] [] - - - - 0ca461afcd706999224c4b501cd0f0e3
+10.128.0.2 - - [10/Nov/2020:11:06:15 +0000] ";sh+/tmp/gpon80&ipv=0" 400 158 "-" "-" 0 0.277 [] [] - - - - c85bb291d2d2d9e09b2f9a28eebf029a
+10.128.0.14 - - [10/Nov/2020:15:33:56 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/c8da26b" 7403 0.030 [jx-hook-80] [] 10.8.5.10:8080 48 0.004 200 5a8d2a45f7dc4a4e5fe306a7d1237c9d
+10.128.0.14 - - [10/Nov/2020:15:33:58 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/c8da26b" 7415 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 30a57732504180a9f16968dbd13e60fa
+10.128.0.5 - - [10/Nov/2020:15:33:59 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/c8da26b" 7410 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 a5944568a1a5e8b5a686c0656aa4cfa9
+10.128.0.14 - - [10/Nov/2020:15:34:00 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/c8da26b" 7403 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 05b75fba448d4067f1afd52142f452f1
+10.128.0.2 - - [10/Nov/2020:15:34:03 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/c8da26b" 7419 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 2d2fc780f3d544cbe5b02a718b732edb
+10.8.7.1 - - [10/Nov/2020:15:34:05 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/c8da26b" 7420 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 5dbd340d92b080f011252398f28b256a
+10.128.0.14 - - [10/Nov/2020:15:34:06 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/c8da26b" 7409 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 1f19833d60592b6cc59d9fcd81509ce8
+10.128.0.2 - - [10/Nov/2020:15:34:07 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/c8da26b" 7416 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 a7875968796c13cc0d3a9b57e1e8aedb
+10.128.0.14 - - [10/Nov/2020:15:34:08 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/c8da26b" 7572 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 92e10c02b04cfff3ebc3d75c06038c61
+10.128.0.2 - - [10/Nov/2020:15:34:08 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/c8da26b" 7651 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 1b3f295750a29d499f4dbfb0b62e3757
+10.128.0.14 - - [10/Nov/2020:15:34:10 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/c8da26b" 6867 0.029 [jx-hook-80] [] 10.8.5.10:8080 48 0.003 200 1b6db18671ecc99e2bea8668b97bb474
+10.8.7.1 - - [10/Nov/2020:15:34:12 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/c8da26b" 7108 0.028 [jx-hook-80] [] 10.8.5.10:8080 48 0.002 200 a2aed1e8e776af11960e94b2eb449467
+10.128.0.14 - - [10/Nov/2020:15:34:14 +0000] "POST /hook HTTP/1.1" 200 48 "-" "GitHub-Hookshot/c8da26b" 7100 0.032 [jx-hook-80] [] 10.8.5.10:8080 48 0.006 200 48243ae3216f343929e6ba1ef0e56a68
+10.128.0.14 - - [10/Nov/2020:19:19:16 +0000] "" 400 0 "-" "-" 0 0.106 [] [] - - - - 191574bf7d29569c0c6df821bf05ca2b
+10.128.0.5 - - [11/Nov/2020:11:06:22 +0000] "\x16\x03\x01\x00\xD2\x01\x00\x00\xCE\x03\x030\x93+}\xF0+\xC4ih\x99\xBE\xCB]u(#j\xF0\xBFI\xD4\x82\x17o\xC4\x0E\x8F\xBC\x96\xDB\x8B{\x00\x00b\xC00\xC0,\xC0/\xC0+\x00\x9F\x00\x9E\xC02\xC0.\xC01\xC0-\x00\xA5\x00\xA1\x00\xA4\x00\xA0\xC0(\xC0$\xC0\x14\xC0" 400 158 "-" "-" 0 5.000 [] [] - - - - 90e3c1ceab8419764a1f84eeeb8dec76
+10.8.7.1 - - [11/Nov/2020:13:18:25 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 12aed8cf5e040b15a18eba1ee52f65c4
+I1111 13:19:45.200238       6 event.go:278] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"jx", Name:"jx-pipelines-visualizer", UID:"3e351917-525a-47c7-bf5a-540e9eec7638", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"27407869", FieldPath:""}): type: 'Normal' reason: 'UPDATE' Ingress jx/jx-pipelines-visualizer
+I1111 13:19:45.971914       6 controller.go:139] Configuration changes detected, backend reload required.
+I1111 13:19:46.102932       6 controller.go:155] Backend successfully reloaded.
+I1111 13:19:49.576378       6 event.go:278] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"jx", Name:"bucketrepo", UID:"2a744465-ac90-435d-8383-ccf5699c6826", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"27407954", FieldPath:""}): type: 'Normal' reason: 'CREATE' Ingress jx/bucketrepo
+W1111 13:19:52.638426       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+I1111 13:19:52.639077       6 controller.go:139] Configuration changes detected, backend reload required.
+I1111 13:19:52.785604       6 controller.go:155] Backend successfully reloaded.
+I1111 13:19:54.574862       6 event.go:278] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"jx", Name:"hook", UID:"50a35503-da26-463a-8803-8d1a09735261", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"27408011", FieldPath:""}): type: 'Normal' reason: 'UPDATE' Ingress jx/hook
+W1111 13:19:55.971900       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+I1111 13:19:55.972107       6 controller.go:139] Configuration changes detected, backend reload required.
+I1111 13:19:56.094526       6 controller.go:155] Backend successfully reloaded.
+I1111 13:19:57.723483       6 event.go:278] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"jx", Name:"bucketrepo", UID:"2a744465-ac90-435d-8383-ccf5699c6826", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"27408046", FieldPath:""}): type: 'Normal' reason: 'UPDATE' Ingress jx/bucketrepo
+W1111 13:19:59.305103       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:20:02.638611       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:20:09.494298       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:20:12.823544       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:20:16.156852       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:20:19.490437       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:20:22.823524       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:20:26.156894       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:20:29.490250       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:20:32.823521       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:21:30.583646       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.

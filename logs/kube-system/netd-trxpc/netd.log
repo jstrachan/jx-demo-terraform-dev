@@ -1,0 +1,8 @@
+I1107 03:08:16.629343       1 main.go:40] netd version: v0.2.7
+I1107 03:08:16.629609       1 main.go:41] netd args: /netd --enable-policy-routing=false --logtostderr --reconcile-interval-seconds=60s --metrics-collectors=conntrack,socket --metrics-address=localhost:10231
+I1107 03:08:16.629870       1 main.go:51] Starting netd
+I1107 03:08:16.629985       1 metrics.go:53] Enabled metrics collectors:
+I1107 03:08:16.630078       1 metrics.go:55]  - conntrack
+I1107 03:08:16.630170       1 metrics.go:55]  - socket
+I1107 03:08:16.630754       1 network_config_controller.go:79] **** NetworkConfigController configurations ****
+I1107 03:08:16.636376       1 metrics.go:84] Listening on localhost:10231

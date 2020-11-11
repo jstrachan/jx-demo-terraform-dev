@@ -1,0 +1,175 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    seccomp.security.alpha.kubernetes.io/pod: docker/default
+  creationTimestamp: "2020-11-07T03:04:14Z"
+  generateName: metrics-server-v0.3.6-64655c969-
+  labels:
+    k8s-app: metrics-server
+    pod-template-hash: 64655c969
+    version: v0.3.6
+  name: metrics-server-v0.3.6-64655c969-qt5sn
+  namespace: kube-system
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: metrics-server-v0.3.6-64655c969
+    uid: 32c27c4a-f4d1-4eb6-9a72-975fe6d4ff10
+  resourceVersion: "22538762"
+  selfLink: /api/v1/namespaces/kube-system/pods/metrics-server-v0.3.6-64655c969-qt5sn
+  uid: b8ca06ac-19e1-4d3e-9b42-a44e705f13e9
+spec:
+  containers:
+  - command:
+    - /metrics-server
+    - --metric-resolution=30s
+    - --kubelet-port=10255
+    - --deprecated-kubelet-completely-insecure=true
+    - --kubelet-preferred-address-types=InternalIP,Hostname,InternalDNS,ExternalDNS,ExternalIP
+    image: k8s.gcr.io/metrics-server-amd64:v0.3.6
+    imagePullPolicy: IfNotPresent
+    name: metrics-server
+    ports:
+    - containerPort: 443
+      name: https
+      protocol: TCP
+    resources:
+      limits:
+        cpu: 43m
+        memory: 55Mi
+      requests:
+        cpu: 43m
+        memory: 55Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: metrics-server-token-hv8zf
+      readOnly: true
+  - command:
+    - /pod_nanny
+    - --config-dir=/etc/config
+    - --cpu=40m
+    - --extra-cpu=0.5m
+    - --memory=35Mi
+    - --extra-memory=4Mi
+    - --threshold=5
+    - --deployment=metrics-server-v0.3.6
+    - --container=metrics-server
+    - --poll-period=300000
+    - --estimator=exponential
+    - --scale-down-delay=24h
+    - --minClusterSize=5
+    env:
+    - name: MY_POD_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.name
+    - name: MY_POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    image: gke.gcr.io/addon-resizer:1.8.8-gke.1
+    imagePullPolicy: IfNotPresent
+    name: metrics-server-nanny
+    resources:
+      limits:
+        cpu: 100m
+        memory: 300Mi
+      requests:
+        cpu: 5m
+        memory: 50Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /etc/config
+      name: metrics-server-config-volume
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: metrics-server-token-hv8zf
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-ccfi
+  nodeSelector:
+    kubernetes.io/os: linux
+  priority: 2000000000
+  priorityClassName: system-cluster-critical
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: metrics-server
+  serviceAccountName: metrics-server
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - key: CriticalAddonsOnly
+    operator: Exists
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - configMap:
+      defaultMode: 420
+      name: metrics-server-config
+    name: metrics-server-config-volume
+  - name: metrics-server-token-hv8zf
+    secret:
+      defaultMode: 420
+      secretName: metrics-server-token-hv8zf
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:04:14Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:04:49Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:04:49Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:04:14Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://c11061b616322422397786e465b338ab7e4f3c73469a43efa2b55aa750e4250e
+    image: k8s.gcr.io/metrics-server-amd64:v0.3.6
+    imageID: docker-pullable://k8s.gcr.io/metrics-server-amd64@sha256:c9c4e95068b51d6b33a9dccc61875df07dc650abbf4ac1a19d58b4628f89288b
+    lastState: {}
+    name: metrics-server
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-07T03:04:34Z"
+  - containerID: docker://a164f0c36665ab2c6c3db787b9c316946832f6e4bd87f6539456d97e47603588
+    image: asia.gcr.io/gke-release-staging/addon-resizer:1.8.8-gke.1
+    imageID: docker-pullable://asia.gcr.io/gke-release-staging/addon-resizer@sha256:c6b0e87d835086b7e1f6fcf148611358534a8081e6489c8fee9c79c6597a4ee3
+    lastState: {}
+    name: metrics-server-nanny
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-07T03:04:48Z"
+  hostIP: 10.128.0.2
+  phase: Running
+  podIP: 10.8.3.7
+  podIPs:
+  - ip: 10.8.3.7
+  qosClass: Burstable
+  startTime: "2020-11-07T03:04:14Z"

@@ -1,0 +1,6 @@
+I1107 03:13:32.655536       1 autoscaler.go:49] Scaling Namespace: kube-system, Target: deployment/kube-dns
+I1107 03:13:32.914596       1 plugin.go:50] Set control mode to linear
+I1107 03:13:32.914622       1 linear_controller.go:59] ConfigMap version change (old:  new: 890) - rebuilding params
+I1107 03:13:32.914631       1 linear_controller.go:60] Params from apiserver: 
+{"coresPerReplica":256,"nodesPerReplica":16,"preventSinglePointFailure":true}
+I1107 03:13:32.914753       1 linear_controller.go:79] Defaulting min replicas count to 1 for linear controller

@@ -1,0 +1,115 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2020-11-11T12:30:03Z"
+  generateName: jxboot-helmfile-resources-gcactivities-1605097800-
+  labels:
+    app: gcactivities
+    controller-uid: 1000cdf0-aa82-4b08-8b34-9812629343ba
+    job-name: jxboot-helmfile-resources-gcactivities-1605097800
+    release: jxboot-helmfile-resources
+  name: jxboot-helmfile-resources-gcactivities-1605097800-lb8xh
+  namespace: jx
+  ownerReferences:
+  - apiVersion: batch/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: Job
+    name: jxboot-helmfile-resources-gcactivities-1605097800
+    uid: 1000cdf0-aa82-4b08-8b34-9812629343ba
+  resourceVersion: "27370048"
+  selfLink: /api/v1/namespaces/jx/pods/jxboot-helmfile-resources-gcactivities-1605097800-lb8xh
+  uid: a85e69bd-bb22-4105-aa5d-17d5a5eb66ea
+spec:
+  containers:
+  - args:
+    - gc
+    - activities
+    - --batch-mode
+    command:
+    - jx
+    env:
+    - name: JX_LOG_FORMAT
+      value: json
+    - name: JX_LOG_LEVEL
+      value: info
+    - name: PIPELINE_KIND
+      value: dummy
+    image: gcr.io/jenkinsxio-labs/jxl:0.0.127
+    imagePullPolicy: IfNotPresent
+    name: gcactivities
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: jxboot-helmfile-resources-gcactivities-token-xd4h2
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-ccfi
+  priority: 0
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: jxboot-helmfile-resources-gcactivities
+  serviceAccountName: jxboot-helmfile-resources-gcactivities
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: jxboot-helmfile-resources-gcactivities-token-xd4h2
+    secret:
+      defaultMode: 420
+      secretName: jxboot-helmfile-resources-gcactivities-token-xd4h2
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T12:30:03Z"
+    reason: PodCompleted
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T12:30:03Z"
+    reason: PodCompleted
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T12:30:03Z"
+    reason: PodCompleted
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T12:30:03Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://06d69e7e086ff0abd31f44fe85f871b60e6018cfcadee235a3e12939713599f6
+    image: gcr.io/jenkinsxio-labs/jxl:0.0.127
+    imageID: docker-pullable://gcr.io/jenkinsxio-labs/jxl@sha256:39b58627b236fe21063bbd5c3e48100a08bb33b79b43cde6cc4ad494024bf3e2
+    lastState: {}
+    name: gcactivities
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      terminated:
+        containerID: docker://06d69e7e086ff0abd31f44fe85f871b60e6018cfcadee235a3e12939713599f6
+        exitCode: 0
+        finishedAt: "2020-11-11T12:30:05Z"
+        reason: Completed
+        startedAt: "2020-11-11T12:30:04Z"
+  hostIP: 10.128.0.2
+  phase: Succeeded
+  podIP: 10.8.3.86
+  podIPs:
+  - ip: 10.8.3.86
+  qosClass: BestEffort
+  startTime: "2020-11-11T12:30:03Z"

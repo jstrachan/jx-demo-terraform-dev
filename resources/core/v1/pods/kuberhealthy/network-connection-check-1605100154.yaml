@@ -1,0 +1,116 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    comcast.github.io/check-name: network-connection-check
+  creationTimestamp: "2020-11-11T13:09:23Z"
+  labels:
+    app: kuberhealthy-check
+    kuberhealthy-check-name: network-connection-check
+    kuberhealthy-run-id: b1339721-0da9-48ed-a799-5b4b2d5ce2cb
+  name: network-connection-check-1605100154
+  namespace: kuberhealthy
+  ownerReferences:
+  - apiVersion: v1
+    kind: Pod
+    name: kuberhealthy-5c46966647-6db64
+    uid: d98a024b-7504-4cdd-a3bb-c70c6128d8fb
+  resourceVersion: "27400003"
+  selfLink: /api/v1/namespaces/kuberhealthy/pods/network-connection-check-1605100154
+  uid: c25a3de1-edd6-4e5e-ac54-b592fd12a4a1
+spec:
+  containers:
+  - env:
+    - name: CONNECTION_TARGET
+      value: tcp://github.com:443
+    - name: KH_REPORTING_URL
+      value: http://kuberhealthy.kuberhealthy.svc.cluster.local/externalCheckStatus
+    - name: KH_RUN_UUID
+      value: b1339721-0da9-48ed-a799-5b4b2d5ce2cb
+    - name: KH_CHECK_RUN_DEADLINE
+      value: "1605100755"
+    - name: KH_POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    image: kuberhealthy/network-connection-check:v0.1.1
+    imagePullPolicy: IfNotPresent
+    name: deployment
+    resources:
+      requests:
+        memory: 5Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-k5bp8
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-nap-n1-standard--0a7ecf20-446q
+  priority: 0
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: default-token-k5bp8
+    secret:
+      defaultMode: 420
+      secretName: default-token-k5bp8
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:09:23Z"
+    reason: PodCompleted
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:09:27Z"
+    reason: PodCompleted
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:09:27Z"
+    reason: PodCompleted
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:09:23Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://d3ef556b8864f54d070c31b71bda352870d45277281d9e01bd55fa7c45626884
+    image: kuberhealthy/network-connection-check:v0.1.1
+    imageID: docker-pullable://kuberhealthy/network-connection-check@sha256:f8fc5330f30c66a27b1e773fa8b42531e5723a910904853fab584a2edfd140d0
+    lastState: {}
+    name: deployment
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      terminated:
+        containerID: docker://d3ef556b8864f54d070c31b71bda352870d45277281d9e01bd55fa7c45626884
+        exitCode: 0
+        finishedAt: "2020-11-11T13:09:26Z"
+        reason: Completed
+        startedAt: "2020-11-11T13:09:24Z"
+  hostIP: 10.128.0.14
+  phase: Succeeded
+  podIP: 10.8.8.126
+  podIPs:
+  - ip: 10.8.8.126
+  qosClass: Burstable
+  startTime: "2020-11-11T13:09:23Z"

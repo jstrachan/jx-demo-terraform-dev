@@ -1,0 +1,114 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    seccomp.security.alpha.kubernetes.io/pod: docker/default
+  creationTimestamp: "2020-11-07T03:13:19Z"
+  generateName: kube-dns-autoscaler-645f7d66cf-
+  labels:
+    k8s-app: kube-dns-autoscaler
+    pod-template-hash: 645f7d66cf
+  name: kube-dns-autoscaler-645f7d66cf-w2rb2
+  namespace: kube-system
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: kube-dns-autoscaler-645f7d66cf
+    uid: a8b90757-d67e-4ad9-9ce2-ce6784d5c098
+  resourceVersion: "22546765"
+  selfLink: /api/v1/namespaces/kube-system/pods/kube-dns-autoscaler-645f7d66cf-w2rb2
+  uid: 43b0c4a0-f3ff-461c-b393-ab3e1163b1fe
+spec:
+  containers:
+  - command:
+    - /cluster-proportional-autoscaler
+    - --namespace=kube-system
+    - --configmap=kube-dns-autoscaler
+    - --target=Deployment/kube-dns
+    - --default-params={"linear":{"coresPerReplica":256,"nodesPerReplica":16,"preventSinglePointFailure":true}}
+    - --logtostderr=true
+    - --v=2
+    image: gke.gcr.io/cluster-proportional-autoscaler-amd64:1.7.1-gke.0
+    imagePullPolicy: IfNotPresent
+    name: autoscaler
+    resources:
+      requests:
+        cpu: 20m
+        memory: 10Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-dns-autoscaler-token-68hn9
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-pmxj
+  nodeSelector:
+    beta.kubernetes.io/os: linux
+  priority: 2000000000
+  priorityClassName: system-cluster-critical
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext:
+    fsGroup: 65534
+    supplementalGroups:
+    - 65534
+  serviceAccount: kube-dns-autoscaler
+  serviceAccountName: kube-dns-autoscaler
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - key: CriticalAddonsOnly
+    operator: Exists
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: kube-dns-autoscaler-token-68hn9
+    secret:
+      defaultMode: 420
+      secretName: kube-dns-autoscaler-token-68hn9
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:13:20Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:14:12Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:14:12Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:13:20Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://c2e8708ff8deb88989183013110cfca998de442104e898428386537bde8f39a6
+    image: asia.gcr.io/gke-release-staging/cluster-proportional-autoscaler-amd64:1.7.1-gke.0
+    imageID: docker-pullable://asia.gcr.io/gke-release-staging/cluster-proportional-autoscaler-amd64@sha256:e3f48b3d1e49cfa3e7f002020769c9cd01cd0e77bbc99dc133c7ab0f8097e989
+    lastState: {}
+    name: autoscaler
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-07T03:13:32Z"
+  hostIP: 10.128.0.11
+  phase: Running
+  podIP: 10.8.7.9
+  podIPs:
+  - ip: 10.8.7.9
+  qosClass: Burstable
+  startTime: "2020-11-07T03:13:20Z"

@@ -1,0 +1,127 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    wave.pusher.com/config-hash: 100444e91862dd77d7ebe29f050c1e9a7f357c771e1a7b7650aae27e6a3a031d
+  creationTimestamp: "2020-11-07T03:04:13Z"
+  generateName: jx-build-controller-c85865f96-
+  labels:
+    app: jx-build-controller
+    pod-template-hash: c85865f96
+    release: jx-build-controller
+  name: jx-build-controller-c85865f96-7dshs
+  namespace: jx
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: jx-build-controller-c85865f96
+    uid: 506fd7b5-4bb3-4463-a6bc-2412c6b3aa8c
+  resourceVersion: "22538971"
+  selfLink: /api/v1/namespaces/jx/pods/jx-build-controller-c85865f96-7dshs
+  uid: 56d969ec-0d08-4d94-a8e4-ae131a8d8c0f
+spec:
+  containers:
+  - command:
+    - jx-build-controller
+    env:
+    - name: GIT_AUTHOR_EMAIL
+      value: jenkins-x@googlegroups.com
+    - name: GIT_AUTHOR_NAME
+      value: jenkins-x-bot
+    - name: XDG_CONFIG_HOME
+      value: /home/jenkins
+    image: gcr.io/jenkinsxio/jx-build-controller:0.0.14
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /healthz
+        port: http
+        scheme: HTTP
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+    name: jx-build-controller
+    ports:
+    - containerPort: 8080
+      name: http
+      protocol: TCP
+    readinessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /readyz
+        port: http
+        scheme: HTTP
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: jenkins-x-controllerbuild-token-jhj5c
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-ccfi
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: jenkins-x-controllerbuild
+  serviceAccountName: jenkins-x-controllerbuild
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: jenkins-x-controllerbuild-token-jhj5c
+    secret:
+      defaultMode: 420
+      secretName: jenkins-x-controllerbuild-token-jhj5c
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:04:14Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:05:06Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:05:06Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:04:14Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://67ffbb4a004b91a42dba2040400b3992d39ba94742b8e7b0cfef0024ec28fbfb
+    image: gcr.io/jenkinsxio/jx-build-controller:0.0.14
+    imageID: docker-pullable://gcr.io/jenkinsxio/jx-build-controller@sha256:9d0bc9b79509d5d2a6516c5872b11bfe7e6587e7df593ee1d20b321fc134aee7
+    lastState: {}
+    name: jx-build-controller
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-07T03:05:00Z"
+  hostIP: 10.128.0.2
+  phase: Running
+  podIP: 10.8.3.3
+  podIPs:
+  - ip: 10.8.3.3
+  qosClass: BestEffort
+  startTime: "2020-11-07T03:04:14Z"

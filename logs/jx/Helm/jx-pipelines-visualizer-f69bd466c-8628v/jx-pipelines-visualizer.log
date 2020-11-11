@@ -1,0 +1,3 @@
+time="2020-11-11T13:19:49Z" level=info msg=Starting logLevel=info
+time="2020-11-11T13:19:49Z" level=info msg="Starting Informer" namespace=jx resyncInterval=1m0s
+time="2020-11-11T13:19:49Z" level=info msg="Starting HTTP Server" listenAddr=":8080"

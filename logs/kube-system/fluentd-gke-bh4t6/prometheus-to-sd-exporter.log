@@ -1,0 +1,6 @@
+I1107 03:08:16.667008       1 main.go:125] GCE config: &{Project:jenkins-x-labs-bdd Zone:us-central1-a Cluster:****-tekton ClusterLocation:us-central1-a Instance:gke-****-tekton-default-pool-154aeb80-n21q InstanceId:1922617347437998469}
+I1107 03:08:16.667065       1 main.go:190] Taking source configs from flags
+I1107 03:08:16.667086       1 main.go:192] Taking source configs from kubernetes api server
+I1107 03:08:16.667094       1 main.go:128] Built the following source configs: [0xc00008c270]
+I1107 03:08:16.667133       1 main.go:201] Running prometheus-to-sd, monitored target is fluentd http://localhost:24231
+E1107 03:08:16.667355       1 main.go:140] listen tcp :6061: bind: address already in use

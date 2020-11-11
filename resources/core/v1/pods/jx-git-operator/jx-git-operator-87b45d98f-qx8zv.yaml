@@ -1,0 +1,106 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2020-11-10T15:32:42Z"
+  generateName: jx-git-operator-87b45d98f-
+  labels:
+    app: jx-git-operator
+    pod-template-hash: 87b45d98f
+  name: jx-git-operator-87b45d98f-qx8zv
+  namespace: jx-git-operator
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: jx-git-operator-87b45d98f
+    uid: fe35766f-0c94-4d62-8e56-91bce1298901
+  resourceVersion: "26410362"
+  selfLink: /api/v1/namespaces/jx-git-operator/pods/jx-git-operator-87b45d98f-qx8zv
+  uid: cbc84a7a-6794-4243-a647-e92a535470fb
+spec:
+  containers:
+  - command:
+    - jx-git-operator
+    env:
+    - name: NO_RESOURCE_APPLY
+      value: "true"
+    - name: POLL_DURATION
+      value: 20s
+    image: gcr.io/jenkinsxio/jx-git-operator-ma:latest
+    imagePullPolicy: IfNotPresent
+    name: jx-git-operator
+    resources:
+      limits:
+        cpu: 100m
+        memory: 256Mi
+      requests:
+        cpu: 80m
+        memory: 128Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: jx-git-operator-token-lhc9s
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-pmxj
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: jx-git-operator
+  serviceAccountName: jx-git-operator
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: jx-git-operator-token-lhc9s
+    secret:
+      defaultMode: 420
+      secretName: jx-git-operator-token-lhc9s
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-10T15:32:42Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-10T15:32:46Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-10T15:32:46Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-10T15:32:42Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://ce6d4c40844f7744761ddb9b5ee59b861070dd0cfb286b52ea41fca35b8dcbe4
+    image: gcr.io/jenkinsxio/jx-git-operator-ma:latest
+    imageID: docker-pullable://gcr.io/jenkinsxio/jx-git-operator-ma@sha256:403bde446fd8a50778ffc1cab7366f697e5c37ad694eefdf4358a8e1d095ec3d
+    lastState: {}
+    name: jx-git-operator
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-10T15:32:45Z"
+  hostIP: 10.128.0.11
+  phase: Running
+  podIP: 10.8.7.93
+  podIPs:
+  - ip: 10.8.7.93
+  qosClass: Burstable
+  startTime: "2020-11-10T15:32:42Z"

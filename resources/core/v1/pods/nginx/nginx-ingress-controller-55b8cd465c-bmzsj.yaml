@@ -1,0 +1,151 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    wave.pusher.com/config-hash: 100444e91862dd77d7ebe29f050c1e9a7f357c771e1a7b7650aae27e6a3a031d
+  creationTimestamp: "2020-11-07T03:08:28Z"
+  generateName: nginx-ingress-controller-55b8cd465c-
+  labels:
+    app: nginx-ingress
+    app.kubernetes.io/component: controller
+    component: controller
+    pod-template-hash: 55b8cd465c
+    release: nginx-ingress
+  name: nginx-ingress-controller-55b8cd465c-bmzsj
+  namespace: nginx
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: nginx-ingress-controller-55b8cd465c
+    uid: 1aaec79d-e57d-4ae9-9bd6-3d30055cff45
+  resourceVersion: "22542702"
+  selfLink: /api/v1/namespaces/nginx/pods/nginx-ingress-controller-55b8cd465c-bmzsj
+  uid: 0eab1861-2ce2-4723-bc23-d39635ce8e1a
+spec:
+  containers:
+  - args:
+    - /nginx-ingress-controller
+    - --default-backend-service=nginx/nginx-ingress-default-backend
+    - --election-id=ingress-controller-leader
+    - --ingress-class=nginx
+    - --configmap=nginx/nginx-ingress-controller
+    - --publish-service=nginx/nginx-ingress-controller
+    env:
+    - name: POD_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.name
+    - name: POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    image: quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.32.0
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /healthz
+        port: 10254
+        scheme: HTTP
+      initialDelaySeconds: 10
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+    name: nginx-ingress-controller
+    ports:
+    - containerPort: 80
+      name: http
+      protocol: TCP
+    - containerPort: 443
+      name: https
+      protocol: TCP
+    readinessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /healthz
+        port: 10254
+        scheme: HTTP
+      initialDelaySeconds: 10
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+    resources: {}
+    securityContext:
+      allowPrivilegeEscalation: true
+      capabilities:
+        add:
+        - NET_BIND_SERVICE
+        drop:
+        - ALL
+      runAsUser: 101
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: nginx-ingress-token-6p6sx
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-n21q
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: nginx-ingress
+  serviceAccountName: nginx-ingress
+  terminationGracePeriodSeconds: 60
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: nginx-ingress-token-6p6sx
+    secret:
+      defaultMode: 420
+      secretName: nginx-ingress-token-6p6sx
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:08:28Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:09:23Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:09:23Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:08:28Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://7bb27bcaad236fe60d0fc9d6513ab8cb034bae8836465fc491be4bc22c806718
+    image: quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.32.0
+    imageID: docker-pullable://quay.io/kubernetes-ingress-controller/nginx-ingress-controller@sha256:251e733bf41cdf726092e079d32eed51791746560fff4d59cf067508ed635287
+    lastState: {}
+    name: nginx-ingress-controller
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-07T03:09:07Z"
+  hostIP: 10.128.0.5
+  phase: Running
+  podIP: 10.8.5.8
+  podIPs:
+  - ip: 10.8.5.8
+  qosClass: BestEffort
+  startTime: "2020-11-07T03:08:28Z"

@@ -1,0 +1,5 @@
+I1107 03:14:54.795833       1 main.go:82] GCE config: &{Project:jenkins-x-labs-bdd Zone:us-central1-a Cluster:****-tekton ClusterLocation: Instance:gke-****-tekton-default-pool-154aeb80-pmxj MetricsPrefix:container.googleapis.com/internal/addons MonitoredResourceTypes:gke_container}
+I1107 03:14:54.796133       1 main.go:122] Taking source configs from flags
+I1107 03:14:54.796289       1 main.go:124] Taking source configs from kubernetes api server
+I1107 03:14:54.796388       1 main.go:85] Built the following source configs: [{kubedns localhost 10054 /metrics [probe_kubedns_latency_ms probe_kubedns_errors dnsmasq_misses dnsmasq_hits] 0xc4202ea9b0}]
+I1107 03:14:54.796578       1 main.go:133] Running prometheus-to-sd, monitored target is kubedns localhost:10054

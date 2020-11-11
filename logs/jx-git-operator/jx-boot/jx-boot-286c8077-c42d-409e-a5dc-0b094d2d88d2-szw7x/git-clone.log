@@ -1,0 +1,6 @@
+Cloning into 'source'...
+/bin/sh: 1: inputs.params.url: not found
+cloned url: to dir: source
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+checked out revision: master to dir: source

@@ -1,0 +1,14 @@
+time="2020-11-11T13:04:18Z" level=info msg="Found instance namespace: kuberhealthy"
+time="2020-11-11T13:04:18Z" level=info msg="Kuberhealthy is located in the kuberhealthy namespace."
+starting jx-install health checks
+skipping checks on pod because it is too young: jx/jx-preview-gc-jobs-1605099600-pxf66
+skipping checks on pod because it is too young: jx/lighthouse-gc-jobs-1605099600-xbm9d
+skipping checks on pod because it is too young: kuberhealthy/check-reaper-1605099420-g8cgn
+skipping checks on pod because it is too young: kuberhealthy/check-reaper-1605099600-t2kjm
+skipping checks on pod because it is too young: kuberhealthy/check-reaper-1605099780-4jwtd
+2020/11/11 13:04:18 checkClient: DEBUG: Reporting FAILURE
+2020/11/11 13:04:18 checkClient: DEBUG: Sending report with error length of:1
+2020/11/11 13:04:18 checkClient: DEBUG: Sending report with ok state of:false
+2020/11/11 13:04:18 checkClient: INFO: Using kuberhealthy reporting URL:http://kuberhealthy.kuberhealthy.svc.cluster.local/externalCheckStatus
+2020/11/11 13:04:18 checkClient: INFO: Got a good http return status code from kuberhealthy URL:http://kuberhealthy.kuberhealthy.svc.cluster.local/externalCheckStatus
+successfully reported

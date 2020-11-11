@@ -1,0 +1,123 @@
+apiVersion: jenkins.io/v1
+kind: PipelineActivity
+metadata:
+  annotations:
+    lighthouse.jenkins-x.io/cloneURI: https://github.com/jstrachan/nodey536.git
+    lighthouse.jenkins-x.io/job: release
+  creationTimestamp: "2020-11-06T15:34:21Z"
+  generation: 20
+  labels:
+    branch: master
+    build: "2"
+    context: release
+    created-by-lighthouse: "true"
+    event-GUID: 899ff6a6-2045-11eb-99ef-d7a4552e513a
+    lighthouse.jenkins-x.io/baseSHA: 3d9cad80d32f30f97424c2a8e7397ea9c8111d14
+    lighthouse.jenkins-x.io/branch: master
+    lighthouse.jenkins-x.io/buildNum: "1604676861130"
+    lighthouse.jenkins-x.io/context: release
+    lighthouse.jenkins-x.io/id: 8a5b4c2c-2045-11eb-bba8-e28ba64a4b7b
+    lighthouse.jenkins-x.io/job: release
+    lighthouse.jenkins-x.io/lastCommitSHA: 3d9cad80d32f30f97424c2a8e7397ea9c8111d14
+    lighthouse.jenkins-x.io/refs.org: jstrachan
+    lighthouse.jenkins-x.io/refs.repo: nodey536
+    lighthouse.jenkins-x.io/type: postsubmit
+    owner: jstrachan
+    podName: release-dhs6c-from-build-pack-zbqrz-pod-gn7mb
+    provider: github
+    repository: nodey536
+    tekton.dev/pipeline: release-dhs6c
+  name: jstrachan-nodey536-master-2
+  namespace: jx
+  resourceVersion: "22013643"
+  selfLink: /apis/jenkins.io/v1/namespaces/jx/pipelineactivities/jstrachan-nodey536-master-2
+  uid: 2a2c0ebc-e913-48ad-9d8f-8cc81dbfe1bd
+spec:
+  baseSHA: 3d9cad80d32f30f97424c2a8e7397ea9c8111d14
+  batchPipelineActivity: {}
+  build: "2"
+  buildLogsUrl: gs://logs-jstrachan-tekton-20699896b252/jenkins-x/logs/jstrachan/nodey536/master/2.log
+  completedTimestamp: "2020-11-06T15:35:21Z"
+  context: release
+  gitBranch: master
+  gitOwner: jstrachan
+  gitRepository: nodey536
+  gitUrl: https://github.com/jstrachan/nodey536.git
+  lastCommitMessage: Update index.html
+  lastCommitSHA: 3d9cad80d32f30f97424c2a8e7397ea9c8111d14
+  pipeline: jstrachan/nodey536/master
+  releaseNotesURL: https://github.com/jstrachan/nodey536/releases/tag/v1.0.5
+  startedTimestamp: "2020-11-06T15:34:21Z"
+  status: Succeeded
+  steps:
+  - kind: Stage
+    stage:
+      completedTimestamp: "2020-11-06T15:35:21Z"
+      name: from build pack
+      startedTimestamp: "2020-11-06T15:34:32Z"
+      status: Succeeded
+      steps:
+      - completedTimestamp: "2020-11-06T15:34:33Z"
+        name: Git Clone
+        startedTimestamp: "2020-11-06T15:34:32Z"
+        status: Succeeded
+      - completedTimestamp: "2020-11-06T15:34:34Z"
+        name: Setup Builder Home
+        startedTimestamp: "2020-11-06T15:34:34Z"
+        status: Succeeded
+      - completedTimestamp: "2020-11-06T15:34:36Z"
+        name: Next Version
+        startedTimestamp: "2020-11-06T15:34:34Z"
+        status: Succeeded
+      - completedTimestamp: "2020-11-06T15:34:38Z"
+        name: Update Version
+        startedTimestamp: "2020-11-06T15:34:37Z"
+        status: Succeeded
+      - completedTimestamp: "2020-11-06T15:34:42Z"
+        name: Tag Version
+        startedTimestamp: "2020-11-06T15:34:38Z"
+        status: Succeeded
+      - completedTimestamp: "2020-11-06T15:34:43Z"
+        name: Jx Variables
+        startedTimestamp: "2020-11-06T15:34:42Z"
+        status: Succeeded
+      - completedTimestamp: "2020-11-06T15:34:43Z"
+        name: Build Npmrc
+        startedTimestamp: "2020-11-06T15:34:43Z"
+        status: Succeeded
+      - completedTimestamp: "2020-11-06T15:34:45Z"
+        name: Build Npm Install
+        startedTimestamp: "2020-11-06T15:34:44Z"
+        status: Succeeded
+      - completedTimestamp: "2020-11-06T15:34:47Z"
+        name: Build Npm Test
+        startedTimestamp: "2020-11-06T15:34:46Z"
+        status: Succeeded
+      - completedTimestamp: "2020-11-06T15:34:59Z"
+        name: Build Container Build
+        startedTimestamp: "2020-11-06T15:34:48Z"
+        status: Succeeded
+      - completedTimestamp: "2020-11-06T15:35:09Z"
+        name: Promote Changelog
+        startedTimestamp: "2020-11-06T15:35:00Z"
+        status: Succeeded
+      - completedTimestamp: "2020-11-06T15:35:10Z"
+        name: Promote Helm Release
+        startedTimestamp: "2020-11-06T15:35:09Z"
+        status: Succeeded
+      - completedTimestamp: "2020-11-06T15:35:21Z"
+        name: Promote Jx Promote
+        startedTimestamp: "2020-11-06T15:35:11Z"
+        status: Succeeded
+  - kind: Promote
+    promote:
+      environment: staging
+      pullRequest:
+        pullRequestURL: https://github.com/jstrachan/jx-demo-terraform-dev/pull/74
+        startedTimestamp: "2020-11-06T15:35:18Z"
+        status: Succeeded
+      startedTimestamp: "2020-11-06T15:35:18Z"
+      status: Succeeded
+  version: 1.0.5
+  workflowStatus: Running
+status: {}

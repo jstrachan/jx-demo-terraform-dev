@@ -1,0 +1,111 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    components.gke.io/component-name: fluentd-scaler
+    components.gke.io/component-version: 1.0.1
+  creationTimestamp: "2020-11-07T03:13:19Z"
+  generateName: fluentd-gke-scaler-cd4d654d7-
+  labels:
+    k8s-app: fluentd-gke-scaler
+    pod-template-hash: cd4d654d7
+  name: fluentd-gke-scaler-cd4d654d7-d8pf7
+  namespace: kube-system
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: fluentd-gke-scaler-cd4d654d7
+    uid: 9a2fa36f-4610-444a-a614-1c173d78992d
+  resourceVersion: "22547325"
+  selfLink: /api/v1/namespaces/kube-system/pods/fluentd-gke-scaler-cd4d654d7-d8pf7
+  uid: 8e99cb4b-5d6b-4bf4-a623-c209ed925eb2
+spec:
+  containers:
+  - command:
+    - /scaler.sh
+    - --ds-name=fluentd-gke
+    - --scaling-policy=fluentd-gcp-scaling-policy
+    env:
+    - name: CPU_REQUEST
+      value: 100m
+    - name: MEMORY_REQUEST
+      value: 200Mi
+    - name: CPU_LIMIT
+      value: "1"
+    - name: MEMORY_LIMIT
+      value: 500Mi
+    image: k8s.gcr.io/fluentd-gcp-scaler:0.5.2
+    imagePullPolicy: IfNotPresent
+    name: fluentd-gke-scaler
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: fluentd-gke-scaler-token-58phv
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-pmxj
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: fluentd-gke-scaler
+  serviceAccountName: fluentd-gke-scaler
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - key: components.gke.io/gke-managed-components
+    operator: Exists
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: fluentd-gke-scaler-token-58phv
+    secret:
+      defaultMode: 420
+      secretName: fluentd-gke-scaler-token-58phv
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:13:20Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:14:57Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:14:57Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:13:20Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://656e6e26e1a36e22f4988fc7bba8abac4368e2f76da5211b858f52c26e8c4a0b
+    image: k8s.gcr.io/fluentd-gcp-scaler:0.5.2
+    imageID: docker-pullable://k8s.gcr.io/fluentd-gcp-scaler@sha256:4f28f10fb89506768910b858f7a18ffb996824a16d70d5ac895e49687df9ff58
+    lastState: {}
+    name: fluentd-gke-scaler
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-07T03:13:32Z"
+  hostIP: 10.128.0.11
+  phase: Running
+  podIP: 10.8.7.8
+  podIPs:
+  - ip: 10.8.7.8
+  qosClass: BestEffort
+  startTime: "2020-11-07T03:13:20Z"

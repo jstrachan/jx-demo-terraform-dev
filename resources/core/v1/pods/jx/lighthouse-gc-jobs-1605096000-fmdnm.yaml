@@ -1,0 +1,107 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2020-11-11T12:00:00Z"
+  generateName: lighthouse-gc-jobs-1605096000-
+  labels:
+    app: lighthouse-gc-jobs
+    controller-uid: bcd86de3-4c26-459d-b759-1092ad84ca7d
+    job-name: lighthouse-gc-jobs-1605096000
+    release: lighthouse
+  name: lighthouse-gc-jobs-1605096000-fmdnm
+  namespace: jx
+  ownerReferences:
+  - apiVersion: batch/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: Job
+    name: lighthouse-gc-jobs-1605096000
+    uid: bcd86de3-4c26-459d-b759-1092ad84ca7d
+  resourceVersion: "27347013"
+  selfLink: /api/v1/namespaces/jx/pods/lighthouse-gc-jobs-1605096000-fmdnm
+  uid: d0111cf7-2b21-446a-83ff-bda0bc80d868
+spec:
+  containers:
+  - args:
+    - --namespace=jx
+    - --max-age=168h
+    command:
+    - /home/jx/gc-jobs
+    image: gcr.io/jenkinsxio/lighthouse-gc-jobs:0.0.0-SNAPSHOT-PR-1142-27
+    imagePullPolicy: IfNotPresent
+    name: lighthouse-gc-jobs
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: lighthouse-gc-jobs-token-jzxn8
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-n21q
+  priority: 0
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: lighthouse-gc-jobs
+  serviceAccountName: lighthouse-gc-jobs
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: lighthouse-gc-jobs-token-jzxn8
+    secret:
+      defaultMode: 420
+      secretName: lighthouse-gc-jobs-token-jzxn8
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T12:00:00Z"
+    reason: PodCompleted
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T12:00:02Z"
+    reason: PodCompleted
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T12:00:02Z"
+    reason: PodCompleted
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T12:00:00Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://2b0cfef7977d73f9c979e9926327501288e4e2b45ccf3bee13e73a3d0c458cfa
+    image: gcr.io/jenkinsxio/lighthouse-gc-jobs:0.0.0-SNAPSHOT-PR-1142-27
+    imageID: docker-pullable://gcr.io/jenkinsxio/lighthouse-gc-jobs@sha256:c1db04ba1cef85a34e27210b298d9f8110a4221a26e37040211407954ce9f566
+    lastState: {}
+    name: lighthouse-gc-jobs
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      terminated:
+        containerID: docker://2b0cfef7977d73f9c979e9926327501288e4e2b45ccf3bee13e73a3d0c458cfa
+        exitCode: 0
+        finishedAt: "2020-11-11T12:00:01Z"
+        reason: Completed
+        startedAt: "2020-11-11T12:00:01Z"
+  hostIP: 10.128.0.5
+  phase: Succeeded
+  podIP: 10.8.5.178
+  podIPs:
+  - ip: 10.8.5.178
+  qosClass: BestEffort
+  startTime: "2020-11-11T12:00:00Z"

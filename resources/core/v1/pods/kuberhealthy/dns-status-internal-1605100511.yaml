@@ -1,0 +1,127 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    comcast.github.io/check-name: dns-status-internal
+  creationTimestamp: "2020-11-11T13:15:17Z"
+  labels:
+    app: kuberhealthy-check
+    kuberhealthy-check-name: dns-status-internal
+    kuberhealthy-run-id: c3939b89-a33b-4d21-a3ec-343555c56292
+  name: dns-status-internal-1605100511
+  namespace: kuberhealthy
+  ownerReferences:
+  - apiVersion: v1
+    kind: Pod
+    name: kuberhealthy-5c46966647-6db64
+    uid: d98a024b-7504-4cdd-a3bb-c70c6128d8fb
+  resourceVersion: "27404578"
+  selfLink: /api/v1/namespaces/kuberhealthy/pods/dns-status-internal-1605100511
+  uid: 452c54e5-bc98-4c1d-afe9-675d56d0f345
+spec:
+  containers:
+  - env:
+    - name: NODE_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: spec.nodeName
+    - name: HOSTNAME
+      value: kubernetes.default
+    - name: KH_REPORTING_URL
+      value: http://kuberhealthy.kuberhealthy.svc.cluster.local/externalCheckStatus
+    - name: KH_RUN_UUID
+      value: c3939b89-a33b-4d21-a3ec-343555c56292
+    - name: KH_CHECK_RUN_DEADLINE
+      value: "1605101411"
+    - name: KH_POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    image: kuberhealthy/dns-resolution-check:v1.4.1
+    imagePullPolicy: IfNotPresent
+    name: main
+    resources:
+      requests:
+        cpu: 10m
+        memory: 50Mi
+    securityContext:
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-k5bp8
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-pmxj
+  priority: 0
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  securityContext:
+    fsGroup: 999
+    runAsUser: 999
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: default-token-k5bp8
+    secret:
+      defaultMode: 420
+      secretName: default-token-k5bp8
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:15:17Z"
+    reason: PodCompleted
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:15:22Z"
+    reason: PodCompleted
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:15:22Z"
+    reason: PodCompleted
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:15:17Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://b9c68917347ee31297c3109bf7f62ea06756f3bd750a2b4a00c4f78d5e31f229
+    image: kuberhealthy/dns-resolution-check:v1.4.1
+    imageID: docker-pullable://kuberhealthy/dns-resolution-check@sha256:91b80a863e44e5a341844f85c5bb057be1334e6491ce2207c9747e0f4ea396dd
+    lastState: {}
+    name: main
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      terminated:
+        containerID: docker://b9c68917347ee31297c3109bf7f62ea06756f3bd750a2b4a00c4f78d5e31f229
+        exitCode: 0
+        finishedAt: "2020-11-11T13:15:21Z"
+        reason: Completed
+        startedAt: "2020-11-11T13:15:18Z"
+  hostIP: 10.128.0.11
+  phase: Succeeded
+  podIP: 10.8.7.133
+  podIPs:
+  - ip: 10.8.7.133
+  qosClass: Burstable
+  startTime: "2020-11-11T13:15:17Z"

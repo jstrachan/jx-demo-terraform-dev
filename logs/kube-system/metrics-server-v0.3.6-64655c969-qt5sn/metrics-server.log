@@ -1,0 +1,575 @@
+Flag --deprecated-kubelet-completely-insecure has been deprecated, This is rarely the right option, since it leaves kubelet communication completely insecure.  If you encounter auth errors, make sure you've enabled token webhook auth on the Kubelet, and if you're in a test cluster with self-signed Kubelet certificates, consider using kubelet-insecure-tls instead.
+I1107 03:05:06.976207       1 serving.go:312] Generated self-signed cert (apiserver.local.config/certificates/apiserver.crt, apiserver.local.config/certificates/apiserver.key)
+I1107 03:05:34.974585       1 secure_serving.go:116] Serving securely on [::]:443
+I1107 03:05:35.076126       1 log.go:172] http: TLS handshake error from 10.128.0.3:43748: EOF
+I1107 03:05:35.176447       1 log.go:172] http: TLS handshake error from 10.8.3.1:36892: EOF
+I1107 03:05:35.374563       1 log.go:172] http: TLS handshake error from 10.128.0.86:41500: EOF
+I1107 03:05:35.476335       1 log.go:172] http: TLS handshake error from 10.128.0.21:58212: EOF
+I1107 03:05:36.072777       1 log.go:172] http: TLS handshake error from 10.128.0.3:43746: EOF
+I1107 03:05:37.273761       1 log.go:172] http: TLS handshake error from 10.128.0.86:41528: EOF
+I1107 03:05:37.273846       1 log.go:172] http: TLS handshake error from 10.128.0.3:43736: EOF
+I1107 03:05:37.273873       1 log.go:172] http: TLS handshake error from 10.128.0.21:58210: EOF
+I1107 03:05:37.273895       1 log.go:172] http: TLS handshake error from 10.128.0.6:35046: EOF
+I1107 03:05:37.273913       1 log.go:172] http: TLS handshake error from 10.8.3.1:36950: EOF
+I1107 03:05:37.273934       1 log.go:172] http: TLS handshake error from 10.128.0.6:35104: EOF
+I1107 03:05:37.275938       1 log.go:172] http: TLS handshake error from 10.128.0.21:58214: EOF
+I1107 03:05:37.474763       1 log.go:172] http: TLS handshake error from 10.128.0.21:58312: EOF
+I1107 03:05:37.572984       1 log.go:172] http: TLS handshake error from 10.128.0.6:35106: EOF
+I1107 03:05:37.873226       1 log.go:172] http: TLS handshake error from 10.128.0.6:35048: EOF
+E1107 03:06:04.577607       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/fluentd-gke-scaler-cd4d654d7-8cddf: no metrics known for pod
+E1107 03:06:04.577697       1 reststorage.go:160] unable to fetch pod metrics for pod jx/lighthouse-webhooks-859b6fffb6-6wjwj: no metrics known for pod
+E1107 03:06:04.577717       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metrics-agent-rhs6r: no metrics known for pod
+E1107 03:06:04.577724       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6b8547dff8-2d2sp: no metrics known for pod
+E1107 03:06:04.577731       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metadata-server-qgt2p: no metrics known for pod
+E1107 03:06:04.577737       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/netd-4v9dn: no metrics known for pod
+E1107 03:06:04.577743       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/fluentd-gke-mzhpg: no metrics known for pod
+E1107 03:06:04.577751       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/fluentd-gke-bhmst: no metrics known for pod
+E1107 03:06:04.577759       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metadata-server-prvdv: no metrics known for pod
+E1107 03:06:04.577770       1 reststorage.go:160] unable to fetch pod metrics for pod nginx/nginx-ingress-controller-55b8cd465c-2vsft: no metrics known for pod
+E1107 03:06:04.577777       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metadata-server-tkqwz: no metrics known for pod
+E1107 03:06:04.577784       1 reststorage.go:160] unable to fetch pod metrics for pod jx/nexus-nexus-754698448d-v4bv2: no metrics known for pod
+E1107 03:06:04.577791       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-74f4d77687-hnchm: no metrics known for pod
+E1107 03:06:04.577797       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/stackdriver-metadata-agent-cluster-level-547f9bfb74-5fst7: no metrics known for pod
+E1107 03:06:04.577804       1 reststorage.go:160] unable to fetch pod metrics for pod secret-infra/pusher-wave-pusher-wave-784df44c8b-zhjj2: no metrics known for pod
+E1107 03:06:04.577995       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metadata-server-rkrrn: no metrics known for pod
+E1107 03:06:04.578072       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/netd-7492r: no metrics known for pod
+E1107 03:06:04.578127       1 reststorage.go:160] unable to fetch pod metrics for pod jx/jenkins-x-chartmuseum-844cddb458-2mnfm: no metrics known for pod
+E1107 03:06:04.578189       1 reststorage.go:160] unable to fetch pod metrics for pod nginx/nginx-ingress-controller-55b8cd465c-2hnk6: no metrics known for pod
+E1107 03:06:04.578266       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/event-exporter-gke-8489df9489-smkcz: no metrics known for pod
+E1107 03:06:04.578326       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metrics-agent-4r5tr: no metrics known for pod
+E1107 03:06:04.578390       1 reststorage.go:160] unable to fetch pod metrics for pod secret-infra/kubernetes-external-secrets-8679dfcf5d-rsf7g: no metrics known for pod
+E1107 03:06:04.578454       1 reststorage.go:160] unable to fetch pod metrics for pod jx/lighthouse-keeper-64955449b9-qgqgm: no metrics known for pod
+E1107 03:06:04.578521       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-74f4d77687-z9nfq: no metrics known for pod
+E1107 03:06:04.578621       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/kuberhealthy-5c46966647-nvcl5: no metrics known for pod
+E1107 03:06:04.578684       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metadata-server-6bwxm: no metrics known for pod
+E1107 03:06:04.578746       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/prometheus-to-sd-pdwcx: no metrics known for pod
+E1107 03:06:04.578835       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metrics-agent-z92tn: no metrics known for pod
+E1107 03:06:04.578935       1 reststorage.go:160] unable to fetch pod metrics for pod tekton-pipelines/tekton-pipelines-controller-9746c7487-2p7rq: no metrics known for pod
+E1107 03:06:04.579032       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/daemonset-daemonset-1604718328-1604718336-gzzqz: no metrics known for pod
+E1107 03:06:04.579121       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/prometheus-to-sd-ntw4b: no metrics known for pod
+E1107 03:06:04.579209       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6b8547dff8-2gfq7: no metrics known for pod
+E1107 03:06:04.579226       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-1604718328: no metrics known for pod
+E1107 03:06:04.579234       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/l7-default-backend-678889f899-n8s77: no metrics known for pod
+E1107 03:06:04.579293       1 reststorage.go:160] unable to fetch pod metrics for pod jx-staging/bdd-gh-1602679032-bdd-gh-1602679032-59944d755d-wdsx4: no metrics known for pod
+E1107 03:06:04.579304       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/kube-proxy-gke-****-tekton-default-pool-154aeb80-ccfi: no metrics known for pod
+E1107 03:06:04.579314       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/daemonset-daemonset-1604718328-1604718336-mk6fr: no metrics known for pod
+E1107 03:06:04.579326       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/daemonset-daemonset-1604718328-1604718336-d6fcd: no metrics known for pod
+E1107 03:06:04.579334       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/kube-dns-autoscaler-645f7d66cf-tgcv5: no metrics known for pod
+E1107 03:06:04.579349       1 reststorage.go:160] unable to fetch pod metrics for pod jx-staging/nodey536-nodey536-76cfc5958f-nhjnq: no metrics known for pod
+E1107 03:06:04.579362       1 reststorage.go:160] unable to fetch pod metrics for pod jx/lighthouse-tekton-controller-74bd4b8487-js67m: no metrics known for pod
+E1107 03:06:04.579370       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/kube-proxy-gke-****-tekton-default-pool-154aeb80-xpxd: no metrics known for pod
+E1107 03:06:04.579382       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/kube-dns-7c976ddbdb-4wz5q: no metrics known for pod
+E1107 03:06:04.579391       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/prometheus-to-sd-t8fgf: no metrics known for pod
+E1107 03:06:04.579400       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/fluentd-gke-lm286: no metrics known for pod
+E1107 03:06:04.579409       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/kube-dns-7c976ddbdb-fbrln: no metrics known for pod
+E1107 03:06:04.579418       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/netd-lf6jf: no metrics known for pod
+E1107 03:06:04.579428       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/prometheus-to-sd-gfp6g: no metrics known for pod
+E1107 03:06:04.579436       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/prometheus-to-sd-4bq8g: no metrics known for pod
+E1107 03:06:04.579444       1 reststorage.go:160] unable to fetch pod metrics for pod jx-git-operator/jx-git-operator-788b49cf4c-cwkfb: no metrics known for pod
+E1107 03:06:04.579456       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/daemonset-1604718328: no metrics known for pod
+E1107 03:06:04.579464       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/kube-proxy-gke-****-tekton-nap-n1-standard--0a7ecf20-50mn: no metrics known for pod
+E1107 03:06:04.579479       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metrics-agent-v5qgj: no metrics known for pod
+E1107 03:06:04.579486       1 reststorage.go:160] unable to fetch pod metrics for pod jx/lighthouse-foghorn-fb5cf7559-gq7s7: no metrics known for pod
+E1107 03:06:04.579495       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/kube-proxy-gke-****-tekton-default-pool-154aeb80-g1nn: no metrics known for pod
+E1107 03:06:04.579507       1 reststorage.go:160] unable to fetch pod metrics for pod jx/jx-build-controller-c85865f96-7dshs: no metrics known for pod
+E1107 03:06:04.579517       1 reststorage.go:160] unable to fetch pod metrics for pod nginx/nginx-ingress-default-backend-64dbd4744d-8n4jm: no metrics known for pod
+E1107 03:06:04.579526       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-74f4d77687-t2wrz: no metrics known for pod
+E1107 03:06:04.579558       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/metrics-server-v0.3.6-64655c969-qt5sn: no metrics known for pod
+E1107 03:06:04.579570       1 reststorage.go:160] unable to fetch pod metrics for pod nginx/nginx-ingress-controller-55b8cd465c-z4xwj: no metrics known for pod
+E1107 03:06:04.579580       1 reststorage.go:160] unable to fetch pod metrics for pod tekton-pipelines/tekton-pipelines-webhook-b4b67f45-hdzwb: no metrics known for pod
+E1107 03:06:04.579590       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/fluentd-gke-8f9r9: no metrics known for pod
+E1107 03:06:04.579598       1 reststorage.go:160] unable to fetch pod metrics for pod jx/jx-pipelines-visualizer-547974f8df-npvfb: no metrics known for pod
+E1107 03:06:04.579605       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metrics-agent-d2lpl: no metrics known for pod
+E1107 03:06:04.579613       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/netd-b9wc8: no metrics known for pod
+E1107 03:06:04.579623       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/kube-proxy-gke-****-tekton-default-pool-154aeb80-r0kn: no metrics known for pod
+E1107 03:06:04.579631       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/netd-tmj26: no metrics known for pod
+E1107 03:06:04.579646       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/fluentd-gke-v6gsx: no metrics known for pod
+E1107 03:06:04.579653       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/kuberhealthy-5c46966647-7mbjl: no metrics known for pod
+E1107 03:06:04.773427       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-g1nn: unable to fetch metrics from Kubelet gke-****-tekton-default-pool-154aeb80-g1nn (10.128.0.3): Get http://10.128.0.3:10255/stats/summary?only_cpu_and_memory=true: dial tcp 10.128.0.3:10255: connect: connection refused
+E1107 03:06:34.872996       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-g1nn: unable to fetch metrics from Kubelet gke-****-tekton-default-pool-154aeb80-g1nn (10.128.0.3): Get http://10.128.0.3:10255/stats/summary?only_cpu_and_memory=true: dial tcp 10.128.0.3:10255: connect: connection refused
+E1107 03:07:04.573000       1 reststorage.go:160] unable to fetch pod metrics for pod jx/jx-bot-token-1604718417: no metrics known for pod
+E1107 03:07:04.573040       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metrics-agent-v5qgj: no metrics known for pod
+E1107 03:07:04.573048       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/kube-proxy-gke-****-tekton-default-pool-154aeb80-g1nn: no metrics known for pod
+E1107 03:07:04.573062       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metadata-server-qgt2p: no metrics known for pod
+E1107 03:07:04.573071       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/netd-4v9dn: no metrics known for pod
+E1107 03:07:04.573078       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/fluentd-gke-mzhpg: no metrics known for pod
+E1107 03:07:04.573090       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/prometheus-to-sd-ntw4b: no metrics known for pod
+E1107 03:07:31.377835       1 manager.go:111] unable to fully collect metrics: [unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-ccfi: unable to get a valid timestamp for metric point for container "jx-install" in pod jx-git-operator/jx-install-1604718417 on node "10.128.0.2", discarding data: no non-zero timestamp on either CPU or memory, unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-g1nn: unable to fetch metrics from Kubelet gke-****-tekton-default-pool-154aeb80-g1nn (10.128.0.3): Get http://10.128.0.3:10255/stats/summary?only_cpu_and_memory=true: context deadline exceeded]
+E1107 03:08:04.972862       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/prometheus-to-sd-qfzkw: no metrics known for pod
+E1107 03:08:04.972916       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/kube-proxy-gke-****-tekton-default-pool-154aeb80-n21q: no metrics known for pod
+E1107 03:12:31.737616       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-r0kn: unable to fetch metrics from Kubelet gke-****-tekton-default-pool-154aeb80-r0kn (10.128.0.21): Get http://10.128.0.21:10255/stats/summary?only_cpu_and_memory=true: context deadline exceeded
+E1107 03:13:04.557477       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/kube-proxy-gke-****-tekton-default-pool-154aeb80-pmxj: no metrics known for pod
+E1107 03:13:04.557573       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/prometheus-to-sd-l65fc: no metrics known for pod
+E1107 03:14:01.437117       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-pmxj: unable to fetch metrics from Kubelet gke-****-tekton-default-pool-154aeb80-pmxj (10.128.0.11): Get http://10.128.0.11:10255/stats/summary?only_cpu_and_memory=true: context deadline exceeded
+E1107 03:14:04.579269       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metadata-server-8fjjb: no metrics known for pod
+E1107 03:14:04.579304       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/kube-proxy-gke-****-tekton-default-pool-154aeb80-pmxj: no metrics known for pod
+E1107 03:14:04.579322       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/fluentd-gke-284vt: no metrics known for pod
+E1107 03:14:04.579331       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metrics-agent-md5kj: no metrics known for pod
+E1107 03:14:04.579340       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/netd-nvnsl: no metrics known for pod
+E1107 03:14:04.579347       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/prometheus-to-sd-l65fc: no metrics known for pod
+E1107 03:14:11.836513       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-pmxj: unable to get a valid timestamp for metric point for container "fluentd-gke-scaler" in pod kube-system/fluentd-gke-scaler-cd4d654d7-d8pf7 on node "10.128.0.11", discarding data: no non-zero timestamp on either CPU or memory
+E1107 03:14:56.647233       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-pmxj: unable to get a valid timestamp for metric point for container "prometheus-to-sd-exporter" in pod kube-system/event-exporter-gke-8489df9489-4nkwt on node "10.128.0.11", discarding data: no non-zero timestamp on either CPU or memory
+E1107 03:15:04.552349       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/event-exporter-gke-8489df9489-4nkwt: no metrics known for pod
+E1107 03:16:04.483958       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-xpxd: unable to fetch metrics from Kubelet gke-****-tekton-default-pool-154aeb80-xpxd (10.128.0.6): Get http://10.128.0.6:10255/stats/summary?only_cpu_and_memory=true: dial tcp 10.128.0.6:10255: connect: connection refused
+E1107 03:16:04.573276       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metrics-agent-4r5tr: no metrics known for pod
+E1107 03:16:04.573319       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/kube-proxy-gke-****-tekton-default-pool-154aeb80-xpxd: no metrics known for pod
+E1107 03:16:04.573328       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/prometheus-to-sd-t8fgf: no metrics known for pod
+E1107 03:16:04.573340       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/fluentd-gke-bhmst: no metrics known for pod
+E1107 03:16:04.573346       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metadata-server-prvdv: no metrics known for pod
+E1107 03:16:04.573362       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/netd-tmj26: no metrics known for pod
+E1107 03:16:34.775410       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-xpxd: unable to fetch metrics from Kubelet gke-****-tekton-default-pool-154aeb80-xpxd (10.128.0.6): Get http://10.128.0.6:10255/stats/summary?only_cpu_and_memory=true: dial tcp 10.128.0.6:10255: connect: connection refused
+E1107 03:17:04.478635       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-xpxd: unable to fetch metrics from Kubelet gke-****-tekton-default-pool-154aeb80-xpxd (10.128.0.6): Get http://10.128.0.6:10255/stats/summary?only_cpu_and_memory=true: dial tcp 10.128.0.6:10255: connect: connection refused
+E1107 03:17:04.549045       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/netd-tmj26: no metrics known for pod
+E1107 03:17:04.549076       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metrics-agent-4r5tr: no metrics known for pod
+E1107 03:17:04.549088       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/kube-proxy-gke-****-tekton-default-pool-154aeb80-xpxd: no metrics known for pod
+E1107 03:17:04.549098       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/prometheus-to-sd-t8fgf: no metrics known for pod
+E1107 03:17:04.549108       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/fluentd-gke-bhmst: no metrics known for pod
+E1107 03:17:04.549115       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metadata-server-prvdv: no metrics known for pod
+E1107 03:23:34.875938       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-50mn: unable to fetch metrics from Kubelet gke-****-tekton-nap-n1-standard--0a7ecf20-50mn (10.128.0.86): Get http://10.128.0.86:10255/stats/summary?only_cpu_and_memory=true: dial tcp 10.128.0.86:10255: connect: connection refused
+E1107 03:24:04.548065       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metrics-agent-d2lpl: no metrics known for pod
+E1107 03:24:04.548101       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/gke-metadata-server-rkrrn: no metrics known for pod
+E1107 03:24:04.548183       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/prometheus-to-sd-pdwcx: no metrics known for pod
+E1107 03:24:04.548226       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/kube-proxy-gke-****-tekton-nap-n1-standard--0a7ecf20-50mn: no metrics known for pod
+E1107 03:24:04.548233       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/fluentd-gke-8f9r9: no metrics known for pod
+E1107 03:24:04.548245       1 reststorage.go:160] unable to fetch pod metrics for pod kube-system/netd-7492r: no metrics known for pod
+E1107 03:24:31.377788       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-50mn: unable to fetch metrics from Kubelet gke-****-tekton-nap-n1-standard--0a7ecf20-50mn (10.128.0.86): Get http://10.128.0.86:10255/stats/summary?only_cpu_and_memory=true: context deadline exceeded
+E1107 03:50:04.773063       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-58bbdd99bf-xwzr4: no metrics known for pod
+E1107 04:03:04.537729       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1604721780-5mpsx: no metrics known for pod
+E1107 04:30:04.773155       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1604723400-7cnfz: no metrics known for pod
+E1107 05:10:04.580881       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6c6c499bf9-2xn9h: no metrics known for pod
+E1107 05:10:04.580910       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6c6c499bf9-hhs4m: no metrics known for pod
+E1107 05:10:04.580922       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6c6c499bf9-jczjk: no metrics known for pod
+E1107 05:10:04.580934       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6c6c499bf9-h4d2j: no metrics known for pod
+E1107 06:00:04.579945       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-77d995c584-zlgb2: no metrics known for pod
+E1107 06:00:04.579992       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-77d995c584-cqdnh: no metrics known for pod
+E1107 06:00:04.580003       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-77d995c584-vqbzs: no metrics known for pod
+E1107 06:10:04.873599       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-798989bd69-g28vt: no metrics known for pod
+E1107 06:10:04.873644       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-798989bd69-krf5v: no metrics known for pod
+E1107 06:10:04.873660       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-798989bd69-gkvgh: no metrics known for pod
+E1107 06:10:04.873688       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-798989bd69-zdbqc: no metrics known for pod
+E1107 06:40:04.558117       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7dcf668f6b-9rjxz: no metrics known for pod
+E1107 06:40:04.558170       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7dcf668f6b-9r74x: no metrics known for pod
+E1107 06:40:04.558183       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7dcf668f6b-jftrx: no metrics known for pod
+E1107 06:40:04.558193       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7dcf668f6b-vkq92: no metrics known for pod
+E1107 06:42:04.557248       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1604731320-kxplg: no metrics known for pod
+E1107 07:20:04.576211       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7d469b775c-hc9zk: no metrics known for pod
+E1107 07:20:04.576243       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7d469b775c-5wdgh: no metrics known for pod
+E1107 07:20:04.576265       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7d469b775c-z2ztm: no metrics known for pod
+E1107 07:20:04.576282       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7d469b775c-tpc7n: no metrics known for pod
+E1107 07:50:04.577197       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-b5c884769-x8gqm: no metrics known for pod
+E1107 08:00:04.572659       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-767f59dbc5-bnlr6: no metrics known for pod
+E1107 08:00:04.572701       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-767f59dbc5-5ml5b: no metrics known for pod
+E1107 08:00:04.572723       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-767f59dbc5-vftjx: no metrics known for pod
+E1107 08:10:04.873935       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-85456f8db8-kgg8t: no metrics known for pod
+E1107 08:10:04.874198       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-85456f8db8-pqdjb: no metrics known for pod
+E1107 08:10:04.874223       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-85456f8db8-ngx5h: no metrics known for pod
+E1107 08:10:04.874237       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-85456f8db8-z8wkd: no metrics known for pod
+E1107 08:50:04.772937       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-857479bdbb-6fp9n: no metrics known for pod
+E1107 08:50:04.772985       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-857479bdbb-tcmsf: no metrics known for pod
+E1107 09:00:04.585190       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-675d754664-x84tw: no metrics known for pod
+E1107 09:00:04.585246       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-675d754664-lgcmk: no metrics known for pod
+E1107 09:00:04.585266       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-675d754664-68d22: no metrics known for pod
+E1107 09:00:04.585287       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-675d754664-2466f: no metrics known for pod
+E1107 10:30:04.573092       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5f64974b9b-rzs9z: no metrics known for pod
+E1107 10:30:04.573130       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5f64974b9b-wwkfh: no metrics known for pod
+E1107 10:30:04.573144       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5f64974b9b-4hzlf: no metrics known for pod
+E1107 10:30:04.573398       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5f64974b9b-mkspr: no metrics known for pod
+E1107 10:40:04.557817       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6fff49844c-mgw7l: no metrics known for pod
+E1107 10:40:04.557849       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6fff49844c-qxmtg: no metrics known for pod
+E1107 10:40:04.557861       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6fff49844c-gxql8: no metrics known for pod
+E1107 10:40:04.557871       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6fff49844c-4blsz: no metrics known for pod
+E1107 10:50:04.559435       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-75495db67d-vvtzg: no metrics known for pod
+E1107 10:50:04.559489       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-75495db67d-5m8mj: no metrics known for pod
+E1107 11:10:04.576213       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6ffc5d96f9-msq7l: no metrics known for pod
+E1107 11:20:04.558318       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-576d75c844-zp5rw: no metrics known for pod
+E1107 11:20:04.558351       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-576d75c844-d42bv: no metrics known for pod
+E1107 11:30:04.604158       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5dbff8898c-p6x7f: no metrics known for pod
+E1107 11:30:04.604197       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5dbff8898c-g7kxj: no metrics known for pod
+E1107 11:30:04.604209       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5dbff8898c-9kpdk: no metrics known for pod
+E1107 11:50:04.679967       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5d6485bfd7-67ztk: no metrics known for pod
+E1107 12:10:04.674134       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5cdbb6d599-8rnr4: no metrics known for pod
+E1107 12:10:04.674173       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5cdbb6d599-8hhmr: no metrics known for pod
+E1107 12:10:04.674195       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5cdbb6d599-z5qcg: no metrics known for pod
+E1107 12:10:04.674236       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5cdbb6d599-f2smr: no metrics known for pod
+E1107 12:40:04.677480       1 reststorage.go:160] unable to fetch pod metrics for pod jx/jx-preview-gc-jobs-1604752800-2ww45: no metrics known for pod
+E1107 13:00:04.574172       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5945d9dc9-p9nb7: no metrics known for pod
+E1107 13:00:04.574207       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5945d9dc9-88tl7: no metrics known for pod
+E1107 13:50:04.872926       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-58f697f5d7-fhdcc: no metrics known for pod
+E1107 14:10:04.573086       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7cfb95db84-5bd8l: no metrics known for pod
+E1107 15:36:04.476253       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604763360-47l66 on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1107 16:00:04.474746       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-n21q: unable to get a valid timestamp for metric point for container "lighthouse-gc-jobs" in pod jx/lighthouse-gc-jobs-1604764800-dv9fc on node "10.128.0.5", discarding data: no non-zero timestamp on either CPU or memory
+E1107 16:00:04.595703       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-bfddd8544-56tjw: no metrics known for pod
+E1107 16:27:04.514204       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604766420-b6m8k on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1107 17:20:04.773607       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5c55bf9469-6zv8q: no metrics known for pod
+E1107 18:00:04.576951       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7f44df6cd4-m4kbh: no metrics known for pod
+E1107 18:09:04.479667       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604772540-t5pqv on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1107 18:09:04.673240       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1604772540-t5pqv: no metrics known for pod
+E1107 18:20:04.677362       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6f78f58cdd-nrrkh: no metrics known for pod
+E1107 18:30:04.773849       1 reststorage.go:160] unable to fetch pod metrics for pod jx/jxboot-helmfile-resources-gcactivities-1604773800-nlkts: no metrics known for pod
+E1107 18:30:04.773888       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-558d84cd79-56sld: no metrics known for pod
+E1107 18:30:04.773900       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-558d84cd79-w9hrv: no metrics known for pod
+E1107 18:50:04.974005       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-b8d955bbb-9whr7: no metrics known for pod
+E1107 19:10:04.777432       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-77679888dd-gvcrl: no metrics known for pod
+E1107 19:10:04.777473       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-77679888dd-kkm8s: no metrics known for pod
+E1107 19:10:04.777497       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-77679888dd-gcx8w: no metrics known for pod
+E1107 19:10:04.777508       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-77679888dd-cxrhw: no metrics known for pod
+E1107 19:24:04.475290       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604777040-cgmmp on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1107 19:30:04.573129       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-54c4c6d49b-6jkpd: no metrics known for pod
+E1107 19:30:04.573172       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-54c4c6d49b-ct8l2: no metrics known for pod
+E1107 19:30:04.573183       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-54c4c6d49b-76rg8: no metrics known for pod
+E1107 19:30:04.573190       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-54c4c6d49b-nc492: no metrics known for pod
+E1107 20:10:04.673233       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-54bf6d54d9-r5859: no metrics known for pod
+E1107 20:10:04.673528       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-54bf6d54d9-4mqpn: no metrics known for pod
+E1107 20:10:04.673631       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-54bf6d54d9-cqzrv: no metrics known for pod
+E1107 20:10:04.673730       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-54bf6d54d9-q9hfh: no metrics known for pod
+E1107 20:50:04.673379       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-78f96cf978-jlbvl: no metrics known for pod
+E1107 20:50:04.673415       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-78f96cf978-rkwqb: no metrics known for pod
+E1107 20:50:04.673446       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-78f96cf978-6b2jv: no metrics known for pod
+E1107 20:50:04.673463       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-78f96cf978-b26kv: no metrics known for pod
+E1107 21:45:04.572974       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604785500-sdxw9 on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1107 21:50:04.573106       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-74549fd544-chkf2: no metrics known for pod
+E1107 21:50:04.573152       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-74549fd544-6qj2p: no metrics known for pod
+E1107 21:50:04.573165       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-9f886655c-k9bdr: no metrics known for pod
+I1107 21:50:05.176087       1 trace.go:81] Trace[1734542320]: "List /apis/metrics.k8s.io/v1beta1/pods" (started: 2020-11-07 21:50:04.572860543 +0000 UTC m=+67530.086171082) (total time: 603.183098ms):
+Trace[1734542320]: [603.179697ms] [602.75426ms] Writing http response done (54 items)
+E1107 22:50:04.576850       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7bb58b89c9-lxrs6: no metrics known for pod
+E1107 23:00:04.558434       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6448cfd7b9-4x9pt: no metrics known for pod
+E1107 23:00:04.558479       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6448cfd7b9-bpdgt: no metrics known for pod
+E1107 23:00:04.558496       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6448cfd7b9-xgxj7: no metrics known for pod
+E1107 23:40:04.779309       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-577f7c77dc-fppw5: no metrics known for pod
+E1107 23:40:04.779400       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-8c5cf7c74-rcn6x: no metrics known for pod
+E1107 23:40:04.779429       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-577f7c77dc-2z72c: no metrics known for pod
+E1108 00:10:04.775894       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-869dcb4d55-7xrwr: no metrics known for pod
+E1108 00:10:04.775938       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-869dcb4d55-2b2cd: no metrics known for pod
+E1108 00:10:04.775948       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-869dcb4d55-4flvh: no metrics known for pod
+E1108 00:10:04.775960       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-869dcb4d55-7dg4b: no metrics known for pod
+E1108 00:20:04.774571       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-58c8c46bcb-q8p7d: no metrics known for pod
+E1108 00:50:04.675119       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-c74844f8-55lfp: no metrics known for pod
+E1108 01:00:04.576918       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-78ff44c58b-zs2ws: no metrics known for pod
+E1108 01:00:04.576954       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-b44f697b7-f4z7x: no metrics known for pod
+E1108 01:12:04.485996       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604797920-wtl45 on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1108 03:20:04.574244       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5d547f9bd6-25sqd: no metrics known for pod
+E1108 03:20:04.673638       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5d547f9bd6-vqhqx: no metrics known for pod
+E1108 03:20:04.673710       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5d547f9bd6-hxlzv: no metrics known for pod
+E1108 03:20:04.673734       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5d547f9bd6-vvg74: no metrics known for pod
+E1108 03:30:04.557985       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-75665fc7b8-g9n4g: no metrics known for pod
+E1108 03:40:04.774656       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5454c56588-sgcnm: no metrics known for pod
+E1108 03:40:04.774737       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5454c56588-m2lwq: no metrics known for pod
+E1108 03:40:04.774755       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5454c56588-r9zcp: no metrics known for pod
+E1108 03:40:04.774800       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5454c56588-mdhjg: no metrics known for pod
+E1108 04:12:04.558086       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1604808720-hcdf2: no metrics known for pod
+E1108 04:50:04.876650       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-c75974f7b-xxsxr: no metrics known for pod
+E1108 05:10:04.774126       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-568699dbb5-8pdpw: no metrics known for pod
+E1108 05:10:04.872684       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-568699dbb5-clpmq: no metrics known for pod
+E1108 05:10:04.872765       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-568699dbb5-blrzq: no metrics known for pod
+E1108 05:10:04.872776       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-568699dbb5-h4xhd: no metrics known for pod
+E1108 05:50:04.773682       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5c994dfcf9-xhjf6: no metrics known for pod
+E1108 05:50:04.773723       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5c994dfcf9-7hpkf: no metrics known for pod
+E1108 06:20:04.773986       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-799746b86d-gvcxq: no metrics known for pod
+E1108 06:20:04.774334       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-799746b86d-hjkmv: no metrics known for pod
+E1108 06:20:04.774563       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-799746b86d-6qw5v: no metrics known for pod
+E1108 06:40:04.875848       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-58b654486f-xt66p: no metrics known for pod
+E1108 06:40:04.875927       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-58b654486f-kb6gn: no metrics known for pod
+E1108 07:00:04.578232       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5bfdb7cb57-9mm5x: no metrics known for pod
+E1108 07:00:04.578266       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5bfdb7cb57-2hp5d: no metrics known for pod
+E1108 07:54:04.475439       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604822040-mn6hb on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1108 08:00:04.572988       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-bf55b7547-sdbwv: no metrics known for pod
+E1108 09:19:34.672763       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-n21q: unable to get a valid timestamp for metric point for container "deployment-container" in pod kuberhealthy/deployment-deployment-5cd49dcd49-hp6q2 on node "10.128.0.5", discarding data: no non-zero timestamp on either CPU or memory
+E1108 09:20:04.576494       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5cd49dcd49-brtq5: no metrics known for pod
+E1108 09:20:04.576534       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5cd49dcd49-hp6q2: no metrics known for pod
+E1108 10:51:04.558737       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1604832660-cvpf5: no metrics known for pod
+E1108 11:00:04.557463       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-ddddc6f58-5sdmd: no metrics known for pod
+E1108 11:00:04.557493       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-ddddc6f58-7ztgz: no metrics known for pod
+E1108 11:00:04.557503       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-ddddc6f58-gl75f: no metrics known for pod
+E1108 11:00:04.557520       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-ddddc6f58-8pgvm: no metrics known for pod
+E1108 11:10:04.773078       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-797f49d4b4-flgx4: no metrics known for pod
+E1108 11:10:04.773144       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-797f49d4b4-2nxht: no metrics known for pod
+E1108 11:20:04.689847       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-ddb5fb9b8-sbh46: no metrics known for pod
+E1108 11:20:04.689882       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-ddb5fb9b8-n8zgm: no metrics known for pod
+E1108 11:20:04.689891       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-ddb5fb9b8-x2hl4: no metrics known for pod
+E1108 11:20:04.689904       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-ddb5fb9b8-d855z: no metrics known for pod
+E1108 11:40:04.776643       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5b8ff67f65-r469l: no metrics known for pod
+E1108 12:30:04.558137       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-766c45686f-2rvw4: no metrics known for pod
+E1108 13:00:04.577213       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-75495c94d5-n9vpd: no metrics known for pod
+E1108 13:00:04.577372       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-75495c94d5-jqwj7: no metrics known for pod
+E1108 13:03:04.576333       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1604840580-7fcqz: no metrics known for pod
+E1108 13:27:04.576777       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1604842020-pcg4v: no metrics known for pod
+E1108 14:20:04.500856       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-ccfi: unable to get a valid timestamp for metric point for container "jx-preview-gc-jobs" in pod jx/jx-preview-gc-jobs-1604845200-5jfnq on node "10.128.0.2", discarding data: no non-zero timestamp on either CPU or memory
+E1108 14:29:34.702361       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "deployment-container" in pod kuberhealthy/deployment-deployment-774d48b684-5zw6p on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1108 14:30:04.558111       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-774d48b684-krfjv: no metrics known for pod
+E1108 15:30:04.577586       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-9f65886c6-hvd9k: no metrics known for pod
+E1108 15:30:04.577618       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-9f65886c6-zz86m: no metrics known for pod
+E1108 17:42:04.576978       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1604857320-lw59x: no metrics known for pod
+E1108 18:33:04.573041       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1604860380-4cnxf: no metrics known for pod
+E1108 19:30:04.573138       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-74b7ff9b87-nkxwz: no metrics known for pod
+E1108 19:30:04.573173       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6b694dd9b6-rh95t: no metrics known for pod
+E1108 19:30:04.573184       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-74b7ff9b87-m5qhh: no metrics known for pod
+E1108 19:30:04.573255       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6b694dd9b6-dfdf9: no metrics known for pod
+E1108 19:42:04.573260       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1604864520-pv28j: no metrics known for pod
+E1108 20:00:04.558381       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7767cc9448-576qk: no metrics known for pod
+E1108 20:20:04.776282       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-85d7ff56f5-jrcmm: no metrics known for pod
+E1108 20:30:04.773791       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-69465bb69f-hfxqx: no metrics known for pod
+E1108 20:30:04.773851       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-69465bb69f-6xd25: no metrics known for pod
+E1108 20:30:04.773890       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-69465bb69f-66pjn: no metrics known for pod
+E1108 20:30:04.773919       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-69465bb69f-b59pc: no metrics known for pod
+E1108 21:20:04.573254       1 reststorage.go:160] unable to fetch pod metrics for pod jx/jx-preview-gc-jobs-1604870400-jqmzv: no metrics known for pod
+E1108 21:21:04.473465       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604870460-l549x on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1108 21:30:04.576434       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-786f54d67b-bz829: no metrics known for pod
+E1108 22:19:34.652462       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-ccfi: unable to get a valid timestamp for metric point for container "deployment-container" in pod kuberhealthy/deployment-deployment-5b488fb877-484tl on node "10.128.0.2", discarding data: no non-zero timestamp on either CPU or memory
+E1108 23:18:04.474735       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604877480-hsfsn on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1108 23:18:04.680166       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1604877480-hsfsn: no metrics known for pod
+E1109 00:00:04.977575       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-744f9bbb65-5xrsj: no metrics known for pod
+E1109 00:20:04.773101       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6fff7755d5-vqh8k: no metrics known for pod
+E1109 00:20:04.773145       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6fff7755d5-4c578: no metrics known for pod
+E1109 00:20:04.872614       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6fff7755d5-8xk24: no metrics known for pod
+E1109 00:20:04.872683       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6fff7755d5-fj4h7: no metrics known for pod
+E1109 00:50:04.676172       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-54b9c466c4-lz4b4: no metrics known for pod
+E1109 00:50:04.676207       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-54b9c466c4-jv45s: no metrics known for pod
+E1109 01:00:04.573187       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-54fc46b9f6-6ck8t: no metrics known for pod
+E1109 01:10:04.774101       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6b8496c8bf-g6tpq: no metrics known for pod
+E1109 01:40:04.774809       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-884fc8f77-h5mp7: no metrics known for pod
+E1109 01:40:04.774849       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-884fc8f77-lx89g: no metrics known for pod
+E1109 01:40:04.774865       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-884fc8f77-2bpqh: no metrics known for pod
+E1109 01:40:04.774877       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-884fc8f77-lhscf: no metrics known for pod
+E1109 02:10:04.775332       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7476b8c96b-sb7zm: no metrics known for pod
+E1109 02:10:04.775365       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7476b8c96b-tnmt8: no metrics known for pod
+E1109 02:10:04.775383       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7476b8c96b-f8sl4: no metrics known for pod
+E1109 02:10:04.775392       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7476b8c96b-tnnrd: no metrics known for pod
+E1109 02:50:04.973162       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7cb7bbd4bc-r9s8m: no metrics known for pod
+E1109 02:50:04.973214       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7cb7bbd4bc-kqb5k: no metrics known for pod
+E1109 02:59:34.555509       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-pmxj: unable to get a valid timestamp for metric point for container "deployment-container" in pod kuberhealthy/deployment-deployment-5649b6d658-tg44x on node "10.128.0.11", discarding data: no non-zero timestamp on either CPU or memory
+E1109 03:48:04.672779       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1604893680-g72q6: no metrics known for pod
+E1109 04:20:04.579223       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-b55dd9fdf-hbcnb: no metrics known for pod
+E1109 04:20:04.579274       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-b55dd9fdf-2dcr4: no metrics known for pod
+E1109 04:30:04.559285       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-9f4ffdd9f-j9tlh: no metrics known for pod
+E1109 04:42:04.475555       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604896920-td52r on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1109 05:10:04.572679       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5ddbdb9fd6-jgxqx: no metrics known for pod
+E1109 05:10:04.572713       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5ddbdb9fd6-msgfb: no metrics known for pod
+E1109 05:10:04.572736       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5ddbdb9fd6-khjcg: no metrics known for pod
+E1109 05:10:04.572747       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-595c6f5475-nqkdz: no metrics known for pod
+E1109 05:10:04.572757       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5ddbdb9fd6-2ggs4: no metrics known for pod
+E1109 06:30:04.674435       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-577d4644c9-p58sv: no metrics known for pod
+E1109 06:30:04.674476       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-577d4644c9-mndm9: no metrics known for pod
+E1109 06:30:04.674740       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-577d4644c9-s9q64: no metrics known for pod
+E1109 06:30:04.674846       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-577d4644c9-xlvv8: no metrics known for pod
+E1109 06:42:04.572913       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604904120-h6kqd on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1109 07:00:04.573144       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-55f885d45b-7d7hl: no metrics known for pod
+E1109 07:00:04.573179       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-55f885d45b-ftnxj: no metrics known for pod
+E1109 07:00:04.573196       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-55f885d45b-gpbpl: no metrics known for pod
+E1109 07:00:04.573209       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-55f885d45b-m599r: no metrics known for pod
+E1109 08:00:04.584941       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-769cdc7d5f-b9mzt: no metrics known for pod
+E1109 08:00:04.584970       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-769cdc7d5f-5kcsq: no metrics known for pod
+E1109 08:00:04.584992       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-769cdc7d5f-tj4fd: no metrics known for pod
+E1109 08:00:04.585004       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-769cdc7d5f-r75nt: no metrics known for pod
+E1109 08:48:04.559697       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1604911680-8d2l2: no metrics known for pod
+E1109 09:20:04.577617       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6db74d579f-rbfhp: no metrics known for pod
+E1109 09:20:04.577650       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6db74d579f-svnk2: no metrics known for pod
+E1109 10:40:04.873734       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7fc9b9d559-hdd85: no metrics known for pod
+E1109 10:40:04.873781       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7fc9b9d559-dmp4g: no metrics known for pod
+E1109 10:40:04.873793       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7fc9b9d559-x75nc: no metrics known for pod
+E1109 10:44:04.593795       1 reststorage.go:160] unable to fetch pod metrics for pod jx/verify-g9bsd-from-build-pack-wvmxf-pod-mcbwg: no metrics known for pod
+E1109 10:50:04.677058       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5b6786fb5-btczc: no metrics known for pod
+E1109 10:50:04.677099       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5b6786fb5-kptxs: no metrics known for pod
+E1109 11:29:34.658010       1 manager.go:111] unable to fully collect metrics: [unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-pmxj: unable to get a valid timestamp for metric point for container "deployment-container" in pod kuberhealthy/deployment-deployment-665c768948-65njx on node "10.128.0.11", discarding data: no non-zero timestamp on either CPU or memory, unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-n21q: unable to get a valid timestamp for metric point for container "deployment-container" in pod kuberhealthy/deployment-deployment-665c768948-lj7d9 on node "10.128.0.5", discarding data: no non-zero timestamp on either CPU or memory]
+E1109 11:30:04.576086       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-665c768948-65njx: no metrics known for pod
+E1109 12:30:04.558031       1 reststorage.go:160] unable to fetch pod metrics for pod jx/jxboot-helmfile-resources-gcactivities-1604925000-7gbw7: no metrics known for pod
+E1109 13:40:04.775355       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7b94dfccf8-wf9bz: no metrics known for pod
+E1109 13:40:04.775392       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7b94dfccf8-hg9ws: no metrics known for pod
+E1109 13:40:04.775400       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7b94dfccf8-vzktw: no metrics known for pod
+E1109 13:40:04.775413       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7b94dfccf8-p8w44: no metrics known for pod
+E1109 15:10:05.076896       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-ddc4f8796-9dh6c: no metrics known for pod
+E1109 15:10:05.076935       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-ddc4f8796-l5687: no metrics known for pod
+E1109 15:10:05.076945       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-ddc4f8796-x6jp5: no metrics known for pod
+E1109 16:00:04.672886       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604937600-kt5pq on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1109 17:00:04.576705       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-55d56cdc9-4vb4h: no metrics known for pod
+E1109 17:00:04.576734       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-55d56cdc9-b4wfv: no metrics known for pod
+E1109 17:00:04.576750       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-55d56cdc9-djzwr: no metrics known for pod
+E1109 17:00:04.576766       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-55d56cdc9-whz6t: no metrics known for pod
+E1109 17:21:04.475255       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604942460-kdnht on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1109 17:30:04.576697       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6845566c56-g9tvn: no metrics known for pod
+E1109 17:30:04.576733       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6845566c56-hrxtx: no metrics known for pod
+E1109 17:40:04.576639       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-84464dd99f-7w4tf: no metrics known for pod
+E1109 17:40:04.576681       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-84464dd99f-h9msj: no metrics known for pod
+E1109 17:40:04.576701       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-84464dd99f-g4k4m: no metrics known for pod
+E1109 17:40:04.576732       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-84464dd99f-r2bpz: no metrics known for pod
+E1109 18:50:04.573270       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7876bff7f4-tfsvn: no metrics known for pod
+E1109 19:20:04.773726       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-856955db67-rzdkk: no metrics known for pod
+E1109 19:20:04.773787       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-856955db67-4vgmn: no metrics known for pod
+E1109 19:20:04.773807       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-856955db67-mg8hw: no metrics known for pod
+E1109 19:30:04.673725       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-666d4768ff-r8n4c: no metrics known for pod
+E1109 19:36:04.574517       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604950560-p8rnd on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1109 19:50:04.773343       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-dd9c766fc-b5nrz: no metrics known for pod
+E1109 19:50:04.773403       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-dd9c766fc-8bvfs: no metrics known for pod
+E1109 20:42:04.527509       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604954520-bfxhx on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1109 22:30:04.574162       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-pmxj: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604961000-2xphl on node "10.128.0.11", discarding data: no non-zero timestamp on either CPU or memory
+E1109 22:40:04.773375       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-674dc5958-qqs4n: no metrics known for pod
+E1109 22:40:04.773411       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-674dc5958-zkccv: no metrics known for pod
+E1109 22:40:04.773422       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-674dc5958-7f4vt: no metrics known for pod
+E1109 22:40:04.773435       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-674dc5958-8h7bt: no metrics known for pod
+E1109 23:12:04.573174       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604963520-nrxpw on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1109 23:50:04.558967       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-c4f854576-n97wt: no metrics known for pod
+E1109 23:50:04.558999       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-c4f854576-562r6: no metrics known for pod
+E1109 23:50:04.559008       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-c4f854576-pp6l4: no metrics known for pod
+E1110 00:20:04.573152       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-78d8b9bd5-447ff: no metrics known for pod
+E1110 00:40:04.876999       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6d569778d4-7r7tm: no metrics known for pod
+E1110 00:50:04.673440       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6d8f8886cb-589mc: no metrics known for pod
+E1110 00:50:04.673485       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6d8f8886cb-4dkmc: no metrics known for pod
+E1110 00:54:04.474458       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604969640-m8ztp on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1110 01:20:04.558126       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-88dc7486-lffks: no metrics known for pod
+E1110 01:20:04.558173       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-88dc7486-dxxhq: no metrics known for pod
+E1110 01:20:04.558188       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-88dc7486-hzs4q: no metrics known for pod
+E1110 02:40:04.557691       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-c477f8865-m6f7t: no metrics known for pod
+E1110 02:40:04.557723       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-c477f8865-6hr45: no metrics known for pod
+E1110 02:40:04.557741       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-c477f8865-g56v4: no metrics known for pod
+E1110 02:40:04.557749       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-c477f8865-k9ds5: no metrics known for pod
+E1110 03:50:04.576614       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7445566df4-fgnhg: no metrics known for pod
+E1110 03:50:04.576647       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7445566df4-6m2zz: no metrics known for pod
+E1110 03:50:04.576654       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7445566df4-5f8r7: no metrics known for pod
+E1110 03:50:04.576662       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7445566df4-xwzf8: no metrics known for pod
+E1110 04:00:04.573270       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6b654c9bf5-5bw9z: no metrics known for pod
+E1110 04:00:04.573313       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6b654c9bf5-mxmf5: no metrics known for pod
+E1110 04:00:04.573328       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6b654c9bf5-r72g9: no metrics known for pod
+E1110 04:00:04.573346       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6b654c9bf5-fdsgq: no metrics known for pod
+E1110 04:10:04.674141       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5888565f78-9scp9: no metrics known for pod
+E1110 04:15:04.473949       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604981700-jx775 on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1110 04:20:04.573120       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7bfd9b5fbc-9lpv8: no metrics known for pod
+E1110 04:40:04.872701       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-858489f8c9-6hzn4: no metrics known for pod
+E1110 04:40:04.872750       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-b6c46646b-d8dpp: no metrics known for pod
+E1110 04:40:04.872762       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-b6c46646b-sfgwg: no metrics known for pod
+E1110 05:00:04.573107       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6b8c8fb9d8-zm8zh: no metrics known for pod
+E1110 05:00:04.573146       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6b8c8fb9d8-n8w6z: no metrics known for pod
+E1110 05:00:04.573163       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6b8c8fb9d8-7n5tq: no metrics known for pod
+E1110 05:00:04.573172       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6b8c8fb9d8-27p75: no metrics known for pod
+E1110 05:20:04.573641       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-c6796c6c-wf272: no metrics known for pod
+E1110 05:20:04.573711       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-c6796c6c-s9qlb: no metrics known for pod
+E1110 05:20:04.573724       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7849d555d-4f5g5: no metrics known for pod
+E1110 05:40:04.973176       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7998c989bd-pghpm: no metrics known for pod
+E1110 06:00:04.574410       1 reststorage.go:160] unable to fetch pod metrics for pod jx/jx-preview-gc-jobs-1604988000-hzvgm: no metrics known for pod
+E1110 06:00:04.574487       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7cbb7c689-967m9: no metrics known for pod
+E1110 06:00:04.574500       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7cbb7c689-xpb4j: no metrics known for pod
+E1110 06:00:04.574513       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7cbb7c689-vkwpk: no metrics known for pod
+E1110 06:00:04.574565       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7cbb7c689-65x9t: no metrics known for pod
+E1110 06:20:04.677970       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5f8bcbb747-r7t5s: no metrics known for pod
+E1110 06:20:04.678010       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5f8bcbb747-v7pc4: no metrics known for pod
+E1110 06:20:04.678025       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5f8bcbb747-fdpl6: no metrics known for pod
+E1110 06:20:04.678049       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5f8bcbb747-tlskw: no metrics known for pod
+E1110 07:06:04.473464       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604991960-w8z2p on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1110 07:51:04.476104       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1604994660-vdqnc on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1110 08:00:04.572613       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-8b58d545f-bv5lf: no metrics known for pod
+E1110 08:00:04.572659       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-8b58d545f-k5g8z: no metrics known for pod
+E1110 08:00:04.572681       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-8b58d545f-z6qkl: no metrics known for pod
+E1110 08:10:04.773488       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6f98f675b-gv2d2: no metrics known for pod
+E1110 08:10:04.773523       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6f98f675b-zqdbd: no metrics known for pod
+E1110 08:10:04.773561       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6f98f675b-76pvl: no metrics known for pod
+E1110 08:10:04.773597       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6f98f675b-brtf5: no metrics known for pod
+E1110 08:30:04.773454       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-78c48df4bc-zzrl9: no metrics known for pod
+E1110 09:10:04.577531       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-b7b5ddc46-pwqn7: no metrics known for pod
+E1110 09:10:04.577639       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-b7b5ddc46-r5n2m: no metrics known for pod
+E1110 09:10:04.577656       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-b7b5ddc46-7xxwc: no metrics known for pod
+E1110 09:20:04.573783       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-ccfi: unable to get a valid timestamp for metric point for container "jx-preview-gc-jobs" in pod jx/jx-preview-gc-jobs-1605000000-c6mwq on node "10.128.0.2", discarding data: no non-zero timestamp on either CPU or memory
+E1110 09:50:04.575896       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-f5547c65b-dxpnw: no metrics known for pod
+E1110 09:50:04.575944       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-f5547c65b-kj8dq: no metrics known for pod
+E1110 09:50:04.575974       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-f5547c65b-w5k26: no metrics known for pod
+E1110 10:10:04.773507       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-77db4c766f-jkgx6: no metrics known for pod
+E1110 10:10:04.773570       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-77db4c766f-5ljg2: no metrics known for pod
+E1110 10:10:04.773591       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-77db4c766f-w2zbg: no metrics known for pod
+E1110 10:10:04.773612       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-77db4c766f-tx7qn: no metrics known for pod
+E1110 10:50:04.558142       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-c9854469f-46s8c: no metrics known for pod
+E1110 12:10:04.676373       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7c95ff4649-gsvzb: no metrics known for pod
+E1110 12:10:04.676409       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-896bf5976-bf9s7: no metrics known for pod
+E1110 12:10:04.676421       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-896bf5976-mghhr: no metrics known for pod
+E1110 12:10:04.676461       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7c95ff4649-n5gt4: no metrics known for pod
+E1110 12:10:04.676509       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7c95ff4649-vv65f: no metrics known for pod
+E1110 12:10:04.676553       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-896bf5976-5k6sc: no metrics known for pod
+E1110 12:10:04.676567       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7c95ff4649-x8r5h: no metrics known for pod
+E1110 12:12:04.559032       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1605010320-bkmlb: no metrics known for pod
+E1110 13:48:04.473463       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1605016080-lzhdq on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1110 14:06:04.557836       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1605017160-vv85w: no metrics known for pod
+E1110 14:30:04.558127       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-76f7989c7f-qwdnh: no metrics known for pod
+E1110 14:30:04.558168       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-76f7989c7f-l8nmt: no metrics known for pod
+E1110 14:30:04.558186       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-76f7989c7f-7qhhh: no metrics known for pod
+E1110 14:30:04.558194       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-76f7989c7f-j65j9: no metrics known for pod
+E1110 14:50:04.604407       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-64996b47b5-b7rch: no metrics known for pod
+E1110 15:30:04.673090       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-669c9c8884-t5zrj: no metrics known for pod
+E1110 15:30:04.673150       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1605022200-w725n: no metrics known for pod
+E1110 15:30:04.673197       1 reststorage.go:160] unable to fetch pod metrics for pod jx/jxboot-helmfile-resources-gcactivities-1605022200-qw9sq: no metrics known for pod
+E1110 15:50:04.673802       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7699ddcdb7-wn2s7: no metrics known for pod
+E1110 16:21:04.573029       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1605025260-tv95z: no metrics known for pod
+E1110 17:10:04.872855       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-858d889f9b-gcjgb: no metrics known for pod
+E1110 17:10:04.872903       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-858d889f9b-bbt57: no metrics known for pod
+E1110 17:20:04.773285       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-8659844555-pdlld: no metrics known for pod
+E1110 17:20:04.773339       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-8659844555-jqwf6: no metrics known for pod
+E1110 17:30:04.873120       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6554b4d84f-z5nh2: no metrics known for pod
+E1110 17:40:04.873766       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7ff8964b4c-wlsrc: no metrics known for pod
+E1110 17:40:04.873945       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7ff8964b4c-hqzhx: no metrics known for pod
+E1110 17:40:04.874035       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7ff8964b4c-slzcj: no metrics known for pod
+E1110 17:40:04.874139       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7ff8964b4c-nm9hk: no metrics known for pod
+E1110 18:00:04.557426       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-658d6d47c5-f7r97: no metrics known for pod
+E1110 18:00:04.557455       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-658d6d47c5-zmwwp: no metrics known for pod
+E1110 18:00:04.557468       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-658d6d47c5-6mgq6: no metrics known for pod
+E1110 18:00:04.557481       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-658d6d47c5-gfczn: no metrics known for pod
+E1110 18:10:04.872809       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-8fdb649f7-lpfwb: no metrics known for pod
+E1110 18:10:04.872854       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-8fdb649f7-5dl7v: no metrics known for pod
+E1110 18:10:04.872892       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-8fdb649f7-tvlg9: no metrics known for pod
+E1110 18:10:04.872900       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-8fdb649f7-jh2km: no metrics known for pod
+E1110 18:30:04.576787       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-76fcb89894-pqdfp: no metrics known for pod
+E1110 18:40:04.773217       1 reststorage.go:160] unable to fetch pod metrics for pod jx/jx-preview-gc-jobs-1605033600-4cw8p: no metrics known for pod
+E1110 18:50:04.773290       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6845bbc577-5pqsn: no metrics known for pod
+E1110 18:50:04.773334       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6845bbc577-g8fjw: no metrics known for pod
+E1110 18:50:04.773355       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6845bbc577-9gfnk: no metrics known for pod
+E1110 19:10:04.773437       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7bbdc7cf4f-pz928: no metrics known for pod
+E1110 19:10:04.773490       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7bbdc7cf4f-cxsjz: no metrics known for pod
+E1110 19:10:04.773507       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7bbdc7cf4f-mmnkv: no metrics known for pod
+E1110 19:10:04.773565       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7bbdc7cf4f-s9lzq: no metrics known for pod
+E1110 20:20:04.773192       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-575f95499b-rjwff: no metrics known for pod
+E1110 20:20:04.773250       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-575f95499b-cfj7x: no metrics known for pod
+E1110 20:30:04.558364       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/check-reaper-1605040200-4dskx: no metrics known for pod
+E1110 20:33:04.572756       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1605040380-88k9p on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1110 21:10:04.576699       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-565fcc9dfb-bkfvm: no metrics known for pod
+E1110 21:10:04.576734       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7b8c4885bf-m5mhx: no metrics known for pod
+E1110 21:10:04.576747       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-565fcc9dfb-dqtxl: no metrics known for pod
+E1110 21:10:04.576761       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7b8c4885bf-sftr2: no metrics known for pod
+E1110 22:49:34.719590       1 manager.go:111] unable to fully collect metrics: [unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-pmxj: unable to get a valid timestamp for metric point for container "deployment-container" in pod kuberhealthy/deployment-deployment-f8b96ccbd-dcqxg on node "10.128.0.11", discarding data: no non-zero timestamp on either CPU or memory, unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-ccfi: unable to get a valid timestamp for metric point for container "deployment-container" in pod kuberhealthy/deployment-deployment-f8b96ccbd-stgl8 on node "10.128.0.2", discarding data: no non-zero timestamp on either CPU or memory]
+E1110 23:06:04.593425       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1605049560-w84lg on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1110 23:30:04.474936       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-default-pool-154aeb80-pmxj: unable to get a valid timestamp for metric point for container "lighthouse-gc-jobs" in pod jx/lighthouse-gc-jobs-1605051000-5zhqj on node "10.128.0.11", discarding data: no non-zero timestamp on either CPU or memory
+E1110 23:50:04.558515       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-66c887f68-vf5xb: no metrics known for pod
+E1110 23:50:04.572579       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-654b67967c-55cdx: no metrics known for pod
+E1110 23:50:04.572618       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-654b67967c-5lh48: no metrics known for pod
+E1111 01:39:04.473979       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1605058740-4czn2 on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1111 01:40:04.673466       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-b9df68bf8-wbsg4: no metrics known for pod
+E1111 02:00:04.573749       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6f9ff58fd6-nl6mw: no metrics known for pod
+E1111 02:00:04.573824       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6f9ff58fd6-m7kq4: no metrics known for pod
+E1111 02:10:04.773692       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-cd7b69945-cg29v: no metrics known for pod
+E1111 02:41:04.573135       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-798c5b8989-jjxw2: no metrics known for pod
+E1111 03:10:05.279240       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-ffbbc9fdc-pptt5: no metrics known for pod
+E1111 03:50:04.673965       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-596f8c686d-njnbz: no metrics known for pod
+E1111 05:10:04.680459       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-597cb589df-7wf4c: no metrics known for pod
+E1111 05:10:04.680518       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-597cb589df-5cc74: no metrics known for pod
+E1111 05:10:04.680528       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-597cb589df-c8649: no metrics known for pod
+E1111 05:10:04.680559       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-597cb589df-964ss: no metrics known for pod
+E1111 05:40:04.873394       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-9dd6b4646-5ktmd: no metrics known for pod
+E1111 05:40:04.873785       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-9dd6b4646-jhv9b: no metrics known for pod
+E1111 05:40:04.873862       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-9dd6b4646-sjk8n: no metrics known for pod
+E1111 05:40:04.873886       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-9dd6b4646-2tcdt: no metrics known for pod
+E1111 06:20:04.775681       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7ff4bc4c76-vbh95: no metrics known for pod
+E1111 06:40:04.673395       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-59c46c5fb5-zv7v4: no metrics known for pod
+E1111 06:40:04.772644       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-59c46c5fb5-strsl: no metrics known for pod
+E1111 06:40:04.773020       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-59c46c5fb5-dq5zm: no metrics known for pod
+E1111 06:40:04.773134       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-59c46c5fb5-jn6vq: no metrics known for pod
+E1111 07:10:04.677108       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5579d594bc-hr5ht: no metrics known for pod
+E1111 07:10:04.677215       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5579d594bc-m2d49: no metrics known for pod
+E1111 07:10:04.677292       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5579d594bc-xfl7j: no metrics known for pod
+E1111 07:10:04.677406       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-5579d594bc-6pczw: no metrics known for pod
+E1111 07:21:04.605981       1 manager.go:111] unable to fully collect metrics: unable to fully scrape metrics from source kubelet_summary:gke-****-tekton-nap-n1-standard--0a7ecf20-446q: unable to get a valid timestamp for metric point for container "check-reaper" in pod kuberhealthy/check-reaper-1605079260-hd2jg on node "10.128.0.14", discarding data: no non-zero timestamp on either CPU or memory
+E1111 07:40:04.577005       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-549767c85d-72pbp: no metrics known for pod
+E1111 07:40:04.577043       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-549767c85d-pjxzt: no metrics known for pod
+E1111 07:40:04.577056       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6894566f75-ssmc2: no metrics known for pod
+E1111 08:50:04.560169       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7bb6566fcb-rjrjg: no metrics known for pod
+E1111 09:40:04.873049       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7c4bc968-kqf26: no metrics known for pod
+E1111 09:40:04.873153       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7c4bc968-mjrhb: no metrics known for pod
+E1111 09:40:04.873177       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7c4bc968-mwctz: no metrics known for pod
+E1111 09:40:04.873207       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7c4bc968-cvdmz: no metrics known for pod
+E1111 10:40:04.558308       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-69886b5fb-8vktf: no metrics known for pod
+E1111 10:40:04.558346       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-657765c94f-c4rqb: no metrics known for pod
+E1111 11:50:04.573166       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-78c7bc65f6-28sjl: no metrics known for pod
+E1111 11:50:04.573208       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-78c7bc65f6-8wt7q: no metrics known for pod

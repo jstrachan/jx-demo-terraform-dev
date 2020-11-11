@@ -1,0 +1,2843 @@
+starting build controller
+starting secret watching masker
+Watching for Secret resources in namespace jx
+Watching for Secret resources in namespace jx-git-operator
+Watching for Environment resources in namespace jx
+The service is ready to listen and serve.
+adding mask of secret jx-boot entry password 
+ignoring secret jx-boot entry url
+ignoring secret jx-boot entry username
+adding mask of secret jenkins-docker-cfg entry config.json 
+adding mask of secret jenkins-maven-settings entry settings-security.xml 
+adding mask of secret jenkins-maven-settings entry settings.xml 
+adding mask of secret jenkins-release-gpg entry pubring.gpg 
+adding mask of secret jenkins-x-chartmuseum entry BASIC_AUTH_PASS 
+ignoring secret jenkins-x-chartmuseum entry BASIC_AUTH_USER
+adding mask of secret jx-basic-auth-htpasswd entry auth 
+adding mask of secret jx-basic-auth-user-password entry password 
+adding mask of secret jx-basic-auth-user-password entry username 
+adding mask of secret jx-pipeline-git-github-github entry password 
+adding mask of secret jx-pipeline-git-github-github entry username 
+adding mask of secret lighthouse-hmac-token entry hmac 
+adding mask of secret lighthouse-oauth-token entry oauth 
+adding mask of secret nexus entry password 
+adding mask of secret tekton-container-registry-auth entry .dockerconfigjson 
+adding mask of secret tekton-git entry password 
+adding mask of secret tekton-git entry username 
+added dev
+added production
+added staging
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+adding mask of secret jenkins-release-gpg entry secring.gpg 
+updated dev
+updated production
+updated staging
+adding mask of secret jenkins-release-gpg entry trustdb.gpg 
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+adding mask of secret jenkins-release-gpg entry sec-jenkins.gpg 
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated production
+updated staging
+updated dev
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+created PipelineActivity ****-jx-demo-terraform-dev-master-4 in namespace jx
+added release-tmkvt
+updated PipelineActivity ****-jx-demo-terraform-dev-master-4 in namespace jx
+updated release-tmkvt
+updated release-tmkvt
+updated PipelineActivity ****-jx-demo-terraform-dev-master-4 in namespace jx
+updated release-tmkvt
+updated PipelineActivity ****-jx-demo-terraform-dev-master-4 in namespace jx
+updated release-tmkvt
+updated PipelineActivity ****-jx-demo-terraform-dev-master-4 in namespace jx
+updated release-tmkvt
+updated PipelineActivity ****-jx-demo-terraform-dev-master-4 in namespace jx
+updated release-tmkvt
+created PipelineActivity ****-jx-demo-terraform-dev-pr-75-1 in namespace jx
+added verify-5tr56
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-1 in namespace jx
+updated verify-5tr56
+updated verify-5tr56
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-1 in namespace jx
+updated verify-5tr56
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-1 in namespace jx
+updated verify-5tr56
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-1 in namespace jx
+updated verify-5tr56
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-1 in namespace jx
+updated verify-5tr56
+updated PipelineActivity ****-jx-demo-terraform-dev-master-4 in namespace jx
+updated release-tmkvt
+updated PipelineActivity ****-jx-demo-terraform-dev-master-4 in namespace jx
+updated release-tmkvt
+updated PipelineActivity ****-jx-demo-terraform-dev-master-4 in namespace jx
+updated release-tmkvt
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-1 in namespace jx
+updated verify-5tr56
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-1 in namespace jx
+updated verify-5tr56
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-1 in namespace jx
+updated verify-5tr56
+updated PipelineActivity ****-jx-demo-terraform-dev-master-4 in namespace jx
+logging pod: release-tmkvt-from-build-pack-t4prs-pod-8zg6d
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/master/4.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-master-4 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/master/4.log
+updated release-tmkvt
+created PipelineActivity ****-jx-demo-terraform-dev-master-5 in namespace jx
+added release-pgww8
+updated PipelineActivity ****-jx-demo-terraform-dev-master-5 in namespace jx
+updated release-pgww8
+updated release-pgww8
+updated PipelineActivity ****-jx-demo-terraform-dev-master-5 in namespace jx
+updated release-pgww8
+updated PipelineActivity ****-jx-demo-terraform-dev-master-5 in namespace jx
+updated release-pgww8
+updated PipelineActivity ****-jx-demo-terraform-dev-master-5 in namespace jx
+updated release-pgww8
+updated PipelineActivity ****-jx-demo-terraform-dev-master-5 in namespace jx
+updated release-pgww8
+updated PipelineActivity ****-jx-demo-terraform-dev-master-5 in namespace jx
+updated release-pgww8
+updated PipelineActivity ****-jx-demo-terraform-dev-master-5 in namespace jx
+updated release-pgww8
+updated PipelineActivity ****-jx-demo-terraform-dev-master-5 in namespace jx
+logging pod: release-pgww8-from-build-pack-c84jz-pod-zcthx
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/master/5.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-master-5 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/master/5.log
+updated release-pgww8
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-1 in namespace jx
+logging pod: verify-5tr56-from-build-pack-tvnww-pod-bsc62
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/PR-75/1.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-1 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/PR-75/1.log
+updated verify-5tr56
+created PipelineActivity ****-jx-demo-terraform-dev-pr-75-2 in namespace jx
+added verify-mq2bd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-2 in namespace jx
+updated verify-mq2bd
+updated verify-mq2bd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-2 in namespace jx
+updated verify-mq2bd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-2 in namespace jx
+updated verify-mq2bd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-2 in namespace jx
+updated verify-mq2bd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-2 in namespace jx
+updated verify-mq2bd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-2 in namespace jx
+updated verify-mq2bd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-2 in namespace jx
+updated verify-mq2bd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-2 in namespace jx
+logging pod: verify-mq2bd-from-build-pack-q2rsv-pod-skd28
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/PR-75/2.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-75-2 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/PR-75/2.log
+updated verify-mq2bd
+updated release-tmkvt
+updated verify-5tr56
+updated release-pgww8
+updated dev
+updated production
+updated staging
+updated verify-mq2bd
+created PipelineActivity ****-jx-demo-terraform-dev-master-6 in namespace jx
+added release-b98vd
+updated PipelineActivity ****-jx-demo-terraform-dev-master-6 in namespace jx
+updated release-b98vd
+updated release-b98vd
+updated PipelineActivity ****-jx-demo-terraform-dev-master-6 in namespace jx
+updated release-b98vd
+updated PipelineActivity ****-jx-demo-terraform-dev-master-6 in namespace jx
+updated release-b98vd
+updated PipelineActivity ****-jx-demo-terraform-dev-master-6 in namespace jx
+updated release-b98vd
+updated PipelineActivity ****-jx-demo-terraform-dev-master-6 in namespace jx
+updated release-b98vd
+updated PipelineActivity ****-jx-demo-terraform-dev-master-6 in namespace jx
+updated release-b98vd
+updated PipelineActivity ****-jx-demo-terraform-dev-master-6 in namespace jx
+updated release-b98vd
+updated PipelineActivity ****-jx-demo-terraform-dev-master-6 in namespace jx
+updated release-b98vd
+updated PipelineActivity ****-jx-demo-terraform-dev-master-6 in namespace jx
+logging pod: release-b98vd-from-build-pack-xqqb8-pod-vkrbq
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/master/6.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-master-6 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/master/6.log
+updated release-b98vd
+created PipelineActivity ****-jx-demo-terraform-dev-master-7 in namespace jx
+added release-gzxvg
+updated PipelineActivity ****-jx-demo-terraform-dev-master-7 in namespace jx
+updated release-gzxvg
+updated release-gzxvg
+updated PipelineActivity ****-jx-demo-terraform-dev-master-7 in namespace jx
+updated release-gzxvg
+updated PipelineActivity ****-jx-demo-terraform-dev-master-7 in namespace jx
+updated release-gzxvg
+updated PipelineActivity ****-jx-demo-terraform-dev-master-7 in namespace jx
+updated release-gzxvg
+updated PipelineActivity ****-jx-demo-terraform-dev-master-7 in namespace jx
+updated release-gzxvg
+updated PipelineActivity ****-jx-demo-terraform-dev-master-7 in namespace jx
+updated release-gzxvg
+updated PipelineActivity ****-jx-demo-terraform-dev-master-7 in namespace jx
+updated release-gzxvg
+updated PipelineActivity ****-jx-demo-terraform-dev-master-7 in namespace jx
+updated release-gzxvg
+updated PipelineActivity ****-jx-demo-terraform-dev-master-7 in namespace jx
+logging pod: release-gzxvg-from-build-pack-p5plq-pod-phvs9
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/master/7.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-master-7 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/master/7.log
+updated release-gzxvg
+updated verify-5tr56
+updated release-pgww8
+updated dev
+updated production
+updated staging
+updated verify-mq2bd
+updated release-b98vd
+updated release-gzxvg
+updated release-tmkvt
+created PipelineActivity ****-jx-demo-terraform-dev-master-8 in namespace jx
+added release-l2rfg
+updated PipelineActivity ****-jx-demo-terraform-dev-master-8 in namespace jx
+updated release-l2rfg
+updated release-l2rfg
+updated PipelineActivity ****-jx-demo-terraform-dev-master-8 in namespace jx
+updated release-l2rfg
+updated PipelineActivity ****-jx-demo-terraform-dev-master-8 in namespace jx
+updated release-l2rfg
+updated PipelineActivity ****-jx-demo-terraform-dev-master-8 in namespace jx
+updated release-l2rfg
+updated PipelineActivity ****-jx-demo-terraform-dev-master-8 in namespace jx
+updated release-l2rfg
+updated PipelineActivity ****-jx-demo-terraform-dev-master-8 in namespace jx
+updated release-l2rfg
+updated PipelineActivity ****-jx-demo-terraform-dev-master-8 in namespace jx
+updated release-l2rfg
+updated PipelineActivity ****-jx-demo-terraform-dev-master-8 in namespace jx
+logging pod: release-l2rfg-from-build-pack-sccrw-pod-k6dwv
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/master/8.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-master-8 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/master/8.log
+updated release-l2rfg
+created PipelineActivity ****-jx-demo-terraform-dev-pr-76-1 in namespace jx
+added verify-6vrdr
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-1 in namespace jx
+updated verify-6vrdr
+updated verify-6vrdr
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-1 in namespace jx
+updated verify-6vrdr
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-1 in namespace jx
+updated verify-6vrdr
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-1 in namespace jx
+updated verify-6vrdr
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-1 in namespace jx
+updated verify-6vrdr
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-1 in namespace jx
+updated verify-6vrdr
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-1 in namespace jx
+updated verify-6vrdr
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-1 in namespace jx
+updated verify-6vrdr
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-1 in namespace jx
+logging pod: verify-6vrdr-from-build-pack-dqjg8-pod-f9249
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/PR-76/1.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-1 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/PR-76/1.log
+updated verify-6vrdr
+created PipelineActivity ****-jx-demo-terraform-dev-pr-76-2 in namespace jx
+added verify-vmhfz
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-2 in namespace jx
+updated verify-vmhfz
+updated verify-vmhfz
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-2 in namespace jx
+updated verify-vmhfz
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-2 in namespace jx
+updated verify-vmhfz
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-2 in namespace jx
+updated verify-vmhfz
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-2 in namespace jx
+updated verify-vmhfz
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-2 in namespace jx
+updated verify-vmhfz
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-2 in namespace jx
+updated verify-vmhfz
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-2 in namespace jx
+logging pod: verify-vmhfz-from-build-pack-p7lmf-pod-l9lxh
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/PR-76/2.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-76-2 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/PR-76/2.log
+updated verify-vmhfz
+created PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+added release-9mpcj
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+updated release-9mpcj
+updated release-9mpcj
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+updated release-9mpcj
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+updated release-9mpcj
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+updated release-9mpcj
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+updated release-9mpcj
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+updated release-9mpcj
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+updated release-9mpcj
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+updated release-9mpcj
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 in namespace jx
+logging pod: release-9mpcj-from-build-pack-hvqg7-pod-d8dt4
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/master/1.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-master-1 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/master/1.log
+updated release-9mpcj
+updated release-l2rfg
+updated release-tmkvt
+updated dev
+updated production
+updated staging
+updated verify-mq2bd
+updated release-b98vd
+updated verify-6vrdr
+updated verify-vmhfz
+updated release-9mpcj
+updated verify-5tr56
+updated release-pgww8
+updated release-gzxvg
+updated release-tmkvt
+updated verify-mq2bd
+updated dev
+updated production
+updated staging
+updated release-b98vd
+updated release-l2rfg
+updated verify-5tr56
+updated release-pgww8
+updated release-gzxvg
+updated verify-6vrdr
+updated verify-vmhfz
+updated release-9mpcj
+updated verify-5tr56
+updated release-pgww8
+updated dev
+updated production
+updated staging
+updated release-gzxvg
+updated verify-6vrdr
+updated verify-vmhfz
+updated release-9mpcj
+updated release-tmkvt
+updated verify-mq2bd
+updated release-b98vd
+updated release-l2rfg
+updated release-l2rfg
+updated dev
+updated production
+updated staging
+updated release-tmkvt
+updated verify-mq2bd
+updated release-b98vd
+updated verify-6vrdr
+updated verify-vmhfz
+updated release-9mpcj
+updated verify-5tr56
+updated release-pgww8
+updated release-gzxvg
+updated release-tmkvt
+updated verify-mq2bd
+updated dev
+updated production
+updated staging
+updated release-b98vd
+updated release-l2rfg
+updated release-9mpcj
+updated verify-5tr56
+updated release-pgww8
+updated release-gzxvg
+updated verify-6vrdr
+updated verify-vmhfz
+updated release-tmkvt
+updated verify-mq2bd
+updated production
+updated staging
+updated dev
+updated release-b98vd
+updated release-l2rfg
+updated release-9mpcj
+updated verify-5tr56
+updated release-pgww8
+updated release-gzxvg
+updated verify-6vrdr
+updated verify-vmhfz
+updated verify-mq2bd
+updated release-b98vd
+updated dev
+updated production
+updated staging
+updated release-l2rfg
+updated release-tmkvt
+updated release-pgww8
+updated release-gzxvg
+updated verify-6vrdr
+updated verify-vmhfz
+updated release-9mpcj
+updated verify-5tr56
+created PipelineActivity ****-jx-demo-terraform-dev-pr-77-1 in namespace jx
+added verify-27w5f
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-1 in namespace jx
+updated verify-27w5f
+updated verify-27w5f
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-1 in namespace jx
+updated verify-27w5f
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-1 in namespace jx
+updated verify-27w5f
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-1 in namespace jx
+updated verify-27w5f
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-1 in namespace jx
+updated verify-27w5f
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-1 in namespace jx
+updated verify-27w5f
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-1 in namespace jx
+updated verify-27w5f
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-1 in namespace jx
+updated verify-27w5f
+created PipelineActivity ****-jx-demo-terraform-dev-master-2 in namespace jx
+added release-ltsn6
+updated PipelineActivity ****-jx-demo-terraform-dev-master-2 in namespace jx
+updated release-ltsn6
+updated release-ltsn6
+updated PipelineActivity ****-jx-demo-terraform-dev-master-2 in namespace jx
+updated release-ltsn6
+updated PipelineActivity ****-jx-demo-terraform-dev-master-2 in namespace jx
+updated release-ltsn6
+updated PipelineActivity ****-jx-demo-terraform-dev-master-2 in namespace jx
+updated release-ltsn6
+updated PipelineActivity ****-jx-demo-terraform-dev-master-2 in namespace jx
+updated release-ltsn6
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-1 in namespace jx
+logging pod: verify-27w5f-from-build-pack-rjqzb-pod-jqhtp
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/PR-77/1.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-1 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/PR-77/1.log
+updated verify-27w5f
+created PipelineActivity ****-jx-demo-terraform-dev-pr-77-2 in namespace jx
+added verify-hbwlg
+created PipelineActivity ****-jx-demo-terraform-dev-pr-77-3 in namespace jx
+added verify-kd4fd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-2 in namespace jx
+updated verify-hbwlg
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-3 in namespace jx
+updated verify-kd4fd
+updated verify-hbwlg
+updated verify-kd4fd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-2 in namespace jx
+updated verify-hbwlg
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-3 in namespace jx
+updated verify-kd4fd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-2 in namespace jx
+updated verify-hbwlg
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-3 in namespace jx
+updated verify-kd4fd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-2 in namespace jx
+updated verify-hbwlg
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-2 in namespace jx
+updated verify-hbwlg
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-3 in namespace jx
+updated verify-kd4fd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-2 in namespace jx
+updated verify-hbwlg
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-3 in namespace jx
+updated verify-kd4fd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-2 in namespace jx
+updated verify-hbwlg
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-2 in namespace jx
+logging pod: verify-hbwlg-from-build-pack-nzttb-pod-nkkl6
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/PR-77/2.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-2 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/PR-77/2.log
+updated verify-hbwlg
+created PipelineActivity ****-jx-demo-terraform-dev-pr-78-1 in namespace jx
+added verify-g9bsd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-78-1 in namespace jx
+updated verify-g9bsd
+updated verify-g9bsd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-78-1 in namespace jx
+updated verify-g9bsd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-78-1 in namespace jx
+updated verify-g9bsd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-78-1 in namespace jx
+updated verify-g9bsd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-78-1 in namespace jx
+updated verify-g9bsd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-78-1 in namespace jx
+updated verify-g9bsd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-78-1 in namespace jx
+updated verify-g9bsd
+created PipelineActivity ****-jx-demo-terraform-dev-master-3 in namespace jx
+added release-sgmd9
+updated PipelineActivity ****-jx-demo-terraform-dev-master-3 in namespace jx
+updated release-sgmd9
+updated release-sgmd9
+updated PipelineActivity ****-jx-demo-terraform-dev-master-3 in namespace jx
+updated release-sgmd9
+updated PipelineActivity ****-jx-demo-terraform-dev-master-3 in namespace jx
+updated release-sgmd9
+updated PipelineActivity ****-jx-demo-terraform-dev-master-3 in namespace jx
+updated release-sgmd9
+updated PipelineActivity ****-jx-demo-terraform-dev-master-2 in namespace jx
+updated release-ltsn6
+updated PipelineActivity ****-jx-demo-terraform-dev-master-3 in namespace jx
+updated release-sgmd9
+updated PipelineActivity ****-jx-demo-terraform-dev-master-2 in namespace jx
+updated release-ltsn6
+updated PipelineActivity ****-jx-demo-terraform-dev-master-2 in namespace jx
+updated release-ltsn6
+updated PipelineActivity ****-jx-demo-terraform-dev-master-2 in namespace jx
+updated release-ltsn6
+updated release-tmkvt
+updated dev
+updated production
+updated staging
+updated release-b98vd
+updated verify-hbwlg
+updated verify-5tr56
+updated release-gzxvg
+updated release-ltsn6
+updated PipelineActivity ****-jx-demo-terraform-dev-master-3 in namespace jx
+updated release-sgmd9
+updated verify-mq2bd
+updated release-l2rfg
+updated verify-27w5f
+updated verify-g9bsd
+updated release-pgww8
+updated verify-6vrdr
+updated verify-vmhfz
+updated release-9mpcj
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-3 in namespace jx
+updated verify-kd4fd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-3 in namespace jx
+updated verify-kd4fd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-3 in namespace jx
+updated verify-kd4fd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-3 in namespace jx
+logging pod: verify-kd4fd-from-build-pack-nsx2q-pod-wkdbz
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/PR-77/3.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-77-3 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/PR-77/3.log
+updated verify-kd4fd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-78-1 in namespace jx
+logging pod: verify-g9bsd-from-build-pack-wvmxf-pod-mcbwg
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/PR-78/1.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-78-1 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/PR-78/1.log
+updated verify-g9bsd
+created PipelineActivity ****-jx-demo-terraform-dev-pr-78-2 in namespace jx
+added verify-g9kqd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-78-2 in namespace jx
+updated verify-g9kqd
+updated verify-g9kqd
+updated verify-g9kqd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-78-2 in namespace jx
+updated verify-g9kqd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-78-2 in namespace jx
+updated verify-g9kqd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-78-2 in namespace jx
+updated verify-g9kqd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-78-2 in namespace jx
+updated verify-g9kqd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-78-2 in namespace jx
+updated verify-g9kqd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-78-2 in namespace jx
+updated verify-g9kqd
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-78-2 in namespace jx
+logging pod: verify-g9kqd-from-build-pack-dh57c-pod-kv7lb
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/PR-78/2.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-pr-78-2 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/PR-78/2.log
+updated verify-g9kqd
+updated PipelineActivity ****-jx-demo-terraform-dev-master-2 in namespace jx
+logging pod: release-ltsn6-from-build-pack-75cxf-pod-6qhh7
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/master/2.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-master-2 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/master/2.log
+updated release-ltsn6
+created PipelineActivity ****-jx-demo-terraform-dev-master-9 in namespace jx
+added release-jtl6z
+updated PipelineActivity ****-jx-demo-terraform-dev-master-9 in namespace jx
+updated release-jtl6z
+updated release-jtl6z
+updated PipelineActivity ****-jx-demo-terraform-dev-master-9 in namespace jx
+updated release-jtl6z
+updated PipelineActivity ****-jx-demo-terraform-dev-master-9 in namespace jx
+updated release-jtl6z
+updated PipelineActivity ****-jx-demo-terraform-dev-master-9 in namespace jx
+updated release-jtl6z
+updated PipelineActivity ****-jx-demo-terraform-dev-master-9 in namespace jx
+updated release-jtl6z
+updated PipelineActivity ****-jx-demo-terraform-dev-master-9 in namespace jx
+updated release-jtl6z
+updated PipelineActivity ****-jx-demo-terraform-dev-master-9 in namespace jx
+updated release-jtl6z
+updated PipelineActivity ****-jx-demo-terraform-dev-master-9 in namespace jx
+updated release-jtl6z
+updated PipelineActivity ****-jx-demo-terraform-dev-master-9 in namespace jx
+logging pod: release-jtl6z-from-build-pack-rgfdd-pod-ddrv8
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/master/9.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-master-9 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/master/9.log
+updated release-jtl6z
+updated PipelineActivity ****-jx-demo-terraform-dev-master-3 in namespace jx
+updated release-sgmd9
+updated PipelineActivity ****-jx-demo-terraform-dev-master-3 in namespace jx
+updated release-sgmd9
+updated PipelineActivity ****-jx-demo-terraform-dev-master-3 in namespace jx
+updated release-sgmd9
+updated PipelineActivity ****-jx-demo-terraform-dev-master-3 in namespace jx
+updated release-sgmd9
+created PipelineActivity ****-jx-demo-terraform-dev-master-10 in namespace jx
+added release-4xhxs
+updated PipelineActivity ****-jx-demo-terraform-dev-master-10 in namespace jx
+updated release-4xhxs
+updated release-4xhxs
+updated PipelineActivity ****-jx-demo-terraform-dev-master-10 in namespace jx
+updated release-4xhxs
+updated PipelineActivity ****-jx-demo-terraform-dev-master-10 in namespace jx
+updated release-4xhxs
+updated PipelineActivity ****-jx-demo-terraform-dev-master-10 in namespace jx
+updated release-4xhxs
+updated PipelineActivity ****-jx-demo-terraform-dev-master-10 in namespace jx
+updated release-4xhxs
+updated PipelineActivity ****-jx-demo-terraform-dev-master-10 in namespace jx
+updated release-4xhxs
+updated PipelineActivity ****-jx-demo-terraform-dev-master-10 in namespace jx
+updated release-4xhxs
+updated PipelineActivity ****-jx-demo-terraform-dev-master-10 in namespace jx
+updated release-4xhxs
+updated PipelineActivity ****-jx-demo-terraform-dev-master-10 in namespace jx
+updated release-4xhxs
+updated PipelineActivity ****-jx-demo-terraform-dev-master-3 in namespace jx
+logging pod: release-sgmd9-from-build-pack-n4j2k-pod-858pj
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/master/3.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-master-3 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/master/3.log
+updated release-sgmd9
+updated PipelineActivity ****-jx-demo-terraform-dev-master-10 in namespace jx
+logging pod: release-4xhxs-from-build-pack-8p2f2-pod-lvx9h
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/master/10.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-master-10 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/master/10.log
+updated release-4xhxs
+created PipelineActivity ****-jx-demo-terraform-dev-master-11 in namespace jx
+added release-sch2s
+updated PipelineActivity ****-jx-demo-terraform-dev-master-11 in namespace jx
+updated release-sch2s
+updated release-sch2s
+updated release-sch2s
+updated PipelineActivity ****-jx-demo-terraform-dev-master-11 in namespace jx
+updated release-sch2s
+updated PipelineActivity ****-jx-demo-terraform-dev-master-11 in namespace jx
+updated release-sch2s
+updated PipelineActivity ****-jx-demo-terraform-dev-master-11 in namespace jx
+updated release-sch2s
+updated PipelineActivity ****-jx-demo-terraform-dev-master-11 in namespace jx
+updated release-sch2s
+updated PipelineActivity ****-jx-demo-terraform-dev-master-11 in namespace jx
+updated release-sch2s
+updated PipelineActivity ****-jx-demo-terraform-dev-master-11 in namespace jx
+updated release-sch2s
+updated PipelineActivity ****-jx-demo-terraform-dev-master-11 in namespace jx
+updated release-sch2s
+updated PipelineActivity ****-jx-demo-terraform-dev-master-11 in namespace jx
+logging pod: release-sch2s-from-build-pack-v7p62-pod-cv5ml
+wrote file jenkins-x/logs/****/jx-demo-terraform-dev/master/11.log to bucket gs://logs-****-tekton-20699896b252
+updated PipelineActivity ****-jx-demo-terraform-dev-master-11 with new build logs URL gs://logs-****-tekton-20699896b252/jenkins-x/logs/****/jx-demo-terraform-dev/master/11.log
+updated release-sch2s
+updated release-sch2s
+updated release-tmkvt
+updated dev
+updated production
+updated staging
+updated release-b98vd
+updated verify-hbwlg
+updated release-jtl6z
+updated verify-g9kqd
+updated release-4xhxs
+updated verify-5tr56
+updated release-gzxvg
+updated release-ltsn6
+updated release-sgmd9
+updated verify-mq2bd
+updated release-l2rfg
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-kd4fd
+updated release-pgww8
+updated verify-6vrdr
+updated verify-vmhfz
+updated release-9mpcj
+updated release-pgww8
+updated verify-6vrdr
+updated staging
+updated dev
+updated production
+updated verify-vmhfz
+updated release-9mpcj
+updated verify-kd4fd
+updated release-tmkvt
+updated release-b98vd
+updated verify-hbwlg
+updated release-jtl6z
+updated release-sch2s
+updated verify-5tr56
+updated release-gzxvg
+updated release-ltsn6
+updated release-sgmd9
+updated verify-g9kqd
+updated release-4xhxs
+updated verify-mq2bd
+updated release-l2rfg
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-mq2bd
+updated dev
+updated production
+updated staging
+updated release-l2rfg
+updated verify-27w5f
+updated verify-g9bsd
+updated release-pgww8
+updated verify-6vrdr
+updated verify-vmhfz
+updated release-9mpcj
+updated verify-kd4fd
+updated release-tmkvt
+updated release-b98vd
+updated verify-hbwlg
+updated release-jtl6z
+updated release-sch2s
+updated verify-5tr56
+updated release-gzxvg
+updated release-ltsn6
+updated release-sgmd9
+updated verify-g9kqd
+updated release-4xhxs
+updated release-pgww8
+updated verify-6vrdr
+updated dev
+updated production
+updated staging
+updated verify-vmhfz
+updated release-9mpcj
+updated verify-kd4fd
+updated release-tmkvt
+updated release-b98vd
+updated verify-hbwlg
+updated release-jtl6z
+updated release-sch2s
+updated verify-5tr56
+updated release-gzxvg
+updated release-ltsn6
+updated release-sgmd9
+updated verify-g9kqd
+updated release-4xhxs
+updated verify-mq2bd
+updated release-l2rfg
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-hbwlg
+updated release-jtl6z
+updated staging
+updated dev
+updated production
+updated release-sch2s
+updated release-tmkvt
+updated release-b98vd
+updated release-ltsn6
+updated release-sgmd9
+updated verify-g9kqd
+updated release-4xhxs
+updated verify-5tr56
+updated release-gzxvg
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-mq2bd
+updated release-l2rfg
+updated verify-vmhfz
+updated release-9mpcj
+updated verify-kd4fd
+updated release-pgww8
+updated verify-6vrdr
+updated verify-mq2bd
+updated release-l2rfg
+updated staging
+updated dev
+updated production
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-kd4fd
+updated release-pgww8
+updated verify-6vrdr
+updated verify-vmhfz
+updated release-9mpcj
+updated release-sch2s
+updated release-tmkvt
+updated release-b98vd
+updated verify-hbwlg
+updated release-jtl6z
+updated verify-g9kqd
+updated release-4xhxs
+updated verify-5tr56
+updated release-gzxvg
+updated release-ltsn6
+updated release-sgmd9
+updated verify-g9kqd
+updated release-4xhxs
+updated production
+updated staging
+updated dev
+updated verify-5tr56
+updated release-gzxvg
+updated release-ltsn6
+updated release-sgmd9
+updated verify-mq2bd
+updated release-l2rfg
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-kd4fd
+updated release-pgww8
+updated verify-6vrdr
+updated verify-vmhfz
+updated release-9mpcj
+updated release-sch2s
+updated release-tmkvt
+updated release-b98vd
+updated verify-hbwlg
+updated release-jtl6z
+updated verify-hbwlg
+updated release-jtl6z
+updated release-sch2s
+updated dev
+updated production
+updated staging
+updated release-ltsn6
+updated release-sgmd9
+updated verify-g9kqd
+updated release-4xhxs
+created PipelineActivity ****-jx-demo-terraform-dev-pr-77-1 in namespace jx
+logging pod: verify-27w5f-from-build-pack-rjqzb-pod-jqhtp
+WARNING: failed to store resources for PipelineActivity ****-jx-demo-terraform-dev-pr-77-1 in namespace jx: failed to write to bucket gs://logs-****-tekton-20699896b252 file jenkins-x/logs/****/jx-demo-terraform-dev/PR-77/1.log: failed to read data for key jenkins-x/logs/****/jx-demo-terraform-dev/PR-77/1.log in bucket gs://logs-****-tekton-20699896b252: getting logs for build ****/jx-demo-terraform-dev/pr-77 #1: failed to load pod verify-27w5f-from-build-pack-rjqzb-pod-jqhtp in namespace jx: pods "verify-27w5f-from-build-pack-rjqzb-pod-jqhtp" not found
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-kd4fd
+updated verify-hbwlg
+updated release-jtl6z
+updated release-sch2s
+updated dev
+updated production
+updated staging
+updated release-ltsn6
+updated release-sgmd9
+updated verify-g9kqd
+updated release-4xhxs
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-kd4fd
+updated release-ltsn6
+updated release-sgmd9
+updated staging
+updated dev
+updated production
+updated verify-g9kqd
+updated release-4xhxs
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-kd4fd
+updated verify-hbwlg
+updated release-jtl6z
+updated release-sch2s
+created PipelineActivity ****-jx-demo-terraform-dev-pr-77-1 in namespace jx
+logging pod: verify-27w5f-from-build-pack-rjqzb-pod-jqhtp
+WARNING: failed to store resources for PipelineActivity ****-jx-demo-terraform-dev-pr-77-1 in namespace jx: failed to write to bucket gs://logs-****-tekton-20699896b252 file jenkins-x/logs/****/jx-demo-terraform-dev/PR-77/1.log: failed to read data for key jenkins-x/logs/****/jx-demo-terraform-dev/PR-77/1.log in bucket gs://logs-****-tekton-20699896b252: getting logs for build ****/jx-demo-terraform-dev/pr-77 #1: failed to load pod verify-27w5f-from-build-pack-rjqzb-pod-jqhtp in namespace jx: pods "verify-27w5f-from-build-pack-rjqzb-pod-jqhtp" not found
+updated verify-27w5f
+updated dev
+updated production
+updated staging
+updated verify-g9bsd
+updated verify-kd4fd
+updated release-sch2s
+updated verify-hbwlg
+updated release-jtl6z
+updated verify-g9kqd
+updated release-4xhxs
+updated release-ltsn6
+updated release-sgmd9
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-kd4fd
+updated dev
+updated production
+updated staging
+updated verify-hbwlg
+updated release-jtl6z
+updated release-sch2s
+updated release-ltsn6
+updated release-sgmd9
+updated verify-g9kqd
+updated release-4xhxs
+updated verify-hbwlg
+updated release-jtl6z
+updated dev
+updated production
+updated staging
+updated release-sch2s
+updated release-4xhxs
+updated release-ltsn6
+updated release-sgmd9
+updated verify-g9kqd
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-kd4fd
+updated verify-kd4fd
+updated release-jtl6z
+updated dev
+updated production
+updated staging
+updated release-sch2s
+updated verify-hbwlg
+updated release-sgmd9
+updated verify-g9kqd
+updated release-4xhxs
+updated release-ltsn6
+updated verify-g9bsd
+updated verify-27w5f
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-kd4fd
+updated dev
+updated production
+updated staging
+updated verify-hbwlg
+updated release-jtl6z
+updated release-sch2s
+updated release-ltsn6
+updated release-sgmd9
+updated verify-g9kqd
+updated release-4xhxs
+updated verify-kd4fd
+updated verify-hbwlg
+updated release-jtl6z
+updated dev
+updated production
+updated staging
+updated release-sch2s
+updated release-ltsn6
+updated release-sgmd9
+updated verify-g9kqd
+updated release-4xhxs
+updated verify-27w5f
+updated verify-g9bsd
+updated release-ltsn6
+updated release-sgmd9
+updated verify-g9kqd
+updated dev
+updated production
+updated staging
+updated release-4xhxs
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-kd4fd
+updated verify-hbwlg
+updated release-jtl6z
+updated release-sch2s
+updated verify-hbwlg
+updated release-jtl6z
+updated dev
+updated production
+updated staging
+updated release-sch2s
+updated release-ltsn6
+updated release-sgmd9
+updated verify-g9kqd
+updated release-4xhxs
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-kd4fd
+updated verify-kd4fd
+updated verify-hbwlg
+updated dev
+updated production
+updated staging
+updated release-jtl6z
+updated release-sch2s
+updated release-ltsn6
+updated release-sgmd9
+updated verify-g9kqd
+updated release-4xhxs
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-kd4fd
+updated dev
+updated production
+updated staging
+updated release-sch2s
+updated verify-hbwlg
+updated release-jtl6z
+updated verify-g9kqd
+updated release-4xhxs
+updated release-ltsn6
+updated release-sgmd9
+updated verify-27w5f
+updated verify-g9bsd
+updated dev
+updated production
+updated staging
+updated verify-kd4fd
+updated verify-hbwlg
+updated release-jtl6z
+updated release-sch2s
+updated release-ltsn6
+updated release-sgmd9
+updated verify-g9kqd
+updated release-4xhxs
+updated release-ltsn6
+updated release-sgmd9
+updated dev
+updated production
+updated staging
+updated verify-g9kqd
+updated release-4xhxs
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-kd4fd
+updated verify-hbwlg
+updated release-jtl6z
+updated release-sch2s
+updated verify-hbwlg
+updated release-jtl6z
+updated dev
+updated production
+updated staging
+updated release-sch2s
+updated release-ltsn6
+updated release-sgmd9
+updated verify-g9kqd
+updated release-4xhxs
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-kd4fd
+updated verify-27w5f
+updated verify-g9bsd
+updated dev
+updated production
+updated staging
+updated verify-kd4fd
+updated release-sch2s
+updated verify-hbwlg
+updated release-jtl6z
+updated verify-g9kqd
+updated release-4xhxs
+updated release-ltsn6
+updated release-sgmd9
+updated verify-g9kqd
+updated release-4xhxs
+updated release-ltsn6
+updated dev
+updated production
+updated staging
+updated release-sgmd9
+updated verify-27w5f
+updated verify-g9bsd
+updated verify-kd4fd
+updated release-sch2s
+updated verify-hbwlg
+updated release-jtl6z
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated production
+updated staging
+updated dev
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated production
+updated staging
+updated dev
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated staging
+updated dev
+updated production
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging
+updated dev
+updated production
+updated staging
+updated dev
+updated dev
+updated production
+updated staging

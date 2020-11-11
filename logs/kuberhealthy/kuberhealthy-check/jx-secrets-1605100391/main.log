@@ -1,0 +1,4 @@
+time="2020-11-11T13:13:17Z" level=info msg="Found instance namespace: kuberhealthy"
+time="2020-11-11T13:13:17Z" level=info msg="Kuberhealthy is located in the kuberhealthy namespace."
+starting jx-webhooks health checks
+successfully reported

@@ -1,0 +1,146 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    wave.pusher.com/config-hash: 5296011d6aaaa5a98ebad5029a833d73ec934538958b5961776fd214efde4f60
+  creationTimestamp: "2020-11-07T03:13:19Z"
+  generateName: nexus-nexus-754698448d-
+  labels:
+    app: nexus
+    pod-template-hash: 754698448d
+    release: nexus
+  name: nexus-nexus-754698448d-vtwtw
+  namespace: jx
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: nexus-nexus-754698448d
+    uid: f06a31fd-8d95-4bf6-be55-bed753859e45
+  resourceVersion: "22548159"
+  selfLink: /api/v1/namespaces/jx/pods/nexus-nexus-754698448d-vtwtw
+  uid: a67ccd98-48e3-491e-9ede-48457cb2d67c
+spec:
+  containers:
+  - env:
+    - name: NEXUS_CONTEXT
+      valueFrom:
+        configMapKeyRef:
+          key: context.path
+          name: nexus
+    - name: ENABLE_ANONYMOUS_ACCESS
+      value: "false"
+    - name: NEXUS_SECURITY_RANDOMPASSWORD
+      value: "false"
+    image: gcr.io/jenkinsxio/nexus:0.1.35
+    imagePullPolicy: IfNotPresent
+    lifecycle:
+      postStart:
+        exec:
+          command:
+          - /opt/sonatype/nexus/postStart.sh
+    livenessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /
+        port: 8081
+        scheme: HTTP
+      initialDelaySeconds: 30
+      periodSeconds: 30
+      successThreshold: 1
+      timeoutSeconds: 1
+    name: nexus
+    ports:
+    - containerPort: 8081
+      protocol: TCP
+    readinessProbe:
+      failureThreshold: 6
+      httpGet:
+        path: /
+        port: 8081
+        scheme: HTTP
+      initialDelaySeconds: 30
+      periodSeconds: 30
+      successThreshold: 1
+      timeoutSeconds: 1
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /nexus-data
+      name: nexus-data-volume
+    - mountPath: /opt/sonatype/nexus/config
+      name: nexus
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-gddcm
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-pmxj
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext:
+    fsGroup: 2000
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: nexus
+    secret:
+      defaultMode: 420
+      secretName: nexus
+  - name: nexus-data-volume
+    persistentVolumeClaim:
+      claimName: nexus-nexus
+  - name: default-token-gddcm
+    secret:
+      defaultMode: 420
+      secretName: default-token-gddcm
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:13:19Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:15:59Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:15:59Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:13:19Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://96eed2efc9d8827db74dc0a8aa657ccfbd3e5b555283594796e99be5b3e82000
+    image: gcr.io/jenkinsxio/nexus:0.1.35
+    imageID: docker-pullable://gcr.io/jenkinsxio/nexus@sha256:a8ed79188afdd4d87e6343a0b71f13d44e84e3e1316065b2a543199a5c5ae463
+    lastState: {}
+    name: nexus
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-07T03:14:48Z"
+  hostIP: 10.128.0.11
+  phase: Running
+  podIP: 10.8.7.13
+  podIPs:
+  - ip: 10.8.7.13
+  qosClass: BestEffort
+  startTime: "2020-11-07T03:13:19Z"

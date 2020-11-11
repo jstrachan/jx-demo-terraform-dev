@@ -1,0 +1,7 @@
+{"level":"info","msg":"Deleted pod jxboot-helmfile-resources-gcactivities-1605085200-jz8ss in namespace jx with phase Succeeded as its age is: 3h0m","time":"2020-11-11T12:00:02Z"}
+{"level":"info","msg":"Deleted pod jxboot-helmfile-resources-gcactivities-1605087000-jtrr5 in namespace jx with phase Succeeded as its age is: 2h30m","time":"2020-11-11T12:00:02Z"}
+{"level":"info","msg":"Deleted pod jxboot-helmfile-resources-gcpods-1605085200-8lfhb in namespace jx with phase Succeeded as its age is: 3h0m","time":"2020-11-11T12:00:02Z"}
+{"level":"info","msg":"Deleted pod jxboot-helmfile-resources-gcpods-1605085200-cvnl4 in namespace jx with phase Failed as its age is: 3h0m","time":"2020-11-11T12:00:02Z"}
+{"level":"info","msg":"Deleted pod jxboot-helmfile-resources-gcpods-1605087000-4gwj5 in namespace jx with phase Succeeded as its age is: 2h30m","time":"2020-11-11T12:00:02Z"}
+{"level":"info","msg":"Deleted pod jxboot-helmfile-resources-gcpods-1605087000-9ln2f in namespace jx with phase Failed as its age is: 2h30m","time":"2020-11-11T12:00:02Z"}
+{"level":"info","msg":"Deleted pod lighthouse-gc-jobs-1605090600-tl4nv in namespace jx with phase Succeeded as its age is: 1h30m","time":"2020-11-11T12:00:02Z"}

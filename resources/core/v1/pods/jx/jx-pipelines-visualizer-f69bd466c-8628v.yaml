@@ -1,0 +1,132 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    wave.pusher.com/config-hash: 100444e91862dd77d7ebe29f050c1e9a7f357c771e1a7b7650aae27e6a3a031d
+  creationTimestamp: "2020-11-11T13:19:44Z"
+  generateName: jx-pipelines-visualizer-f69bd466c-
+  labels:
+    app.kubernetes.io/instance: jx-pipelines-visualizer
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: jx-pipelines-visualizer
+    app.kubernetes.io/version: 0.0.52
+    helm.sh/chart: jx-pipelines-visualizer-0.0.52
+    pod-template-hash: f69bd466c
+  name: jx-pipelines-visualizer-f69bd466c-8628v
+  namespace: jx
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: jx-pipelines-visualizer-f69bd466c
+    uid: ca144687-4a44-42a5-ad1d-57670c01b841
+  resourceVersion: "27408056"
+  selfLink: /api/v1/namespaces/jx/pods/jx-pipelines-visualizer-f69bd466c-8628v
+  uid: 21bfe512-5198-4afa-b5ba-9d5459435029
+spec:
+  containers:
+  - args:
+    - -namespace
+    - jx
+    - -resync-interval
+    - 60s
+    - -log-level
+    - INFO
+    image: gcr.io/jenkinsxio/jx-pipelines-visualizer:0.0.52
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 3
+      periodSeconds: 10
+      successThreshold: 1
+      tcpSocket:
+        port: http
+      timeoutSeconds: 1
+    name: jx-pipelines-visualizer
+    ports:
+    - containerPort: 8080
+      name: http
+      protocol: TCP
+    readinessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /healthz
+        port: http
+        scheme: HTTP
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+    resources:
+      limits:
+        cpu: "1"
+        memory: 512M
+      requests:
+        cpu: 200m
+        memory: 128M
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: jx-pipelines-visualizer-token-tvc9q
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: false
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-ccfi
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: jx-pipelines-visualizer
+  serviceAccountName: jx-pipelines-visualizer
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: jx-pipelines-visualizer-token-tvc9q
+    secret:
+      defaultMode: 420
+      secretName: jx-pipelines-visualizer-token-tvc9q
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:19:44Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:19:58Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:19:58Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:19:44Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://fefe18dee1c8549635d236db877d10c15c6e816d82d0e42d7f2c05f1b85a5ce0
+    image: gcr.io/jenkinsxio/jx-pipelines-visualizer:0.0.52
+    imageID: docker-pullable://gcr.io/jenkinsxio/jx-pipelines-visualizer@sha256:392213c76da4afa5fc3e4294430703a597fda18bb2b471d7337ab31cfd0748ab
+    lastState: {}
+    name: jx-pipelines-visualizer
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-11T13:19:49Z"
+  hostIP: 10.128.0.2
+  phase: Running
+  podIP: 10.8.3.100
+  podIPs:
+  - ip: 10.8.3.100
+  qosClass: Burstable
+  startTime: "2020-11-11T13:19:44Z"

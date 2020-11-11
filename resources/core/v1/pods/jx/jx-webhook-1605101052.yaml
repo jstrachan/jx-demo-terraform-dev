@@ -1,0 +1,117 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    comcast.github.io/check-name: jx-webhook
+  creationTimestamp: "2020-11-11T13:24:18Z"
+  labels:
+    app: kuberhealthy-check
+    kuberhealthy-check-name: jx-webhook
+    kuberhealthy-run-id: 223610a1-9f38-4384-b78b-0647d560311e
+  name: jx-webhook-1605101052
+  namespace: jx
+  ownerReferences:
+  - apiVersion: v1
+    kind: Pod
+    name: kuberhealthy-5c46966647-6db64
+    uid: d98a024b-7504-4cdd-a3bb-c70c6128d8fb
+  resourceVersion: "27410891"
+  selfLink: /api/v1/namespaces/jx/pods/jx-webhook-1605101052
+  uid: d065826b-44c1-4ab2-a290-a9c6c9792f1a
+spec:
+  containers:
+  - env:
+    - name: KH_REPORTING_URL
+      value: http://kuberhealthy.kuberhealthy.svc.cluster.local/externalCheckStatus
+    - name: KH_RUN_UUID
+      value: 223610a1-9f38-4384-b78b-0647d560311e
+    - name: KH_CHECK_RUN_DEADLINE
+      value: "1605101172"
+    - name: KH_POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    image: gcr.io/jenkinsxio/jx-webhooks:0.0.32
+    imagePullPolicy: IfNotPresent
+    name: jx-webhook
+    resources:
+      limits:
+        cpu: 40m
+      requests:
+        cpu: 25m
+        memory: 15Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: jx-webhook-sa-token-mt4b7
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-pmxj
+  priority: 0
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: jx-webhook-sa
+  serviceAccountName: jx-webhook-sa
+  terminationGracePeriodSeconds: 60
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: jx-webhook-sa-token-mt4b7
+    secret:
+      defaultMode: 420
+      secretName: jx-webhook-sa-token-mt4b7
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:24:18Z"
+    reason: PodCompleted
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:24:22Z"
+    reason: PodCompleted
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:24:22Z"
+    reason: PodCompleted
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T13:24:18Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://c97277e964b7f51e161071cf934e705e6628b526ffbc7782d4ad2f9715095891
+    image: gcr.io/jenkinsxio/jx-webhooks:0.0.32
+    imageID: docker-pullable://gcr.io/jenkinsxio/jx-webhooks@sha256:02b8be926e299e08202e933b90775428868c1adf5a30692c0d78e895039fc954
+    lastState: {}
+    name: jx-webhook
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      terminated:
+        containerID: docker://c97277e964b7f51e161071cf934e705e6628b526ffbc7782d4ad2f9715095891
+        exitCode: 0
+        finishedAt: "2020-11-11T13:24:22Z"
+        reason: Completed
+        startedAt: "2020-11-11T13:24:21Z"
+  hostIP: 10.128.0.11
+  phase: Succeeded
+  podIP: 10.8.7.159
+  podIPs:
+  - ip: 10.8.7.159
+  qosClass: Burstable
+  startTime: "2020-11-11T13:24:18Z"

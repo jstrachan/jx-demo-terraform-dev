@@ -1,0 +1,8 @@
+time="2020-11-11T12:09:23Z" level=info msg="Found instance namespace: kuberhealthy"
+time="2020-11-11T12:09:23Z" level=info msg="Kuberhealthy is located in the kuberhealthy namespace."
+time="2020-11-11T12:09:23Z" level=info msg="Check time limit set to: 9m46.40260929s"
+time="2020-11-11T12:09:23Z" level=info msg="CONNECTION_TARGET_UNREACHABLE could not be parsed."
+time="2020-11-11T12:09:23Z" level=error msg="Failed to check node age: an empty namespace may not be set when a resource name is provided"
+time="2020-11-11T12:09:23Z" level=info msg="Running network connection checker"
+time="2020-11-11T12:09:24Z" level=info msg="Successfully reported success to Kuberhealthy servers"
+time="2020-11-11T12:09:24Z" level=info msg="Done running network connection check for: tcp://github.com:443"

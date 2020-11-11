@@ -1,0 +1,6 @@
+ERROR: logging before flag.Parse: I1107 03:04:48.403919       1 pod_nanny.go:67] Invoked by [/pod_nanny --config-dir=/etc/config --cpu=40m --extra-cpu=0.5m --memory=35Mi --extra-memory=4Mi --threshold=5 --deployment=metrics-server-v0.3.6 --container=metrics-server --poll-period=300000 --estimator=exponential --scale-down-delay=24h --minClusterSize=5]
+ERROR: logging before flag.Parse: I1107 03:04:48.404082       1 pod_nanny.go:68] Version: 1.8.8
+ERROR: logging before flag.Parse: I1107 03:04:48.404112       1 pod_nanny.go:84] Watching namespace: kube-system, pod: metrics-server-v0.3.6-64655c969-qt5sn, container: metrics-server.
+ERROR: logging before flag.Parse: I1107 03:04:48.404129       1 pod_nanny.go:85] storage: MISSING, extra_storage: 0Gi
+ERROR: logging before flag.Parse: I1107 03:04:48.406394       1 pod_nanny.go:115] cpu: 40m, extra_cpu: 0.5m, memory: 35Mi, extra_memory: 4Mi
+ERROR: logging before flag.Parse: I1107 03:04:48.406431       1 pod_nanny.go:144] Resources: [{Base:{i:{value:40 scale:-3} d:{Dec:<nil>} s:40m Format:DecimalSI} ExtraPerNode:{i:{value:5 scale:-4} d:{Dec:<nil>} s: Format:DecimalSI} Name:cpu} {Base:{i:{value:36700160 scale:0} d:{Dec:<nil>} s:35Mi Format:BinarySI} ExtraPerNode:{i:{value:4194304 scale:0} d:{Dec:<nil>} s:4Mi Format:BinarySI} Name:memory}]

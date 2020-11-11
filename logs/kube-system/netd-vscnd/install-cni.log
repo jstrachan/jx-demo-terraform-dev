@@ -1,0 +1,8 @@
+Calico network policy config:  false
+PodCIDR validation succeeded: "10.8.8.0/24"
+Filling IPv4 subnet "10.8.8.0/24"
+Config MASQUERADE rule
+IP-MASQ Chain exists, skip creating IP-MASQ Chain and MASQ rules.
+Clearing IPv6 subnet and route given private IPv6 access is disabled...
+Set the default mtu to 1460, inherited from dev eth0
+Creating CNI spec...

@@ -1,0 +1,126 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    kubernetes.io/config.hash: 1b13071a0b296453ef7a32701441f230
+    kubernetes.io/config.mirror: 1b13071a0b296453ef7a32701441f230
+    kubernetes.io/config.seen: "2020-11-07T03:03:44.251752678Z"
+    kubernetes.io/config.source: file
+  creationTimestamp: "2020-11-07T03:03:44Z"
+  labels:
+    component: kube-proxy
+    tier: node
+  name: kube-proxy-gke-jstrachan-tekton-default-pool-154aeb80-ccfi
+  namespace: kube-system
+  resourceVersion: "22537920"
+  selfLink: /api/v1/namespaces/kube-system/pods/kube-proxy-gke-jstrachan-tekton-default-pool-154aeb80-ccfi
+  uid: b92e940c-5aee-480d-83a2-c9831e8c6c23
+spec:
+  containers:
+  - command:
+    - /bin/sh
+    - -c
+    - exec kube-proxy --master=https://35.238.250.202 --kubeconfig=/var/lib/kube-proxy/kubeconfig --cluster-cidr=10.8.0.0/14 --oom-score-adj=-998 --v=2 --feature-gates=DynamicKubeletConfig=false,TaintBasedEvictions=false,RotateKubeletServerCertificate=true --iptables-sync-period=1m --iptables-min-sync-period=10s --ipvs-sync-period=1m --ipvs-min-sync-period=10s 1>>/var/log/kube-proxy.log 2>&1
+    image: gke.gcr.io/kube-proxy-amd64:v1.16.13-gke.401
+    imagePullPolicy: IfNotPresent
+    name: kube-proxy
+    resources:
+      requests:
+        cpu: 100m
+    securityContext:
+      privileged: true
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /etc/ssl/certs
+      name: etc-ssl-certs
+      readOnly: true
+    - mountPath: /usr/share/ca-certificates
+      name: usr-ca-certs
+      readOnly: true
+    - mountPath: /var/log
+      name: varlog
+    - mountPath: /var/lib/kube-proxy/kubeconfig
+      name: kubeconfig
+    - mountPath: /run/xtables.lock
+      name: iptableslock
+    - mountPath: /lib/modules
+      name: lib-modules
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  hostNetwork: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-ccfi
+  priority: 2000001000
+  priorityClassName: system-node-critical
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    operator: Exists
+  - effect: NoSchedule
+    operator: Exists
+  volumes:
+  - hostPath:
+      path: /usr/share/ca-certificates
+      type: ""
+    name: usr-ca-certs
+  - hostPath:
+      path: /etc/ssl/certs
+      type: ""
+    name: etc-ssl-certs
+  - hostPath:
+      path: /var/lib/kube-proxy/kubeconfig
+      type: FileOrCreate
+    name: kubeconfig
+  - hostPath:
+      path: /var/log
+      type: ""
+    name: varlog
+  - hostPath:
+      path: /run/xtables.lock
+      type: FileOrCreate
+    name: iptableslock
+  - hostPath:
+      path: /lib/modules
+      type: ""
+    name: lib-modules
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:03:44Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:03:46Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:03:46Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:03:44Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://4798d7db25a8224e5f148bd9124bc824b3152f5ea9b738618676ac128828b745
+    image: gke.gcr.io/kube-proxy-amd64:v1.16.13-gke.401
+    imageID: docker://sha256:89825752aba466019f1014c4b3dc0e3000b37b0ad6da689624db44c88da3f30c
+    lastState: {}
+    name: kube-proxy
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-07T03:03:46Z"
+  hostIP: 10.128.0.2
+  phase: Running
+  podIP: 10.128.0.2
+  podIPs:
+  - ip: 10.128.0.2
+  qosClass: Burstable
+  startTime: "2020-11-07T03:03:44Z"

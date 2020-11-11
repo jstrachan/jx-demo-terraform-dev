@@ -1,0 +1,59 @@
+I1107 03:05:02.216413       1 flags.go:52] FLAG: --alsologtostderr="false"
+I1107 03:05:02.216632       1 flags.go:52] FLAG: --config-dir="/kube-dns-config"
+I1107 03:05:02.216670       1 flags.go:52] FLAG: --config-map=""
+I1107 03:05:02.216756       1 flags.go:52] FLAG: --config-map-namespace="kube-system"
+I1107 03:05:02.216790       1 flags.go:52] FLAG: --config-period="10s"
+I1107 03:05:02.216845       1 flags.go:52] FLAG: --dns-bind-address="0.0.0.0"
+I1107 03:05:02.216885       1 flags.go:52] FLAG: --dns-port="10053"
+I1107 03:05:02.216919       1 flags.go:52] FLAG: --domain="cluster.local."
+I1107 03:05:02.216981       1 flags.go:52] FLAG: --federations=""
+I1107 03:05:02.217024       1 flags.go:52] FLAG: --healthz-port="8081"
+I1107 03:05:02.217058       1 flags.go:52] FLAG: --initial-sync-timeout="1m0s"
+I1107 03:05:02.217112       1 flags.go:52] FLAG: --kube-master-url=""
+I1107 03:05:02.217154       1 flags.go:52] FLAG: --kubecfg-file=""
+I1107 03:05:02.217185       1 flags.go:52] FLAG: --log-backtrace-at=":0"
+I1107 03:05:02.217243       1 flags.go:52] FLAG: --log-dir=""
+I1107 03:05:02.217301       1 flags.go:52] FLAG: --log-flush-frequency="5s"
+I1107 03:05:02.217347       1 flags.go:52] FLAG: --logtostderr="true"
+I1107 03:05:02.217394       1 flags.go:52] FLAG: --nameservers=""
+I1107 03:05:02.217441       1 flags.go:52] FLAG: --profiling="false"
+I1107 03:05:02.217475       1 flags.go:52] FLAG: --stderrthreshold="2"
+I1107 03:05:02.217530       1 flags.go:52] FLAG: --v="2"
+I1107 03:05:02.217598       1 flags.go:52] FLAG: --version="false"
+I1107 03:05:02.217644       1 flags.go:52] FLAG: --vmodule=""
+I1107 03:05:02.217740       1 dns.go:48] version: 1.15.13
+I1107 03:05:02.219175       1 server.go:74] Using configuration read from directory: /kube-dns-config with period 10s
+I1107 03:05:02.219293       1 server.go:127] FLAG: --alsologtostderr="false"
+I1107 03:05:02.219312       1 server.go:127] FLAG: --config-dir="/kube-dns-config"
+I1107 03:05:02.219320       1 server.go:127] FLAG: --config-map=""
+I1107 03:05:02.219361       1 server.go:127] FLAG: --config-map-namespace="kube-system"
+I1107 03:05:02.219369       1 server.go:127] FLAG: --config-period="10s"
+I1107 03:05:02.219377       1 server.go:127] FLAG: --dns-bind-address="0.0.0.0"
+I1107 03:05:02.219383       1 server.go:127] FLAG: --dns-port="10053"
+I1107 03:05:02.219392       1 server.go:127] FLAG: --domain="cluster.local."
+I1107 03:05:02.219403       1 server.go:127] FLAG: --federations=""
+I1107 03:05:02.219410       1 server.go:127] FLAG: --healthz-port="8081"
+I1107 03:05:02.219423       1 server.go:127] FLAG: --initial-sync-timeout="1m0s"
+I1107 03:05:02.219431       1 server.go:127] FLAG: --kube-master-url=""
+I1107 03:05:02.219442       1 server.go:127] FLAG: --kubecfg-file=""
+I1107 03:05:02.219448       1 server.go:127] FLAG: --log-backtrace-at=":0"
+I1107 03:05:02.219456       1 server.go:127] FLAG: --log-dir=""
+I1107 03:05:02.219462       1 server.go:127] FLAG: --log-flush-frequency="5s"
+I1107 03:05:02.219476       1 server.go:127] FLAG: --logtostderr="true"
+I1107 03:05:02.219483       1 server.go:127] FLAG: --nameservers=""
+I1107 03:05:02.219489       1 server.go:127] FLAG: --profiling="false"
+I1107 03:05:02.219497       1 server.go:127] FLAG: --stderrthreshold="2"
+I1107 03:05:02.219506       1 server.go:127] FLAG: --v="2"
+I1107 03:05:02.219512       1 server.go:127] FLAG: --version="false"
+I1107 03:05:02.219522       1 server.go:127] FLAG: --vmodule=""
+I1107 03:05:02.219761       1 server.go:183] Starting SkyDNS server (0.0.0.0:10053)
+I1107 03:05:02.219963       1 server.go:195] Skydns metrics enabled (/metrics:10055)
+I1107 03:05:02.219982       1 dns.go:189] Starting endpointsController
+I1107 03:05:02.219990       1 dns.go:192] Starting serviceController
+I1107 03:05:02.220127       1 dns.go:185] Configuration updated: {TypeMeta:{Kind: APIVersion:} Federations:map[] StubDomains:map[] UpstreamNameservers:[]}
+I1107 03:05:02.221035       1 logs.go:41] skydns: ready for queries on cluster.local. for tcp://0.0.0.0:10053 [rcache 0]
+I1107 03:05:02.221059       1 logs.go:41] skydns: ready for queries on cluster.local. for udp://0.0.0.0:10053 [rcache 0]
+I1107 03:05:02.720385       1 dns.go:223] Initialized services and endpoints from apiserver
+I1107 03:05:02.720416       1 server.go:151] Setting up Healthz Handler (/readiness)
+I1107 03:05:02.720429       1 server.go:156] Setting up cache handler (/cache)
+I1107 03:05:02.720446       1 server.go:137] Status HTTP port 8081

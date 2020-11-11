@@ -1,0 +1,155 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    wave.pusher.com/config-hash: 3c313f4005475421cdab3ce6b7d19c47397db5012f564232ba2215abe1f2294a
+  creationTimestamp: "2020-11-07T03:08:27Z"
+  generateName: lighthouse-webhooks-859b6fffb6-
+  labels:
+    app: lighthouse-webhooks
+    draft: draft-app
+    pod-template-hash: 859b6fffb6
+  name: lighthouse-webhooks-859b6fffb6-xdrrj
+  namespace: jx
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: lighthouse-webhooks-859b6fffb6
+    uid: 2d23f9b0-39b1-465f-beca-d88af7d82e28
+  resourceVersion: "22542596"
+  selfLink: /api/v1/namespaces/jx/pods/lighthouse-webhooks-859b6fffb6-xdrrj
+  uid: 261b0fe2-07d3-4c07-bae1-b59eeb916c2a
+spec:
+  containers:
+  - args:
+    - --namespace=jx
+    env:
+    - name: GIT_KIND
+      value: github
+    - name: GIT_SERVER
+      value: https://github.com
+    - name: GIT_USER
+      value: jstrachan
+    - name: GIT_TOKEN
+      valueFrom:
+        secretKeyRef:
+          key: oauth
+          name: lighthouse-oauth-token
+    - name: HMAC_TOKEN
+      valueFrom:
+        secretKeyRef:
+          key: hmac
+          name: lighthouse-hmac-token
+    - name: JX_LOG_FORMAT
+      value: json
+    - name: LOGRUS_FORMAT
+      value: json
+    - name: DEFAULT_PIPELINE_RUN_SERVICE_ACCOUNT
+      value: tekton-bot
+    - name: DEFAULT_PIPELINE_RUN_TIMEOUT
+      value: 2h0m0s
+    - name: JX_DEFAULT_IMAGE
+      value: gcr.io/jenkinsxio/builder-maven:2.1.142-761
+    - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
+      value: namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}
+    image: gcr.io/jenkinsxio/lighthouse-webhooks:0.0.0-SNAPSHOT-PR-1142-27
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /
+        port: 8080
+        scheme: HTTP
+      initialDelaySeconds: 60
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+    name: lighthouse-webhooks
+    ports:
+    - containerPort: 8080
+      protocol: TCP
+    readinessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /
+        port: 8080
+        scheme: HTTP
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 512Mi
+      requests:
+        cpu: 80m
+        memory: 128Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: lighthouse-webhooks-token-mw5sr
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-n21q
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: lighthouse-webhooks
+  serviceAccountName: lighthouse-webhooks
+  terminationGracePeriodSeconds: 180
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: lighthouse-webhooks-token-mw5sr
+    secret:
+      defaultMode: 420
+      secretName: lighthouse-webhooks-token-mw5sr
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:08:27Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:09:20Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:09:20Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:08:27Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://0d1c97c8cef7c9894549f090c4a5897e72615e729678c8c6014f59236859bbfe
+    image: gcr.io/jenkinsxio/lighthouse-webhooks:0.0.0-SNAPSHOT-PR-1142-27
+    imageID: docker-pullable://gcr.io/jenkinsxio/lighthouse-webhooks@sha256:3b9429d948af5f87ccfd33511cd4a83ce757470f71cce4e03b5997366709c684
+    lastState: {}
+    name: lighthouse-webhooks
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-07T03:09:11Z"
+  hostIP: 10.128.0.5
+  phase: Running
+  podIP: 10.8.5.10
+  podIPs:
+  - ip: 10.8.5.10
+  qosClass: Burstable
+  startTime: "2020-11-07T03:08:27Z"

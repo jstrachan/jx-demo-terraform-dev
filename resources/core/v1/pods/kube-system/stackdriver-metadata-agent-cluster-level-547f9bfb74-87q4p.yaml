@@ -1,0 +1,181 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    components.gke.io/component-name: stackdriver-metadata-agent
+    components.gke.io/component-version: 1.1.3
+  creationTimestamp: "2020-11-07T03:08:27Z"
+  generateName: stackdriver-metadata-agent-cluster-level-547f9bfb74-
+  labels:
+    app: stackdriver-metadata-agent
+    cluster-level: "true"
+    pod-template-hash: 547f9bfb74
+  name: stackdriver-metadata-agent-cluster-level-547f9bfb74-87q4p
+  namespace: kube-system
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: stackdriver-metadata-agent-cluster-level-547f9bfb74
+    uid: 95a4c020-512c-457d-a195-7989bc5e46aa
+  resourceVersion: "22542517"
+  selfLink: /api/v1/namespaces/kube-system/pods/stackdriver-metadata-agent-cluster-level-547f9bfb74-87q4p
+  uid: 478b850b-f2df-4d00-9633-43efe682cf3e
+spec:
+  containers:
+  - args:
+    - -logtostderr
+    - -v=1
+    env:
+    - name: CLUSTER_NAME
+      value: jstrachan-tekton
+    - name: CLUSTER_LOCATION
+      value: us-central1-a
+    - name: IGNORED_RESOURCES
+      value: replicasets.v1.apps,replicasets.v1beta1.extensions
+    image: gcr.io/stackdriver-agents/metadata-agent-go:1.2.0
+    imagePullPolicy: IfNotPresent
+    name: metadata-agent
+    resources:
+      limits:
+        cpu: 48m
+        memory: 112Mi
+      requests:
+        cpu: 48m
+        memory: 112Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /etc/ssl/certs
+      name: ssl-certs
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: metadata-agent-token-fnwfl
+      readOnly: true
+  - command:
+    - /pod_nanny
+    - --config-dir=/etc/config
+    - --cpu=40m
+    - --extra-cpu=0.5m
+    - --memory=80Mi
+    - --extra-memory=2Mi
+    - --threshold=5
+    - --deployment=stackdriver-metadata-agent-cluster-level
+    - --container=metadata-agent
+    - --poll-period=300000
+    - --estimator=exponential
+    - --minClusterSize=16
+    - --use-metrics=true
+    env:
+    - name: MY_POD_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.name
+    - name: MY_POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    image: gke.gcr.io/addon-resizer:1.8.11-gke.1
+    imagePullPolicy: IfNotPresent
+    name: metadata-agent-nanny
+    resources:
+      limits:
+        memory: 90Mi
+      requests:
+        cpu: 50m
+        memory: 90Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /etc/config
+      name: metadata-agent-config-volume
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: metadata-agent-token-fnwfl
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-n21q
+  priority: 2000000000
+  priorityClassName: system-cluster-critical
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: metadata-agent
+  serviceAccountName: metadata-agent
+  terminationGracePeriodSeconds: 5
+  tolerations:
+  - key: CriticalAddonsOnly
+    operator: Exists
+  - key: components.gke.io/gke-managed-components
+    operator: Exists
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - hostPath:
+      path: /etc/ssl/certs
+      type: Directory
+    name: ssl-certs
+  - configMap:
+      defaultMode: 420
+      name: metadata-agent-config
+    name: metadata-agent-config-volume
+  - name: metadata-agent-token-fnwfl
+    secret:
+      defaultMode: 420
+      secretName: metadata-agent-token-fnwfl
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:08:28Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:09:14Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:09:14Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:08:28Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://29169fbbca4bb554be9c8491f2e10d6be8cf82a9541360b8b563faa5d14d405e
+    image: gcr.io/stackdriver-agents/metadata-agent-go:1.2.0
+    imageID: docker-pullable://gcr.io/stackdriver-agents/metadata-agent-go@sha256:b7d97f6543ebd8d133da944f3631cc2501c16dbc2abc835e741f4dcc8daba3d7
+    lastState: {}
+    name: metadata-agent
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-07T03:08:40Z"
+  - containerID: docker://20331809926e8907e2b1adfb16688b5396fc6dd6a11a4899d0739312ada5df9c
+    image: gke.gcr.io/addon-resizer:1.8.11-gke.1
+    imageID: docker-pullable://gke.gcr.io/addon-resizer@sha256:39b3b30565c5dc4942630a14b1b7efe4851a986b2895bc76c25cab5303920b61
+    lastState: {}
+    name: metadata-agent-nanny
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-07T03:09:13Z"
+  hostIP: 10.128.0.5
+  phase: Running
+  podIP: 10.8.5.4
+  podIPs:
+  - ip: 10.8.5.4
+  qosClass: Burstable
+  startTime: "2020-11-07T03:08:28Z"

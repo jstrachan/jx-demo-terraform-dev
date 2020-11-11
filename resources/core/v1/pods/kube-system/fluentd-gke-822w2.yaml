@@ -1,0 +1,252 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    EnableKnativeConfig: "false"
+    EnableNodeJournal: "false"
+    EnablePodSecurityPolicy: "false"
+    PodLogEnabled: "false"
+    SystemOnlyLogging: "false"
+    components.gke.io/component-name: fluentd
+    components.gke.io/component-version: 1.0.12
+    scheduler.alpha.kubernetes.io/critical-pod: ""
+  creationTimestamp: "2020-11-07T03:22:38Z"
+  generateName: fluentd-gke-
+  labels:
+    component: fluentd-gke
+    controller-revision-hash: 768759c9d
+    k8s-app: fluentd-gke
+    kubernetes.io/cluster-service: "true"
+    pod-template-generation: "2"
+  name: fluentd-gke-822w2
+  namespace: kube-system
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: DaemonSet
+    name: fluentd-gke
+    uid: 5c02a753-e925-412c-aca4-a6d61151c6e4
+  resourceVersion: "22553673"
+  selfLink: /api/v1/namespaces/kube-system/pods/fluentd-gke-822w2
+  uid: 94ee86f4-6ff2-41c5-b2a3-554eb5506149
+spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchFields:
+          - key: metadata.name
+            operator: In
+            values:
+            - gke-jstrachan-tekton-nap-n1-standard--0a7ecf20-446q
+  containers:
+  - env:
+    - name: NODE_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: spec.nodeName
+    - name: K8S_NODE_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: spec.nodeName
+    - name: STACKDRIVER_METADATA_AGENT_URL
+      value: http://$(NODE_NAME):8799
+    image: gcr.io/stackdriver-agents/stackdriver-logging-agent:1.6.36
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      exec:
+        command:
+        - /bin/sh
+        - -c
+        - |
+          LIVENESS_THRESHOLD_SECONDS=${LIVENESS_THRESHOLD_SECONDS:-300}; STUCK_THRESHOLD_SECONDS=${STUCK_THRESHOLD_SECONDS:-900}; if [ ! -e /var/run/google-fluentd/buffers ]; then
+            exit 1;
+          fi; touch -d "${STUCK_THRESHOLD_SECONDS} seconds ago" /tmp/marker-stuck; if [ -z "$(find /var/run/google-fluentd/buffers -type d -newer /tmp/marker-stuck -print -quit)" ]; then
+            rm -rf /var/run/google-fluentd/buffers;
+            exit 1;
+          fi; touch -d "${LIVENESS_THRESHOLD_SECONDS} seconds ago" /tmp/marker-liveness; if [ -z "$(find /var/run/google-fluentd/buffers -type d -newer /tmp/marker-liveness -print -quit)" ]; then
+            exit 1;
+          fi;
+      failureThreshold: 3
+      initialDelaySeconds: 600
+      periodSeconds: 60
+      successThreshold: 1
+      timeoutSeconds: 1
+    name: fluentd-gcp
+    resources:
+      limits:
+        cpu: "1"
+        memory: 500Mi
+      requests:
+        cpu: 100m
+        memory: 200Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/google-fluentd
+      name: varrun
+    - mountPath: /var/log
+      name: varlog
+    - mountPath: /var/lib/docker/containers
+      name: varlibdockercontainers
+      readOnly: true
+    - mountPath: /etc/google-fluentd/google-fluentd.conf
+      name: config-volume
+      subPath: google-fluentd.conf
+    - mountPath: /etc/google-fluentd/config.d
+      name: input-config-volume
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: fluentd-gke-token-pl927
+      readOnly: true
+  - command:
+    - /monitor
+    - --stackdriver-prefix=container.googleapis.com/internal/addons
+    - --api-override=https://monitoring.googleapis.com/
+    - --source=fluentd:http://localhost:24231?whitelisted=stackdriver_successful_requests_count,stackdriver_failed_requests_count,stackdriver_ingested_entries_count,stackdriver_dropped_entries_count
+    - --pod-id=$(POD_NAME)
+    - --namespace-id=$(POD_NAMESPACE)
+    - --node-name=$(NODE_NAME)
+    env:
+    - name: POD_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.name
+    - name: POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    - name: NODE_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: spec.nodeName
+    image: gke.gcr.io/prometheus-to-sd:v0.10.0-gke.0
+    imagePullPolicy: IfNotPresent
+    name: prometheus-to-sd-exporter
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: fluentd-gke-token-pl927
+      readOnly: true
+  dnsPolicy: Default
+  enableServiceLinks: true
+  hostNetwork: true
+  nodeName: gke-jstrachan-tekton-nap-n1-standard--0a7ecf20-446q
+  nodeSelector:
+    beta.kubernetes.io/os: linux
+  priority: 2000001000
+  priorityClassName: system-node-critical
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: fluentd-gke
+  serviceAccountName: fluentd-gke
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    operator: Exists
+  - effect: NoSchedule
+    operator: Exists
+  - key: components.gke.io/gke-managed-components
+    operator: Exists
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/disk-pressure
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/memory-pressure
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/pid-pressure
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/unschedulable
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/network-unavailable
+    operator: Exists
+  volumes:
+  - hostPath:
+      path: /var/run/google-fluentd
+      type: ""
+    name: varrun
+  - hostPath:
+      path: /var/log
+      type: ""
+    name: varlog
+  - hostPath:
+      path: /var/lib/docker/containers
+      type: ""
+    name: varlibdockercontainers
+  - configMap:
+      defaultMode: 420
+      name: fluentd-gke-input-config-v1.2.9
+    name: input-config-volume
+  - configMap:
+      defaultMode: 420
+      name: fluentd-gke-config-v1.2.9
+    name: config-volume
+  - name: fluentd-gke-token-pl927
+    secret:
+      defaultMode: 420
+      secretName: fluentd-gke-token-pl927
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:22:38Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:23:04Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:23:04Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:22:38Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://902d1b5d17dd024eb6fae88cbaab6ff78bc022924a06248450f90b1c074c915e
+    image: gcr.io/stackdriver-agents/stackdriver-logging-agent:1.6.36
+    imageID: docker-pullable://gcr.io/stackdriver-agents/stackdriver-logging-agent@sha256:e2ef6735a2730d3af25a2bdca6ecbcfc80a2d25f4aaf69cc25c4af9b56b39996
+    lastState: {}
+    name: fluentd-gcp
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-07T03:22:51Z"
+  - containerID: docker://04637145b8f400eea0777c40688529d72d4b33d181ab5fcc6c01916dfd92e33e
+    image: gke.gcr.io/prometheus-to-sd:v0.10.0-gke.0
+    imageID: docker-pullable://gke.gcr.io/prometheus-to-sd@sha256:c5e12680a431990d5e39ed249dcb43a7672e99f7ef94a9928be40cf2f418f62f
+    lastState: {}
+    name: prometheus-to-sd-exporter
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-07T03:23:04Z"
+  hostIP: 10.128.0.14
+  phase: Running
+  podIP: 10.128.0.14
+  podIPs:
+  - ip: 10.128.0.14
+  qosClass: Burstable
+  startTime: "2020-11-07T03:22:38Z"

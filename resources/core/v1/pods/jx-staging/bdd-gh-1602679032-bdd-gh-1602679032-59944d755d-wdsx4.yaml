@@ -1,0 +1,124 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    wave.pusher.com/config-hash: 100444e91862dd77d7ebe29f050c1e9a7f357c771e1a7b7650aae27e6a3a031d
+  creationTimestamp: "2020-11-07T03:04:13Z"
+  generateName: bdd-gh-1602679032-bdd-gh-1602679032-59944d755d-
+  labels:
+    app: bdd-gh-1602679032-bdd-gh-1602679032
+    draft: draft-app
+    pod-template-hash: 59944d755d
+  name: bdd-gh-1602679032-bdd-gh-1602679032-59944d755d-wdsx4
+  namespace: jx-staging
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: bdd-gh-1602679032-bdd-gh-1602679032-59944d755d
+    uid: 870f38eb-23db-4bb1-8057-819e17d19eb5
+  resourceVersion: "22538948"
+  selfLink: /api/v1/namespaces/jx-staging/pods/bdd-gh-1602679032-bdd-gh-1602679032-59944d755d-wdsx4
+  uid: ac1e46b6-cf12-41bf-a1b5-3d9d44d7bdd6
+spec:
+  containers:
+  - image: gcr.io/jenkins-x-labs-bdd/bdd-gh-1602679032:0.0.4
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /
+        port: 8080
+        scheme: HTTP
+      initialDelaySeconds: 60
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+    name: bdd-gh-1602679032
+    ports:
+    - containerPort: 8080
+      protocol: TCP
+    readinessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /
+        port: 8080
+        scheme: HTTP
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+    resources:
+      limits:
+        cpu: 400m
+        memory: 256Mi
+      requests:
+        cpu: 200m
+        memory: 128Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-d5sdk
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-ccfi
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: default-token-d5sdk
+    secret:
+      defaultMode: 420
+      secretName: default-token-d5sdk
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:04:13Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:05:04Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:05:04Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-07T03:04:13Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://5705d96f1fd3b1afa8f766a24d4f1c540e9b4569700d3ae221b4276087dbc95e
+    image: gcr.io/jenkins-x-labs-bdd/bdd-gh-1602679032:0.0.4
+    imageID: docker-pullable://gcr.io/jenkins-x-labs-bdd/bdd-gh-1602679032@sha256:f23467eea96e43aa30c0dc347392d355eb13fb938069ff1800f9d0ae7d42f301
+    lastState: {}
+    name: bdd-gh-1602679032
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-07T03:05:02Z"
+  hostIP: 10.128.0.2
+  phase: Running
+  podIP: 10.8.3.5
+  podIPs:
+  - ip: 10.8.3.5
+  qosClass: Burstable
+  startTime: "2020-11-07T03:04:13Z"

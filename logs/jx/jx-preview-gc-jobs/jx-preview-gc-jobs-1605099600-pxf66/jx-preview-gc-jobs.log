@@ -1,0 +1,4 @@
+about to run: git config --global --add user.name ****
+about to run: git config --global --add user.email jenkins-x@googlegroups.com
+about to run: git config --global credential.helper store in dir /home
+Generated Git credentials file /home/.config/git/credentials

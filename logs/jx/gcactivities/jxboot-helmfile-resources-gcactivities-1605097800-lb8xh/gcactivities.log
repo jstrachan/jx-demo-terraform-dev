@@ -1,0 +1,1 @@
+{"level":"warning","msg":"no ProwJob instances found: prowjobs.prow.k8s.io is forbidden: User \"system:serviceaccount:jx:jxboot-helmfile-resources-gcactivities\" cannot list resource \"prowjobs\" in API group \"prow.k8s.io\" in the namespace \"jx\"","time":"2020-11-11T12:30:05Z"}
