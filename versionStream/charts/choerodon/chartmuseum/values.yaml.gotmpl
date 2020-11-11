@@ -1,5 +1,8 @@
 enabled: true
 
+nameOverride: jenkins-x-chartmuseum
+
+
 service:
   servicename: jenkins-x-chartmuseum
 
@@ -9,7 +12,6 @@ persistence:
   size: 8Gi
 
 env:
-  existingSecret: jenkins-x-chartmuseum
   open:
     AUTH_ANONYMOUS_GET: true
     DISABLE_API: false
