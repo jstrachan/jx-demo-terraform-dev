@@ -364,3 +364,12 @@ W1111 14:13:39.027560       6 controller.go:909] Service "jx/bucketrepo" does no
 10.8.5.1 - - [11/Nov/2020:14:14:23 +0000] "GET /charts/nodey536-1.0.5.tgz HTTP/1.1" 200 4872 "-" "Helm/3.4.0" 111 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 4866 0.002 200 c983923539263966977642df6e76c433
 W1111 14:14:35.855435       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
 10.8.5.1 - - [11/Nov/2020:14:15:13 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 b288013dbeee70b37c3711a8988be0f1
+10.128.0.11 - - [11/Nov/2020:14:17:18 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 6a1ab9271b08bfc0c825f01164bf67ba
+10.128.0.11 - - [11/Nov/2020:14:18:33 +0000] "GET /charts/bdd-gh-1602679032-0.0.4.tgz HTTP/1.1" 200 6419 "-" "Helm/3.4.0" 120 0.002 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 6413 0.002 200 41fa66ba74678806e4e5a9c4a666e745
+10.128.0.11 - - [11/Nov/2020:14:18:46 +0000] "GET /index.yaml HTTP/1.1" 200 17806 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 0a098132a827553a8e1d78284bd86fbe
+10.128.0.11 - - [11/Nov/2020:14:19:25 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.002 200 d352a38d3501e84be782c0beffc6af41
+W1111 14:19:39.121476       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 14:19:42.454225       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 14:19:56.319484       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 14:19:59.652921       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 14:20:02.988363       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.

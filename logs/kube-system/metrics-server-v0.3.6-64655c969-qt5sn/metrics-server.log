@@ -581,3 +581,7 @@ E1111 14:10:04.673331       1 reststorage.go:160] unable to fetch pod metrics fo
 E1111 14:10:04.673361       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-849fc84cd4-gc5f4: no metrics known for pod
 E1111 14:10:04.673373       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-849fc84cd4-zg6sj: no metrics known for pod
 E1111 14:12:04.573291       1 reststorage.go:160] unable to fetch pod metrics for pod jx-git-operator/jx-boot-e6692c40-71ac-40bd-b738-4d24db840f63-q8twj: no metrics known for pod
+E1111 14:20:04.561048       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-7754944654-q5f25: no metrics known for pod
+E1111 14:20:04.561081       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6bf8fd9975-t7mgh: no metrics known for pod
+E1111 14:20:04.561094       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6bf8fd9975-kh97r: no metrics known for pod
+E1111 14:20:04.561108       1 reststorage.go:160] unable to fetch pod metrics for pod kuberhealthy/deployment-deployment-6bf8fd9975-ftf5q: no metrics known for pod

@@ -8612,3 +8612,31 @@
 2020-11-11 14:14:58 +0000 [info]: #0 following tail of /var/log/containers/jx-pod-status-1605104051_kuberhealthy_main-ee74e00bd954aff31d6e6c989bf3f2025945ffe0c8f9a6ccc831e08b65c0083b.log
 2020-11-11 14:14:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
 2020-11-11 14:15:01 +0000 [info]: #0 detected rotation of /var/log/containers/jx-pod-status-1605102551_kuberhealthy_main-61747c6b72652fb3af7e6b17476176cde9b674b144e630405dba0fa151bace35.log; waiting 5 seconds
+2020-11-11 14:15:58 +0000 [info]: #0 following tail of /var/log/containers/jx-webhook-1605104111_jx_jx-webhook-5d6ce95f4d9eb693cc088053f02fd95379e96bedad6b1d426c746b56e1ce57a5.log
+2020-11-11 14:15:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:15:58 +0000 [info]: #0 following tail of /var/log/containers/jx-install-1605104111_jx-git-operator_jx-install-4aa3441efc8aadbd3a8c842ed298a3c455296cc00e7fb1fffc33b8197f2576ed.log
+2020-11-11 14:15:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:15:58 +0000 [info]: #0 following tail of /var/log/containers/jx-secrets-1605104124_kuberhealthy_main-4fb1e010931b3706351896d15c4dba462b1613db5bac2454d6238401716fb65a.log
+2020-11-11 14:15:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:15:59 +0000 [info]: #0 following tail of /var/log/containers/check-reaper-1605104100-97ddr_kuberhealthy_check-reaper-2083badb69bb74340969295626e9edeb60b6b5ffce6ec44fe2bba1e6dccc0a3e.log
+2020-11-11 14:15:59 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:15:59 +0000 [info]: #0 following tail of /var/log/containers/dns-status-internal-1605104111_kuberhealthy_main-31c6f620dafc54f385ee8e1cfef216695353f18a5527221107611ccaab1c465c.log
+2020-11-11 14:15:59 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:17:58 +0000 [info]: #0 following tail of /var/log/containers/dns-status-internal-1605104231_kuberhealthy_main-beb17cea555897c86b5e931c3d8146c8bde0ef5f51716b7faac07d8e31ac7d69.log
+2020-11-11 14:17:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:18:58 +0000 [info]: #0 following tail of /var/log/containers/check-reaper-1605104280-wpqg6_kuberhealthy_check-reaper-405415b7180f15c8249d90805176555925902a8d9c5c79b99be717d042e5f72f.log
+2020-11-11 14:18:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:18:58 +0000 [info]: #0 following tail of /var/log/containers/jx-bot-token-1605104291_jx_jx-bot-token-8a75cc8e9d4cc8d6239040be5eebcbf972cc94cb1eeb1faa95c98ee7f31b319c.log
+2020-11-11 14:18:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:19:01 +0000 [info]: #0 detected rotation of /var/log/containers/dns-status-internal-1605103631_kuberhealthy_main-fbfd73db43a1786483b2e3cae2f0804cb05c0b432e9c8dbb6f2e74c05e296d57.log; waiting 5 seconds
+2020-11-11 14:19:01 +0000 [info]: #0 detected rotation of /var/log/containers/jx-secrets-1605102618_kuberhealthy_main-bfda1f4ce4482f46023a3c06afb28146df911e3fa90f9f0e139e286a7ac10005.log; waiting 5 seconds
+2020-11-11 14:19:57 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 3, pod_cache_api_updates: 35702, id_cache_miss: 35701, pod_cache_host_updates: 37228, pod_cache_watch_ignored: 16252, namespace_cache_miss: 28323, pod_cache_watch_updates: 45835, pod_cache_watch_delete_ignored: 16227, pod_watch_failures: 139, pod_watch_error_type_notices: 139, namespace_cache_watch_misses: 6
+2020-11-11 14:19:58 +0000 [info]: #0 following tail of /var/log/containers/deployment-deployment-6bf8fd9975-ftf5q_kuberhealthy_deployment-container-2bc18ff138a714ff394bdfbdcb1f397c2fedc35f775eef7e88b7eb8fd5a9bdb4.log
+2020-11-11 14:19:58 +0000 [info]: #0 following tail of /var/log/containers/deployment-deployment-7754944654-q5f25_kuberhealthy_deployment-container-9a71c0e250bc66db4208452344b6d519451bd47fcd6c0e29eacf42977dfdeeb5.log
+2020-11-11 14:19:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:19:58 +0000 [info]: #0 following tail of /var/log/containers/dns-status-internal-1605104351_kuberhealthy_main-3bc060fff959e3f60efc0ddd42bcd8fbe1420426c7efd81013ae1ad8950a57ad.log
+2020-11-11 14:19:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:19:58 +0000 [info]: #0 following tail of /var/log/containers/jx-pod-status-1605104351_kuberhealthy_main-c851cb05e553a0cf64855468e9db792bf42d84f58e32f8388e99886af0add0fa.log
+2020-11-11 14:19:59 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:20:02 +0000 [info]: #0 detected rotation of /var/log/containers/deployment-deployment-7754944654-q5f25_kuberhealthy_deployment-container-9a71c0e250bc66db4208452344b6d519451bd47fcd6c0e29eacf42977dfdeeb5.log; waiting 5 seconds
+2020-11-11 14:20:02 +0000 [info]: #0 detected rotation of /var/log/containers/deployment-deployment-6bf8fd9975-ftf5q_kuberhealthy_deployment-container-2bc18ff138a714ff394bdfbdcb1f397c2fedc35f775eef7e88b7eb8fd5a9bdb4.log; waiting 5 seconds

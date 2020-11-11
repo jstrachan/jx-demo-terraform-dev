@@ -382,3 +382,18 @@ W1111 14:14:35.958422       6 controller.go:909] Service "jx/bucketrepo" does no
 10.128.0.5 - - [11/Nov/2020:14:14:36 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 368e8e23593572d8d12d3c71b8009b48
 10.8.7.1 - - [11/Nov/2020:14:15:03 +0000] "GET /index.yaml HTTP/1.1" 200 17806 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 7daf5d7f8024a38f26a9895887a97d02
 10.8.7.1 - - [11/Nov/2020:14:15:17 +0000] "GET /index.yaml HTTP/1.1" 200 17813 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.004 200 893cce0c2417148ca0afd9df5347f59b
+10.8.7.1 - - [11/Nov/2020:14:16:26 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.004 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.004 200 005364ef67908083a0c0c62fb307064c
+2020/11/11 14:17:02 [warn] 1011#1011: *2465606 a client request body is buffered to a temporary file /tmp/client-body/0000000014, client: 10.8.7.1, server: hook-jx.35.184.150.204.nip.io, request: "POST /hook HTTP/1.1", host: "hook-jx.35.184.150.204.nip.io"
+10.8.7.1 - - [11/Nov/2020:14:17:02 +0000] "POST /hook HTTP/1.1" 200 19 "-" "GitHub-Hookshot/6767b47" 20718 0.055 [jx-hook-80] [] 10.8.5.10:8080 19 0.004 200 7537d201a03c5ea399be660f1e8cbc87
+10.8.7.1 - - [11/Nov/2020:14:17:04 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 75d8d1fbef7ef3f98debbedfe0ae15ac
+10.8.7.1 - - [11/Nov/2020:14:17:30 +0000] "GET /charts/nodey536-1.0.5.tgz HTTP/1.1" 200 4872 "-" "Helm/3.4.0" 111 0.001 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 4866 0.001 200 f374fa0b739f1c6aa1747e658d4408e1
+10.8.7.1 - - [11/Nov/2020:14:18:07 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.001 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.002 200 4fd1149fdac6d5ab2fbd8548697d242b
+10.8.7.1 - - [11/Nov/2020:14:18:33 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 ad536e79a4a3a7c745f82eabf016cd64
+10.8.7.1 - - [11/Nov/2020:14:18:33 +0000] "GET /charts/nodey536-1.0.5.tgz HTTP/1.1" 200 4872 "-" "Helm/3.4.0" 111 0.005 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 4866 0.005 200 80eeebac13f769512c400d5814c549e5
+10.8.7.1 - - [11/Nov/2020:14:19:09 +0000] "GET /index.yaml HTTP/1.1" 200 17813 "-" "Helm/3.4.0" 96 0.004 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 46bd65ae3dec3f2a7dacc5d924da37dd
+10.8.7.1 - - [11/Nov/2020:14:19:38 +0000] "GET /index.yaml HTTP/1.1" 200 17807 "-" "Helm/3.4.0" 96 0.003 [jx-jenkins-x-chartmuseum-8080] [] 10.8.3.8:8080 17777 0.003 200 978e3d3ad87ee1c90918ec28ccf74dcc
+W1111 14:19:39.158897       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 14:19:42.492495       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 14:19:56.318301       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 14:19:59.651810       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 14:20:02.985870       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.

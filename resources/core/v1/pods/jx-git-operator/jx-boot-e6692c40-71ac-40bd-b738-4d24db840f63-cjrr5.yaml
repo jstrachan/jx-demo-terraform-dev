@@ -17,7 +17,7 @@ metadata:
     kind: Job
     name: jx-boot-e6692c40-71ac-40bd-b738-4d24db840f63
     uid: 49435bf5-27f5-42ca-ad32-896b918e78fc
-  resourceVersion: "27441113"
+  resourceVersion: "27442220"
   selfLink: /api/v1/namespaces/jx-git-operator/pods/jx-boot-e6692c40-71ac-40bd-b738-4d24db840f63-cjrr5
   uid: 0b2aec12-3183-4110-8be8-6b4db1032b56
 spec:
@@ -117,19 +117,17 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2020-11-11T14:15:33Z"
-    message: 'containers with incomplete status: [git-clone]'
-    reason: ContainersNotInitialized
-    status: "False"
+    lastTransitionTime: "2020-11-11T14:15:59Z"
+    status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2020-11-11T14:15:33Z"
+    lastTransitionTime: "2020-11-11T14:17:38Z"
     message: 'containers with unready status: [job]'
     reason: ContainersNotReady
     status: "False"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2020-11-11T14:15:33Z"
+    lastTransitionTime: "2020-11-11T14:17:38Z"
     message: 'containers with unready status: [job]'
     reason: ContainersNotReady
     status: "False"
@@ -139,27 +137,40 @@ status:
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - image: gcr.io/jenkinsxio/jx-cli:3.0.668
-    imageID: ""
+  - containerID: docker://61969fe2b838b0ac18debde0042eefe2e0076e79b7b34aef5a7c8def2de0ea31
+    image: gcr.io/jenkinsxio/jx-cli:3.0.668
+    imageID: docker-pullable://gcr.io/jenkinsxio/jx-cli@sha256:ce47e63336a9cb1138b5fc5d2c1bfec92e35845074e6a2e24d5f958a17e3d354
     lastState: {}
     name: job
     ready: false
     restartCount: 0
     started: false
     state:
-      waiting:
-        reason: PodInitializing
+      terminated:
+        containerID: docker://61969fe2b838b0ac18debde0042eefe2e0076e79b7b34aef5a7c8def2de0ea31
+        exitCode: 2
+        finishedAt: "2020-11-11T14:17:37Z"
+        reason: Error
+        startedAt: "2020-11-11T14:16:00Z"
   hostIP: 10.128.0.11
   initContainerStatuses:
-  - image: gcr.io/jenkinsxio/jx-cli:3.0.668
-    imageID: ""
+  - containerID: docker://1fc48b6654d72077a5c011a319a2b163257d380ca305f8d2910f0234baf67c49
+    image: gcr.io/jenkinsxio/jx-cli:3.0.668
+    imageID: docker-pullable://gcr.io/jenkinsxio/jx-cli@sha256:ce47e63336a9cb1138b5fc5d2c1bfec92e35845074e6a2e24d5f958a17e3d354
     lastState: {}
     name: git-clone
-    ready: false
+    ready: true
     restartCount: 0
     state:
-      waiting:
-        reason: PodInitializing
-  phase: Pending
+      terminated:
+        containerID: docker://1fc48b6654d72077a5c011a319a2b163257d380ca305f8d2910f0234baf67c49
+        exitCode: 0
+        finishedAt: "2020-11-11T14:15:59Z"
+        reason: Completed
+        startedAt: "2020-11-11T14:15:54Z"
+  phase: Failed
+  podIP: 10.8.7.70
+  podIPs:
+  - ip: 10.8.7.70
   qosClass: BestEffort
   startTime: "2020-11-11T14:15:33Z"

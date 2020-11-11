@@ -5021,3 +5021,7 @@
 2020-11-11 14:14:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
 2020-11-11 14:14:14 +0000 [info]: #0 following tail of /var/log/containers/jx-boot-e6692c40-71ac-40bd-b738-4d24db840f63-sjcpl_jx-git-operator_git-clone-11f12002dfe3d0265b4067d7531fe59dff578b505e738fbbacce8f80f6f7a05e.log
 2020-11-11 14:14:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:16:14 +0000 [info]: #0 following tail of /var/log/containers/jx-bot-token-1605104111_jx_jx-bot-token-bf9f647dac7cf12eac6f09f4bedcd5de9493088b7a046392be9cc94a9e1916ef.log
+2020-11-11 14:16:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 14:18:37 +0000 [info]: #0 detected rotation of /var/log/containers/jx-bot-token-1605103753_jx_jx-bot-token-c922b02a27c9a18d09b9e3956a842e42f6041895ce59a945e8f3ffd1088f352b.log; waiting 5 seconds
+2020-11-11 14:18:43 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 5, pod_cache_api_updates: 50439, id_cache_miss: 50336, namespace_cache_miss: 445849

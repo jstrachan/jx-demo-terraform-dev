@@ -1,0 +1,124 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    comcast.github.io/check-name: jx-bot-token
+  creationTimestamp: "2020-11-11T14:16:46Z"
+  labels:
+    app: kuberhealthy-check
+    kuberhealthy-check-name: jx-bot-token
+    kuberhealthy-run-id: 66964a09-b05f-47d4-83ed-ae5de4de2b8a
+  name: jx-bot-token-1605104201
+  namespace: jx
+  ownerReferences:
+  - apiVersion: v1
+    kind: Pod
+    name: kuberhealthy-5c46966647-6db64
+    uid: d98a024b-7504-4cdd-a3bb-c70c6128d8fb
+  resourceVersion: "27441835"
+  selfLink: /api/v1/namespaces/jx/pods/jx-bot-token-1605104201
+  uid: d81f65de-677f-4f20-a15a-e77e52fcfd7f
+spec:
+  containers:
+  - env:
+    - name: OAUTH_TOKEN
+      valueFrom:
+        secretKeyRef:
+          key: password
+          name: tekton-git
+    - name: GIT_PROVIDER
+      value: https://github.com
+    - name: KH_REPORTING_URL
+      value: http://kuberhealthy.kuberhealthy.svc.cluster.local/externalCheckStatus
+    - name: KH_RUN_UUID
+      value: 66964a09-b05f-47d4-83ed-ae5de4de2b8a
+    - name: KH_CHECK_RUN_DEADLINE
+      value: "1605104321"
+    - name: KH_POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    image: gcr.io/jenkinsxio/jx-bot-token:0.0.32
+    imagePullPolicy: IfNotPresent
+    name: jx-bot-token
+    resources:
+      limits:
+        cpu: 40m
+      requests:
+        cpu: 25m
+        memory: 15Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-gddcm
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-pmxj
+  priority: 0
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 60
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: default-token-gddcm
+    secret:
+      defaultMode: 420
+      secretName: default-token-gddcm
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:16:46Z"
+    reason: PodCompleted
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:16:54Z"
+    reason: PodCompleted
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:16:54Z"
+    reason: PodCompleted
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:16:46Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://b945feaf9e1bb61dd4616e17cd61ede771afa8f982bc9228da964a66a8ffbfd9
+    image: gcr.io/jenkinsxio/jx-bot-token:0.0.32
+    imageID: docker-pullable://gcr.io/jenkinsxio/jx-bot-token@sha256:6ceca5b1d0e07b4b0e05bc56f6fe6ab68fdb840f31fd294e863629ac91ef4401
+    lastState: {}
+    name: jx-bot-token
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      terminated:
+        containerID: docker://b945feaf9e1bb61dd4616e17cd61ede771afa8f982bc9228da964a66a8ffbfd9
+        exitCode: 0
+        finishedAt: "2020-11-11T14:16:54Z"
+        reason: Completed
+        startedAt: "2020-11-11T14:16:49Z"
+  hostIP: 10.128.0.11
+  phase: Succeeded
+  podIP: 10.8.7.71
+  podIPs:
+  - ip: 10.8.7.71
+  qosClass: Burstable
+  startTime: "2020-11-11T14:16:46Z"

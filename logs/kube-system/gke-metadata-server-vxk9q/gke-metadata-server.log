@@ -3281,3 +3281,4 @@ I1111 14:15:21.976401       1 podfinder.go:188] Syncing pod "jx/jx-bot-token-160
 I1111 14:15:21.976433       1 podfinder.go:207] Pod "jx/jx-bot-token-1605104111" found in snapshot: podfinder.entry{sandboxUID:"8a1b5613794c7e00f51ac446740123e46793b6a97e00fdbcc0b24e73b63609f6", podUID:"0221abc3-b0fb-45fe-86e2-f3f9df9e8110", ip:"10.8.5.243"}
 I1111 14:15:22.376552       1 podfinder.go:188] Syncing pod "jx/jx-bot-token-1605104111"
 I1111 14:15:22.376599       1 podfinder.go:207] Pod "jx/jx-bot-token-1605104111" found in snapshot: podfinder.entry{sandboxUID:"8a1b5613794c7e00f51ac446740123e46793b6a97e00fdbcc0b24e73b63609f6", podUID:"0221abc3-b0fb-45fe-86e2-f3f9df9e8110", ip:"10.8.5.243"}
+I1111 14:20:06.804988       1 metadata.go:310] /computeMetadata/v1/instance/service-accounts/default/token?scopes=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fmonitoring.write HTTP/200 size=274
