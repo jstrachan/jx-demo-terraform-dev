@@ -21,8 +21,6 @@ repositories:
   url: https://storage.googleapis.com/jenkinsxio/charts
 - name: stable
   url: https://charts.helm.sh/stable
-- name: dev
-  url: http://chartmuseum-jx.35.184.150.204.nip.io/
 - name: choerodon
   url: https://openchart.choerodon.com.cn/choerodon/c7n
 releases:
