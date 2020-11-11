@@ -323,3 +323,6 @@ W1111 13:40:11.198692       6 controller.go:909] Service "jx/bucketrepo" does no
 W1111 13:40:14.532138       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
 W1111 13:40:17.865515       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
 W1111 13:40:21.198811       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:49:38.894185       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:49:42.227596       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:49:45.560875       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.

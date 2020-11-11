@@ -8517,3 +8517,20 @@
 2020-11-11 13:43:58 +0000 [info]: #0 following tail of /var/log/containers/dns-status-internal-1605102191_kuberhealthy_main-9cdf0da8ba7b543bcd68e29c8b639e7499976948fab21873cae2ed85176959c1.log
 2020-11-11 13:43:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
 2020-11-11 13:44:57 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 1, pod_cache_api_updates: 35555, id_cache_miss: 35554, namespace_cache_miss: 28201, pod_cache_watch_updates: 45699, pod_cache_host_updates: 37118, pod_cache_watch_ignored: 16204, pod_cache_watch_delete_ignored: 16191, pod_watch_failures: 138, pod_watch_error_type_notices: 138, namespace_cache_watch_misses: 6
+2020-11-11 13:45:58 +0000 [info]: #0 detected rotation of /var/log/containers/check-reaper-1605101760-29cvr_kuberhealthy_check-reaper-4ddf82b83342275ec470a1ecea164723a2c3c9e4e0c040b59e31f3aff196a79f.log; waiting 5 seconds
+2020-11-11 13:45:58 +0000 [info]: #0 following tail of /var/log/containers/jx-secrets-1605102317_kuberhealthy_main-672a7f77bf2671676080956d3e105952b6eec76fddb80cb17e4c62fec0c035cc.log
+2020-11-11 13:45:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 13:45:58 +0000 [info]: #0 following tail of /var/log/containers/check-reaper-1605102300-7cbgc_kuberhealthy_check-reaper-ddd5cd5a3a3d4c237caaaeaac49a6fbc909f0d65f7383d98ef00a88e21a99b2b.log
+2020-11-11 13:45:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 13:45:59 +0000 [info]: #0 detected rotation of /var/log/containers/jx-pod-status-1605100751_kuberhealthy_main-5c624831829b4770f1e31ae94cfa856a3045587b3bb5469b707f764105be10e6.log; waiting 5 seconds
+2020-11-11 13:47:58 +0000 [info]: #0 following tail of /var/log/containers/dns-status-internal-1605102431_kuberhealthy_main-271d4cbb3c3f76f348496eee7f6b8d326288d10eeec646896afd22405e998bd7.log
+2020-11-11 13:47:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 13:48:58 +0000 [info]: #0 following tail of /var/log/containers/check-reaper-1605102480-dxvnp_kuberhealthy_check-reaper-e544d249c2408c1b34839d4cdcad528b1ec607a4f2c63f14b714c8b39604fa10.log
+2020-11-11 13:48:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 13:48:59 +0000 [info]: #0 detected rotation of /var/log/containers/jx-secrets-1605100811_kuberhealthy_main-46cb7812f33bf9127526fe11ca34fd6ea0aa04ec05cbb437acefc92f4c414e80.log; waiting 5 seconds
+2020-11-11 13:48:59 +0000 [info]: #0 detected rotation of /var/log/containers/check-reaper-1605101940-sjc44_kuberhealthy_check-reaper-1f560a86df51480c0799636ccc6995f65caaa7360d8b4e372ab746afa9d10bf2.log; waiting 5 seconds
+2020-11-11 13:49:57 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 6, pod_cache_api_updates: 35574, id_cache_miss: 35573, pod_cache_watch_updates: 45722, namespace_cache_miss: 28217, pod_cache_host_updates: 37131, pod_cache_watch_ignored: 16212, pod_cache_watch_delete_ignored: 16197, pod_watch_failures: 138, pod_watch_error_type_notices: 138, namespace_cache_watch_misses: 6
+2020-11-11 13:49:58 +0000 [info]: #0 following tail of /var/log/containers/jx-pod-status-1605102551_kuberhealthy_main-61747c6b72652fb3af7e6b17476176cde9b674b144e630405dba0fa151bace35.log
+2020-11-11 13:49:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 13:49:58 +0000 [info]: #0 following tail of /var/log/containers/jx-install-1605102581_jx-git-operator_jx-install-b08d83b8de95298ac826c55e4c0adff92252f4ba82bdd864a12ed41d1401dac3.log
+2020-11-11 13:49:58 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.

@@ -5480,3 +5480,159 @@ I1111 13:45:22.930610       1 podfinder.go:188] Syncing pod "jx-git-operator/jx-
 I1111 13:45:22.930617       1 podfinder.go:194] Pod "jx-git-operator/jx-install-1605102311" not found
 I1111 13:45:23.130674       1 podfinder.go:188] Syncing pod "jx-git-operator/jx-install-1605102311"
 I1111 13:45:23.130723       1 podfinder.go:194] Pod "jx-git-operator/jx-install-1605102311" not found
+I1111 13:46:46.595312       1 podfinder.go:188] Syncing pod "jx/jx-bot-token-1605102401"
+I1111 13:46:46.617842       1 podfinder.go:312] Unable to sync sandbox "02823ca78b6fd50db865122a7300a59dd32a20d63348166fd0f245a2499da848": setup not complete: podUID="48776b2a-6ae8-4d2b-981d-374a7739ee3e", ip=""
+I1111 13:46:46.636687       1 podfinder.go:312] Unable to sync sandbox "2cbb7e2fe489ef80d15cff5f90ef5db7d2c67d3e35f2f3df029979486486e266": setup not complete: podUID="d93d8adf-d033-42f6-901e-f6e249940bf9", ip=""
+I1111 13:46:46.638310       1 podfinder.go:312] Unable to sync sandbox "459ca65664ce478cab948e6fc5cf83ac2afbb4d815cdec702197693828aac477": setup not complete: podUID="6bfb7a25-ce7a-459f-b1cd-6dd076e8112c", ip=""
+I1111 13:46:46.640430       1 podfinder.go:312] Unable to sync sandbox "61be98ccbf1f0444b3dc8bb52160d87073289b6e886f3de9043226bce5bf2b19": setup not complete: podUID="da03b61d-c857-4592-9525-89f243b3883a", ip=""
+I1111 13:46:46.641746       1 podfinder.go:312] Unable to sync sandbox "a19016839f654b243b0ec2576e653250313b956cea990ab06430e6a61c45ecde": setup not complete: podUID="919761e6-8c3d-443a-afd3-57254953b946", ip=""
+I1111 13:46:46.643457       1 podfinder.go:312] Unable to sync sandbox "d9d38bf2e4c123a5abe06d66b1d614e78c9289527d4b3500bcfd85f1d322e0da": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+E1111 13:46:46.643489       1 podfinder.go:178] Error syncing pod "jx/jx-bot-token-1605102401": generic::unavailable: pod "jx/jx-bot-token-1605102401" not found after refresh
+I1111 13:46:46.643522       1 podfinder.go:188] Syncing pod "jx-git-operator/jx-install-1605102401"
+I1111 13:46:51.613773       1 podfinder.go:312] Unable to sync sandbox "02823ca78b6fd50db865122a7300a59dd32a20d63348166fd0f245a2499da848": setup not complete: podUID="48776b2a-6ae8-4d2b-981d-374a7739ee3e", ip=""
+I1111 13:46:52.619909       1 podfinder.go:312] Unable to sync sandbox "1b053d5ab0c9bb67966a1b5054d877d4a87dddc863216623d57a5dd2f1395bc2": setup not complete: podUID="d816bd41-13e3-41fc-acfb-233d823e2a8d", ip=""
+I1111 13:46:52.622664       1 podfinder.go:312] Unable to sync sandbox "2cbb7e2fe489ef80d15cff5f90ef5db7d2c67d3e35f2f3df029979486486e266": setup not complete: podUID="d93d8adf-d033-42f6-901e-f6e249940bf9", ip=""
+I1111 13:46:52.624259       1 podfinder.go:312] Unable to sync sandbox "459ca65664ce478cab948e6fc5cf83ac2afbb4d815cdec702197693828aac477": setup not complete: podUID="6bfb7a25-ce7a-459f-b1cd-6dd076e8112c", ip=""
+I1111 13:46:52.626096       1 podfinder.go:312] Unable to sync sandbox "61be98ccbf1f0444b3dc8bb52160d87073289b6e886f3de9043226bce5bf2b19": setup not complete: podUID="da03b61d-c857-4592-9525-89f243b3883a", ip=""
+I1111 13:46:52.627685       1 podfinder.go:312] Unable to sync sandbox "629cc026c83f8e78473eb33179e4527ca9cc00324291728758a507fb70520fec": setup not complete: podUID="d1aa573e-51fa-47d3-a399-511df12147b4", ip=""
+I1111 13:46:52.629419       1 podfinder.go:312] Unable to sync sandbox "a19016839f654b243b0ec2576e653250313b956cea990ab06430e6a61c45ecde": setup not complete: podUID="919761e6-8c3d-443a-afd3-57254953b946", ip=""
+I1111 13:46:52.637381       1 podfinder.go:312] Unable to sync sandbox "d9d38bf2e4c123a5abe06d66b1d614e78c9289527d4b3500bcfd85f1d322e0da": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+E1111 13:46:52.637414       1 podfinder.go:178] Error syncing pod "jx-git-operator/jx-install-1605102401": generic::unavailable: pod "jx-git-operator/jx-install-1605102401" not found after refresh
+I1111 13:46:52.637442       1 podfinder.go:188] Syncing pod "jx/jx-bot-token-1605102401"
+I1111 13:46:52.637453       1 podfinder.go:207] Pod "jx/jx-bot-token-1605102401" found in snapshot: podfinder.entry{sandboxUID:"b071079a8e2ba81e9afc80182ebbb1f9907daf12835f9e931474f37a96305143", podUID:"b39add00-c135-4691-9304-9044565f2923", ip:"10.8.7.231"}
+I1111 13:46:52.637473       1 podfinder.go:188] Syncing pod "jx/jx-webhook-1605102401"
+I1111 13:46:52.637479       1 podfinder.go:194] Pod "jx/jx-webhook-1605102401" not found
+I1111 13:46:52.637488       1 podfinder.go:188] Syncing pod "jx-git-operator/jx-install-1605102401"
+I1111 13:46:52.637494       1 podfinder.go:194] Pod "jx-git-operator/jx-install-1605102401" not found
+I1111 13:46:52.837530       1 podfinder.go:188] Syncing pod "jx-git-operator/jx-install-1605102401"
+I1111 13:46:52.837588       1 podfinder.go:194] Pod "jx-git-operator/jx-install-1605102401" not found
+I1111 13:48:16.621570       1 podfinder.go:188] Syncing pod "jx-git-operator/jx-install-1605102491"
+I1111 13:48:16.634150       1 podfinder.go:312] Unable to sync sandbox "02823ca78b6fd50db865122a7300a59dd32a20d63348166fd0f245a2499da848": setup not complete: podUID="48776b2a-6ae8-4d2b-981d-374a7739ee3e", ip=""
+I1111 13:48:16.635728       1 podfinder.go:312] Unable to sync sandbox "2cbb7e2fe489ef80d15cff5f90ef5db7d2c67d3e35f2f3df029979486486e266": setup not complete: podUID="d93d8adf-d033-42f6-901e-f6e249940bf9", ip=""
+I1111 13:48:16.637676       1 podfinder.go:312] Unable to sync sandbox "459ca65664ce478cab948e6fc5cf83ac2afbb4d815cdec702197693828aac477": setup not complete: podUID="6bfb7a25-ce7a-459f-b1cd-6dd076e8112c", ip=""
+I1111 13:48:16.639398       1 podfinder.go:312] Unable to sync sandbox "61be98ccbf1f0444b3dc8bb52160d87073289b6e886f3de9043226bce5bf2b19": setup not complete: podUID="da03b61d-c857-4592-9525-89f243b3883a", ip=""
+I1111 13:48:16.642586       1 podfinder.go:312] Unable to sync sandbox "a19016839f654b243b0ec2576e653250313b956cea990ab06430e6a61c45ecde": setup not complete: podUID="919761e6-8c3d-443a-afd3-57254953b946", ip=""
+I1111 13:48:16.644349       1 podfinder.go:312] Unable to sync sandbox "d9d38bf2e4c123a5abe06d66b1d614e78c9289527d4b3500bcfd85f1d322e0da": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+E1111 13:48:16.644403       1 podfinder.go:178] Error syncing pod "jx-git-operator/jx-install-1605102491": generic::unavailable: pod "jx-git-operator/jx-install-1605102491" not found after refresh
+I1111 13:48:16.656217       1 podfinder.go:188] Syncing pod "jx/jx-webhook-1605102491"
+I1111 13:48:21.632918       1 podfinder.go:312] Unable to sync sandbox "02823ca78b6fd50db865122a7300a59dd32a20d63348166fd0f245a2499da848": setup not complete: podUID="48776b2a-6ae8-4d2b-981d-374a7739ee3e", ip=""
+I1111 13:48:21.640046       1 podfinder.go:312] Unable to sync sandbox "2cbb7e2fe489ef80d15cff5f90ef5db7d2c67d3e35f2f3df029979486486e266": setup not complete: podUID="d93d8adf-d033-42f6-901e-f6e249940bf9", ip=""
+I1111 13:48:21.647381       1 podfinder.go:312] Unable to sync sandbox "459ca65664ce478cab948e6fc5cf83ac2afbb4d815cdec702197693828aac477": setup not complete: podUID="6bfb7a25-ce7a-459f-b1cd-6dd076e8112c", ip=""
+I1111 13:48:21.649831       1 podfinder.go:312] Unable to sync sandbox "61be98ccbf1f0444b3dc8bb52160d87073289b6e886f3de9043226bce5bf2b19": setup not complete: podUID="da03b61d-c857-4592-9525-89f243b3883a", ip=""
+I1111 13:48:21.651992       1 podfinder.go:312] Unable to sync sandbox "a19016839f654b243b0ec2576e653250313b956cea990ab06430e6a61c45ecde": setup not complete: podUID="919761e6-8c3d-443a-afd3-57254953b946", ip=""
+I1111 13:48:21.653620       1 podfinder.go:312] Unable to sync sandbox "d9d38bf2e4c123a5abe06d66b1d614e78c9289527d4b3500bcfd85f1d322e0da": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+E1111 13:48:21.653686       1 podfinder.go:178] Error syncing pod "jx/jx-webhook-1605102491": generic::unavailable: pod "jx/jx-webhook-1605102491" not found after refresh
+I1111 13:48:21.653714       1 podfinder.go:188] Syncing pod "jx-git-operator/jx-install-1605102491"
+I1111 13:48:21.653771       1 podfinder.go:194] Pod "jx-git-operator/jx-install-1605102491" not found
+I1111 13:48:21.653784       1 podfinder.go:188] Syncing pod "jx/jx-bot-token-1605102491"
+I1111 13:48:21.653793       1 podfinder.go:207] Pod "jx/jx-bot-token-1605102491" found in snapshot: podfinder.entry{sandboxUID:"19416dcdfc4769427efbb84bed7d7ff18fe9da67c09a44ade550323abf15227e", podUID:"58be602e-da1c-4549-bd90-34fc636692e8", ip:"10.8.7.234"}
+I1111 13:48:21.653852       1 podfinder.go:188] Syncing pod "jx/jx-webhook-1605102491"
+I1111 13:48:21.653860       1 podfinder.go:207] Pod "jx/jx-webhook-1605102491" found in snapshot: podfinder.entry{sandboxUID:"3f7ef7e6439247645fe5fea9f20b1be8b262bae04ce6ad7b2d5816d207c63dc9", podUID:"384b7def-a31d-4178-b9f4-4f08e17efa26", ip:"10.8.7.235"}
+I1111 13:48:21.853880       1 podfinder.go:188] Syncing pod "jx/jx-webhook-1605102491"
+I1111 13:48:21.853933       1 podfinder.go:207] Pod "jx/jx-webhook-1605102491" found in snapshot: podfinder.entry{sandboxUID:"3f7ef7e6439247645fe5fea9f20b1be8b262bae04ce6ad7b2d5816d207c63dc9", podUID:"384b7def-a31d-4178-b9f4-4f08e17efa26", ip:"10.8.7.235"}
+I1111 13:49:16.635900       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-1605102551"
+I1111 13:49:16.648804       1 podfinder.go:312] Unable to sync sandbox "02823ca78b6fd50db865122a7300a59dd32a20d63348166fd0f245a2499da848": setup not complete: podUID="48776b2a-6ae8-4d2b-981d-374a7739ee3e", ip=""
+I1111 13:49:16.653647       1 podfinder.go:312] Unable to sync sandbox "2cbb7e2fe489ef80d15cff5f90ef5db7d2c67d3e35f2f3df029979486486e266": setup not complete: podUID="d93d8adf-d033-42f6-901e-f6e249940bf9", ip=""
+I1111 13:49:16.658931       1 podfinder.go:312] Unable to sync sandbox "459ca65664ce478cab948e6fc5cf83ac2afbb4d815cdec702197693828aac477": setup not complete: podUID="6bfb7a25-ce7a-459f-b1cd-6dd076e8112c", ip=""
+I1111 13:49:16.664659       1 podfinder.go:312] Unable to sync sandbox "61be98ccbf1f0444b3dc8bb52160d87073289b6e886f3de9043226bce5bf2b19": setup not complete: podUID="da03b61d-c857-4592-9525-89f243b3883a", ip=""
+I1111 13:49:16.666222       1 podfinder.go:312] Unable to sync sandbox "a19016839f654b243b0ec2576e653250313b956cea990ab06430e6a61c45ecde": setup not complete: podUID="919761e6-8c3d-443a-afd3-57254953b946", ip=""
+I1111 13:49:16.669205       1 podfinder.go:312] Unable to sync sandbox "d9d38bf2e4c123a5abe06d66b1d614e78c9289527d4b3500bcfd85f1d322e0da": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+E1111 13:49:16.669242       1 podfinder.go:178] Error syncing pod "kuberhealthy/deployment-1605102551": generic::unavailable: pod "kuberhealthy/deployment-1605102551" not found after refresh
+I1111 13:49:16.669310       1 podfinder.go:188] Syncing pod "kuberhealthy/dns-status-internal-1605102551"
+I1111 13:49:21.652455       1 podfinder.go:312] Unable to sync sandbox "02823ca78b6fd50db865122a7300a59dd32a20d63348166fd0f245a2499da848": setup not complete: podUID="48776b2a-6ae8-4d2b-981d-374a7739ee3e", ip=""
+I1111 13:49:21.659805       1 podfinder.go:312] Unable to sync sandbox "2cbb7e2fe489ef80d15cff5f90ef5db7d2c67d3e35f2f3df029979486486e266": setup not complete: podUID="d93d8adf-d033-42f6-901e-f6e249940bf9", ip=""
+I1111 13:49:21.662425       1 podfinder.go:312] Unable to sync sandbox "459ca65664ce478cab948e6fc5cf83ac2afbb4d815cdec702197693828aac477": setup not complete: podUID="6bfb7a25-ce7a-459f-b1cd-6dd076e8112c", ip=""
+I1111 13:49:21.663849       1 podfinder.go:312] Unable to sync sandbox "61be98ccbf1f0444b3dc8bb52160d87073289b6e886f3de9043226bce5bf2b19": setup not complete: podUID="da03b61d-c857-4592-9525-89f243b3883a", ip=""
+I1111 13:49:21.670814       1 podfinder.go:312] Unable to sync sandbox "a19016839f654b243b0ec2576e653250313b956cea990ab06430e6a61c45ecde": setup not complete: podUID="919761e6-8c3d-443a-afd3-57254953b946", ip=""
+I1111 13:49:21.672205       1 podfinder.go:312] Unable to sync sandbox "d9d38bf2e4c123a5abe06d66b1d614e78c9289527d4b3500bcfd85f1d322e0da": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+E1111 13:49:21.672240       1 podfinder.go:178] Error syncing pod "kuberhealthy/dns-status-internal-1605102551": generic::unavailable: pod "kuberhealthy/dns-status-internal-1605102551" not found after refresh
+I1111 13:49:21.672285       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-1605102551"
+I1111 13:49:21.672296       1 podfinder.go:207] Pod "kuberhealthy/deployment-1605102551" found in snapshot: podfinder.entry{sandboxUID:"01e34ad13dc20d455603f914c1aec9b093968a4c28e3a2243282d1cf509ad33c", podUID:"4a9f744d-806a-4d34-8e4d-485447cc229e", ip:"10.8.7.238"}
+I1111 13:49:21.672316       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-54b445b498-rg59h"
+I1111 13:49:26.646607       1 podfinder.go:312] Unable to sync sandbox "02823ca78b6fd50db865122a7300a59dd32a20d63348166fd0f245a2499da848": setup not complete: podUID="48776b2a-6ae8-4d2b-981d-374a7739ee3e", ip=""
+I1111 13:49:26.648290       1 podfinder.go:312] Unable to sync sandbox "2cbb7e2fe489ef80d15cff5f90ef5db7d2c67d3e35f2f3df029979486486e266": setup not complete: podUID="d93d8adf-d033-42f6-901e-f6e249940bf9", ip=""
+I1111 13:49:26.649737       1 podfinder.go:312] Unable to sync sandbox "459ca65664ce478cab948e6fc5cf83ac2afbb4d815cdec702197693828aac477": setup not complete: podUID="6bfb7a25-ce7a-459f-b1cd-6dd076e8112c", ip=""
+I1111 13:49:26.652510       1 podfinder.go:312] Unable to sync sandbox "61be98ccbf1f0444b3dc8bb52160d87073289b6e886f3de9043226bce5bf2b19": setup not complete: podUID="da03b61d-c857-4592-9525-89f243b3883a", ip=""
+I1111 13:49:26.653901       1 podfinder.go:312] Unable to sync sandbox "a19016839f654b243b0ec2576e653250313b956cea990ab06430e6a61c45ecde": setup not complete: podUID="919761e6-8c3d-443a-afd3-57254953b946", ip=""
+I1111 13:49:26.655687       1 podfinder.go:312] Unable to sync sandbox "d9d38bf2e4c123a5abe06d66b1d614e78c9289527d4b3500bcfd85f1d322e0da": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+E1111 13:49:26.655728       1 podfinder.go:178] Error syncing pod "kuberhealthy/deployment-deployment-54b445b498-rg59h": generic::unavailable: pod "kuberhealthy/deployment-deployment-54b445b498-rg59h" not found after refresh
+I1111 13:49:26.655759       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-54b445b498-mp89d"
+I1111 13:49:26.655774       1 podfinder.go:207] Pod "kuberhealthy/deployment-deployment-54b445b498-mp89d" found in snapshot: podfinder.entry{sandboxUID:"1d24d992098e40b7788c6514b0bc84c90a8b3e7b7870ef8a558d59e59c2f9333", podUID:"cfcf1dac-548d-4c66-85b1-6005145ff7ae", ip:"10.8.7.240"}
+I1111 13:49:26.655797       1 podfinder.go:188] Syncing pod "kuberhealthy/dns-status-internal-1605102551"
+I1111 13:49:26.655814       1 podfinder.go:194] Pod "kuberhealthy/dns-status-internal-1605102551" not found
+I1111 13:49:26.655826       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-54b445b498-rg59h"
+I1111 13:49:26.655841       1 podfinder.go:207] Pod "kuberhealthy/deployment-deployment-54b445b498-rg59h" found in snapshot: podfinder.entry{sandboxUID:"9a84549422f30f339ea26d4d8823ba33b62ed6d5aa47bc028189f07ee00513d2", podUID:"374ee764-e9d4-4441-8fab-17ff86d0c10c", ip:"10.8.7.239"}
+I1111 13:49:26.856131       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-54b445b498-rg59h"
+I1111 13:49:26.856216       1 podfinder.go:207] Pod "kuberhealthy/deployment-deployment-54b445b498-rg59h" found in snapshot: podfinder.entry{sandboxUID:"9a84549422f30f339ea26d4d8823ba33b62ed6d5aa47bc028189f07ee00513d2", podUID:"374ee764-e9d4-4441-8fab-17ff86d0c10c", ip:"10.8.7.239"}
+I1111 13:49:30.860624       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-54b445b498-rg59h"
+I1111 13:49:30.860668       1 podfinder.go:207] Pod "kuberhealthy/deployment-deployment-54b445b498-rg59h" found in snapshot: podfinder.entry{sandboxUID:"9a84549422f30f339ea26d4d8823ba33b62ed6d5aa47bc028189f07ee00513d2", podUID:"374ee764-e9d4-4441-8fab-17ff86d0c10c", ip:"10.8.7.239"}
+I1111 13:49:31.737259       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-54b445b498-mp89d"
+I1111 13:49:31.737635       1 podfinder.go:207] Pod "kuberhealthy/deployment-deployment-54b445b498-mp89d" found in snapshot: podfinder.entry{sandboxUID:"1d24d992098e40b7788c6514b0bc84c90a8b3e7b7870ef8a558d59e59c2f9333", podUID:"cfcf1dac-548d-4c66-85b1-6005145ff7ae", ip:"10.8.7.240"}
+I1111 13:49:39.181291       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-54b445b498-mp89d"
+I1111 13:49:39.181367       1 podfinder.go:207] Pod "kuberhealthy/deployment-deployment-54b445b498-mp89d" found in snapshot: podfinder.entry{sandboxUID:"1d24d992098e40b7788c6514b0bc84c90a8b3e7b7870ef8a558d59e59c2f9333", podUID:"cfcf1dac-548d-4c66-85b1-6005145ff7ae", ip:"10.8.7.240"}
+I1111 13:49:39.191663       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-f8b84d875-gkth8"
+I1111 13:49:39.206840       1 podfinder.go:312] Unable to sync sandbox "02823ca78b6fd50db865122a7300a59dd32a20d63348166fd0f245a2499da848": setup not complete: podUID="48776b2a-6ae8-4d2b-981d-374a7739ee3e", ip=""
+I1111 13:49:39.212004       1 podfinder.go:312] Unable to sync sandbox "2cbb7e2fe489ef80d15cff5f90ef5db7d2c67d3e35f2f3df029979486486e266": setup not complete: podUID="d93d8adf-d033-42f6-901e-f6e249940bf9", ip=""
+I1111 13:49:39.214985       1 podfinder.go:312] Unable to sync sandbox "459ca65664ce478cab948e6fc5cf83ac2afbb4d815cdec702197693828aac477": setup not complete: podUID="6bfb7a25-ce7a-459f-b1cd-6dd076e8112c", ip=""
+I1111 13:49:39.218060       1 podfinder.go:312] Unable to sync sandbox "61be98ccbf1f0444b3dc8bb52160d87073289b6e886f3de9043226bce5bf2b19": setup not complete: podUID="da03b61d-c857-4592-9525-89f243b3883a", ip=""
+I1111 13:49:39.220217       1 podfinder.go:312] Unable to sync sandbox "a19016839f654b243b0ec2576e653250313b956cea990ab06430e6a61c45ecde": setup not complete: podUID="919761e6-8c3d-443a-afd3-57254953b946", ip=""
+I1111 13:49:39.224071       1 podfinder.go:312] Unable to sync sandbox "d9d38bf2e4c123a5abe06d66b1d614e78c9289527d4b3500bcfd85f1d322e0da": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+E1111 13:49:39.224981       1 podfinder.go:178] Error syncing pod "kuberhealthy/deployment-deployment-f8b84d875-gkth8": generic::unavailable: pod "kuberhealthy/deployment-deployment-f8b84d875-gkth8" not found after refresh
+I1111 13:49:39.294940       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-f8b84d875-gkth8"
+I1111 13:49:44.200588       1 podfinder.go:312] Unable to sync sandbox "02823ca78b6fd50db865122a7300a59dd32a20d63348166fd0f245a2499da848": setup not complete: podUID="48776b2a-6ae8-4d2b-981d-374a7739ee3e", ip=""
+I1111 13:49:44.207967       1 podfinder.go:312] Unable to sync sandbox "2cbb7e2fe489ef80d15cff5f90ef5db7d2c67d3e35f2f3df029979486486e266": setup not complete: podUID="d93d8adf-d033-42f6-901e-f6e249940bf9", ip=""
+I1111 13:49:44.214953       1 podfinder.go:312] Unable to sync sandbox "459ca65664ce478cab948e6fc5cf83ac2afbb4d815cdec702197693828aac477": setup not complete: podUID="6bfb7a25-ce7a-459f-b1cd-6dd076e8112c", ip=""
+I1111 13:49:44.216878       1 podfinder.go:312] Unable to sync sandbox "61be98ccbf1f0444b3dc8bb52160d87073289b6e886f3de9043226bce5bf2b19": setup not complete: podUID="da03b61d-c857-4592-9525-89f243b3883a", ip=""
+I1111 13:49:44.219673       1 podfinder.go:312] Unable to sync sandbox "a19016839f654b243b0ec2576e653250313b956cea990ab06430e6a61c45ecde": setup not complete: podUID="919761e6-8c3d-443a-afd3-57254953b946", ip=""
+I1111 13:49:44.221156       1 podfinder.go:312] Unable to sync sandbox "d9d38bf2e4c123a5abe06d66b1d614e78c9289527d4b3500bcfd85f1d322e0da": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+E1111 13:49:44.221233       1 podfinder.go:178] Error syncing pod "kuberhealthy/deployment-deployment-f8b84d875-gkth8": generic::unavailable: pod "kuberhealthy/deployment-deployment-f8b84d875-gkth8" not found after refresh
+I1111 13:49:44.221274       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-f8b84d875-mc859"
+I1111 13:49:44.221292       1 podfinder.go:207] Pod "kuberhealthy/deployment-deployment-f8b84d875-mc859" found in snapshot: podfinder.entry{sandboxUID:"2853dcd7d2f9498e1255569f7843474c370482b76722a1ad7c35024175dd8600", podUID:"9e54d48d-0bf9-4135-8c35-f1e2b1192273", ip:"10.8.7.242"}
+I1111 13:49:44.221314       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-54b445b498-mp89d"
+I1111 13:49:49.201908       1 podfinder.go:312] Unable to sync sandbox "02823ca78b6fd50db865122a7300a59dd32a20d63348166fd0f245a2499da848": setup not complete: podUID="48776b2a-6ae8-4d2b-981d-374a7739ee3e", ip=""
+I1111 13:49:49.208636       1 podfinder.go:312] Unable to sync sandbox "2cbb7e2fe489ef80d15cff5f90ef5db7d2c67d3e35f2f3df029979486486e266": setup not complete: podUID="d93d8adf-d033-42f6-901e-f6e249940bf9", ip=""
+I1111 13:49:49.210391       1 podfinder.go:312] Unable to sync sandbox "459ca65664ce478cab948e6fc5cf83ac2afbb4d815cdec702197693828aac477": setup not complete: podUID="6bfb7a25-ce7a-459f-b1cd-6dd076e8112c", ip=""
+I1111 13:49:49.212715       1 podfinder.go:312] Unable to sync sandbox "61be98ccbf1f0444b3dc8bb52160d87073289b6e886f3de9043226bce5bf2b19": setup not complete: podUID="da03b61d-c857-4592-9525-89f243b3883a", ip=""
+I1111 13:49:49.214356       1 podfinder.go:312] Unable to sync sandbox "a19016839f654b243b0ec2576e653250313b956cea990ab06430e6a61c45ecde": setup not complete: podUID="919761e6-8c3d-443a-afd3-57254953b946", ip=""
+I1111 13:49:49.215755       1 podfinder.go:312] Unable to sync sandbox "d9d38bf2e4c123a5abe06d66b1d614e78c9289527d4b3500bcfd85f1d322e0da": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+E1111 13:49:49.215803       1 podfinder.go:178] Error syncing pod "kuberhealthy/deployment-deployment-54b445b498-mp89d": generic::unavailable: pod "kuberhealthy/deployment-deployment-54b445b498-mp89d" not found after refresh
+I1111 13:49:49.215842       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-f8b84d875-gkth8"
+I1111 13:49:54.201481       1 podfinder.go:312] Unable to sync sandbox "02823ca78b6fd50db865122a7300a59dd32a20d63348166fd0f245a2499da848": setup not complete: podUID="48776b2a-6ae8-4d2b-981d-374a7739ee3e", ip=""
+I1111 13:49:54.203001       1 podfinder.go:312] Unable to sync sandbox "2cbb7e2fe489ef80d15cff5f90ef5db7d2c67d3e35f2f3df029979486486e266": setup not complete: podUID="d93d8adf-d033-42f6-901e-f6e249940bf9", ip=""
+I1111 13:49:54.204519       1 podfinder.go:312] Unable to sync sandbox "459ca65664ce478cab948e6fc5cf83ac2afbb4d815cdec702197693828aac477": setup not complete: podUID="6bfb7a25-ce7a-459f-b1cd-6dd076e8112c", ip=""
+I1111 13:49:54.205883       1 podfinder.go:312] Unable to sync sandbox "61be98ccbf1f0444b3dc8bb52160d87073289b6e886f3de9043226bce5bf2b19": setup not complete: podUID="da03b61d-c857-4592-9525-89f243b3883a", ip=""
+I1111 13:49:54.207844       1 podfinder.go:312] Unable to sync sandbox "a19016839f654b243b0ec2576e653250313b956cea990ab06430e6a61c45ecde": setup not complete: podUID="919761e6-8c3d-443a-afd3-57254953b946", ip=""
+I1111 13:49:54.209555       1 podfinder.go:312] Unable to sync sandbox "d9d38bf2e4c123a5abe06d66b1d614e78c9289527d4b3500bcfd85f1d322e0da": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+E1111 13:49:54.209590       1 podfinder.go:178] Error syncing pod "kuberhealthy/deployment-deployment-f8b84d875-gkth8": generic::unavailable: pod "kuberhealthy/deployment-deployment-f8b84d875-gkth8" not found after refresh
+I1111 13:49:54.209630       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-f8b84d875-mc859"
+I1111 13:49:54.209642       1 podfinder.go:194] Pod "kuberhealthy/deployment-deployment-f8b84d875-mc859" not found
+I1111 13:49:54.209653       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-54b445b498-rg59h"
+I1111 13:49:54.209659       1 podfinder.go:194] Pod "kuberhealthy/deployment-deployment-54b445b498-rg59h" not found
+I1111 13:49:54.209669       1 podfinder.go:188] Syncing pod "jx/jx-webhook-1605102581"
+I1111 13:49:54.209675       1 podfinder.go:194] Pod "jx/jx-webhook-1605102581" not found
+I1111 13:49:54.209685       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-54b445b498-mp89d"
+I1111 13:49:54.209692       1 podfinder.go:194] Pod "kuberhealthy/deployment-deployment-54b445b498-mp89d" not found
+I1111 13:49:55.009760       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-f8b84d875-gkth8"
+I1111 13:49:59.201116       1 podfinder.go:312] Unable to sync sandbox "02823ca78b6fd50db865122a7300a59dd32a20d63348166fd0f245a2499da848": setup not complete: podUID="48776b2a-6ae8-4d2b-981d-374a7739ee3e", ip=""
+I1111 13:49:59.203584       1 podfinder.go:312] Unable to sync sandbox "2cbb7e2fe489ef80d15cff5f90ef5db7d2c67d3e35f2f3df029979486486e266": setup not complete: podUID="d93d8adf-d033-42f6-901e-f6e249940bf9", ip=""
+I1111 13:49:59.205027       1 podfinder.go:312] Unable to sync sandbox "459ca65664ce478cab948e6fc5cf83ac2afbb4d815cdec702197693828aac477": setup not complete: podUID="6bfb7a25-ce7a-459f-b1cd-6dd076e8112c", ip=""
+I1111 13:49:59.206932       1 podfinder.go:312] Unable to sync sandbox "61be98ccbf1f0444b3dc8bb52160d87073289b6e886f3de9043226bce5bf2b19": setup not complete: podUID="da03b61d-c857-4592-9525-89f243b3883a", ip=""
+I1111 13:49:59.208606       1 podfinder.go:312] Unable to sync sandbox "a19016839f654b243b0ec2576e653250313b956cea990ab06430e6a61c45ecde": setup not complete: podUID="919761e6-8c3d-443a-afd3-57254953b946", ip=""
+I1111 13:49:59.209976       1 podfinder.go:312] Unable to sync sandbox "d9d38bf2e4c123a5abe06d66b1d614e78c9289527d4b3500bcfd85f1d322e0da": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+E1111 13:49:59.210006       1 podfinder.go:178] Error syncing pod "kuberhealthy/deployment-deployment-f8b84d875-gkth8": generic::unavailable: pod "kuberhealthy/deployment-deployment-f8b84d875-gkth8" not found after refresh
+I1111 13:49:59.210035       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-f8b84d875-gkth8"
+I1111 13:49:59.210045       1 podfinder.go:194] Pod "kuberhealthy/deployment-deployment-f8b84d875-gkth8" not found
+I1111 13:50:00.058676       1 podfinder.go:188] Syncing pod "jx/jx-preview-gc-jobs-1605102600-jzfwr"
+I1111 13:50:04.201118       1 podfinder.go:312] Unable to sync sandbox "02823ca78b6fd50db865122a7300a59dd32a20d63348166fd0f245a2499da848": setup not complete: podUID="48776b2a-6ae8-4d2b-981d-374a7739ee3e", ip=""
+I1111 13:50:04.202954       1 podfinder.go:312] Unable to sync sandbox "2cbb7e2fe489ef80d15cff5f90ef5db7d2c67d3e35f2f3df029979486486e266": setup not complete: podUID="d93d8adf-d033-42f6-901e-f6e249940bf9", ip=""
+I1111 13:50:04.205684       1 podfinder.go:312] Unable to sync sandbox "459ca65664ce478cab948e6fc5cf83ac2afbb4d815cdec702197693828aac477": setup not complete: podUID="6bfb7a25-ce7a-459f-b1cd-6dd076e8112c", ip=""
+I1111 13:50:04.207780       1 podfinder.go:312] Unable to sync sandbox "61be98ccbf1f0444b3dc8bb52160d87073289b6e886f3de9043226bce5bf2b19": setup not complete: podUID="da03b61d-c857-4592-9525-89f243b3883a", ip=""
+I1111 13:50:04.209396       1 podfinder.go:312] Unable to sync sandbox "a19016839f654b243b0ec2576e653250313b956cea990ab06430e6a61c45ecde": setup not complete: podUID="919761e6-8c3d-443a-afd3-57254953b946", ip=""
+I1111 13:50:04.211023       1 podfinder.go:312] Unable to sync sandbox "d9d38bf2e4c123a5abe06d66b1d614e78c9289527d4b3500bcfd85f1d322e0da": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+E1111 13:50:04.211059       1 podfinder.go:178] Error syncing pod "jx/jx-preview-gc-jobs-1605102600-jzfwr": generic::unavailable: pod "jx/jx-preview-gc-jobs-1605102600-jzfwr" not found after refresh
+I1111 13:50:04.211089       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-f8b84d875-gkth8"
+I1111 13:50:04.211101       1 podfinder.go:194] Pod "kuberhealthy/deployment-deployment-f8b84d875-gkth8" not found
+I1111 13:50:04.211111       1 podfinder.go:188] Syncing pod "jx/jx-preview-gc-jobs-1605102600-jzfwr"
+I1111 13:50:04.211118       1 podfinder.go:194] Pod "jx/jx-preview-gc-jobs-1605102600-jzfwr" not found
+I1111 13:50:04.411242       1 podfinder.go:188] Syncing pod "jx/jx-preview-gc-jobs-1605102600-jzfwr"
+I1111 13:50:04.411361       1 podfinder.go:194] Pod "jx/jx-preview-gc-jobs-1605102600-jzfwr" not found

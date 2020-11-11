@@ -4978,3 +4978,8 @@
 2020-11-11 13:40:14 +0000 [info]: #0 following tail of /var/log/containers/deployment-deployment-64f9486766-jds5n_kuberhealthy_deployment-container-8cf8f963f4ec88307115f2c88bfef1cb0d299d5344bd6aad2154ef9e7b1a7501.log
 2020-11-11 13:40:21 +0000 [info]: #0 detected rotation of /var/log/containers/deployment-deployment-64f9486766-jds5n_kuberhealthy_deployment-container-8cf8f963f4ec88307115f2c88bfef1cb0d299d5344bd6aad2154ef9e7b1a7501.log; waiting 5 seconds
 2020-11-11 13:43:43 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 4, pod_cache_api_updates: 50139, id_cache_miss: 50036, namespace_cache_miss: 444578
+2020-11-11 13:48:35 +0000 [info]: #0 detected rotation of /var/log/containers/jx-bot-token-1605101954_jx_jx-bot-token-4ff28dccd8dc3e78b18bfdc6996cda83cf0f72b01e8c2bafee7b46f99f176d6e.log; waiting 5 seconds
+2020-11-11 13:48:43 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 4, pod_cache_api_updates: 50174, id_cache_miss: 50071, namespace_cache_miss: 444745
+2020-11-11 13:50:14 +0000 [info]: #0 following tail of /var/log/containers/jx-bot-token-1605102581_jx_jx-bot-token-99e182524c269644cead5cb5b22639e7f5451c779672b66472724d2156b607cc.log
+2020-11-11 13:50:14 +0000 [info]: #0 disable filter chain optimization because [Fluent::Plugin::KubernetesMetadataFilter] uses `#filter_stream` method.
+2020-11-11 13:50:35 +0000 [info]: #0 detected rotation of /var/log/containers/jx-preview-gc-jobs-1605100800-2m6sg_jx_jx-preview-gc-jobs-cfab00ab98ec52c4839e8f179523d430d04a1acb5330dc6088f62ff2b9d6ef25.log; waiting 5 seconds
