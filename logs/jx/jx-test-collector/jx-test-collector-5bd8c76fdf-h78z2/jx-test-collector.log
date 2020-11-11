@@ -902,3 +902,417 @@ A  resources/jenkins.io/v1/pipelineactivities/jx/****-nodey536-master-2.yaml
 A  resources/tekton.dev/v1alpha1/pipelines/jx/jx-meta-pipeline.yaml
 ?? logs/jx/kuberhealthy-check/jx-webhook-1605101141/
 about to run: git commit -a -m chore: latest logs in dir /tmp/jx-test-collector-155602160
+[gh-pages (root-commit) 5032026] chore: latest logs
+ 296 files changed, 330965 insertions(+)
+ create mode 100644 logs/jx-git-operator/jx-boot/jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2-szw7x/git-clone.log
+ create mode 100644 logs/jx-git-operator/jx-boot/jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2-szw7x/job.log
+ create mode 100644 logs/jx-git-operator/jx-git-operator/jx-git-operator-87b45d98f-qx8zv/jx-git-operator.log
+ create mode 100644 logs/jx-git-operator/kuberhealthy-check/jx-install-1605100241/jx-install.log
+ create mode 100644 logs/jx-git-operator/kuberhealthy-check/jx-install-1605100331/jx-install.log
+ create mode 100644 logs/jx-git-operator/kuberhealthy-check/jx-install-1605100421/jx-install.log
+ create mode 100644 logs/jx-git-operator/kuberhealthy-check/jx-install-1605100511/jx-install.log
+ create mode 100644 logs/jx-git-operator/kuberhealthy-check/jx-install-1605100601/jx-install.log
+ create mode 100644 logs/jx-git-operator/kuberhealthy-check/jx-install-1605100691/jx-install.log
+ create mode 100644 logs/jx-git-operator/kuberhealthy-check/jx-install-1605100781/jx-install.log
+ create mode 100644 logs/jx-git-operator/kuberhealthy-check/jx-install-1605100871/jx-install.log
+ create mode 100644 logs/jx-git-operator/kuberhealthy-check/jx-install-1605100961/jx-install.log
+ create mode 100644 logs/jx-git-operator/kuberhealthy-check/jx-install-1605101051/jx-install.log
+ create mode 100644 logs/jx-git-operator/kuberhealthy-check/jx-install-1605101141/jx-install.log
+ create mode 100644 logs/jx-staging/bdd-gh-1602679032-bdd-gh-1602679032/bdd-gh-1602679032-bdd-gh-1602679032-59944d755d-wdsx4/bdd-gh-1602679032.log
+ create mode 100644 logs/jx-staging/nodey536-nodey536/nodey536-nodey536-558695b556-266sn/nodey536.log
+ create mode 100644 logs/jx-staging/nodey536-nodey536/nodey536-nodey536-76cfc5958f-hjcgd/nodey536.log
+ create mode 100644 logs/jx/Helm/jx-pipelines-visualizer-f69bd466c-8628v/jx-pipelines-visualizer.log
+ create mode 100644 logs/jx/bucketrepo-bucketrepo/bucketrepo-bucketrepo-59846fdf9c-rj4lr/bucketrepo.log
+ create mode 100644 logs/jx/chartmuseum/jenkins-x-chartmuseum-844cddb458-2mnfm/chartmuseum.log
+ create mode 100644 logs/jx/gcactivities/jxboot-helmfile-resources-gcactivities-1605096000-tk6zt/gcactivities.log
+ create mode 100644 logs/jx/gcactivities/jxboot-helmfile-resources-gcactivities-1605097800-lb8xh/gcactivities.log
+ create mode 100644 logs/jx/gcpods/jxboot-helmfile-resources-gcpods-1605096000-86k44/gcpods.log
+ create mode 100644 logs/jx/gcpods/jxboot-helmfile-resources-gcpods-1605097800-zmq7w/gcpods.log
+ create mode 100644 logs/jx/jx-build-controller/jx-build-controller-c85865f96-7dshs/jx-build-controller.log
+ create mode 100644 logs/jx/jx-preview-gc-jobs/jx-preview-gc-jobs-1605099600-pxf66/jx-preview-gc-jobs.log
+ create mode 100644 logs/jx/jx-preview-gc-jobs/jx-preview-gc-jobs-1605100200-4c8k2/jx-preview-gc-jobs.log
+ create mode 100644 logs/jx/jx-preview-gc-jobs/jx-preview-gc-jobs-1605100800-2m6sg/jx-preview-gc-jobs.log
+ create mode 100644 logs/jx/jx-test-collector/jx-test-collector-5bd8c76fdf-h78z2/jx-test-collector.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-bot-token-1605100241/jx-bot-token.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-bot-token-1605100331/jx-bot-token.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-bot-token-1605100421/jx-bot-token.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-bot-token-1605100511/jx-bot-token.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-bot-token-1605100601/jx-bot-token.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-bot-token-1605100691/jx-bot-token.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-bot-token-1605100781/jx-bot-token.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-bot-token-1605100871/jx-bot-token.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-bot-token-1605100961/jx-bot-token.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-bot-token-1605101051/jx-bot-token.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-bot-token-1605101141/jx-bot-token.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-webhook-1605100241/jx-webhook.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-webhook-1605100331/jx-webhook.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-webhook-1605100421/jx-webhook.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-webhook-1605100511/jx-webhook.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-webhook-1605100601/jx-webhook.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-webhook-1605100691/jx-webhook.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-webhook-1605100781/jx-webhook.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-webhook-1605100871/jx-webhook.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-webhook-1605100961/jx-webhook.log
+ create mode 100644 logs/jx/kuberhealthy-check/jx-webhook-1605101052/jx-webhook.log
+ create mode 100644 logs/jx/lighthouse-foghorn/lighthouse-foghorn-55c8559447-97554/lighthouse-foghorn.log
+ create mode 100644 logs/jx/lighthouse-gc-jobs/lighthouse-gc-jobs-1605096000-fmdnm/lighthouse-gc-jobs.log
+ create mode 100644 logs/jx/lighthouse-gc-jobs/lighthouse-gc-jobs-1605097800-qvn2g/lighthouse-gc-jobs.log
+ create mode 100644 logs/jx/lighthouse-gc-jobs/lighthouse-gc-jobs-1605099600-xbm9d/lighthouse-gc-jobs.log
+ create mode 100644 logs/jx/lighthouse-keeper/lighthouse-keeper-64955449b9-2g59f/lighthouse-keeper.log
+ create mode 100644 logs/jx/lighthouse-keeper/lighthouse-keeper-6c7b89b4c5-gsswn/lighthouse-keeper.log
+ create mode 100644 logs/jx/lighthouse-tekton-controller/lighthouse-tekton-controller-55665cdd4f-9xlbm/lighthouse-tekton-controller.log
+ create mode 100644 logs/jx/lighthouse-webhooks/lighthouse-webhooks-859b6fffb6-xdrrj/lighthouse-webhooks.log
+ create mode 100644 logs/jx/nexus/nexus-nexus-754698448d-vtwtw/nexus.log
+ create mode 100644 logs/kube-system/event-exporter-gke-8489df9489-4nkwt/event-exporter.log
+ create mode 100644 logs/kube-system/event-exporter-gke-8489df9489-4nkwt/prometheus-to-sd-exporter.log
+ create mode 100644 logs/kube-system/fluentd-gke-284vt/fluentd-gcp.log
+ create mode 100644 logs/kube-system/fluentd-gke-284vt/prometheus-to-sd-exporter.log
+ create mode 100644 logs/kube-system/fluentd-gke-822w2/fluentd-gcp.log
+ create mode 100644 logs/kube-system/fluentd-gke-822w2/prometheus-to-sd-exporter.log
+ create mode 100644 logs/kube-system/fluentd-gke-bh4t6/fluentd-gcp.log
+ create mode 100644 logs/kube-system/fluentd-gke-bh4t6/prometheus-to-sd-exporter.log
+ create mode 100644 logs/kube-system/fluentd-gke-scaler-cd4d654d7-d8pf7/fluentd-gke-scaler.log
+ create mode 100644 logs/kube-system/fluentd-gke-v6gsx/fluentd-gcp.log
+ create mode 100644 logs/kube-system/fluentd-gke-v6gsx/prometheus-to-sd-exporter.log
+ create mode 100644 logs/kube-system/gke-metadata-server-8fjjb/gke-metadata-server.log
+ create mode 100644 logs/kube-system/gke-metadata-server-gvh82/gke-metadata-server.log
+ create mode 100644 logs/kube-system/gke-metadata-server-tkqwz/gke-metadata-server.log
+ create mode 100644 logs/kube-system/gke-metadata-server-vxk9q/gke-metadata-server.log
+ create mode 100644 logs/kube-system/gke-metrics-agent-6tc8t/gke-metrics-agent.log
+ create mode 100644 logs/kube-system/gke-metrics-agent-md5kj/gke-metrics-agent.log
+ create mode 100644 logs/kube-system/gke-metrics-agent-tfvsd/gke-metrics-agent.log
+ create mode 100644 logs/kube-system/gke-metrics-agent-z92tn/gke-metrics-agent.log
+ create mode 100644 logs/kube-system/kube-dns-7c976ddbdb-4wz5q/dnsmasq.log
+ create mode 100644 logs/kube-system/kube-dns-7c976ddbdb-4wz5q/kubedns.log
+ create mode 100644 logs/kube-system/kube-dns-7c976ddbdb-4wz5q/prometheus-to-sd.log
+ create mode 100644 logs/kube-system/kube-dns-7c976ddbdb-4wz5q/sidecar.log
+ create mode 100644 logs/kube-system/kube-dns-7c976ddbdb-wn7jq/dnsmasq.log
+ create mode 100644 logs/kube-system/kube-dns-7c976ddbdb-wn7jq/kubedns.log
+ create mode 100644 logs/kube-system/kube-dns-7c976ddbdb-wn7jq/prometheus-to-sd.log
+ create mode 100644 logs/kube-system/kube-dns-7c976ddbdb-wn7jq/sidecar.log
+ create mode 100644 logs/kube-system/kube-dns-autoscaler-645f7d66cf-w2rb2/autoscaler.log
+ create mode 100644 logs/kube-system/kube-proxy-gke-****-tekton-default-pool-154aeb80-ccfi/kube-proxy.log
+ create mode 100644 logs/kube-system/kube-proxy-gke-****-tekton-default-pool-154aeb80-n21q/kube-proxy.log
+ create mode 100644 logs/kube-system/kube-proxy-gke-****-tekton-default-pool-154aeb80-pmxj/kube-proxy.log
+ create mode 100644 logs/kube-system/kube-proxy-gke-****-tekton-nap-n1-standard--0a7ecf20-446q/kube-proxy.log
+ create mode 100644 logs/kube-system/l7-default-backend-678889f899-bt2ll/default-http-backend.log
+ create mode 100644 logs/kube-system/metrics-server-v0.3.6-64655c969-qt5sn/metrics-server-nanny.log
+ create mode 100644 logs/kube-system/metrics-server-v0.3.6-64655c969-qt5sn/metrics-server.log
+ create mode 100644 logs/kube-system/netd-b9wc8/install-cni.log
+ create mode 100644 logs/kube-system/netd-b9wc8/netd.log
+ create mode 100644 logs/kube-system/netd-nvnsl/install-cni.log
+ create mode 100644 logs/kube-system/netd-nvnsl/netd.log
+ create mode 100644 logs/kube-system/netd-trxpc/install-cni.log
+ create mode 100644 logs/kube-system/netd-trxpc/netd.log
+ create mode 100644 logs/kube-system/netd-vscnd/install-cni.log
+ create mode 100644 logs/kube-system/netd-vscnd/netd.log
+ create mode 100644 logs/kube-system/prometheus-to-sd-gfp6g/prometheus-to-sd.log
+ create mode 100644 logs/kube-system/prometheus-to-sd-j875f/prometheus-to-sd.log
+ create mode 100644 logs/kube-system/prometheus-to-sd-l65fc/prometheus-to-sd.log
+ create mode 100644 logs/kube-system/prometheus-to-sd-qfzkw/prometheus-to-sd.log
+ create mode 100644 logs/kube-system/stackdriver-metadata-agent/stackdriver-metadata-agent-cluster-level-547f9bfb74-87q4p/metadata-agent-nanny.log
+ create mode 100644 logs/kube-system/stackdriver-metadata-agent/stackdriver-metadata-agent-cluster-level-547f9bfb74-87q4p/metadata-agent.log
+ create mode 100644 logs/kuberhealthy/check-reaper-1605100320-p5fxv/check-reaper.log
+ create mode 100644 logs/kuberhealthy/check-reaper-1605100500-8khzl/check-reaper.log
+ create mode 100644 logs/kuberhealthy/check-reaper-1605100680-tzh2g/check-reaper.log
+ create mode 100644 logs/kuberhealthy/check-reaper-1605100860-9l5vd/check-reaper.log
+ create mode 100644 logs/kuberhealthy/check-reaper-1605101040-vzrbj/check-reaper.log
+ create mode 100644 logs/kuberhealthy/daemonset-daemonset-1605101051-1605101058/daemonset-daemonset-1605101051-1605101058-5mz22/sleep.log
+ create mode 100644 logs/kuberhealthy/daemonset-daemonset-1605101051-1605101058/daemonset-daemonset-1605101051-1605101058-h8rgq/sleep.log
+ create mode 100644 logs/kuberhealthy/daemonset-daemonset-1605101051-1605101058/daemonset-daemonset-1605101051-1605101058-mz2g5/sleep.log
+ create mode 100644 logs/kuberhealthy/daemonset-daemonset-1605101051-1605101058/daemonset-daemonset-1605101051-1605101058-xqqzw/sleep.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/daemonset-1605096553/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/daemonset-1605097452/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/daemonset-1605098353/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/daemonset-1605099251/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/daemonset-1605100153/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/daemonset-1605101051/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/deployment-1605097751/deployment.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/deployment-1605098353/deployment.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/deployment-1605098951/deployment.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/deployment-1605099551/deployment.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/deployment-1605100152/deployment.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/deployment-1605100751/deployment.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/dns-status-internal-1605100152/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/dns-status-internal-1605100271/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/dns-status-internal-1605100391/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/dns-status-internal-1605100511/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/dns-status-internal-1605100631/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/dns-status-internal-1605100751/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/dns-status-internal-1605100871/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/dns-status-internal-1605100991/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/dns-status-internal-1605101111/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/jx-pod-status-1605099251/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/jx-pod-status-1605099551/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/jx-pod-status-1605099851/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/jx-pod-status-1605100153/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/jx-pod-status-1605100451/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/jx-pod-status-1605100751/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/jx-pod-status-1605101051/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/jx-secrets-1605100391/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/jx-secrets-1605100451/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/jx-secrets-1605100512/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/jx-secrets-1605100571/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/jx-secrets-1605100631/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/jx-secrets-1605100691/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/jx-secrets-1605100751/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/jx-secrets-1605100811/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/jx-secrets-1605101112/main.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/network-connection-check-1605092952/deployment.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/network-connection-check-1605094753/deployment.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/network-connection-check-1605096553/deployment.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/network-connection-check-1605098352/deployment.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy-check/network-connection-check-1605100154/deployment.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy/kuberhealthy-5c46966647-6db64/kuberhealthy.log
+ create mode 100644 logs/kuberhealthy/kuberhealthy/kuberhealthy-5c46966647-7mbjl/kuberhealthy.log
+ create mode 100644 logs/nginx/nginx-ingress/nginx-ingress-controller-55b8cd465c-bmzsj/nginx-ingress-controller.log
+ create mode 100644 logs/nginx/nginx-ingress/nginx-ingress-controller-55b8cd465c-d6znk/nginx-ingress-controller.log
+ create mode 100644 logs/nginx/nginx-ingress/nginx-ingress-controller-55b8cd465c-rppnj/nginx-ingress-controller.log
+ create mode 100644 logs/nginx/nginx-ingress/nginx-ingress-default-backend-64dbd4744d-zlnfg/nginx-ingress-default-backend.log
+ create mode 100644 logs/tekton-pipelines/tekton-pipelines-controller/tekton-pipelines-controller-9746c7487-8fhdt/tekton-pipelines-controller.log
+ create mode 100644 logs/tekton-pipelines/tekton-pipelines-webhook/tekton-pipelines-webhook-b4b67f45-zlmlc/webhook.log
+ create mode 100644 resources/core/v1/pods/jx-git-operator/jx-boot-286c8077-c42d-409e-a5dc-0b094d2d88d2-szw7x.yaml
+ create mode 100644 resources/core/v1/pods/jx-git-operator/jx-git-operator-87b45d98f-qx8zv.yaml
+ create mode 100644 resources/core/v1/pods/jx-git-operator/jx-install-1605100601.yaml
+ create mode 100644 resources/core/v1/pods/jx-git-operator/jx-install-1605100691.yaml
+ create mode 100644 resources/core/v1/pods/jx-git-operator/jx-install-1605100781.yaml
+ create mode 100644 resources/core/v1/pods/jx-git-operator/jx-install-1605100871.yaml
+ create mode 100644 resources/core/v1/pods/jx-git-operator/jx-install-1605100961.yaml
+ create mode 100644 resources/core/v1/pods/jx-git-operator/jx-install-1605101051.yaml
+ create mode 100644 resources/core/v1/pods/jx-staging/bdd-gh-1602679032-bdd-gh-1602679032-59944d755d-wdsx4.yaml
+ create mode 100644 resources/core/v1/pods/jx-staging/nodey536-nodey536-558695b556-266sn.yaml
+ create mode 100644 resources/core/v1/pods/jx-staging/nodey536-nodey536-76cfc5958f-hjcgd.yaml
+ create mode 100644 resources/core/v1/pods/jx/bucketrepo-bucketrepo-59846fdf9c-rj4lr.yaml
+ create mode 100644 resources/core/v1/pods/jx/jenkins-x-chartmuseum-844cddb458-2mnfm.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-bot-token-1605100601.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-bot-token-1605100691.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-bot-token-1605100781.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-bot-token-1605100871.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-bot-token-1605100961.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-bot-token-1605101051.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-build-controller-c85865f96-7dshs.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-pipelines-visualizer-f69bd466c-8628v.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-preview-gc-jobs-1605099600-pxf66.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-preview-gc-jobs-1605100200-4c8k2.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-preview-gc-jobs-1605100800-2m6sg.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-test-collector-5bd8c76fdf-h78z2.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-webhook-1605100601.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-webhook-1605100691.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-webhook-1605100781.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-webhook-1605100871.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-webhook-1605100961.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-webhook-1605101052.yaml
+ create mode 100644 resources/core/v1/pods/jx/jxboot-helmfile-resources-gcactivities-1605096000-tk6zt.yaml
+ create mode 100644 resources/core/v1/pods/jx/jxboot-helmfile-resources-gcactivities-1605097800-lb8xh.yaml
+ create mode 100644 resources/core/v1/pods/jx/jxboot-helmfile-resources-gcpods-1605096000-86k44.yaml
+ create mode 100644 resources/core/v1/pods/jx/jxboot-helmfile-resources-gcpods-1605097800-zmq7w.yaml
+ create mode 100644 resources/core/v1/pods/jx/lighthouse-foghorn-55c8559447-97554.yaml
+ create mode 100644 resources/core/v1/pods/jx/lighthouse-gc-jobs-1605096000-fmdnm.yaml
+ create mode 100644 resources/core/v1/pods/jx/lighthouse-gc-jobs-1605097800-qvn2g.yaml
+ create mode 100644 resources/core/v1/pods/jx/lighthouse-gc-jobs-1605099600-xbm9d.yaml
+ create mode 100644 resources/core/v1/pods/jx/lighthouse-keeper-6c7b89b4c5-gsswn.yaml
+ create mode 100644 resources/core/v1/pods/jx/lighthouse-tekton-controller-55665cdd4f-9xlbm.yaml
+ create mode 100644 resources/core/v1/pods/jx/lighthouse-webhooks-859b6fffb6-xdrrj.yaml
+ create mode 100644 resources/core/v1/pods/jx/nexus-nexus-754698448d-vtwtw.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/event-exporter-gke-8489df9489-4nkwt.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/fluentd-gke-284vt.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/fluentd-gke-822w2.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/fluentd-gke-bh4t6.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/fluentd-gke-scaler-cd4d654d7-d8pf7.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/fluentd-gke-v6gsx.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/gke-metadata-server-8fjjb.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/gke-metadata-server-gvh82.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/gke-metadata-server-tkqwz.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/gke-metadata-server-vxk9q.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/gke-metrics-agent-6tc8t.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/gke-metrics-agent-md5kj.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/gke-metrics-agent-tfvsd.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/gke-metrics-agent-z92tn.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/kube-dns-7c976ddbdb-4wz5q.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/kube-dns-7c976ddbdb-wn7jq.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/kube-dns-autoscaler-645f7d66cf-w2rb2.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/kube-proxy-gke-****-tekton-default-pool-154aeb80-ccfi.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/kube-proxy-gke-****-tekton-default-pool-154aeb80-n21q.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/kube-proxy-gke-****-tekton-default-pool-154aeb80-pmxj.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/kube-proxy-gke-****-tekton-nap-n1-standard--0a7ecf20-446q.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/l7-default-backend-678889f899-bt2ll.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/metrics-server-v0.3.6-64655c969-qt5sn.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/netd-b9wc8.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/netd-nvnsl.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/netd-trxpc.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/netd-vscnd.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/prometheus-to-sd-gfp6g.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/prometheus-to-sd-j875f.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/prometheus-to-sd-l65fc.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/prometheus-to-sd-qfzkw.yaml
+ create mode 100644 resources/core/v1/pods/kube-system/stackdriver-metadata-agent-cluster-level-547f9bfb74-87q4p.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/check-reaper-1605100680-tzh2g.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/check-reaper-1605100860-9l5vd.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/check-reaper-1605101040-vzrbj.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/daemonset-1605096553.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/daemonset-1605097452.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/daemonset-1605098353.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/daemonset-1605099251.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/daemonset-1605100153.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/daemonset-1605101051.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/deployment-1605098353.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/deployment-1605098951.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/deployment-1605099551.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/deployment-1605100152.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/deployment-1605100751.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/dns-status-internal-1605100511.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/dns-status-internal-1605100631.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/dns-status-internal-1605100751.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/dns-status-internal-1605100871.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/dns-status-internal-1605100991.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/dns-status-internal-1605101111.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/jx-pod-status-1605099551.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/jx-pod-status-1605099851.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/jx-pod-status-1605100153.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/jx-pod-status-1605100451.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/jx-pod-status-1605100751.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/jx-pod-status-1605101051.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/jx-secrets-1605100512.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/jx-secrets-1605100571.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/jx-secrets-1605100631.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/jx-secrets-1605100691.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/jx-secrets-1605100751.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/jx-secrets-1605100811.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/jx-secrets-1605101112.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/kuberhealthy-5c46966647-6db64.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/kuberhealthy-5c46966647-7mbjl.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/network-connection-check-1605092952.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/network-connection-check-1605094753.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/network-connection-check-1605096553.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/network-connection-check-1605098352.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/network-connection-check-1605100154.yaml
+ create mode 100644 resources/core/v1/pods/nginx/nginx-ingress-controller-55b8cd465c-bmzsj.yaml
+ create mode 100644 resources/core/v1/pods/nginx/nginx-ingress-controller-55b8cd465c-d6znk.yaml
+ create mode 100644 resources/core/v1/pods/nginx/nginx-ingress-controller-55b8cd465c-rppnj.yaml
+ create mode 100644 resources/core/v1/pods/nginx/nginx-ingress-default-backend-64dbd4744d-zlnfg.yaml
+ create mode 100644 resources/core/v1/pods/tekton-pipelines/tekton-pipelines-controller-9746c7487-8fhdt.yaml
+ create mode 100644 resources/core/v1/pods/tekton-pipelines/tekton-pipelines-webhook-b4b67f45-zlmlc.yaml
+ create mode 100644 resources/jenkins.io/v1/pipelineactivities/jx/****-jx-demo-terraform-dev-master-10.yaml
+ create mode 100644 resources/jenkins.io/v1/pipelineactivities/jx/****-jx-demo-terraform-dev-master-11.yaml
+ create mode 100644 resources/jenkins.io/v1/pipelineactivities/jx/****-jx-demo-terraform-dev-master-2.yaml
+ create mode 100644 resources/jenkins.io/v1/pipelineactivities/jx/****-jx-demo-terraform-dev-master-3.yaml
+ create mode 100644 resources/jenkins.io/v1/pipelineactivities/jx/****-jx-demo-terraform-dev-master-9.yaml
+ create mode 100644 resources/jenkins.io/v1/pipelineactivities/jx/****-nodey536-master-1.yaml
+ create mode 100644 resources/jenkins.io/v1/pipelineactivities/jx/****-nodey536-master-2.yaml
+ create mode 100644 resources/tekton.dev/v1alpha1/pipelines/jx/jx-meta-pipeline.yaml
+about to run: git push origin gh-pages in dir /tmp/jx-test-collector-155602160
+remote: 
+remote: Create a pull request for 'gh-pages' on GitHub by visiting:        
+remote:      https://github.com/****/jx-demo-terraform-dev/pull/new/gh-pages        
+remote: 
+To https://github.com/****/jx-demo-terraform-dev
+ * [new branch]      gh-pages -> gh-pages
+sync completed
+WARNING: Error opening stream to kuberhealthy/check-reaper-1605101220-4rcxc: check-reaper
+WARNING: Error opening stream to jx/jx-webhook-1605101231: jx-webhook
+WARNING: Error opening stream to jx/jx-bot-token-1605101231: jx-bot-token
+WARNING: Error opening stream to jx-git-operator/jx-install-1605101231: jx-install
+WARNING: Error opening stream to kuberhealthy/dns-status-internal-1605101231: main
+WARNING: Error opening stream to jx-git-operator/jx-install-1605101321: jx-install
+WARNING: Error opening stream to jx/jx-webhook-1605101321: jx-webhook
+WARNING: Error opening stream to jx/jx-bot-token-1605101321: jx-bot-token
+WARNING: Error opening stream to kuberhealthy/deployment-1605101351: deployment
+WARNING: Error opening stream to kuberhealthy/dns-status-internal-1605101351: main
+WARNING: Error opening stream to kuberhealthy/jx-pod-status-1605101351: main
+WARNING: Error opening stream to kuberhealthy/deployment-deployment-64dd7968b7-4xxdv: deployment-container
+WARNING: Error opening stream to kuberhealthy/deployment-deployment-64dd7968b7-rsr6x: deployment-container
+WARNING: Error opening stream to kuberhealthy/deployment-deployment-64dd7968b7-2nhnw: deployment-container
+WARNING: Error opening stream to kuberhealthy/deployment-deployment-64dd7968b7-qdhzz: deployment-container
+WARNING: Error opening stream to kuberhealthy/deployment-deployment-6695dfbfd6-wklr8: deployment-container
+WARNING: Error opening stream to kuberhealthy/deployment-deployment-6695dfbfd6-fxp98: deployment-container
+WARNING: Error opening stream to kuberhealthy/deployment-deployment-6695dfbfd6-g4pdm: deployment-container
+WARNING: Error opening stream to kuberhealthy/deployment-deployment-6695dfbfd6-p8k9v: deployment-container
+WARNING: Error opening stream to jx/jx-preview-gc-jobs-1605101400-4ghf7: jx-preview-gc-jobs
+WARNING: Error opening stream to jx/lighthouse-gc-jobs-1605101400-m8msp: lighthouse-gc-jobs
+WARNING: Error opening stream to kuberhealthy/check-reaper-1605101400-jxmlc: check-reaper
+WARNING: Error opening stream to jx-git-operator/jx-install-1605101411: jx-install
+WARNING: Error opening stream to jx/jx-bot-token-1605101411: jx-bot-token
+WARNING: Error opening stream to jx/jx-webhook-1605101411: jx-webhook
+WARNING: Error opening stream to kuberhealthy/jx-secrets-1605101414: main
+about to run: git add * in dir /tmp/jx-test-collector-155602160
+about to run: git status -s in dir /tmp/jx-test-collector-155602160
+MM logs/jx-git-operator/jx-git-operator/jx-git-operator-87b45d98f-qx8zv/jx-git-operator.log
+A  logs/jx-git-operator/kuberhealthy-check/jx-install-1605101231/jx-install.log
+A  logs/jx-git-operator/kuberhealthy-check/jx-install-1605101321/jx-install.log
+A  logs/jx-git-operator/kuberhealthy-check/jx-install-1605101411/jx-install.log
+MM logs/jx-staging/bdd-gh-1602679032-bdd-gh-1602679032/bdd-gh-1602679032-bdd-gh-1602679032-59944d755d-wdsx4/bdd-gh-1602679032.log
+MM logs/jx-staging/nodey536-nodey536/nodey536-nodey536-76cfc5958f-hjcgd/nodey536.log
+MM logs/jx/chartmuseum/jenkins-x-chartmuseum-844cddb458-2mnfm/chartmuseum.log
+A  logs/jx/jx-preview-gc-jobs/jx-preview-gc-jobs-1605101400-4ghf7/jx-preview-gc-jobs.log
+M  logs/jx/jx-test-collector/jx-test-collector-5bd8c76fdf-h78z2/jx-test-collector.log
+A  logs/jx/kuberhealthy-check/jx-bot-token-1605101231/jx-bot-token.log
+A  logs/jx/kuberhealthy-check/jx-bot-token-1605101321/jx-bot-token.log
+A  logs/jx/kuberhealthy-check/jx-bot-token-1605101411/jx-bot-token.log
+A  logs/jx/kuberhealthy-check/jx-webhook-1605101141/jx-webhook.log
+A  logs/jx/kuberhealthy-check/jx-webhook-1605101231/jx-webhook.log
+A  logs/jx/kuberhealthy-check/jx-webhook-1605101321/jx-webhook.log
+A  logs/jx/kuberhealthy-check/jx-webhook-1605101411/jx-webhook.log
+A  logs/jx/lighthouse-gc-jobs/lighthouse-gc-jobs-1605101400-m8msp/lighthouse-gc-jobs.log
+M  logs/jx/lighthouse-keeper/lighthouse-keeper-6c7b89b4c5-gsswn/lighthouse-keeper.log
+M  logs/jx/lighthouse-webhooks/lighthouse-webhooks-859b6fffb6-xdrrj/lighthouse-webhooks.log
+M  logs/jx/nexus/nexus-nexus-754698448d-vtwtw/nexus.log
+M  logs/kube-system/fluentd-gke-284vt/fluentd-gcp.log
+M  logs/kube-system/fluentd-gke-822w2/fluentd-gcp.log
+M  logs/kube-system/fluentd-gke-bh4t6/fluentd-gcp.log
+M  logs/kube-system/fluentd-gke-v6gsx/fluentd-gcp.log
+M  logs/kube-system/gke-metadata-server-8fjjb/gke-metadata-server.log
+M  logs/kube-system/gke-metadata-server-gvh82/gke-metadata-server.log
+M  logs/kube-system/gke-metadata-server-tkqwz/gke-metadata-server.log
+M  logs/kube-system/gke-metadata-server-vxk9q/gke-metadata-server.log
+M  logs/kube-system/gke-metrics-agent-md5kj/gke-metrics-agent.log
+M  logs/kube-system/gke-metrics-agent-z92tn/gke-metrics-agent.log
+M  logs/kube-system/metrics-server-v0.3.6-64655c969-qt5sn/metrics-server.log
+M  logs/kube-system/prometheus-to-sd-gfp6g/prometheus-to-sd.log
+M  logs/kube-system/prometheus-to-sd-j875f/prometheus-to-sd.log
+M  logs/kube-system/prometheus-to-sd-l65fc/prometheus-to-sd.log
+M  logs/kube-system/prometheus-to-sd-qfzkw/prometheus-to-sd.log
+M  logs/kube-system/stackdriver-metadata-agent/stackdriver-metadata-agent-cluster-level-547f9bfb74-87q4p/metadata-agent.log
+A  logs/kuberhealthy/check-reaper-1605101220-4rcxc/check-reaper.log
+A  logs/kuberhealthy/check-reaper-1605101400-jxmlc/check-reaper.log
+A  logs/kuberhealthy/deployment-deployment-64dd7968b7-2nhnw/deployment-container.log
+A  logs/kuberhealthy/deployment-deployment-64dd7968b7-4xxdv/deployment-container.log
+A  logs/kuberhealthy/deployment-deployment-64dd7968b7-qdhzz/deployment-container.log
+A  logs/kuberhealthy/deployment-deployment-64dd7968b7-rsr6x/deployment-container.log
+A  logs/kuberhealthy/deployment-deployment-6695dfbfd6-fxp98/deployment-container.log
+A  logs/kuberhealthy/deployment-deployment-6695dfbfd6-g4pdm/deployment-container.log
+A  logs/kuberhealthy/deployment-deployment-6695dfbfd6-p8k9v/deployment-container.log
+A  logs/kuberhealthy/deployment-deployment-6695dfbfd6-wklr8/deployment-container.log
+A  logs/kuberhealthy/kuberhealthy-check/deployment-1605101351/deployment.log
+A  logs/kuberhealthy/kuberhealthy-check/dns-status-internal-1605101231/main.log
+A  logs/kuberhealthy/kuberhealthy-check/dns-status-internal-1605101351/main.log
+A  logs/kuberhealthy/kuberhealthy-check/jx-pod-status-1605101351/main.log
+A  logs/kuberhealthy/kuberhealthy-check/jx-secrets-1605101414/main.log
+M  logs/kuberhealthy/kuberhealthy/kuberhealthy-5c46966647-6db64/kuberhealthy.log
+M  logs/kuberhealthy/kuberhealthy/kuberhealthy-5c46966647-7mbjl/kuberhealthy.log
+M  logs/nginx/nginx-ingress/nginx-ingress-controller-55b8cd465c-bmzsj/nginx-ingress-controller.log
+M  logs/nginx/nginx-ingress/nginx-ingress-controller-55b8cd465c-d6znk/nginx-ingress-controller.log
+M  logs/nginx/nginx-ingress/nginx-ingress-controller-55b8cd465c-rppnj/nginx-ingress-controller.log
+M  logs/tekton-pipelines/tekton-pipelines-webhook/tekton-pipelines-webhook-b4b67f45-zlmlc/webhook.log
+A  resources/core/v1/pods/jx-git-operator/jx-install-1605101141.yaml
+A  resources/core/v1/pods/jx-git-operator/jx-install-1605101231.yaml
+A  resources/core/v1/pods/jx-git-operator/jx-install-1605101321.yaml
+A  resources/core/v1/pods/jx-git-operator/jx-install-1605101411.yaml
+M  resources/core/v1/pods/jx-staging/nodey536-nodey536-558695b556-266sn.yaml
+A  resources/core/v1/pods/jx/jx-bot-token-1605101141.yaml
+A  resources/core/v1/pods/jx/jx-bot-token-1605101231.yaml
+A  resources/core/v1/pods/jx/jx-bot-token-1605101321.yaml
+A  resources/core/v1/pods/jx/jx-bot-token-1605101411.yaml
+A  resources/core/v1/pods/jx/jx-preview-gc-jobs-1605101400-4ghf7.yaml
+A  resources/core/v1/pods/jx/jx-webhook-1605101141.yaml
+A  resources/core/v1/pods/jx/jx-webhook-1605101231.yaml
+A  resources/core/v1/pods/jx/jx-webhook-1605101321.yaml
+A  resources/core/v1/pods/jx/jx-webhook-1605101411.yaml
+A  resources/core/v1/pods/jx/lighthouse-gc-jobs-1605101400-m8msp.yaml
+A  resources/core/v1/pods/kuberhealthy/check-reaper-1605101220-4rcxc.yaml
+A  resources/core/v1/pods/kuberhealthy/check-reaper-1605101400-jxmlc.yaml
+A  resources/core/v1/pods/kuberhealthy/deployment-1605101351.yaml
+A  resources/core/v1/pods/kuberhealthy/dns-status-internal-1605101231.yaml
+A  resources/core/v1/pods/kuberhealthy/dns-status-internal-1605101351.yaml
+A  resources/core/v1/pods/kuberhealthy/jx-pod-status-1605101351.yaml
+A  resources/core/v1/pods/kuberhealthy/jx-secrets-1605101414.yaml
+about to run: git commit -a -m chore: latest logs in dir /tmp/jx-test-collector-155602160

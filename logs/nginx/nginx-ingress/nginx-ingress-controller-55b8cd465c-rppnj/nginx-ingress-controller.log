@@ -301,3 +301,11 @@ W1111 13:20:29.499565       6 controller.go:909] Service "jx/bucketrepo" does no
 W1111 13:20:32.832972       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
 W1111 13:21:30.615415       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
 10.128.0.2 - - [11/Nov/2020:13:25:49 +0000] "GET / HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0" 274 0.002 [jx-hook-80] [] 10.8.5.10:8080 0 0.002 200 abcae460aa9f2f97f6319b12602702e8
+2020/11/11 13:26:39 [warn] 497#497: *1298203 a client request body is buffered to a temporary file /tmp/client-body/0000000019, client: 10.8.8.1, server: _, request: "POST /hook HTTP/1.1", host: "hook-jx.35.184.150.204.nip.io"
+10.8.8.1 - - [11/Nov/2020:13:26:39 +0000] "POST /hook HTTP/1.1" 200 19 "-" "GitHub-Hookshot/6767b47" 52310 0.084 [jx-hook-80] [] 10.8.5.10:8080 19 0.006 200 7e63c545a565f27704a6fc8ed5300a6a
+W1111 13:29:33.377146       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:29:36.710528       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:29:40.043867       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:29:50.501769       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:29:53.835263       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
+W1111 13:29:57.168545       6 controller.go:909] Service "jx/bucketrepo" does not have any active Endpoint.
