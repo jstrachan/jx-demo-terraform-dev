@@ -1,0 +1,117 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    comcast.github.io/check-name: jx-install
+  creationTimestamp: "2020-11-11T14:33:16Z"
+  labels:
+    app: kuberhealthy-check
+    kuberhealthy-check-name: jx-install
+    kuberhealthy-run-id: a3dd0dbe-94b9-4277-8c73-20b79efebafc
+  name: jx-install-1605105191
+  namespace: jx-git-operator
+  ownerReferences:
+  - apiVersion: v1
+    kind: Pod
+    name: kuberhealthy-5c46966647-6db64
+    uid: d98a024b-7504-4cdd-a3bb-c70c6128d8fb
+  resourceVersion: "27451616"
+  selfLink: /api/v1/namespaces/jx-git-operator/pods/jx-install-1605105191
+  uid: d1a690ce-d8d8-44e0-ac57-bf0ff2a1b0f1
+spec:
+  containers:
+  - env:
+    - name: KH_REPORTING_URL
+      value: http://kuberhealthy.kuberhealthy.svc.cluster.local/externalCheckStatus
+    - name: KH_RUN_UUID
+      value: a3dd0dbe-94b9-4277-8c73-20b79efebafc
+    - name: KH_CHECK_RUN_DEADLINE
+      value: "1605105311"
+    - name: KH_POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    image: gcr.io/jenkinsxio/jx-install:0.0.51
+    imagePullPolicy: IfNotPresent
+    name: jx-install
+    resources:
+      limits:
+        cpu: 40m
+      requests:
+        cpu: 25m
+        memory: 15Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: jx-install-sa-token-kz8w4
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-jstrachan-tekton-default-pool-154aeb80-pmxj
+  priority: 0
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: jx-install-sa
+  serviceAccountName: jx-install-sa
+  terminationGracePeriodSeconds: 60
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: jx-install-sa-token-kz8w4
+    secret:
+      defaultMode: 420
+      secretName: jx-install-sa-token-kz8w4
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:33:16Z"
+    reason: PodCompleted
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:33:21Z"
+    reason: PodCompleted
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:33:21Z"
+    reason: PodCompleted
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-11T14:33:16Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://2145190f795f1b366a9a94304ece18e11ef1477b6e2e98308b7a9a69a55e492e
+    image: gcr.io/jenkinsxio/jx-install:0.0.51
+    imageID: docker-pullable://gcr.io/jenkinsxio/jx-install@sha256:bfb477d82a44122ecd03c45438ea3babe8bfeb883d4f67bf5f2407e40a5314a1
+    lastState: {}
+    name: jx-install
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      terminated:
+        containerID: docker://2145190f795f1b366a9a94304ece18e11ef1477b6e2e98308b7a9a69a55e492e
+        exitCode: 0
+        finishedAt: "2020-11-11T14:33:20Z"
+        reason: Completed
+        startedAt: "2020-11-11T14:33:19Z"
+  hostIP: 10.128.0.11
+  phase: Succeeded
+  podIP: 10.8.7.138
+  podIPs:
+  - ip: 10.8.7.138
+  qosClass: Burstable
+  startTime: "2020-11-11T14:33:16Z"

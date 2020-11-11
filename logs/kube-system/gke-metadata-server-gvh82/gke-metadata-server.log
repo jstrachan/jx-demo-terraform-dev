@@ -6557,3 +6557,7 @@ I1111 14:30:00.959665       1 podfinder.go:188] Syncing pod "kuberhealthy/deploy
 I1111 14:30:00.959732       1 podfinder.go:207] Pod "kuberhealthy/deployment-deployment-549d78689c-vnvx2" found in snapshot: podfinder.entry{sandboxUID:"59b5c0b335389e2a0f9c36e76d9f9348ca82823616d0e773d04bef8f696f8d67", podUID:"db3bbc7d-d2d1-435e-a89e-00378c546bb5", ip:"10.8.8.241"}
 I1111 14:30:01.988090       1 podfinder.go:188] Syncing pod "kuberhealthy/deployment-deployment-549d78689c-vnvx2"
 I1111 14:30:01.988126       1 podfinder.go:207] Pod "kuberhealthy/deployment-deployment-549d78689c-vnvx2" found in snapshot: podfinder.entry{sandboxUID:"59b5c0b335389e2a0f9c36e76d9f9348ca82823616d0e773d04bef8f696f8d67", podUID:"db3bbc7d-d2d1-435e-a89e-00378c546bb5", ip:"10.8.8.241"}
+I1111 14:34:24.807598       1 podfinder.go:188] Syncing pod "jx-staging/nodey536-nodey536-558695b556-266sn"
+I1111 14:34:24.807646       1 podfinder.go:207] Pod "jx-staging/nodey536-nodey536-558695b556-266sn" found in snapshot: podfinder.entry{sandboxUID:"1b802d6eafc7b93c2eddfa87f0e13e6f81b2ad5d4ce05ceae63611553e70fb84", podUID:"2b20f443-4a98-463c-acbf-d0761a924ca2", ip:"10.8.8.2"}
+I1111 14:34:37.823756       1 podfinder.go:188] Syncing pod "jx-staging/nodey536-nodey536-558695b556-266sn"
+I1111 14:34:37.823802       1 podfinder.go:207] Pod "jx-staging/nodey536-nodey536-558695b556-266sn" found in snapshot: podfinder.entry{sandboxUID:"1b802d6eafc7b93c2eddfa87f0e13e6f81b2ad5d4ce05ceae63611553e70fb84", podUID:"2b20f443-4a98-463c-acbf-d0761a924ca2", ip:"10.8.8.2"}

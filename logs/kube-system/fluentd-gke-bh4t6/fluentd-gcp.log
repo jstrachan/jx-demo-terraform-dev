@@ -5038,3 +5038,4 @@
 2020-11-11 14:29:24 +0000 [info]: #0 detected rotation of /var/log/containers/kuberhealthy-5c46966647-6db64_kuberhealthy_kuberhealthy-d3c18b32c11a98c3b00701109c5645d5ab37cb62c9bdd7c905e5763b63f3d944.log; waiting 5 seconds
 2020-11-11 14:29:24 +0000 [info]: #0 following tail of /var/log/containers/kuberhealthy-5c46966647-6db64_kuberhealthy_kuberhealthy-d3c18b32c11a98c3b00701109c5645d5ab37cb62c9bdd7c905e5763b63f3d944.log
 2020-11-11 14:30:38 +0000 [info]: #0 detected rotation of /var/log/containers/lighthouse-gc-jobs-1605099600-xbm9d_jx_lighthouse-gc-jobs-fc64f33c568a7abc1dbaef3bea66d393b23fca8f1047537cfe7069a1da08894b.log; waiting 5 seconds
+2020-11-11 14:33:43 +0000 [info]: #0 stats - namespace_cache_size: 0, pod_cache_size: 3, namespace_cache_miss: 446355, pod_cache_api_updates: 50536, id_cache_miss: 50433

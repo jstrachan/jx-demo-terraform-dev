@@ -8107,3 +8107,10 @@ I1111 14:28:43.209821       1 trace.go:897] Failed loading config; disabling tra
 I1111 14:28:50.786896       1 binarylog.go:274] rpc: flushed binary log to ""
 I1111 14:29:50.787075       1 binarylog.go:274] rpc: flushed binary log to ""
 I1111 14:30:50.787280       1 binarylog.go:274] rpc: flushed binary log to ""
+I1111 14:31:50.787535       1 binarylog.go:274] rpc: flushed binary log to ""
+I1111 14:32:50.787699       1 binarylog.go:274] rpc: flushed binary log to ""
+I1111 14:33:32.363091       1 retry.go:89] call failed on attempt 0 with err=rpc error: code = Unavailable desc = The service is currently unavailable., retrying.
+I1111 14:33:43.209956       1 trace.go:897] Failed loading config; disabling tracing: open /export/hda3/trace_data/trace_config.proto: no such file or directory
+I1111 14:33:50.787904       1 binarylog.go:274] rpc: flushed binary log to ""
+I1111 14:34:50.788113       1 binarylog.go:274] rpc: flushed binary log to ""
+I1111 14:35:50.788344       1 binarylog.go:274] rpc: flushed binary log to ""
