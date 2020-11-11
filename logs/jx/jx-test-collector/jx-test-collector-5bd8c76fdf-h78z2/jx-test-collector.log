@@ -2934,3 +2934,21 @@ A  resources/core/v1/pods/kuberhealthy/dns-status-internal-1605105311.yaml
 A  resources/core/v1/pods/kuberhealthy/jx-pod-status-1605105251.yaml
 A  resources/core/v1/pods/kuberhealthy/jx-secrets-1605105330.yaml
 about to run: git commit -a -m chore: latest logs in dir /tmp/jx-test-collector-155602160
+[gh-pages 0f69e84] chore: latest logs
+ 40 files changed, 5350 insertions(+), 1 deletion(-)
+ create mode 100644 resources/core/v1/pods/jx-git-operator/jx-install-1605105101.yaml
+ create mode 100644 resources/core/v1/pods/jx-git-operator/jx-install-1605105191.yaml
+ create mode 100644 resources/core/v1/pods/jx-git-operator/jx-install-1605105281.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-bot-token-1605105101.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-bot-token-1605105191.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-bot-token-1605105281.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-webhook-1605105101.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-webhook-1605105191.yaml
+ create mode 100644 resources/core/v1/pods/jx/jx-webhook-1605105281.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/check-reaper-1605105180-stsnz.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/dns-status-internal-1605105071.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/dns-status-internal-1605105191.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/dns-status-internal-1605105311.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/jx-pod-status-1605105251.yaml
+ create mode 100644 resources/core/v1/pods/kuberhealthy/jx-secrets-1605105330.yaml
+about to run: git push origin gh-pages in dir /tmp/jx-test-collector-155602160

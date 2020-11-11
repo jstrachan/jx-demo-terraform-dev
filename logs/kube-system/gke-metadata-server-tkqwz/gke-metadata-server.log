@@ -12400,3 +12400,27 @@ I1111 14:35:53.875812       1 podfinder.go:312] Unable to sync sandbox "e2c1c005
 I1111 14:35:53.877210       1 podfinder.go:312] Unable to sync sandbox "e51ad1c8c4f2bc423f02c5ef3c28283548b26a9d8fa66faaf2e67c68d28111cf": setup not complete: podUID="620e482e-a489-4e93-a4ad-7d3db64b5c0a", ip=""
 I1111 14:35:53.878714       1 podfinder.go:312] Unable to sync sandbox "eccb83fef399bc835985a1ae9be47ea70cc608746c8528f3b1539aef46aef6d8": setup not complete: podUID="e49a3d9e-6d3c-4548-9fc8-263f1adfc152", ip=""
 E1111 14:35:53.878885       1 podfinder.go:178] Error syncing pod "jx/bucketrepo-bucketrepo-59846fdf9c-rj4lr": generic::unavailable: pod "jx/bucketrepo-bucketrepo-59846fdf9c-rj4lr" not found after refresh
+I1111 14:36:03.879129       1 podfinder.go:188] Syncing pod "jx/bucketrepo-bucketrepo-59846fdf9c-rj4lr"
+I1111 14:36:03.889749       1 podfinder.go:312] Unable to sync sandbox "1706bcc5ccd5195b536d852c356f93643870d877baf2c05789ffe96fec85721e": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+I1111 14:36:03.891666       1 podfinder.go:312] Unable to sync sandbox "1bf7c48987ec69c4e0c97afc08b510546f47afdf8c9e9315e0dedd6631cc25c6": setup not complete: podUID="7e20a26c-9938-45cb-84ab-e5a54ea48697", ip=""
+I1111 14:36:03.893269       1 podfinder.go:312] Unable to sync sandbox "31c92090e7953446dedf8193d01f2ed2c41b6dcf39e5157148ec80107df966a6": setup not complete: podUID="aef394e1-d2ba-4eec-8855-075b5cbb0148", ip=""
+I1111 14:36:03.894509       1 podfinder.go:312] Unable to sync sandbox "e2c1c00507e9a576a56748542c91f578e5fc0ce8e5b7df48996ae5aaa60eb9a1": setup not complete: podUID="fc9d5ad7-403f-4994-b3bc-be3297ee06be", ip=""
+I1111 14:36:03.895901       1 podfinder.go:312] Unable to sync sandbox "e51ad1c8c4f2bc423f02c5ef3c28283548b26a9d8fa66faaf2e67c68d28111cf": setup not complete: podUID="620e482e-a489-4e93-a4ad-7d3db64b5c0a", ip=""
+I1111 14:36:03.898238       1 podfinder.go:312] Unable to sync sandbox "eccb83fef399bc835985a1ae9be47ea70cc608746c8528f3b1539aef46aef6d8": setup not complete: podUID="e49a3d9e-6d3c-4548-9fc8-263f1adfc152", ip=""
+E1111 14:36:03.898284       1 podfinder.go:178] Error syncing pod "jx/bucketrepo-bucketrepo-59846fdf9c-rj4lr": generic::unavailable: pod "jx/bucketrepo-bucketrepo-59846fdf9c-rj4lr" not found after refresh
+I1111 14:36:13.898495       1 podfinder.go:188] Syncing pod "jx/bucketrepo-bucketrepo-59846fdf9c-rj4lr"
+I1111 14:36:13.907893       1 podfinder.go:312] Unable to sync sandbox "1706bcc5ccd5195b536d852c356f93643870d877baf2c05789ffe96fec85721e": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+I1111 14:36:13.910008       1 podfinder.go:312] Unable to sync sandbox "1bf7c48987ec69c4e0c97afc08b510546f47afdf8c9e9315e0dedd6631cc25c6": setup not complete: podUID="7e20a26c-9938-45cb-84ab-e5a54ea48697", ip=""
+I1111 14:36:13.911484       1 podfinder.go:312] Unable to sync sandbox "31c92090e7953446dedf8193d01f2ed2c41b6dcf39e5157148ec80107df966a6": setup not complete: podUID="aef394e1-d2ba-4eec-8855-075b5cbb0148", ip=""
+I1111 14:36:13.913725       1 podfinder.go:312] Unable to sync sandbox "e2c1c00507e9a576a56748542c91f578e5fc0ce8e5b7df48996ae5aaa60eb9a1": setup not complete: podUID="fc9d5ad7-403f-4994-b3bc-be3297ee06be", ip=""
+I1111 14:36:13.915170       1 podfinder.go:312] Unable to sync sandbox "e51ad1c8c4f2bc423f02c5ef3c28283548b26a9d8fa66faaf2e67c68d28111cf": setup not complete: podUID="620e482e-a489-4e93-a4ad-7d3db64b5c0a", ip=""
+I1111 14:36:13.916989       1 podfinder.go:312] Unable to sync sandbox "eccb83fef399bc835985a1ae9be47ea70cc608746c8528f3b1539aef46aef6d8": setup not complete: podUID="e49a3d9e-6d3c-4548-9fc8-263f1adfc152", ip=""
+E1111 14:36:13.917026       1 podfinder.go:178] Error syncing pod "jx/bucketrepo-bucketrepo-59846fdf9c-rj4lr": generic::unavailable: pod "jx/bucketrepo-bucketrepo-59846fdf9c-rj4lr" not found after refresh
+I1111 14:36:23.917095       1 podfinder.go:188] Syncing pod "jx/bucketrepo-bucketrepo-59846fdf9c-rj4lr"
+I1111 14:36:23.928139       1 podfinder.go:312] Unable to sync sandbox "1706bcc5ccd5195b536d852c356f93643870d877baf2c05789ffe96fec85721e": setup not complete: podUID="1b13071a0b296453ef7a32701441f230", ip=""
+I1111 14:36:23.929943       1 podfinder.go:312] Unable to sync sandbox "1bf7c48987ec69c4e0c97afc08b510546f47afdf8c9e9315e0dedd6631cc25c6": setup not complete: podUID="7e20a26c-9938-45cb-84ab-e5a54ea48697", ip=""
+I1111 14:36:23.931241       1 podfinder.go:312] Unable to sync sandbox "31c92090e7953446dedf8193d01f2ed2c41b6dcf39e5157148ec80107df966a6": setup not complete: podUID="aef394e1-d2ba-4eec-8855-075b5cbb0148", ip=""
+I1111 14:36:23.932798       1 podfinder.go:312] Unable to sync sandbox "e2c1c00507e9a576a56748542c91f578e5fc0ce8e5b7df48996ae5aaa60eb9a1": setup not complete: podUID="fc9d5ad7-403f-4994-b3bc-be3297ee06be", ip=""
+I1111 14:36:23.935489       1 podfinder.go:312] Unable to sync sandbox "e51ad1c8c4f2bc423f02c5ef3c28283548b26a9d8fa66faaf2e67c68d28111cf": setup not complete: podUID="620e482e-a489-4e93-a4ad-7d3db64b5c0a", ip=""
+I1111 14:36:23.937048       1 podfinder.go:312] Unable to sync sandbox "eccb83fef399bc835985a1ae9be47ea70cc608746c8528f3b1539aef46aef6d8": setup not complete: podUID="e49a3d9e-6d3c-4548-9fc8-263f1adfc152", ip=""
+E1111 14:36:23.937080       1 podfinder.go:178] Error syncing pod "jx/bucketrepo-bucketrepo-59846fdf9c-rj4lr": generic::unavailable: pod "jx/bucketrepo-bucketrepo-59846fdf9c-rj4lr" not found after refresh
