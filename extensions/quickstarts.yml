@@ -1,6 +1,0 @@
-quickstarts:
-- downloadZipURL: https://github.com/jenkins-x-plugins/jx-tap/archive/main.zip
-  language: Go
-  name: jx-tap
-  version: 1.0.0
-
