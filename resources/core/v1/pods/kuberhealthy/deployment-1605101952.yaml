@@ -15,7 +15,7 @@ metadata:
     kind: Pod
     name: kuberhealthy-5c46966647-6db64
     uid: d98a024b-7504-4cdd-a3bb-c70c6128d8fb
-  resourceVersion: "27419536"
+  resourceVersion: "27420454"
   selfLink: /api/v1/namespaces/kuberhealthy/pods/deployment-1605101952
   uid: 203249dd-f1c8-4566-ada4-5898ce5b132d
 spec:
@@ -86,15 +86,18 @@ status:
   conditions:
   - lastProbeTime: null
     lastTransitionTime: "2020-11-11T13:39:18Z"
+    reason: PodCompleted
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2020-11-11T13:39:23Z"
-    status: "True"
+    lastTransitionTime: "2020-11-11T13:40:42Z"
+    reason: PodCompleted
+    status: "False"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2020-11-11T13:39:23Z"
-    status: "True"
+    lastTransitionTime: "2020-11-11T13:40:42Z"
+    reason: PodCompleted
+    status: "False"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2020-11-11T13:39:18Z"
@@ -106,14 +109,18 @@ status:
     imageID: docker-pullable://kuberhealthy/deployment-check@sha256:19ad1a5255b0d0c6d2f3b8f31759f986c3b832d2a4b39a2056a6d05140e3f761
     lastState: {}
     name: deployment
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: docker://101a730318caad09ee8d96d62cb57d26bc2ffb2ac42a96c2ed7a674fc7d10ecb
+        exitCode: 0
+        finishedAt: "2020-11-11T13:40:41Z"
+        reason: Completed
         startedAt: "2020-11-11T13:39:21Z"
   hostIP: 10.128.0.11
-  phase: Running
+  phase: Succeeded
   podIP: 10.8.7.208
   podIPs:
   - ip: 10.8.7.208
