@@ -5,7 +5,7 @@ metadata:
   name: jenkins-x-chartmuseum
   labels:
     app: chartmuseum
-    chart: chartmuseum-2.6.0
+    chart: chartmuseum-2.14.1
     heritage: "Helm"
     release: "chartmuseum"
     gitops.jenkins-x.io/pipeline: 'namespaces'
