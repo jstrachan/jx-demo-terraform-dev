@@ -15,8 +15,6 @@ repositories:
   url: https://charts.bitnami.com/bitnami
 - name: external-secrets
   url: https://godaddy.github.io/kubernetes-external-secrets
-- name: jx-labs
-  url: https://storage.googleapis.com/jenkinsxio-labs-private/charts
 - name: jx3
   url: https://storage.googleapis.com/jenkinsxio/charts
 - name: stable
@@ -25,7 +23,7 @@ repositories:
   url: http://chartmuseum-jx.35.184.150.204.nip.io/
 releases:
 - chart: jenkins-x/jxboot-helmfile-resources
-  version: 1.0.12
+  version: 1.0.16
   name: jxboot-helmfile-resources
   namespace: jx
   values:
@@ -36,20 +34,20 @@ releases:
   namespace: secret-infra
   values:
   - versionStream/charts/external-secrets/kubernetes-external-secrets/values.yaml.gotmpl
-- chart: jx-labs/jenkins-x-crds
-  version: 0.0.7
+- chart: jx3/jenkins-x-crds
+  version: 3.0.5
   name: jenkins-x-crds
   namespace: jx
   values:
-  - versionStream/charts/jx-labs/jenkins-x-crds/values.yaml
+  - versionStream/charts/jx3/jenkins-x-crds/values.yaml.gotmpl
 - chart: jx3/jx-pipelines-visualizer
-  version: 0.0.50
+  version: 0.0.52
   name: jx-pipelines-visualizer
   namespace: jx
   values:
   - versionStream/charts/jx3/jx-pipelines-visualizer/values.yaml.gotmpl
 - chart: jx3/jx-preview
-  version: 0.0.114
+  version: 0.0.116
   name: jx-preview
   namespace: jx
 - chart: stable/nginx-ingress
@@ -59,7 +57,7 @@ releases:
   values:
   - versionStream/charts/stable/nginx-ingress/values.yaml.gotmpl
 - chart: cdf/tekton-pipeline
-  version: 0.17.1
+  version: 0.17.3
   name: tekton-pipeline
   namespace: tekton-pipelines
   values:
@@ -77,13 +75,13 @@ releases:
   values:
   - versionStream/charts/jenkins-x/nexus/values.yaml.gotmpl
 - chart: stable/chartmuseum
-  version: 2.14.1
+  version: 2.4.1
   name: chartmuseum
   namespace: jx
   values:
   - versionStream/charts/stable/chartmuseum/values.yaml.gotmpl
-- chart: jx-labs/pusher-wave
-  version: 1.0.0
+- chart: jx3/pusher-wave
+  version: 0.4.12
   name: pusher-wave
   namespace: secret-infra
 - chart: jx3/jx-build-controller
