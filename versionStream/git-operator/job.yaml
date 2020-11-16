@@ -57,7 +57,9 @@ spec:
           value: /workspace/xdg_config
         - name: JX_SECRET_SIDECAR
           value: gsm
-        image: gcr.io/jenkinsxio/jx-boot:3.0.727
+        - name: JX_SECRET_TMP_DIR
+          value: /workspace/source/.jx-secrets
+        image: gcr.io/jenkinsxio/jx-secret:0.0.0-SNAPSHOT-PR-130-1
         name: git-clone
         volumeMounts:
         - mountPath: /workspace
@@ -68,7 +70,7 @@ spec:
         - apply
         command:
         - make
-        image: gcr.io/jenkinsxio/jx-boot:3.0.727
+        image: gcr.io/jenkinsxio/jx-secret:0.0.0-SNAPSHOT-PR-130-1
         imagePullPolicy: Always
         name: job
         volumeMounts:
