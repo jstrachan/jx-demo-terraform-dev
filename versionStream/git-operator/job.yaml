@@ -83,12 +83,10 @@ spec:
           name: workspace-volume
         workingDir: /workspace/source
       - command:
-        - cat
+        - versionStream/src/wait-for-complete.sh
         image: google/cloud-sdk:slim
         imagePullPolicy: Always
         name: gsm
-        stdin: true
-        tty: true
         volumeMounts:
         - mountPath: /workspace
           name: workspace-volume
