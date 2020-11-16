@@ -55,14 +55,6 @@ spec:
           value: jenkins-x-labs-bot
         - name: XDG_CONFIG_HOME
           value: /workspace/xdg_config
-        - name: JX_SECRET_SIDECAR
-          value: gsm
-        - name: JX_SECRET_TMP_DIR
-          value: /workspace/source/.jx-secrets
-        - name: POD_NAME
-          valueFrom:
-            fieldRef:
-              fieldPath: metadata.name
         image: gcr.io/jenkinsxio/jx-boot:3.0.729
         name: git-clone
         volumeMounts:
@@ -74,6 +66,15 @@ spec:
         - apply
         command:
         - make
+        env:
+        - name: JX_SECRET_SIDECAR
+          value: gsm
+        - name: JX_SECRET_TMP_DIR
+          value: /workspace/source/.jx-secrets
+        - name: POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
         image: gcr.io/jenkinsxio/jx-boot:3.0.729
         imagePullPolicy: Always
         name: job
