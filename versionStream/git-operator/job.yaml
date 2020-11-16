@@ -87,6 +87,8 @@ spec:
         image: google/cloud-sdk:slim
         imagePullPolicy: Always
         name: gsm
+        stdin: true
+        tty: true
         volumeMounts:
         - mountPath: /workspace
           name: workspace-volume
