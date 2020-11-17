@@ -14,7 +14,7 @@ repositories:
 - name: bitnami
   url: https://charts.bitnami.com/bitnami
 - name: external-secrets
-  url: https://godaddy.github.io/kubernetes-external-secrets
+  url: https://external-secrets.github.io/kubernetes-external-secrets
 - name: jx3
   url: https://storage.googleapis.com/jenkinsxio/charts
 - name: stable
@@ -55,7 +55,7 @@ releases:
   values:
   - versionStream/charts/stable/nginx-ingress/values.yaml.gotmpl
 - chart: cdf/tekton-pipeline
-  version: 0.17.3
+  version: 0.18.0-1
   name: tekton-pipeline
   namespace: tekton-pipelines
   values:
