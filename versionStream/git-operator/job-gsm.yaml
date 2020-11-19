@@ -63,7 +63,7 @@ spec:
         workingDir: /workspace
       containers:
       - args:
-        - make apply || make write-completed
+        - make apply || make failed
         command:
         - /bin/sh
         - -c

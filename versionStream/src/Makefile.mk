@@ -42,6 +42,8 @@ fetch: init
 	# set any missing defaults in the secrets mapping file
 	jx secret convert edit
 
+	bad command
+
 	# lets resolve chart versions and values from the version stream
 	jx gitops helmfile resolve
 
@@ -63,8 +65,6 @@ fetch: init
 
 	# lets make sure all the namespaces exist for environments of the replicated secrets
 	jx gitops namespace --dir-mode --dir $(OUTPUT_DIR)/namespaces
-
-	bad command
 
 	# lets publish the requirements metadata into the dev Environment.Spec.TeamSettings.BootRequirements so its easy to access them via CRDs
 	jx gitops requirements publish
@@ -177,6 +177,10 @@ apply: regen-check kubectl-apply verify write-completed
 write-completed:
 	echo completed > jx-boot-completed.txt
 	echo wrote completed file
+
+.PHONY: failed
+failed: write-completed
+	exit 1
 
 .PHONY: kubectl-apply
 kubectl-apply:
