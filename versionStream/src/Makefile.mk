@@ -36,6 +36,8 @@ init: setup
 
 .PHONY: fetch
 fetch: init
+	bad command
+
 	# lets configure the cluster gitops repository URL on the requirements if its missing
 	jx gitops repository resolve --source-dir $(OUTPUT_DIR)/namespaces
 
