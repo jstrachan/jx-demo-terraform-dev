@@ -63,10 +63,9 @@ spec:
         workingDir: /workspace
       containers:
       - args:
-        - make apply || make write-completed
+        - apply
         command:
-        - /bin/sh
-        - -c
+        - make
         env:
         - name: JX_SECRET_SIDECAR
           value: gsm

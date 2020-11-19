@@ -67,9 +67,6 @@ fetch: init
 	# lets publish the requirements metadata into the dev Environment.Spec.TeamSettings.BootRequirements so its easy to access them via CRDs
 	jx gitops requirements publish
 
-	bad command
-
-
 .PHONY: build
 # uncomment this line to enable kustomize
 #build: build-kustomise
@@ -233,4 +230,4 @@ release: lint
 .PHONY: dev-ns
 dev-ns:
 	@echo changing to the jx namespace to verify
-	jx ns jx
+	jx ns jx --quiet
