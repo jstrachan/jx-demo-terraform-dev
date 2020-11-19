@@ -36,8 +36,6 @@ init: setup
 
 .PHONY: fetch
 fetch: init
-	bad command
-
 	# lets configure the cluster gitops repository URL on the requirements if its missing
 	jx gitops repository resolve --source-dir $(OUTPUT_DIR)/namespaces
 
@@ -66,8 +64,11 @@ fetch: init
 	# lets make sure all the namespaces exist for environments of the replicated secrets
 	jx gitops namespace --dir-mode --dir $(OUTPUT_DIR)/namespaces
 
+	bad command
+
 	# lets publish the requirements metadata into the dev Environment.Spec.TeamSettings.BootRequirements so its easy to access them via CRDs
 	jx gitops requirements publish
+
 
 .PHONY: build
 # uncomment this line to enable kustomize
