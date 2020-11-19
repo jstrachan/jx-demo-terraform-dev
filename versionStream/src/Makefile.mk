@@ -42,8 +42,6 @@ fetch: init
 	# set any missing defaults in the secrets mapping file
 	jx secret convert edit
 
-	bad command
-
 	# lets resolve chart versions and values from the version stream
 	jx gitops helmfile resolve
 
