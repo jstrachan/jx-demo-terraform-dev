@@ -1,0 +1,84 @@
+# Source: nodey542/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-11-22T09:22:39Z"
+  deletionTimestamp: null
+  name: 'nodey542-1.0.0'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        release 1.0.0
+      sha: 807cd16b830ca976ee8bf0096de8295dca8bfff1
+    - author:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: added variables
+      sha: 0a8c9a53586dfc42d6f2dacc9960cef100a71dec
+    - author:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        release 1.0.0
+      sha: 29205d047a7d11bf130d3b46fe48ef8b9f1528d2
+    - author:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        chore: Jenkins X build pack
+      sha: 0e2c4d4fa2adaae76045c8eec5edfd8aece58202
+  gitCloneUrl: https://github.com/jstrachan/nodey542.git
+  gitHttpUrl: https://github.com/jstrachan/nodey542
+  gitOwner: jstrachan
+  gitRepository: nodey542
+  name: 'nodey542'
+  releaseNotesURL: https://github.com/jstrachan/nodey542/releases/tag/v1.0.0
+  version: v1.0.0
+status: {}
