@@ -15,6 +15,7 @@ spec:
     - name: nodey533
     - name: nodey534
     - name: nodey536
+    - name: nodey542
     scheduler: in-repo
   - owner: cb-kubecd
     provider: https://github.com
