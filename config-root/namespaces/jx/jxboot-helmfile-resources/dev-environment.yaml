@@ -27,8 +27,8 @@ spec:
       bootConfigURL: https://github.com/jenkins-x/jx3-boot-config
       buildPacks:
         buildPackLibrary:
-          gitRef: master
-          gitURL: https://github.com/jenkins-x/jx3-pipeline-catalog.git
+          gitRef: mink
+          gitURL: https://github.com/jstrachan/jx3-pipeline-catalog.git
       cluster:
         chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
         clusterName: jstrachan-tekton
@@ -108,8 +108,8 @@ spec:
         ref: master
         url: https://github.com/jenkins-x/jxr-versions.git
       webhook: lighthouse
-    buildPackRef: master
-    buildPackUrl: https://github.com/jenkins-x/jx3-pipeline-catalog.git
+    buildPackRef: mink
+    buildPackUrl: https://github.com/jstrachan/jx3-pipeline-catalog.git
     defaultScheduler:
       apiVersion: jenkins.io/v1
       kind: Scheduler
