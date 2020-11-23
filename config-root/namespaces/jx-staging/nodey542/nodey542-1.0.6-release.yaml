@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-11-23T13:20:24Z"
+  creationTimestamp: "2020-11-23T15:40:13Z"
   deletionTimestamp: null
-  name: 'nodey542-1.0.5'
+  name: 'nodey542-1.0.6'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 1.0.5
-      sha: bc1c64add23385c74a7991482e06ffc8644560a6
+        release 1.0.6
+      sha: 6cd55d41ec12d8e13905d4b94e4f908ff16b5c34
     - author:
         accountReference:
           - id: jenkins-x-bot-0
@@ -41,7 +41,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: added variables
-      sha: cc1f75af6384c9ae617e492b3b993f7141bf5636
+      sha: 429f5e03c7d6410d6b1eb71b885a18f4cd5140ac
     - author:
         accountReference:
           - id: jenkins-x-bot-0
@@ -56,8 +56,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 1.0.5
-      sha: 913bf7bcec918ab3252f19d5e062220130c9eb20
+        release 1.0.6
+      sha: ecc59d29bd1379459f77d47420053d28ab2e656f
     - author:
         accountReference:
           - id: james-strachan-0
@@ -72,13 +72,29 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: latest mink
-      sha: 1592b965e43de2fb51ea34052234f4e338317bde
+        fix: latest jx-mink
+      sha: 51d78ebc34699fbc8216d26d3b9fd2b2c76adeb0
+    - author:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: try latest image
+      sha: c5f517da5567b754fd7d3afbac4ce6229f39e217
   gitCloneUrl: https://github.com/jstrachan/nodey542.git
   gitHttpUrl: https://github.com/jstrachan/nodey542
   gitOwner: jstrachan
   gitRepository: nodey542
   name: 'nodey542'
-  releaseNotesURL: https://github.com/jstrachan/nodey542/releases/tag/v1.0.5
-  version: v1.0.5
+  releaseNotesURL: https://github.com/jstrachan/nodey542/releases/tag/v1.0.6
+  version: v1.0.6
 status: {}
