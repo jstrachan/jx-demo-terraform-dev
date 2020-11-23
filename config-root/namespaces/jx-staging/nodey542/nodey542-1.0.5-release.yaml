@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-11-23T12:20:22Z"
+  creationTimestamp: "2020-11-23T13:20:24Z"
   deletionTimestamp: null
-  name: 'nodey542-1.0.3'
+  name: 'nodey542-1.0.5'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 1.0.3
-      sha: 121ff4f0631ad6deadb411983fa4f27cc76ad154
+        release 1.0.5
+      sha: bc1c64add23385c74a7991482e06ffc8644560a6
     - author:
         accountReference:
           - id: jenkins-x-bot-0
@@ -41,7 +41,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: added variables
-      sha: c066fc472e699a0e39cd1bff35bf35ffee55983d
+      sha: cc1f75af6384c9ae617e492b3b993f7141bf5636
     - author:
         accountReference:
           - id: jenkins-x-bot-0
@@ -56,8 +56,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 1.0.3
-      sha: 14848e6ab4e0fdd2b3d630a59aedaa22f7c62ff3
+        release 1.0.5
+      sha: 913bf7bcec918ab3252f19d5e062220130c9eb20
     - author:
         accountReference:
           - id: james-strachan-0
@@ -72,13 +72,13 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: use mink
-      sha: a1a001bdc5c4a9dffdfa69073759a1f44fa9121f
+        fix: latest mink
+      sha: 1592b965e43de2fb51ea34052234f4e338317bde
   gitCloneUrl: https://github.com/jstrachan/nodey542.git
   gitHttpUrl: https://github.com/jstrachan/nodey542
   gitOwner: jstrachan
   gitRepository: nodey542
   name: 'nodey542'
-  releaseNotesURL: https://github.com/jstrachan/nodey542/releases/tag/v1.0.3
-  version: v1.0.3
+  releaseNotesURL: https://github.com/jstrachan/nodey542/releases/tag/v1.0.5
+  version: v1.0.5
 status: {}
