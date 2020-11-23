@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-11-22T09:22:39Z"
+  creationTimestamp: "2020-11-23T06:46:39Z"
   deletionTimestamp: null
-  name: 'nodey542-1.0.0'
+  name: 'nodey542-1.0.1'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 1.0.0
-      sha: 807cd16b830ca976ee8bf0096de8295dca8bfff1
+        release 1.0.1
+      sha: 80087dd656add3c741cb9141bd897327e2e87f83
     - author:
         accountReference:
           - id: jenkins-x-bot-0
@@ -41,7 +41,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: added variables
-      sha: 0a8c9a53586dfc42d6f2dacc9960cef100a71dec
+      sha: c2892f5831fbe2e80f824e44f39c64b6175eeb7b
     - author:
         accountReference:
           - id: jenkins-x-bot-0
@@ -56,8 +56,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 1.0.0
-      sha: 29205d047a7d11bf130d3b46fe48ef8b9f1528d2
+        release 1.0.1
+      sha: 0d6d654190a87be870cb562618fa9530244195f4
     - author:
         accountReference:
           - id: james-strachan-0
@@ -72,13 +72,13 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        chore: Jenkins X build pack
-      sha: 0e2c4d4fa2adaae76045c8eec5edfd8aece58202
+        fix: upgrade pipelines
+      sha: bd97ff185e501bdc919aa858b08c4b47deb97eba
   gitCloneUrl: https://github.com/jstrachan/nodey542.git
   gitHttpUrl: https://github.com/jstrachan/nodey542
   gitOwner: jstrachan
   gitRepository: nodey542
   name: 'nodey542'
-  releaseNotesURL: https://github.com/jstrachan/nodey542/releases/tag/v1.0.0
-  version: v1.0.0
+  releaseNotesURL: https://github.com/jstrachan/nodey542/releases/tag/v1.0.1
+  version: v1.0.1
 status: {}
