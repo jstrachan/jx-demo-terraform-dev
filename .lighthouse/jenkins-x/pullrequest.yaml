@@ -89,7 +89,7 @@ spec:
             $(inputs.params.subdirectory)'
           command:
           - /bin/sh
-          image: gcr.io/jenkinsxio/builder-jx:2.1.32-662
+          image: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/git-init:v0.18.0
           name: git-clone
           resources: {}
           workingDir: /workspace
