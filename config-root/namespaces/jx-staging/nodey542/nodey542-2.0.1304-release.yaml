@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-11-23T15:40:13Z"
+  creationTimestamp: "2020-11-24T17:36:01Z"
   deletionTimestamp: null
-  name: 'nodey542-1.0.6'
+  name: 'nodey542-2.0.1304'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 1.0.6
-      sha: 6cd55d41ec12d8e13905d4b94e4f908ff16b5c34
+        release 2.0.1304
+      sha: 6e7018d57885fa69403714cd19b7e57ef6652d6b
     - author:
         accountReference:
           - id: jenkins-x-bot-0
@@ -41,7 +41,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: added variables
-      sha: 429f5e03c7d6410d6b1eb71b885a18f4cd5140ac
+      sha: ccaa51b97a288a7aed914790214bb4b669d41621
     - author:
         accountReference:
           - id: jenkins-x-bot-0
@@ -56,8 +56,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 1.0.6
-      sha: ecc59d29bd1379459f77d47420053d28ab2e656f
+        release 2.0.1304
+      sha: 06d82ab5d4aac9c189ec18ecab437978a864e9ae
     - author:
         accountReference:
           - id: james-strachan-0
@@ -72,8 +72,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: latest jx-mink
-      sha: 51d78ebc34699fbc8216d26d3b9fd2b2c76adeb0
+        fix: latest mink
+      sha: 690a3d52f2afc5324c52a59699bc09eda89b07df
     - author:
         accountReference:
           - id: james-strachan-0
@@ -88,13 +88,45 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: try latest image
-      sha: c5f517da5567b754fd7d3afbac4ce6229f39e217
+        fix: plain kaniko
+      sha: 92588e45bd05f746f689470ccf872cc9c73a6ee8
+    - author:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: plain kaniko
+      sha: 5c05099bbf22f52dc5fb9ffa69f4452c347530ba
+    - author:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: plain kaniko
+      sha: 16b7ea8009f5549b1bda55518ae2454491f64c34
   gitCloneUrl: https://github.com/jstrachan/nodey542.git
   gitHttpUrl: https://github.com/jstrachan/nodey542
   gitOwner: jstrachan
   gitRepository: nodey542
   name: 'nodey542'
-  releaseNotesURL: https://github.com/jstrachan/nodey542/releases/tag/v1.0.6
-  version: v1.0.6
+  releaseNotesURL: https://github.com/jstrachan/nodey542/releases/tag/v2.0.1304
+  version: v2.0.1304
 status: {}
