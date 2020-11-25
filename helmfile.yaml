@@ -101,7 +101,7 @@ releases:
   name: nodey533
   namespace: jx-staging
 - chart: dev/nodey542
-  version: 2.0.1305
+  version: 2.0.1306
   name: nodey542
   namespace: jx-staging
 templates: {}
