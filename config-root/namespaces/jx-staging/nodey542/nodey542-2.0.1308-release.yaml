@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-11-25T10:58:53Z"
+  creationTimestamp: "2020-11-25T11:09:51Z"
   deletionTimestamp: null
-  name: 'nodey542-2.0.1306'
+  name: 'nodey542-2.0.1308'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 2.0.1306
-      sha: 31e5821ca2d2d77bc15742ac72637d61b42f9be9
+        release 2.0.1308
+      sha: 9975b743f7c9e56ae6e2a2cab7b3aa45e961b9d8
     - author:
         accountReference:
           - id: jenkins-x-bot-0
@@ -41,7 +41,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: added variables
-      sha: b63ba8ed92eece11a66aaa5f308fc00136709589
+      sha: caacd8ab20274e66a6162645793d54c5251cdaf5
     - author:
         accountReference:
           - id: jenkins-x-bot-0
@@ -56,8 +56,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 2.0.1306
-      sha: 30d8d2abb4a8184b380f462e23dba1b2109a6c17
+        release 2.0.1308
+      sha: 0e5d667d82c0426619325192ca095a01ed361285
     - author:
         accountReference:
           - id: james-strachan-0
@@ -72,13 +72,13 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: upgrade jx mink
-      sha: bf341faeb87938ff2e7b2ba5abaf3015b2ce9b96
+        fix: disable local kaniko
+      sha: 686d87c4f5808ddf2cd0919f744fbb5bb1ff6f00
   gitCloneUrl: https://github.com/jstrachan/nodey542.git
   gitHttpUrl: https://github.com/jstrachan/nodey542
   gitOwner: jstrachan
   gitRepository: nodey542
   name: 'nodey542'
-  releaseNotesURL: https://github.com/jstrachan/nodey542/releases/tag/v2.0.1306
-  version: v2.0.1306
+  releaseNotesURL: https://github.com/jstrachan/nodey542/releases/tag/v2.0.1308
+  version: v2.0.1308
 status: {}
