@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-11-27T14:40:00Z"
+  creationTimestamp: "2020-11-27T14:53:12Z"
   deletionTimestamp: null
-  name: 'knative-serving-0.19.11'
+  name: 'knative-serving-0.19.13'
   namespace: knative-serving
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -25,7 +25,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: added variables
-      sha: 006e93392eac393874b4ef24769aa3477647dbf4
+      sha: c5bb217019a495a226ad4815b69c02ed80fa6109
     - author:
         accountReference:
           - id: james-strachan-0
@@ -40,13 +40,13 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: release pipeline
-      sha: 8df06e359b8846f6f123cba08bea5e2da7f51b46
+        fix: support configuration of domain
+      sha: 38b77afc6b7095f23f3d3c5c6064718db1cd4c2c
   gitCloneUrl: https://github.com/jenkins-x-charts/knative-serving.git
   gitHttpUrl: https://github.com/jenkins-x-charts/knative-serving
   gitOwner: jenkins-x-charts
   gitRepository: knative-serving
   name: 'knative-serving'
-  releaseNotesURL: https://github.com/jenkins-x-charts/knative-serving/releases/tag/v0.19.11
-  version: v0.19.11
+  releaseNotesURL: https://github.com/jenkins-x-charts/knative-serving/releases/tag/v0.19.13
+  version: v0.19.13
 status: {}
