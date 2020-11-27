@@ -43,7 +43,7 @@ data:
     # Default value for domain.
     # Although it will match all routes, it is the least-specific rule so it
     # will only be used if no other domain matches.
-    example.com: |
+    35.184.150.204.nip.io: |
 
     # These are example settings of domain.
     # example.org will be used for routes having app=nonprofit.
