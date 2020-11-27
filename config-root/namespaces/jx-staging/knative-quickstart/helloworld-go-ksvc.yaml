@@ -10,7 +10,7 @@ spec:
   template:
     spec:
       containers:
-        - image: gcr.io/jenkins-x-labs-bdd/helloworld-go:0.0.3@sha256:0979b3402a9340a2ca075124189d1bd9db1e62cd23c04938e4bceeddafe9f05d
+        - image: gcr.io/jenkins-x-labs-bdd/helloworld-go:0.0.8@sha256:7171a6907c895ee258d3c02ace2d0db9be02ca139660243c705c78f3f57beead
           env:
             - name: TARGET
               value: "Go Sample v1"
