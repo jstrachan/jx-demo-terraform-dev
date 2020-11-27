@@ -1,0 +1,16 @@
+# Source: knative-quickstart/templates/helloworld-go-service.yaml
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: helloworld-go
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  template:
+    spec:
+      containers:
+        - image: gcr.io/jenkins-x-labs-bdd/helloworld-go:0.0.3@sha256:0979b3402a9340a2ca075124189d1bd9db1e62cd23c04938e4bceeddafe9f05d
+          env:
+            - name: TARGET
+              value: "Go Sample v1"

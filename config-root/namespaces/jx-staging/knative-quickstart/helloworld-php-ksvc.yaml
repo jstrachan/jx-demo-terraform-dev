@@ -1,0 +1,16 @@
+# Source: knative-quickstart/templates/helloworld-php-service.yaml
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: helloworld-php
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  template:
+    spec:
+      containers:
+        - image: gcr.io/jenkins-x-labs-bdd/helloworld-php:0.0.3@sha256:60887ac83b462304f6aedbb2e86298474b8b86d12476dcf5620bdc8a20843848
+          env:
+            - name: TARGET
+              value: "PHP Sample v1"
