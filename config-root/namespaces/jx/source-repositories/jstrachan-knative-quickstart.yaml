@@ -5,18 +5,18 @@ metadata:
   labels:
     owner: jstrachan
     provider: github
-    repository: node-http-3ed56e893
+    repository: knative-quickstart
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  name: jstrachan-node-http-3ed56e893
+  name: jstrachan-knative-quickstart
   namespace: jx
 spec:
-  httpCloneURL: https://github.com/jstrachan/node-http-3ed56e893.git
+  httpCloneURL: https://github.com/jstrachan/knative-quickstart.git
   org: jstrachan
   provider: https://github.com
   providerKind: github
   providerName: github
-  repo: node-http-3ed56e893
+  repo: knative-quickstart
   scheduler:
     kind: ""
     name: in-repo
-  url: https://github.com/jstrachan/node-http-3ed56e893
+  url: https://github.com/jstrachan/knative-quickstart

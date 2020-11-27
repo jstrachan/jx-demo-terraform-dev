@@ -7,18 +7,9 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
-        cb-kubecd/bdd-gh-1602679032: true
-        cb-kubecd/bdd-gh-1603274485: true
-        cb-kubecd/bdd-gh-1603279273: true
-        cb-kubecd/bdd-gh-1603280035: true
-        cb-kubecd/bdd-gh-1604073644: true
         jstrachan/jx-demo-terraform-dev: true
-        jstrachan/mytap1: true
-        jstrachan/node-http-3ed56e893: true
-        jstrachan/nodey506: true
-        jstrachan/nodey507: true
+        jstrachan/knative-quickstart: true
         jstrachan/nodey533: true
-        jstrachan/nodey534: true
         jstrachan/nodey536: true
         jstrachan/nodey542: true
     plank: {}
@@ -32,18 +23,9 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
-        cb-kubecd/bdd-gh-1602679032: merge
-        cb-kubecd/bdd-gh-1603274485: merge
-        cb-kubecd/bdd-gh-1603279273: merge
-        cb-kubecd/bdd-gh-1603280035: merge
-        cb-kubecd/bdd-gh-1604073644: merge
         jstrachan/jx-demo-terraform-dev: merge
-        jstrachan/mytap1: merge
-        jstrachan/node-http-3ed56e893: merge
-        jstrachan/nodey506: merge
-        jstrachan/nodey507: merge
+        jstrachan/knative-quickstart: merge
         jstrachan/nodey533: merge
-        jstrachan/nodey534: merge
         jstrachan/nodey536: merge
         jstrachan/nodey542: merge
       queries:
@@ -57,17 +39,8 @@ data:
         - needs-rebase
         repos:
         - jstrachan/jx-demo-terraform-dev
-        - cb-kubecd/bdd-gh-1602679032
-        - cb-kubecd/bdd-gh-1603274485
-        - cb-kubecd/bdd-gh-1603279273
-        - cb-kubecd/bdd-gh-1603280035
-        - cb-kubecd/bdd-gh-1604073644
-        - jstrachan/mytap1
-        - jstrachan/node-http-3ed56e893
-        - jstrachan/nodey506
-        - jstrachan/nodey507
+        - jstrachan/knative-quickstart
         - jstrachan/nodey533
-        - jstrachan/nodey534
         - jstrachan/nodey536
         - jstrachan/nodey542
       - labels:
@@ -80,17 +53,8 @@ data:
         - needs-rebase
         repos:
         - jstrachan/jx-demo-terraform-dev
-        - cb-kubecd/bdd-gh-1602679032
-        - cb-kubecd/bdd-gh-1603274485
-        - cb-kubecd/bdd-gh-1603279273
-        - cb-kubecd/bdd-gh-1603280035
-        - cb-kubecd/bdd-gh-1604073644
-        - jstrachan/mytap1
-        - jstrachan/node-http-3ed56e893
-        - jstrachan/nodey506
-        - jstrachan/nodey507
+        - jstrachan/knative-quickstart
         - jstrachan/nodey533
-        - jstrachan/nodey534
         - jstrachan/nodey536
         - jstrachan/nodey542
       target_url: http://dashboard-jx.35.184.150.204.nip.io
