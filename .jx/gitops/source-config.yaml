@@ -8,22 +8,8 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
-    - name: mytap1
-    - name: node-http-3ed56e893
-    - name: nodey506
-    - name: nodey507
+    - name: knative-quickstart
     - name: nodey533
-    - name: nodey534
     - name: nodey536
     - name: nodey542
-    scheduler: in-repo
-  - owner: cb-kubecd
-    provider: https://github.com
-    providerKind: github
-    repositories:
-    - name: bdd-gh-1602679032
-    - name: bdd-gh-1603274485
-    - name: bdd-gh-1603279273
-    - name: bdd-gh-1603280035
-    - name: bdd-gh-1604073644
     scheduler: in-repo
