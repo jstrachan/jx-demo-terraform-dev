@@ -23,7 +23,7 @@ repositories:
   url: http://chartmuseum-jx.35.184.150.204.nip.io/
 releases:
 - chart: jx3/knative-serving
-  version: 0.19.11
+  version: 0.19.13
   name: knative-serving
   namespace: knative-serving
 - chart: jenkins-x/jxboot-helmfile-resources
