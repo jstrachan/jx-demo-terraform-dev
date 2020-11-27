@@ -100,13 +100,5 @@ releases:
   namespace: jx
   values:
   - versionStream/charts/jx3/health-checks-jx/values.yaml.gotmpl
-- chart: dev/nodey533
-  version: 1.0.1
-  name: nodey533
-  namespace: jx-staging
-- chart: dev/nodey542
-  version: 2.0.1308
-  name: nodey542
-  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
