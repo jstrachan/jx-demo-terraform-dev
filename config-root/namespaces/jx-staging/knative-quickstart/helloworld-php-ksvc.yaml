@@ -10,7 +10,7 @@ spec:
   template:
     spec:
       containers:
-        - image: gcr.io/jenkins-x-labs-bdd/helloworld-php:0.0.3@sha256:60887ac83b462304f6aedbb2e86298474b8b86d12476dcf5620bdc8a20843848
+        - image: gcr.io/jenkins-x-labs-bdd/helloworld-php:0.0.8@sha256:c2572cb5685c8d0e726d6a1b58fcd3fdb236fae7068534c6385f8da01b427afa
           env:
             - name: TARGET
               value: "PHP Sample v1"
