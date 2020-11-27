@@ -1,0 +1,52 @@
+# Source: knative-quickstart/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-11-27T15:24:32Z"
+  deletionTimestamp: null
+  name: 'knative-quickstart-0.0.3'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: added variables
+      sha: d776fb72519ae3248ebdd95ccc61a69b1db1be6f
+    - author:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        accountReference:
+          - id: james-strachan-0
+            provider: jenkins.io/git-github-userid
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        chore: disable local kaniko
+      sha: 60fc772f2c796ab83a95d094b1caca602c72f6d1
+  gitCloneUrl: https://github.com/jstrachan/knative-quickstart.git
+  gitHttpUrl: https://github.com/jstrachan/knative-quickstart
+  gitOwner: jstrachan
+  gitRepository: knative-quickstart
+  name: 'knative-quickstart'
+  releaseNotesURL: https://github.com/jstrachan/knative-quickstart/releases/tag/v0.0.3
+  version: v0.0.3
+status: {}

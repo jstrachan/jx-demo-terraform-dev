@@ -100,5 +100,9 @@ releases:
   namespace: jx
   values:
   - versionStream/charts/jx3/health-checks-jx/values.yaml.gotmpl
+- chart: dev/knative-quickstart
+  version: 0.0.3
+  name: knative-quickstart
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
