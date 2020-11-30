@@ -104,5 +104,9 @@ releases:
   version: 0.0.8
   name: knative-quickstart
   namespace: jx-staging
+- chart: dev/nodey542
+  version: 2.0.1310
+  name: nodey542
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""

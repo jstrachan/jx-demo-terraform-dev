@@ -1,0 +1,58 @@
+# Source: nodey542/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-11-30T19:26:14Z"
+  deletionTimestamp: null
+  name: 'nodey542-2.0.1310'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        release 2.0.1310
+      sha: 948cf454908f54a1179a7aa07c3efff807dbfb49
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: added variables
+      sha: 9cb862422d293849cc8c47e1b31fba2cc2b34634
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        release 2.0.1310
+      sha: da0eda56211dafc65ac588b3a671c068abcf7782
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update release.yaml
+      sha: c4056f728de2764c4b424dd6580f8d1a6e4f4087
+  gitHttpUrl: https://github.com/jstrachan/nodey542
+  gitOwner: jstrachan
+  gitRepository: nodey542
+  name: 'nodey542'
+  releaseNotesURL: https://github.com/jstrachan/nodey542/releases/tag/v2.0.1310
+  version: v2.0.1310
+status: {}
