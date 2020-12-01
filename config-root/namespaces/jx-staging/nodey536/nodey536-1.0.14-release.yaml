@@ -1,0 +1,69 @@
+# Source: nodey536/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-01T06:39:05Z"
+  deletionTimestamp: null
+  name: 'nodey536-1.0.14'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: added variables
+      sha: 23921c264b77c75c52953e5082bf510fb85ff06f
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: use shiny new image and shell
+      sha: 1d7b6528c1df2da744123fe4e6bcb0c116b26f92
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: use shiny new image
+      sha: 64f1f2e85afed6234c79b8961d375d4a9bf0b159
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: debug changelog
+      sha: bc30f96e282ffc3dae8bdbec659f01f756f117bb
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: use nicer changelog
+      sha: 75d4bfdfa105dcac677cb939c2c4ba0e4d573b7c
+  gitHttpUrl: https://github.com/jstrachan/nodey536
+  gitOwner: jstrachan
+  gitRepository: nodey536
+  name: 'nodey536'
+  releaseNotesURL: https://github.com/jstrachan/nodey536/releases/tag/v1.0.14
+  version: v1.0.14
+status: {}
