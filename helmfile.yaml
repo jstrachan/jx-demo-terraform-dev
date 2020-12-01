@@ -108,5 +108,9 @@ releases:
   version: 2.0.1310
   name: nodey542
   namespace: jx-staging
+- chart: dev/nodey536
+  version: 1.0.10
+  name: nodey536
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
