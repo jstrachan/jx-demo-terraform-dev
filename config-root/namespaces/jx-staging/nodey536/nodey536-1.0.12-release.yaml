@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-12-01T05:46:57Z"
+  creationTimestamp: "2020-12-01T05:59:04Z"
   deletionTimestamp: null
-  name: 'nodey536-1.0.11'
+  name: 'nodey536-1.0.12'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -19,7 +19,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: added variables
-      sha: 34c2053d2fce0f09ff095038777452d37047442e
+      sha: d2efb474471e03fd75387c6c4829c8ce622d7847
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -29,11 +29,11 @@ spec:
         name: James Strachan
       message: |
         fix: better changelog
-      sha: fe6bcae9c770a4b09c87f507f9dcf41152325e99
+      sha: 8b126ba8df0c798c5f8aef987afa317c5bf7c630
   gitHttpUrl: https://github.com/jstrachan/nodey536
   gitOwner: jstrachan
   gitRepository: nodey536
   name: 'nodey536'
-  releaseNotesURL: https://github.com/jstrachan/nodey536/releases/tag/v1.0.11
-  version: v1.0.11
+  releaseNotesURL: https://github.com/jstrachan/nodey536/releases/tag/v1.0.12
+  version: v1.0.12
 status: {}
