@@ -1,0 +1,39 @@
+# Source: nodey536/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-01T07:53:02Z"
+  deletionTimestamp: null
+  name: 'nodey536-1.0.15'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: added variables
+      sha: 04bff63166066ceaa0c42746a1e005c9728fc604
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: changelog 7
+      sha: 7cdbe76adf8278ad7360718cfd696bac4c0fd028
+  gitHttpUrl: https://github.com/jstrachan/nodey536
+  gitOwner: jstrachan
+  gitRepository: nodey536
+  name: 'nodey536'
+  releaseNotesURL: https://github.com/jstrachan/nodey536/releases/tag/v1.0.15
+  version: v1.0.15
+status: {}
