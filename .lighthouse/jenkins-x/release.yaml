@@ -44,7 +44,7 @@ spec:
           script: |
             #!/usr/bin/env sh
             echo "viewing the git operator boot job log for commit sha: $PULL_BASE_SHA"
-            x admin log --commit-sha $PULL_BASE_SHA
+            jx admin log --commit-sha $PULL_BASE_SHA
   podTemplate: {}
   serviceAccountName: tekton-bot
   timeout: 240h0m0s
