@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-12-02T12:37:24Z"
+  creationTimestamp: "2020-12-02T13:58:58Z"
   deletionTimestamp: null
-  name: 'knative-net-istio-0.19.19'
+  name: 'knative-net-istio-0.19.20'
   namespace: knative-serving
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -25,7 +25,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: added variables
-      sha: c6673010c045ce2a0197d4b01ba28c066954da4d
+      sha: 16d4e87969b3f254e54473831f496470693b59d6
     - author:
         accountReference:
           - id: james-strachan-0
@@ -40,13 +40,13 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: release
-      sha: 1e226702d859d41e626dbb861f08b214a17e7817
+        fix: add optional local domain value in the helm chart
+      sha: 46f834efe5c15c2d205f5e46d3d0c4e08ea82ca4
   gitCloneUrl: https://github.com/jenkins-x-charts/knative-serving.git
   gitHttpUrl: https://github.com/jenkins-x-charts/knative-serving
   gitOwner: jenkins-x-charts
   gitRepository: knative-serving
   name: 'knative-net-istio'
-  releaseNotesURL: https://github.com/jenkins-x-charts/knative-serving/releases/tag/v0.19.19
-  version: v0.19.19
+  releaseNotesURL: https://github.com/jenkins-x-charts/knative-serving/releases/tag/v0.19.20
+  version: v0.19.20
 status: {}
