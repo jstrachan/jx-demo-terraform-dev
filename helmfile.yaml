@@ -33,12 +33,18 @@ releases:
 - chart: istio/istio-discovery
   name: istio-discovery
   namespace: istio-system
+  values:
+  - charts/istio/values.yaml
 - chart: istio/istio-ingress
   name: istio-ingress
   namespace: istio-system
+  values:
+  - charts/istio/values.yaml
 - chart: istio/istio-egress
   name: istio-egress
   namespace: istio-system
+  values:
+  - charts/istio/values.yaml
 - chart: jx3/knative-serving
   version: 0.19.21
   name: knative-serving
