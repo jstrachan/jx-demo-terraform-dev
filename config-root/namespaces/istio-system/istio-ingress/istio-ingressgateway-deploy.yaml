@@ -50,7 +50,7 @@ spec:
       serviceAccountName: istio-ingressgateway-service-account
       containers:
         - name: istio-proxy
-          image: "gcr.io/istio-testing/proxyv2:latest"
+          image: "docker.io/istio/proxyv2:1.8.0"
           ports:
             - containerPort: 15021
               protocol: TCP
