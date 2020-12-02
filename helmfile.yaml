@@ -21,6 +21,8 @@ repositories:
   url: https://charts.helm.sh/stable
 - name: istio
   url: https://jenkins-x-charts.github.io/istio
+- name: dev
+  url: http://chartmuseum-jx.35.226.222.140.nip.io/
 releases:
 - chart: istio/base
   name: base
@@ -117,5 +119,9 @@ releases:
   namespace: jx
   values:
   - versionStream/charts/jx3/health-checks-jx/values.yaml.gotmpl
+- chart: dev/knative-quickstart
+  version: 0.0.9
+  name: knative-quickstart
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
