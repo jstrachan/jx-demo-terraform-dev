@@ -24,6 +24,9 @@ repositories:
 - name: dev
   url: http://chartmuseum-jx.35.184.150.204.nip.io/
 releases:
+- chart: ./charts/istio-operator
+  name: istio-operator
+  namespace: istio-system
 - chart: istio/base
   name: base
   namespace: istio-system
