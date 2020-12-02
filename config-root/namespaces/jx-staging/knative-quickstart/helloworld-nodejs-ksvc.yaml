@@ -1,0 +1,16 @@
+# Source: knative-quickstart/templates/helloworld-nodejs-service.yaml
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: helloworld-nodejs
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  template:
+    spec:
+      containers:
+        - image: gcr.io/jenkins-x-labs-bdd/helloworld-nodejs:0.0.10@sha256:5e8432934c50ce1427c17a2d070398b6a1a9e5dfa18dad656df723e0c055e8d0
+          env:
+            - name: TARGET
+              value: "Node.js Sample v1"
