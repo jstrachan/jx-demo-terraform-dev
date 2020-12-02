@@ -10,7 +10,7 @@ spec:
   template:
     spec:
       containers:
-        - image: gcr.io/jenkins-x-labs-bdd/helloworld-nodejs:0.0.11@sha256:7163b0da9ea84101fa2a615495c686ba0dc7cf8355311ee6acb9cb5a10d5b1aa
+        - image: gcr.io/jenkins-x-labs-bdd/helloworld-nodejs:0.0.12@sha256:5ffc284831e1093cc7ea02ef9a3c196bb638da750e56a9b565f40333c5bc82de
           env:
             - name: TARGET
               value: "Node.js Sample v1"
