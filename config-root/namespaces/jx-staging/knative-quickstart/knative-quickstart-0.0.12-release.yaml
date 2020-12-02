@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-12-02T14:19:22Z"
+  creationTimestamp: "2020-12-02T14:52:06Z"
   deletionTimestamp: null
-  name: 'knative-quickstart-0.0.11'
+  name: 'knative-quickstart-0.0.12'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -25,7 +25,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: added variables
-      sha: 38f9616f19cba6af74f53a06cd2e275650def60c
+      sha: f88415498be1229b24cec5390d89d7c79193b153
     - author:
         accountReference:
           - id: james-strachan-0
@@ -39,13 +39,13 @@ spec:
             provider: jenkins.io/git-github-userid
         email: noreply@github.com
         name: GitHub
-      message: Update index.js
-      sha: 1e05a0b61f29e3eea844c17febf4256d95a0c6d0
+      message: Update README.md
+      sha: 3d4da7d75dab8a512a1a0b4da2816b914b4e4090
   gitCloneUrl: https://github.com/jstrachan/knative-quickstart.git
   gitHttpUrl: https://github.com/jstrachan/knative-quickstart
   gitOwner: jstrachan
   gitRepository: knative-quickstart
   name: 'knative-quickstart'
-  releaseNotesURL: https://github.com/jstrachan/knative-quickstart/releases/tag/v0.0.11
-  version: v0.0.11
+  releaseNotesURL: https://github.com/jstrachan/knative-quickstart/releases/tag/v0.0.12
+  version: v0.0.12
 status: {}
