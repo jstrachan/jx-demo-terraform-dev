@@ -109,7 +109,7 @@ releases:
   name: nodey542
   namespace: jx-staging
 - chart: dev/nodey536
-  version: 1.0.15
+  version: 1.0.16
   name: nodey536
   namespace: jx-staging
 templates: {}
