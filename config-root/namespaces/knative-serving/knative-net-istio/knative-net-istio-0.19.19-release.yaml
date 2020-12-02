@@ -1,10 +1,10 @@
-# Source: knative-serving/templates/release.yaml
+# Source: knative-net-istio/templates/release.yaml
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-11-27T17:45:21Z"
+  creationTimestamp: "2020-12-02T12:37:24Z"
   deletionTimestamp: null
-  name: 'knative-serving-0.19.14'
+  name: 'knative-net-istio-0.19.19'
   namespace: knative-serving
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -25,7 +25,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: added variables
-      sha: 138b38219c262a2efd790a13bc5920bde46e3b1c
+      sha: c6673010c045ce2a0197d4b01ba28c066954da4d
     - author:
         accountReference:
           - id: james-strachan-0
@@ -40,13 +40,13 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: better default configuration
-      sha: a5721afe1f59c92a784e23d529fa515cf07fd064
+        fix: release
+      sha: 1e226702d859d41e626dbb861f08b214a17e7817
   gitCloneUrl: https://github.com/jenkins-x-charts/knative-serving.git
   gitHttpUrl: https://github.com/jenkins-x-charts/knative-serving
   gitOwner: jenkins-x-charts
   gitRepository: knative-serving
-  name: 'knative-serving'
-  releaseNotesURL: https://github.com/jenkins-x-charts/knative-serving/releases/tag/v0.19.14
-  version: v0.19.14
+  name: 'knative-net-istio'
+  releaseNotesURL: https://github.com/jenkins-x-charts/knative-serving/releases/tag/v0.19.19
+  version: v0.19.19
 status: {}
