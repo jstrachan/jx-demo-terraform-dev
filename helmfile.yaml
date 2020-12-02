@@ -37,13 +37,13 @@ releases:
   name: istio-egress
   namespace: istio-system
 - chart: jx3/knative-serving
-  version: 0.19.20
+  version: 0.19.21
   name: knative-serving
   namespace: knative-serving
   values:
   - charts/knative-serving/values.yaml
 - chart: jx3/knative-net-istio
-  version: 0.19.20
+  version: 0.19.21
   name: knative-net-istio
   namespace: knative-serving
 - chart: jenkins-x/jxboot-helmfile-resources
