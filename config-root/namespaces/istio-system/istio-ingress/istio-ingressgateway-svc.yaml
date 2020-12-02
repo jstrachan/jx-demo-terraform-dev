@@ -1,0 +1,37 @@
+# Source: istio-ingress/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: istio-ingressgateway
+  namespace: istio-system
+  annotations:
+  labels:
+    app: istio-ingressgateway
+    istio: ingressgateway
+    release: istio-ingress
+    istio.io/rev: default
+    install.operator.istio.io/owning-resource: unknown
+    operator.istio.io/component: "IngressGateways"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  type: LoadBalancer
+  selector:
+    app: istio-ingressgateway
+    istio: ingressgateway
+  ports:
+    - name: status-port
+      port: 15021
+      protocol: TCP
+      targetPort: 15021
+    - name: http2
+      port: 80
+      protocol: TCP
+      targetPort: 8080
+    - name: https
+      port: 443
+      protocol: TCP
+      targetPort: 8443
+    - name: tls
+      port: 15443
+      protocol: TCP
+      targetPort: 15443

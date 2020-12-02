@@ -1,8 +1,0 @@
-# Source: nodey542/templates/sa.yaml
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: nodey542-nodey542
-  namespace: jx-staging
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
