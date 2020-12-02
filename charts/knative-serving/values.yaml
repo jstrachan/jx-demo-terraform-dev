@@ -1,3 +1,1 @@
-jxRequirements:
-  ingress:
-    domain: "35.226.222.140.nip.io"
+domain: "35.226.222.140.nip.io"

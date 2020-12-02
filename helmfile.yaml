@@ -37,15 +37,13 @@ releases:
   name: istio-egress
   namespace: istio-system
 - chart: jx3/knative-serving
-  version: 0.19.19
+  version: 0.19.20
   name: knative-serving
   namespace: knative-serving
   values:
-  - jxRequirements:
-      ingress:
-        domain: 35.226.222.140.nip.io
+  - charts/knative-serving/values.yaml
 - chart: jx3/knative-net-istio
-  version: 0.19.19
+  version: 0.19.20
   name: knative-net-istio
   namespace: knative-serving
 - chart: jenkins-x/jxboot-helmfile-resources
