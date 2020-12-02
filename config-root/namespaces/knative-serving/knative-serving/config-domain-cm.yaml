@@ -24,7 +24,7 @@ metadata:
   annotations:
     knative.dev/example-checksum: "74c3fc6a"
 data:
-  "35.226.222.140.nip.io": ""
+  "35.184.150.204.nip.io": ""
   ################################
   #                              #
   #    EXAMPLE CONFIGURATION     #
