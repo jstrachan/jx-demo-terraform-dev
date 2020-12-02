@@ -41,7 +41,9 @@ releases:
   name: knative-serving
   namespace: knative-serving
   values:
-  - charts/knative-serving/values.yaml
+  - jxRequirements:
+      ingress:
+        domain: "35.226.222.140.nip.io"
 - chart: jx3/knative-net-istio
   version: 0.19.19
   name: knative-net-istio
