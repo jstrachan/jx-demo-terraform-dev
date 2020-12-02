@@ -38,6 +38,8 @@ releases:
   version: 0.19.19
   name: knative-serving
   namespace: knative-serving
+  values:
+  - charts/knative-serving/values.yaml
 - chart: jx3/knative-net-istio
   version: 0.19.19
   name: knative-net-istio
@@ -48,7 +50,6 @@ releases:
   namespace: jx
   values:
   - versionStream/charts/jenkins-x/jxboot-helmfile-resources/values.yaml.gotmpl
-  - charts/jxboot-helmfile-resources/values.yaml
 - chart: external-secrets/kubernetes-external-secrets
   version: 5.2.0
   name: kubernetes-external-secrets
