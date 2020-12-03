@@ -24,11 +24,6 @@ spec:
       autoUpdate:
         enabled: false
         schedule: ""
-      bootConfigURL: https://github.com/jenkins-x/jx3-boot-config
-      buildPacks:
-        buildPackLibrary:
-          gitRef: mink
-          gitURL: https://github.com/jstrachan/jx3-pipeline-catalog.git
       cluster:
         chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
         clusterName: jstrachan-tekton
@@ -38,7 +33,6 @@ spec:
         gitServer: https://github.com
         gke:
           projectNumber: "688875092189"
-        namespace: jx
         project: jenkins-x-labs-bdd
         provider: gke
         registry: gcr.io
@@ -73,7 +67,6 @@ spec:
             enabled: false
             production: false
         key: production
-      gitops: true
       ingress:
         domain: 35.184.150.204.nip.io
         externalDNS: false
@@ -82,34 +75,19 @@ spec:
           email: ""
           enabled: false
           production: true
-      kaniko: true
       pipelineUser:
         username: jstrachan
       repository: nexus
       secretStorage: gsm
       storage:
-        backup:
-          enabled: false
-          url: ""
-        logs:
-          enabled: true
-          url: gs://logs-jstrachan-tekton-20699896b252
-        reports:
-          enabled: true
-          url: gs://reports-jstrachan-tekton-20699896b252
-        repository:
-          enabled: true
-          url: gs://repository-jstrachan-tekton-20699896b252
+      - name: logs
+        url: gs://logs-jstrachan-tekton-20699896b252
+      - name: reports
+        url: gs://reports-jstrachan-tekton-20699896b252
+      - name: repository
+        url: gs://repository-jstrachan-tekton-20699896b252
       vault: {}
-      velero:
-        schedule: ""
-        ttl: ""
-      versionStream:
-        ref: master
-        url: https://github.com/jenkins-x/jxr-versions.git
       webhook: lighthouse
-    buildPackRef: mink
-    buildPackUrl: https://github.com/jstrachan/jx3-pipeline-catalog.git
     defaultScheduler:
       apiVersion: jenkins.io/v1
       kind: Scheduler
@@ -117,21 +95,15 @@ spec:
     dockerRegistryOrg: jenkins-x-labs-bdd
     envOrganisation: todo
     gitServer: https://github.com
-    helmTemplate: true
-    importMode: YAML
     kubeProvider: gke
     pipelineUserEmail: jenkins-x@googlegroups.com
     pipelineUsername: jstrachan
     promotionEngine: Prow
     prowConfig: Scheduler
-    prowEngine: Tekton
     storageLocations:
       - bucketUrl: gs://logs-jstrachan-tekton-20699896b252
         classifier: logs
       - bucketUrl: gs://reports-jstrachan-tekton-20699896b252
         classifier: reports
-    useGitOps: true
-    versionStreamRef: master
-    versionStreamUrl: https://github.com/jenkins-x/jxr-versions.git
   webHookEngine: Lighthouse
 status: {}
