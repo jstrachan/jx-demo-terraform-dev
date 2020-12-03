@@ -18,37 +18,13 @@ spec:
     registry: gcr.io
     zone: europe-west2-a
   environments:
-  - ingress:
-      domain: ""
-      externalDNS: false
-      namespaceSubDomain: ""
-      tls:
-        email: ""
-        enabled: false
-        production: false
-    key: dev
+  - key: dev
     owner: jstrachan
     repository: jx-demo-terraform-dev
-  - ingress:
-      domain: ""
-      externalDNS: false
-      namespaceSubDomain: ""
-      tls:
-        email: ""
-        enabled: false
-        production: false
-    key: staging
-  - ingress:
-      domain: ""
-      externalDNS: false
-      namespaceSubDomain: ""
-      tls:
-        email: ""
-        enabled: false
-        production: false
-    key: production
+  - key: staging
+  - key: production
   ingress:
-    domain: 35.184.150.204.nip.io
+    domain: ""
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
