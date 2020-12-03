@@ -42,7 +42,7 @@ spec:
         project: jenkins-x-labs-bdd
         provider: gke
         registry: gcr.io
-        zone: us-central1-a
+        zone: europe-west2-a
       environments:
       - ingress:
           domain: ""
