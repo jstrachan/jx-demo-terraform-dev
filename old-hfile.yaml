@@ -24,6 +24,37 @@ repositories:
 - name: dev
   url: http://chartmuseum-jx.35.184.150.204.nip.io/
 releases:
+#- chart: ./charts/istio-operator
+#  name: istio-operator
+#  namespace: istio-system
+- chart: istio/base
+  name: base
+  namespace: istio-system
+- chart: istio/istio-discovery
+  name: istio-discovery
+  namespace: istio-system
+  values:
+  - charts/istio/values.yaml
+- chart: istio/istio-ingress
+  name: istio-ingress
+  namespace: istio-system
+  values:
+  - charts/istio/values.yaml
+- chart: istio/istio-egress
+  name: istio-egress
+  namespace: istio-system
+  values:
+  - charts/istio/values.yaml
+- chart: jx3/knative-serving
+  version: 0.19.21
+  name: knative-serving
+  namespace: knative-serving
+  values:
+  - charts/knative-serving/values.yaml
+- chart: jx3/knative-net-istio
+  version: 0.19.21
+  name: knative-net-istio
+  namespace: knative-serving
 - chart: jenkins-x/jxboot-helmfile-resources
   version: 1.0.16
   name: jxboot-helmfile-resources
@@ -98,5 +129,9 @@ releases:
   namespace: jx
   values:
   - versionStream/charts/jx3/health-checks-jx/values.yaml.gotmpl
+- chart: dev/knative-quickstart
+  version: 0.0.12
+  name: knative-quickstart
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
