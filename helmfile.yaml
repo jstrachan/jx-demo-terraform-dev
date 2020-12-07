@@ -1,9 +1,15 @@
 filepath: ""
 helmfiles:
 - path: helmfiles/jx/helmfile.yaml
+  environment: {}
 - path: helmfiles/nginx/helmfile.yaml
+  environment: {}
 - path: helmfiles/secret-infra/helmfile.yaml
+  environment: {}
 - path: helmfiles/tekton-pipelines/helmfile.yaml
+  environment: {}
+- path: helmfiles/jx-staging/helmfile.yaml
+  environment: {}
 templates: {}
 missingFileHandler: ""
 renderedvalues: {}
