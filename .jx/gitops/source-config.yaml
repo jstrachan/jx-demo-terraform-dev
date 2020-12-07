@@ -12,4 +12,5 @@ spec:
     - name: nodey533
     - name: nodey536
     - name: nodey542
+    - name: nodey544
     scheduler: in-repo
