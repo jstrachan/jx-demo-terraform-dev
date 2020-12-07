@@ -1,0 +1,8 @@
+# Source: nodey544/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: nodey544-nodey544
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
