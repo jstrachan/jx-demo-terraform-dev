@@ -4,4 +4,4 @@ spec:
   repositories:
   - label: JX3 Pipeline Catalog
     gitUrl: https://github.com/jstrachan/jx3-pipeline-catalog
-    gitRef: mink
+    gitRef: beta
