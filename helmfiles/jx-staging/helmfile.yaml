@@ -1,0 +1,14 @@
+filepath: ""
+namespace: jx-staging
+repositories:
+- name: dev
+  url: http://chartmuseum-jx.34.105.200.93.nip.io/
+releases:
+- chart: dev/nodey544
+  version: 1.0.1
+  name: nodey544
+  forceNamespace: ""
+  skipDeps: null
+templates: {}
+missingFileHandler: ""
+renderedvalues: {}
