@@ -8,5 +8,5 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
-#    - name: knative-quickstart
+    - name: mynodeapp
     scheduler: in-repo
