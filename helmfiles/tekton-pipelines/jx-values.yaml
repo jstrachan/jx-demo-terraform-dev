@@ -25,7 +25,7 @@ jxRequirements:
     project: jenkins-x-labs-bdd
     provider: gke
     registry: gcr.io
-    zone: europe-west2-a
+    zone: europe-west2-b
   environments:
   - key: dev
     owner: jstrachan
