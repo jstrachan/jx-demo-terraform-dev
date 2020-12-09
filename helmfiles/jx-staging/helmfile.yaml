@@ -4,17 +4,7 @@ environments:
     values:
     - jx-values.yaml
 namespace: jx-staging
-repositories:
-- name: dev
-  url: http://chartmuseum-jx.34.105.200.93.nip.io/
-releases:
-- chart: dev/nodey544
-  version: 1.0.1
-  name: nodey544
-  values:
-  - jx-values.yaml
-  forceNamespace: ""
-  skipDeps: null
+releases: []
 templates: {}
 missingFileHandler: ""
 renderedvalues: {}
