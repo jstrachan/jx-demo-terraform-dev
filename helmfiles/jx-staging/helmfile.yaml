@@ -1,4 +1,8 @@
 filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
 namespace: jx-staging
 repositories:
 - name: dev
@@ -7,6 +11,8 @@ releases:
 - chart: dev/nodey544
   version: 1.0.1
   name: nodey544
+  values:
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 templates: {}

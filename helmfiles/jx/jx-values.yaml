@@ -1,3 +1,14 @@
+jx:
+  imagePullSecrets: []
+  secrets:
+    adminUser:
+      password: todo
+      username: todo
+    hmacToken: todo
+    pipelineUser:
+      email: jenkins-x@googlegroups.com
+      token: todo
+      username: jenkins-x-labs-bot
 jxRequirements:
   autoUpdate:
     enabled: false

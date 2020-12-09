@@ -1,0 +1,61 @@
+jx:
+  imagePullSecrets: []
+  secrets:
+    adminUser:
+      password: todo
+      username: todo
+    hmacToken: todo
+    pipelineUser:
+      email: jenkins-x@googlegroups.com
+      token: todo
+      username: jenkins-x-labs-bot
+jxRequirements:
+  autoUpdate:
+    enabled: false
+    schedule: ""
+  cluster:
+    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    clusterName: jstrachan-tekton
+    environmentGitOwner: todo
+    gitKind: github
+    gitName: github
+    gitServer: https://github.com
+    gke:
+      projectNumber: "688875092189"
+    project: jenkins-x-labs-bdd
+    provider: gke
+    registry: gcr.io
+    zone: europe-west2-a
+  environments:
+  - key: dev
+    owner: jstrachan
+    repository: jx-demo-terraform-dev
+  - key: staging
+  - key: production
+  ingress:
+    domain: 34.105.200.93.nip.io
+    externalDNS: false
+    namespaceSubDomain: -secret-infra.
+    tls:
+      email: ""
+      enabled: false
+      production: true
+  pipelineUser:
+    username: jstrachan
+  repository: nexus
+  secretStorage: gsm
+  storage:
+  - name: logs
+    url: gs://logs-jstrachan-tekton-20699896b252
+  - name: reports
+    url: gs://reports-jstrachan-tekton-20699896b252
+  - name: repository
+    url: gs://repository-jstrachan-tekton-20699896b252
+  vault: {}
+  webhook: lighthouse
+jxRequirementsIngressExternalDNS:
+  enabled: false
+jxRequirementsIngressTLS:
+  enabled: false
+jxRequirementsVault:
+  enabled: false
